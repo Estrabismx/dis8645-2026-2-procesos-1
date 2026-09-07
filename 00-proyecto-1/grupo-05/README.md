@@ -1,4 +1,9 @@
 # Proyecto 01
+*Vanessa García*
+
+*Isidora Pérez*
+
+*Narely Riquelme*
 
 ## Licencia 
 
