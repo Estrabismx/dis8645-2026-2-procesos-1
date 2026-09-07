@@ -189,7 +189,16 @@ Así que se le pidió a Gemini que integrara la animación dentro de nuestro có
 ![integrar animación](./gifs/avance-animacion.gif)
 
 #### Componentes
-AQUI SUMAR EXPLICACIÓN
+
+Durante este día pudimos avanzar principalmente en la organización y conexión de los componentes dentro de la protoboard y el Arduino. Una de las primeras cosas que hicimos fue revisar cómo debíamos distribuir las conexiones para que pudieran funcionar correctamente sin interferirse entre ellos. Antes de intentar conectar todo al mismo tiempo, decidimos probar cada componente por separado, lo que nos permitió identificar si existía algún problema específico en el funcionamiento de cada uno.
+
+Primero trabajamos con el potenciómetro. Realizamos las conexiones correspondientes y lo probamos utilizando el código para comprobar que la lectura de sus valores funcionara correctamente. Luego hicimos un procedimiento similar con el botón, comprobando que al presionarlo el código pudiera detectar correctamente el cambio de estado.
+
+Una vez que comprobamos que ambos componentes funcionaban de manera independiente, tuvimos que conseguir que los dos pudieran estar conectados y funcionar al mismo tiempo dentro de una misma protoboard. En este proceso contamos con la ayuda de Seba, a quien agradecemos mucho por su amabilidad, paciencia y disposición para ayudarnos en todo momento. Con su orientación pudimos entender mejor cómo ordenar las conexiones dentro de la protoboard y conectarlo al Arduino. Después de realizar las conexiones, volvimos a probar el circuito utilizando el código, fue importante porque no solo queríamos comprobar que los componentes estuvieran conectados físicamente, sino también que el código pudiera interpretar correctamente la información de ambos al mismo tiempo.
+
+Este avance nos permitió entender mejor la relación entre las conexiones físicas de la protoboard, el Arduino y  el funcionamiento del código, también nos ayudó a darnos cuenta de la importancia de ir probando los componentes por separado antes de integrarlos, ya que de esta manera es mucho más fácil identificar dónde se encuentra un posible error. 
+
+
 
 ![ejemplo](./gifs/componentes.gif)
 
@@ -199,6 +208,15 @@ Este día tras la explicación de Aarón, se ordenó el código para que estuvie
 Avance: [LINK YOUTUBE](https://youtube.com/shorts/AT0fQQUXfAs?feature=share)
 
 COLOCAR EJEMPLOS Y EXPLICACIÓN 
+
+Habíamos dejado funcionando en la protoboard el botón y el potenciómetro conectados al Arduino. Esto nos permitió tener una base sobre la cual seguir agregando los demás componentes y comprobar que el circuito que habíamos pensado podía funcionar. A partir de esta conexión, durante esta sesión nos enfocamos en incorporar la pantalla y, al mismo tiempo comenzar a pensar cómo llevar todo este sistema desde la protoboard/Arduino hacia la carcasa. Además de conectar la pantalla, extendimos las conexiones de los componentes para que no quedaran limitadas a la posición que tenían en la protoboard.
+
+Por temas de tiempo, decidimos darle prioridad al desarrollo de la carcasa y terminar los últimos detalles relacionados con la organización de los componentes. Esto fue necesario porque ya teníamos una idea más clara de cómo funcionaría el circuito, por lo que podíamos comenzar a tomar decisiones más concretas sobre el espacio que necesitaríamos para instalarlo.
+
+
+![IMG](./imagenes/avance01.png)
+
+
 
 ### Viernes 04 de septiembre
 Ya teníamos el código funcionando, por lo que solo nos quedó ajustar pequeños detalles y avanzar con la carcasa. 
