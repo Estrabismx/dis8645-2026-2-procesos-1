@@ -478,8 +478,8 @@ Ahí entendimos algo muy simple pero súper útil:
 
 menos tiempo = texto más rápido = más intensidad.
 
-![primercodigo](./imagenes/pantalla1.heic)
-![primercodigo](./imagenes/pantalla2.heic)
+![primercodigo](./imagenes/pantalla1.HEIC)
+![primercodigo](./imagenes/pantalla2.HEIC)
 
 No necesitábamos crear una función nueva cada vez que quisiéramos cambiar la sensación de una frase.
 
