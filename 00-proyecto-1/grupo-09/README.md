@@ -57,7 +57,21 @@ El poema está bajo la licencia de copyright, donde todos los derechos están re
 ## Proceso código
 
 ### Martes 25 de agosto
-Empezamos por analizar el código que nos dieron de ejemplo, viendo que era lo que nos servía y lo que no. Eliminamos lo que era animación y movimiento de texto, dejando solo el que se desplaza a la izquierda, reemplazando el texto por el primer verso de nuestro poema hasta que funcionara. A partir de esto, se fue duplicando esta estructura con cada verso.
+Empezamos por analizar el código que nos dieron de ejemplo, viendo que era lo que nos servía y lo que no. Eliminamos lo que era animación y movimiento de texto, dejando solo el que se desplaza a la izquierda y reemplazando el texto por el primer verso de nuestro poema hasta que funcionara. En esta etapa tuvimos una serie de errores en cuanto a cómo editábamos las propiedades del texto, algunos ejemplos de estos es que nos quedaba la tipografía expandida, desfazada o superpuesta con la otra frase.
+
+`1,5 display size`
+
+![errores](./imagenes/error1.png)
+
+`1 display size`
+
+![errores](./imagenes/error2.png)
+
+
+![errores](./imagenes/error3.png)
+
+AQUÍ AGREGAR ERRORES DE CÓDIGO Y LECCIONES 
+
 
 Ejemplo de la estructura inicial:
 
@@ -92,7 +106,7 @@ void testscrolltext(void) {
 ```
 
 ### Viernes 28 de agosto
-En esta clase se terminó de colocar todos los versos en el código, definimos el diagrama de flujo, para estructurar nuestra interacción, y empezamos a desarrollar la animación. 
+En esta clase se terminó de colocar todos los versos en el código, definimos el diagrama de flujo, para estructurar nuestra interacción, empezamos a desarrollar la animación y también organizamos los componentes en la protoboard, comprobando que funcionaran por separado y empezamos a programarlos.
 
 #### Interacción 
 Para realizar el diagrama, utilizamos Chat GPT y utilizamos el siguiente prompt:
@@ -103,9 +117,9 @@ _La estructura debe entenderse como una secuencia de interacción progresiva. Al
 
 _Solo una vez que se ha mostrado el quinto verso, y por lo tanto después de completar las cinco presiones correspondientes a los versos, la pantalla se limpia y se habilita el uso del potenciómetro. Aunque este se encuentre conectado físicamente desde el inicio, el programa debe ignorar su lectura hasta llegar a esta etapa. Al mover el potenciómetro, el nombre de la autora debe revelarse progresivamente, letra por letra, según la posición del control. Finalmente, cuando el sistema se encuentre en esta última etapa, una doble presión rápida del botón debe reiniciar toda la experiencia y volver al texto de licencia inicial."_
 
-Nos dio como resultado:
+Nos dio de resultado el orden del diagrama, el cual rediseñamos y quedó el siguiente resultado:
 
-![imagen diagrama de flujo, falta subirla](./imagenes/ejemplo.jpg)
+![diagrama de flujo](./imagenes/diagrama.png)
 
 #### Animación
 Para poder realizar la animación, primero elegimos un video en pixabay subido por Bell Alvarez. Gracias a su licencia, desde esta página se permite usar el contenido gratis,  sin tener que dar crédito al autor (aunque siempre es apreciado) y modificar o adaptar el contenido en obras nuevas. 
@@ -160,11 +174,34 @@ const unsigned char epd_bitmap_frames_animacion_1 [] PROGMEM = {
 };
 ```
 
-Se intentó colocar directamente en donde traía la animación el código de ejemplo, pero no funcionó, así que con Gemini AI le preguntamos por qué no funcionaba 
+Se intentó colocar directamente en donde traía la animación el código de ejemplo, pero no funcionó, así que le preguntamos a Gemini AI por qué y nos dio la siguiente respuesta:
 
+_"El problema es que tienes definidos los cuadros de tu nueva animación en el arreglo epd_bitmap_allArray, pero nunca llamas a ninguna función que los dibuje dentro de setup() o loop(). Para que la animación se muestre en tu pantalla OLED, debes recorrer las imágenes del arreglo y pintarlas con display.drawBitmap()."_
+
+Así que se le pidió a Gemini que integrara la animación dentro de nuestro código considerando la acotación anterior, y funcionó.
+
+![integrar animación](./gifs/avance-animacion.gif)
+
+#### Componentes
+AQUI SUMAR EXPLICACIÓN
+
+![ejemplo](./gifs/componentes.gif)
 
 ### Martes 01 de septiembre
+Este día tras la explicación de Aarón, se ordenó el código para que estuviera más estructurado y simplificar su extensión en cuanto a las funciones del texto, se conectaron los componentes a la pantalla y se agregaron pasos de la interacción.
+
+Avance: [LINK YOUTUBE](https://youtube.com/shorts/AT0fQQUXfAs?feature=share)
+
+COLOCAR EJEMPLOS Y EXPLICACIÓN 
 
 ### Viernes 04 de septiembre
+Ya teníamos el código funcionando, por lo que solo nos quedó ajustar pequeños detalles y avanzar con la carcasa. 
+
+Aarón nos ayudó a ordenar la animación, dejándolo como otra ventana e incluyéndola en el código
+
+COLOCAR EJEMPLO
 
 ## Carcasa
+
+
+
