@@ -1,21 +1,21 @@
 #include <LiquidCrystal.h>
 
 // versos del poema
-char *versosPoema[] = {
+const char *versosPoema[] = {
   "Cuando estan nuestras almas frente a frente,", 
   "mudas, erguidas, fuertes, ya muy proximas,",
   "y sus alas se encienden al tocarse,",
-  "en cada punta curva ¿qué mal amargo",
+  "en cada punta curva ?que mal amargo",
   "puede hacernos la tierra, que no debiéramos",
-  "quedarnos aquí, contentos? Piénsalo. Al subir más alto,",
-  "los ángeles nos oprimirían y aspirarían",
-  "a dejar caer algún áureo orbe de canto perfecto",
-  "en nuestro hondo, querido silencio. Quedémonos",
-  "mejor en la tierra, Amado mío, donde los ánimos",
+  "quedarnos aqui, contentos? Piensalo. Al subir más alto,",
+  "los angeles nos oprimirian y aspirarian",
+  "a dejar caer algun aureo orbe de canto perfecto",
+  "en nuestro hondo, querido silencio. Quedemonos",
+  "mejor en la tierra, Amado mio, donde los animos",
   "contrarios e injustos de los hombres retroceden",
-  "y aíslan a los espíritus puros, y permiten",
-  "un lugar donde estar y amar por un día,",
-  "con la oscuridad y la hora de la muerte rodeándolo."
+  "y aislan a los espiritus puros, y permiten",
+  "un lugar donde estar y amar por un dia,",
+  "con la oscuridad y la hora de la muerte rodeandolo."
 };
 
 // corresponde a los pines que utiliza la pantalla 
@@ -47,8 +47,10 @@ int filtrarConDivision(int valor, int divisor) {
 
 // determinar dirección y calcular velocidad
 // relacionada al desplazamiento del poema
-  int direccion = 0;
+  int direccion = 0; // variable asociada a si el texto avanza o retrocede
   int pausa = 0;
+  int v = 0;
+  int pos = 0; // variable que determina la posición del texto
 
 
 // ----- inicio de funcionamiento ----
@@ -132,18 +134,22 @@ void loop() {
   Serial.println(poteFiltrado);
   // ------- fin lectura pote ---------
 
-  if (poteFiltrado > 127) {
-    direccion = 1; // avanzar
-    // map() convierte el rango del pote (128 a 255) a un delay en milisegundos (de 600ms a 50ms)
-    // Mientras más cerca del 255, menor es el delay (más rápido)
-    pausa = map(poteFiltrado, 128, 255, 600, 50); // para editar la velocidad menor y mayor, editar los 2 ultimos valores
-  } else {
-    direccion = -1; // retroceder
-    // mientras más cerca del 0, menor es el delay (más rápido)
-    pausa = map(poteFiltrado, 127, 0, 600, 50); 
+if (poteFiltrado >= 135) {
+    direccion = 1; // Avanzar
+    // Mapea desde 135 (el mínimo para avanzar) hasta 255 (velocidad máxima)
+    pausa = map(poteFiltrado, 135, 255, 600, 50); 
+  } 
+  else if (poteFiltrado <= 120) {
+    direccion = -1; // Retroceder
+    // Mapea desde 120 (el mínimo para retroceder) hasta 0 (velocidad máxima en reversa)
+    pausa = map(poteFiltrado, 120, 0, 600, 50); 
+  } 
+  else {
+    direccion = 0; // Pausa / Zona muerta al centro (valores entre 121 y 134)
+    pausa = 200;   // Pequeño delay de espera
   }
 
-  // calculoa el verso actual
+  // calcula el verso actual
   int totalVersos = sizeof(versosPoema) / sizeof(versosPoema[0]);
   int largoVerso = strlen(versosPoema[v]);
   int pasosTotales = (largoVerso > 16) ? (largoVerso - 16 + 3) : 0;
