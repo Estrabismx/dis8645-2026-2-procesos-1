@@ -73,41 +73,7 @@ Vimos varios videos para saber como funcionan los milis
   se muestra el tercer verso con la palabra SINGS en testdrawstyles con otra tipografía;
   cuarto verso y se muestra la palabra NEVER en mayusculas.
 
-- Apuntes Marti:
-
-Todo comenzó la noche del último día de agosto…
-con mi compañera Maite nos dispusimos a continuar nuestro proyecto 1 en lo que llegaban nuestras demás compañeras que se encontraban en sus respectivos trabajos.
-
-Yo había faltado a clases el día que enseñaron a conectar las pantallitas y las proto al arduino, y mis compañeras no entendieron mucho lo que debíamos hacer.
-
-En el discord subieron una imagen de cómo tienen que ir conectadas las cosas- dijo maite
-
--Altiro lo veo- le respondí mientras me dirigía al chat del taller a buscar las imágenes de las que hablaba. saque los cables correspondientes y empecé a conectarlos.
-
-conecte el usb al computador y de inmediato se sintió un leve olor a plástico quemado, rápidamente desconecte el usb de mi computador, toque la pantalla y estaba hirviendo, sentí miedo 
-
--¿habrá muerto?- pensé
-
-Luego le dije a Maite que la pantalla estaba muy caliente y tenía miedo de habermela echado.
-
-Le preguntamos a chatgpt qué habíamos hecho mal, nos dijo que teníamos mal conectados unos cables, me puse a revisar, y como no tenía la información que entregaron en clases no entendía lo que me estaba diciendo, así que decidí enviarle un mensaje por ig a nuestro compañero nicolas valdes. Me mandó audios diciendo que la imagen que compartieron por el chat de discord estaba mala y que lo lamentaba mucho, pero era probable que la pantalla hubiese muerto…
-
-Decidimos dejar descansar un par de minutos la pantalla como nos recomendó nuestro compañero Nicolás. Arreglé la conexión de los cables y empezamos a probar el código que nos entregó el profesor Aaron para ver si la pantalla funcionaba correctamente o no, pero nada, el código se subía al arduino pero la pantalla no emite imagen alguna…
-
-le pedimos a chat gpt algún código para ver si es que la pantalla funcionaba o no, tampoco pasaba algo. Desesperada, subo una historia a mejores amigos de instagram mencionando mi frustración que sentía en ese momento, creíamos que lo habíamos perdido todo y tendríamos que ir a comprar una pantalla nueva para poder seguir con el proyecto. La imagen mostraba el arduino conectado a la proto y a la pantalla.
-
--Marti, ¿por qué el azul está conectado primero?- preguntó Maite
-
--Así estaba en la imagen po - respondí
-
--nooo wn esta conectado primero el amarillo
-
-Procedo a revisar la foto de la conexión nuevamente, y en efecto, lo que me decía Maite era verdad. con un poco de fe en el corazón, cambie de posición los cables, subí el código al arduino otra vez, y aparece… ahí estaba, adafruit nosequemierda y las animaciones del código que nos compartió el profe para probar si la pantalla funcionaba.
-
-Estaba viva, y la esperanza volvió a nuestros cuerpos.
-
-Autoria por Martina Fernández, Pumpkinguurl.
-
+-marti:
 Le compartí el primer código a chatgpt junto con los llamados para poder usar la pantallita para que me ayudara a ver donde tenía que ponerle los display pero me cambió todo lo que le puse para poder agregarle los display maldito no me deja ir a mi ritmo.
 
 ![pantalla funcionando](./poema-en-pantalla.jpeg)
