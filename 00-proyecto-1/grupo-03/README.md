@@ -25,6 +25,10 @@ Nuestro grupo eligió ;p0ema de Leonor Olmos. Es el extracto del poema 4, págin
 >
 > No, en serio, este poema nada puede resolver.
 
+Es difícil decir el porqué escogimos este extracto porque nuestra respuesta sería “nos gusto por lo complejo que es”. Cada uno, hasta el día de hoy, mientras más lo leemos, más significados encontramos, pero esta es la gracia de este poema, no entender y creemos que jamás lo comprenderemos porqué si lo analizamos—teniendo en cuenta todo el libro— la autora habla siempre de su cuerpo pero a su vez lo que pasa alrededor como lo es la quimica, música, sistema económico, etc. 
+
+Lo que nosotros queremos hacer con esta entrega es poder hacer más cercano este poema, presentar como lo entendemos y experimentar en la marca. 
+
 ## **2\. Corpus y Licencias (Legal)**
 
 La obra original establece en su página legal: *"Ninguna parte de esta publicación puede ser reproducida o transmitida mediante cualquier soporte sin la expresa autorización de la editorial"*.
