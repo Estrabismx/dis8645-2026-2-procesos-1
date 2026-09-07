@@ -47,9 +47,15 @@ Lo primero que hicimos fue entender cada verso para poder representarlo en las p
 
 A partir de la retroalimentación, se nos entregaron dos pantallas I2C para que estas hablaran el mismo idioma y no se crearán 2 animaciones por separado. Destacamos esta opción, solamente por cómo se veían gráficamente las pantallas. Finalmente, lo que realizamos como grupo fue que en la pantalla TFT se encontrará la animación del poema y en la I2C indicaciones que el usuario debe realizar mediante cada verso. 
 
+
+<div align="center">
+  <img src="./imagenes/pantallas.jpeg" width="50%">
+</div>
+
 Además, tuvimos la posibilidad de utilizar 3 motores para el proyecto, primero queríamos hacer explotar un diodo representando el caos, pero esto podría afectar el uso del arduino, dejándonos sin ninguna retroalimentación a las pantallas, entonces descartamos la idea al encontrar esta segunda opción. 
 
 Osea, lo que queríamos era que no representar tan sólo gráficamente en las pantallas, sino sonora y sensorialmente. Esto nos dio a entender que ARDUINO no se limita, si no nosotros. 
+
 
 ## **5\. Carcasa**
 
