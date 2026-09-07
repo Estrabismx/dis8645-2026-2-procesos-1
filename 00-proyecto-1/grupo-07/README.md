@@ -93,26 +93,25 @@ Expresa un amor frustrado y posiblemente no correspondido, pero principalmente m
 ---
 
 ## ¿Qué queremos que pase? (texto)
-- Cambio de dirección 2: de derecha a izquierda. Lo que queremos es que lo que se proyecte en la pantalla represente el poema, por ende, puede ser que solo se proyectan ciertas palabras y no todo el texto, que son palabras claves representativas (palabras intensas).
+
+- Poner al comienzo el nombre de la poetisa Alfonsina Storni
+- Cambio de dirección 1: Dirección inicial del texto (arriba hacia abajo)
+- Cambio de dirección 2: de izquierda a derecha
 - Que la velocidad del texto cambie según la perilla del potenciómetro (verso por verso).
 - A través de un botón, tener la posibilidad de presionarlo y que se inviertan los colores mostrando las palabras claves representativas (palabras intensas).
 - Que a ciertas palabras del poema se les pueda bajar o subir la opacidad con el potenciómetro.
 - perfeccionismo = control = pausar/reanudar (botón)
-- cambio = velocidad de reproducción (potenciómetro)
-- cambio = dirección del texto (botón)
-- dirección inicial del texto: arriba hacia abajo
-- cambio de dirección 1: de izquierda a derecha
-- poner al comienzo el nombre de la poetisa Alfonsina Storni
+- Cada palabra intensa que aparezca se encenderan leds rojos
+
 
 ## Paso a paso de que queremos que suceda
 
-- lo primero en proyectarse en la pantalla es el nombre de la poetisa "Alfonsina Storni"
-- se despliega la animación inicial con el nombre del poema "Queja"
-- el poema comienza a proyectarse y avanza verso por verso de manera interactiva a medida que el usuario gira la perilla del potenciometro
-- al llegar a versos con palabras claves representativas (palabras intensas), el tamaño de la tipografía es mas grande que el resto del verso, para simular un efecto de "grito"
-- entre medio de las dos primeras estrofas, la pantalla reproduce una animación visual
-- al presionar el botón, se invierte los colores de la pantalla y se muestran únicamente las palabras clave representativas (palabras de tamaño de la tipografía es mas grande)
-
+- Lo primero en proyectarse en la pantalla es el nombre de la poetisa "Alfonsina Storni"
+- Se despliega la animación inicial con el nombre del poema "Queja"
+- El poema comienza a proyectarse y avanza verso por verso de manera interactiva a medida que el usuario gira la perilla del potenciometro
+- Al llegar a versos con palabras claves representativas (palabras intensas), el tamaño de la tipografía es mas grande que el resto del verso, para simular un efecto de "grito", esto hace que se enciendan 3 leds para intensificar estas palabras claves
+- Despues de la primera estrofa, la pantalla reproduce una animación visual de un corazón roto expandiendose por la pantalla
+- Entre medio de las dos primeras estrofas, la pantalla reproduce una animación visual de fuego subiendo de abajo hacia arriba
 
 
 
