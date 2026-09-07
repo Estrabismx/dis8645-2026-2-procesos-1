@@ -21,7 +21,7 @@ Esta poetisa argentina nacida en 1892 en Suiza es uno de los íconos de la liter
 
 Toda su obra refleja dramatismo, lucha y una audacia inusual para la época. Su temática es, sobre todo, amorosa, feminista y profunda, en donde se refleja un carácter singular, marcado muchas veces por la neurosis.
 
-Su muerte, continúa la huella de su transgresora personalidad. Su trágico suicidio, en las aguas de la playa "La Perla", de Mar del Plata, el 25 de octubre de 1938, le permitió huir de una penosa enfermedad oncológica y de la soledad que la invadía.
+Su muerte, continúa la huella de su transgresora personalidad. Su trágico suicidio, en las aguas de la playa "La Perla", de Mar del Plata, el 25 de octubre de 1938, le permitió huir de una penosa enfermedad oncológica (crecimiento descontrolado y la multiplicación rápida de células anormales) y de la soledad que la invadía.
 
 Información sacada de → https://www.poemas-del-alma.com/alfonsina-storni.htm#block-bio
 
