@@ -146,6 +146,13 @@ La carcasa consiste en una caja de cartón representada como un ataúd, haciendo
 El ataúd está decorado con telas de colores y otros elementos que lo acompañan, haciendo referencia a los gitanos, su cultura y su forma de vestir. De esta manera, buscamos que la carcasa tenga sentido tanto con la temática del poema como con su contexto y la cultura gitana presente en la obra.
 
 ### Fotogramas
+![titulo](./imagenes/fotogramaluna.jpg)
+
+![titulo](./imagenes/fotogramacorazon.jpg)
+
+![titulo](./imagenes/fotogramaojo.jpg)
+
+![titulo](./imagenes/fotogramacaballo.jpg)
 
 ### Prueba y error
 
