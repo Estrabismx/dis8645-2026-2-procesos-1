@@ -8,9 +8,49 @@ Avanzamos en el proyecto de manera autónoma como grupo.
 
 Descubrimos (el Tomás) que el tecno-mesianismo es la idea de que la tecnología, especialmente la inteligencia artificial, va a salvar a la humanidad y de todos sus problemas de manera mágica.
 
+En general hicimos experimentación en el proyecto más que nada para saber qué tipos de usos podíamos darle, con las pantallas y lo que se podía hacer con estas.
 
+Dejaré ejemplos de imágenes tomadas en este proceso.
+
+Este es un código que se utilizó para poder encender las 2 pantallas, la TFT y la OLED, que por lo que nos explicó el profe, esto habla 2 idiomas distintos y que es complicado hacer que hablen entre ellas, por eso nos pasó otras pantallas para intentar con esas, ya que tienen el mismo lenguaje y veremos en una próxima imagen, pero al final decidimos descartarlas, ya que no nos gustó cómo se veían estéticamente para lo que queríamos hacer nosotros con nuestro poema:
+
+![Foto proceso 1](./imagenes/codigo-esperimentacion.jpeg)
+
+---
+
+Acá, como podemos observar, están ya conviviendo las 2 pantallas a la vez y era el primer paso para saber que podíamos utilizar las 2 para los fines de nuestro poema y proyecto.
+
+![Foto proceso 2](./imagenes/experimentacion-1.jpeg)
+
+---
+
+En esta foto se puede apreciar una de las pantallas TFT (la azul) de las 2 que nos había dado para probar con ellas y efectivamente también nos funcionó pero como mencioné antes, no nos gustó la estética.
+
+![Foto proceso 3](./imagenes/experimentacion-2.jpeg)
+
+---
+
+Esta es la imagen de un pato conejo donde el profesor nos dijo que no tenía nada que ver con la materia y que no nos hicieran caso porque esto no iba a entrar en la clase, pero como somos rebeldes XD, lo pusimos en la pantalla OLED con código, lo que al final sí hace que entre en la clase, pero lo más importante es que vemos, ¿un conejo?, ¿un pato? o un Patonejo :V
+
+![Foto proceso 4](./imagenes/experimentacion-3.jpeg)
+
+---
+
+Acá el código que se fue modificando del patonejo para que se pueda ver la imagen y, como lo hicimos con ayuda de la IA, pues a veces se cansaba, entonces tuvimos que borrar las líneas con espacios en blanco una por una para que la imagen no saliera desfasada.
+
+![Foto proceso 5](./imagenes/codigo-experimentacion-3.jpeg)
+
+---
+
+Y, finalmente, este fue el resultado de la imagen escalada en la pantalla OLED, tanto en su forma original como en negativo.
+
+![Foto proceso 6](./imagenes/resultado-experimentacion-3.jpeg)
+
+![Foto proceso 7](./imagenes/resultado-2-experimentacion-3.jpeg)
 
 ## encargos
+
+No hubo encargos en esta clase, ya que avanzamos en el proyecto y nuestros avances corresponden al autoencargo.
 
 ## lectura
 
