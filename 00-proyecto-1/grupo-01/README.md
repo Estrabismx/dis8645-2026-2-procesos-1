@@ -121,6 +121,28 @@ con la oscuridad y la hora de la muerte rodeándolo.
 | Potenciómetro lineal (valor) | 1 | Dato 3 |
 | Botón (tipo) | 2 | Dato 3 |
 
+### Pantalla LCD Azul 16X02
+
+A diferencia de la mayoría de los grupos decidimos utilizar esta pantalla, debido a su mayor tamaño y por su configuración, ya que está pensada para solo mostrar texto, es más sencillo, sumado que posee un controlador estandarizado. Pero todo eso lo veremos ahora con las caracterisiticas de esta pantalla
+
+![display](.imagenes/lcd-1602.webp)
+
+> Directamente desde [Afel](https://afel.cl/products/pantalla-lcd-azul-16x02)
+
+#### Caracteristicas
+
+- **Formato** 16 caracteres por 2 lineas
+
+- **Voltaje funcionamiento** 5V
+
+- **Controlador** SPLC780D1 o compatible con HD44780
+
+- **Retroiluminación (Backlight)** LED de color azul con caracteres blancos.
+
+- **Interfaz** Paralela, configurable para operación de 4 bits u 8 bits.
+
+- **Tipo de Pantalla** STN (Super-twisted Nematic) de tipo negativo.
+
 <br>
 
 ## Código
@@ -180,3 +202,93 @@ Conexión representada en Tinkercad
 ![Tinkercad](./imagenes/sc-09.png)
 
 ![Tinkercad](./imagenes/sc-10.png)
+
+<br>
+
+## Proceso
+
+### Etapa inicial
+
+- chao poema de victoria Ramírez 
+
+- por copyright (xd)
+
+- buscar alguna solución
+
+- Encontrar poema
+
+- Traducir poema
+
+- Acreditar licencia
+
+- Conceptualizar
+
+### Pseudo código
+
+- Hacer listado de pasos
+
+- Ponerse en situaciones que podrían entrar en conflicto (del código, no nosotras xd)
+
+- Realizar esquema / hacer pruebas
+
+- definir variables
+
+- definir posibles funciones
+
+### Codi-Gooooo
+
+- Realizar un test funcionamiento del inicio (licencia, nombre y autora del poema)
+
+```cpp
+
+// adjuntar codigo con fallo inicial
+
+```
+
+> Explicar que fallo (todo ocurre en parelelo y sin un desfase, se pelean por quien se muestra en la pantalla)
+>
+> Mencionar elementos claves del código, funciones, variables, etc
+>
+> > set.display(0,0) por ejemplo
+
+```cpp
+
+// codigo con inicio listo
+
+```
+
+> Explicar que se solucionó, que cambiamos y que mantuvimos (el porque)
+
+- Agregamos la parte que visualiza el poema de manera completa
+
+  
+```cpp
+
+// codigo con poema (el que genero la daya)
+
+```
+> hablar de que elementos podemos entender que aparecen y porque, mencionar que instrucciones se le dieron a la ia, agregar prompt
+>
+> mencionar como pensamos agregar la siguiente función y que conflictos podriamos tener el código
+
+- Agregar pote
+
+```cpp
+
+// codigo pote xd
+
+```
+> que cambio, genero algun error?, existe algun valor que queramos editar
+>
+> mencionar ejercicio en clase que fue utilizado como base
+
+- agregar botones (solo congelar)
+
+```cpp
+// codigo botones solo congelar xddd
+```
+> que se le pidió a la ia, que sabemos de lo que se generó, algo que solucionar??
+
+- agregar botones (palabra clave)
+
+- codigo final
