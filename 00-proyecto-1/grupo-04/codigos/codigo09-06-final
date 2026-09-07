@@ -1,0 +1,2258 @@
+/*
+ * ---------------------------------------------------------------
+ * USAGE NOTICE / FAIR USE - FAIR DEALING
+ * ---------------------------------------------------------------
+ * The text of the poem "Pepper Sauce" (from the collection
+ * "Pepper Seed", 2013) used in this code belongs to its author,
+ * Malika Booker.
+ *
+ * This text is partially reproduced in this project for strictly
+ * educational, non-commercial purposes, as part of an academic
+ * project at Universidad Diego Portales (UDP). The use is
+ * transformative: the poem is reinterpreted through text animations
+ * on an OLED display as an installation piece, not reproduced or
+ * distributed as a standalone work.
+ *
+ * No authorship over the original poem text is claimed.
+ * All rights to the poem belong to Malika Booker.
+ *
+ * This project is non-profit and does not seek to substitute
+ * for the acquisition or reading of the original work.
+ * ---------------------------------------------------------------
+ */
+
+#include <Wire.h>
+#include <Adafruit_GFX.h>
+#include <Adafruit_SSD1306.h>
+
+#define ANCHO_PANTALLA 128
+#define ALTO_PANTALLA 32
+
+Adafruit_SSD1306 display(ANCHO_PANTALLA, ALTO_PANTALLA, &Wire, -1);
+
+
+// ------------------------------------------------
+// CONTROLES
+// ------------------------------------------------
+
+// pines de los 3 botones fisicos
+// PLAY inicia la reproduccion, STOP la corta y limpia pantalla,
+// REPEAT activa o desactiva que el poema se repita solo al terminar
+#define BOTON_PLAY 2
+#define BOTON_STOP 3
+#define BOTON_REPEAT 4
+
+// pin analogico donde esta conectado el potenciometro
+// controla el tamaño de letra en pantalla, para que el usuario
+// pueda ajustar la lectura a su gusto (mas grande o mas chico)
+#define POTENCIOMETRO A0
+
+// variables globales que guardan el estado actual del reproductor
+bool reproduciendo = false;
+bool repetir = false;
+bool cancelarReproduccion = false;
+
+bool ultimoPlay = HIGH;
+bool ultimoStop = HIGH;
+bool ultimoRepeat = HIGH;
+
+
+// ------------------------------------------------
+// TEXTOS DEL POEMA
+// ------------------------------------------------
+
+// PRIMERA ESTROFA
+char e1_v1[] = "I pray";
+char e1_v2[] = "for that";
+char e1_v3[] = "grandmother";
+char e1_v4[] = "grinding her teeth";
+char e1_v5[] = "one hand pushing in fresh hot peppers, seeds and all";
+char e1_v6[] = "turning the handle of that old iron mill";
+char e1_v7[] = "squeezing the limes, knowing";
+char e1_v8[] = "they will burn and cut raw like acid";
+
+char e1_golpe1[] = "BURN";
+char e1_golpe2[] = "CUT";
+char e1_golpe3[] = "RAW";
+char e1_golpe4[] = "ACID";
+
+// SEGUNDA ESTROFA
+char e2_v1[] = "She pours in vinegar and gets Anne to chop five onions";
+char e2_v2[] = "with a whole bulb of garlic";
+char e2_v3[] = "Chop them up";
+char e2_v4[] = "real fine girl";
+char e2_v5[] = "you hear?";
+char e2_v6[] = "And Anne dicing";
+char e2_v7[] = "and crying";
+char e2_v8[] = "relieved that no belt has blistered her skin";
+char e2_v9[] = "no knife handle smashed down onto her knuckles";
+char e2_v10[] = "until they bleed";
+char e2_v11[] = "for stealing money from she grandmother purse";
+
+// TERCERA ESTROFA
+char e3_v1[] = "I hear she made Anne pour in the oil and vinegar";
+char e3_v2[] = "stir up that hot sauce";
+char e3_v3[] = "how she hold her down";
+char e3_v4[] = "I hear she tied that girl to the bedposts";
+char e3_v5[] = "strung her out naked";
+char e3_v6[] = "like she there lying on a crucifix";
+char e3_v7[] = "I hear she spread she out, then say";
+char e3_v8[] = "I go teach you to go and steal from me";
+char e3_v9[] = "Miss Lady";
+
+// CUARTA ESTROFA
+char e4_warning[] = "WARNING: violence and abuse";
+char e4_v1[] = "I hear she scoop that pepper sauce out of a white enamel bowl";
+char e4_v2[] = "and pack it deep into she granddaughter's PUSSY";
+char e4_v3[] = "I hear there was one piece of screaming in the house that day";
+char e4_golpe[] = "SCREAMING";
+
+// QUINTA ESTROFA
+char e5_v1[] = "Anne bawl till she turn hoarse";
+char e5_v2[] = "bawl till the hair on the neighbours skin raise up";
+char e5_v3[] = "bawl till she start hiss through her teeth";
+char e5_v4[] = "bawl till she mouth could make no more sound";
+char e5_v5[] = "I hear how she turn raw";
+char e5_v6[] = "how that grandmother leave her there all day";
+
+// FINAL
+char final_v1[] = "I hear how she couldn't walk or talk for weeks";
+
+
+// ------------------------------------------------
+// FRAME DE INTRODUCCION
+// ------------------------------------------------
+
+char *intro[] = {
+  "Poema 1:",
+  "Pepper Sauce",
+  "Malika Booker",
+};
+
+int cantidadLineasIntro = 3;
+
+
+// ------------------------------------------------
+// DECLARACIONES DE FUNCIONES
+// ------------------------------------------------
+
+// ERROR QUE TUVIMOS:
+// Antes escribirLetraPorLetra() estaba declarada con 5 parametros:
+// texto, x, y, velocidad y tamano.
+// Pero en la segunda estrofa se estaba llamando solo con texto + velocidad,
+// lo que provocaba "too few arguments".
+//
+// CORRECCION:
+// Ahora recibe SOLO texto + velocidad.
+// El tamaño se lee directamente desde el potenciometro dentro de la funcion.
+
+bool escribirLetraPorLetra(
+  const char *texto,
+  int velocidad
+);
+
+void imprimirTextoSinCortar(
+  const char *texto,
+  int tamano
+);
+
+int leerTamanoLetra();
+
+bool moverMolino(const char *texto);
+bool mostrarGolpe(const char *texto);
+bool mostrarPulso(const char *texto);
+
+bool mostrarConBrillo(
+  const char *texto,
+  int velocidad,
+  int brillo
+);
+
+bool moverRevolver(
+  const char *texto
+);
+
+bool mostrarCrucifix(
+  const char *texto
+);
+
+bool mostrarRepeticionBrillo(
+  const char *texto,
+  int brillo
+);
+
+bool mostrarWarning(const char *texto);
+
+bool mostrarScreaming(const char *texto);
+
+bool mostrarAcumulacion(
+  const char *texto1,
+  const char *texto2,
+  const char *texto3,
+  const char *texto4
+);
+
+// ERROR QUE TUVIMOS:
+// segundaEstrofa() estaba declarada como void pero definida como bool.
+// Eso provocaba "ambiguating new declaration".
+//
+// CORRECCION:
+// primeraEstrofa() y segundaEstrofa() usan bool para poder devolver
+// false inmediatamente si STOP cancela la reproduccion.
+
+bool primeraEstrofa();
+bool segundaEstrofa();
+bool terceraEstrofa();
+bool cuartaEstrofa();
+bool quintaEstrofa();
+bool ultimoVerso();
+
+void leerControles();
+bool pausaControlada(unsigned long tiempo);
+void reproducirPoema();
+
+
+// ------------------------------------------------
+// SETUP
+// ------------------------------------------------
+
+void setup() {
+
+  if (!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) {
+    while (true);
+  }
+
+  pinMode(BOTON_PLAY, INPUT_PULLUP);
+  pinMode(BOTON_STOP, INPUT_PULLUP);
+  pinMode(BOTON_REPEAT, INPUT_PULLUP);
+
+  display.setTextColor(SSD1306_WHITE);
+
+  for (int i = 0; i < cantidadLineasIntro; i++) {
+
+    display.clearDisplay();
+    display.setTextColor(SSD1306_WHITE);
+    display.setTextSize(1);
+    display.setCursor(0, 0);
+    display.println(intro[i]);
+    display.display();
+
+    delay(900);
+  }
+
+  // despues de la portada, comienza el poema
+  reproduciendo = true;
+  cancelarReproduccion = false;
+}
+
+
+// ------------------------------------------------
+// LOOP
+// ------------------------------------------------
+
+void loop() {
+
+  leerControles();
+
+  if (reproduciendo == true) {
+
+    reproducirPoema();
+
+    if (
+      cancelarReproduccion == false &&
+      repetir == true
+    ) {
+
+      reproduciendo = true;
+
+    } else {
+
+      reproduciendo = false;
+    }
+  }
+}
+
+
+// ------------------------------------------------
+// FUNCIONES DE ANIMACION
+// ------------------------------------------------
+
+int leerTamanoLetra() {
+
+  int lecturaPot =
+    analogRead(POTENCIOMETRO);
+
+  return constrain(
+    map(
+      lecturaPot,
+      0,
+      1023,
+      1,
+      3
+    ),
+    1,
+    3
+  );
+}
+
+
+// ======================================================
+// ESCRIBIR LETRA POR LETRA
+// ======================================================
+
+// Mantiene la escritura letra por letra.
+//
+// La diferencia es que antes de dibujar cada letra
+// comprobamos si la palabra completa cabe en la línea.
+// Si no cabe, la palabra comienza completa en la siguiente línea.
+//
+// Así:
+// - las letras siguen apareciendo una por una
+// - ninguna palabra se corta entre dos líneas
+// - el potenciometro sigue controlando el tamaño
+
+bool escribirLetraPorLetra(
+  const char *texto,
+  int velocidad
+) {
+
+  int longitud =
+    strlen(texto);
+
+
+  for (
+    int i = 0;
+    i < longitud;
+    i++
+  ) {
+
+    leerControles();
+
+
+    if (
+      cancelarReproduccion
+    ) {
+
+      return false;
+    }
+
+
+    int tamano =
+      leerTamanoLetra();
+
+
+    display.clearDisplay();
+
+    display.setTextColor(
+      SSD1306_WHITE
+    );
+
+    display.setTextSize(
+      tamano
+    );
+
+    display.setTextWrap(false);
+
+
+    // --------------------------------------------------
+    // CALCULAR LA POSICION DE CADA PALABRA
+    // --------------------------------------------------
+
+    int x = 0;
+    int y = 0;
+
+    int anchoCaracter =
+      6 * tamano;
+
+    int altoLinea =
+      8 * tamano;
+
+
+    // recorrer todas las palabras hasta la letra actual
+
+    int posicion = 0;
+
+
+    while (
+      posicion <= i &&
+      texto[posicion] != '\0'
+    ) {
+
+      // saltar espacios
+      if (
+        texto[posicion] == ' '
+      ) {
+
+        posicion++;
+        continue;
+      }
+
+
+      // encontrar dónde termina la palabra
+
+      int inicioPalabra =
+        posicion;
+
+      int finalPalabra =
+        posicion;
+
+
+      while (
+        texto[finalPalabra] != ' ' &&
+        texto[finalPalabra] != '\0'
+      ) {
+
+        finalPalabra++;
+      }
+
+
+      int largoPalabra =
+        finalPalabra - inicioPalabra;
+
+
+      int anchoPalabra =
+        largoPalabra * anchoCaracter;
+
+
+      // ------------------------------------------------
+      // COMPROBAR SI LA PALABRA CABE
+      // ------------------------------------------------
+
+      if (
+        x > 0 &&
+        x + anchoPalabra > ANCHO_PANTALLA
+      ) {
+
+        x = 0;
+
+        y += altoLinea;
+      }
+
+
+      // ------------------------------------------------
+      // DIBUJAR SOLO LAS LETRAS QUE YA CORRESPONDEN
+      // ------------------------------------------------
+
+      int limite =
+        finalPalabra;
+
+
+      // Si esta es la palabra que contiene
+      // la letra que estamos escribiendo,
+      // solamente mostramos hasta i.
+
+      if (
+        i >= inicioPalabra &&
+        i < finalPalabra
+      ) {
+
+        limite =
+          i + 1;
+      }
+
+
+      for (
+        int j = inicioPalabra;
+        j < limite;
+        j++
+      ) {
+
+        display.setCursor(
+          x,
+          y
+        );
+
+        display.print(
+          texto[j]
+        );
+
+        x += anchoCaracter;
+      }
+
+
+      // Si ya llegamos a la palabra actual,
+      // no seguimos dibujando palabras futuras.
+
+      if (
+        i >= inicioPalabra &&
+        i < finalPalabra
+      ) {
+
+        break;
+      }
+
+
+      // si la palabra ya estaba completamente escrita,
+      // avanzar hacia la siguiente
+
+      x += anchoCaracter;
+
+      posicion =
+        finalPalabra + 1;
+    }
+
+
+    display.display();
+
+
+    if (
+      !pausaControlada(
+        velocidad
+      )
+    ) {
+
+      return false;
+    }
+  }
+
+
+  display.setTextWrap(true);
+
+  return true;
+}
+
+
+// ------------------------------------------------
+// PAUSA CONTROLADA
+// ------------------------------------------------
+
+bool pausaControlada(
+  unsigned long tiempo
+) {
+
+  unsigned long inicio =
+    millis();
+
+  while (
+    millis() - inicio < tiempo
+  ) {
+
+    leerControles();
+
+    if (
+      cancelarReproduccion == true
+    ) {
+
+      return false;
+    }
+
+    delay(5);
+  }
+
+  return true;
+}
+
+
+// ------------------------------------------------
+// EFECTO MOLINO
+// ------------------------------------------------
+
+bool moverMolino(
+  const char *texto
+) {
+
+  for (
+    int x = 128;
+    x >= -128;
+    x--
+  ) {
+
+    leerControles();
+
+    if (
+      cancelarReproduccion == true
+    ) {
+
+      return false;
+    }
+
+    display.clearDisplay();
+    display.setTextColor(SSD1306_WHITE);
+    display.setTextSize(leerTamanoLetra());
+    display.setCursor(x, 10);
+    display.print(texto);
+    display.display();
+
+    if (
+      !pausaControlada(30)
+    ) {
+
+      return false;
+    }
+  }
+
+  for (
+    int x = -128;
+    x <= 128;
+    x++
+  ) {
+
+    leerControles();
+
+    if (
+      cancelarReproduccion == true
+    ) {
+
+      return false;
+    }
+
+    display.clearDisplay();
+    display.setTextColor(SSD1306_WHITE);
+    display.setTextSize(leerTamanoLetra());
+    display.setCursor(x, 10);
+    display.print(texto);
+    display.display();
+
+    if (
+      !pausaControlada(30)
+    ) {
+
+      return false;
+    }
+  }
+
+  return true;
+}
+
+
+// ------------------------------------------------
+// PALABRAS BURN / CUT / RAW / ACID
+// ------------------------------------------------
+
+bool mostrarGolpe(
+  const char *texto
+) {
+
+  leerControles();
+
+  if (
+    cancelarReproduccion
+  ) {
+
+    return false;
+  }
+
+  display.clearDisplay();
+  display.fillScreen(SSD1306_WHITE);
+
+  display.setTextColor(
+    SSD1306_BLACK
+  );
+
+  display.setTextSize(2);
+  display.setCursor(10, 10);
+  display.print(texto);
+  display.display();
+
+  if (
+    !pausaControlada(550)
+  ) {
+
+    return false;
+  }
+
+  display.clearDisplay();
+
+  display.setTextColor(
+    SSD1306_WHITE
+  );
+
+  display.setTextSize(1);
+  display.display();
+
+  return pausaControlada(200);
+}
+
+
+// ======================================================
+// EFECTO PULSO
+// ======================================================
+
+bool mostrarPulso(
+  const char *texto
+) {
+
+  leerControles();
+
+
+  if (cancelarReproduccion) {
+
+    return false;
+  }
+
+
+  // tamaño base definido por el potenciometro
+  int tamanoBase =
+    leerTamanoLetra();
+
+
+  // --------------------------------------
+  // AGRANDAR
+  // --------------------------------------
+
+  for (
+    int tamano = tamanoBase;
+    tamano <= tamanoBase + 1;
+    tamano++
+  ) {
+
+    display.clearDisplay();
+
+    display.setTextColor(
+      SSD1306_WHITE
+    );
+
+    display.setTextSize(
+      tamano
+    );
+
+    display.setCursor(
+      0,
+      0
+    );
+
+    display.print(
+      texto
+    );
+
+    display.display();
+
+
+    if (
+      !pausaControlada(300)
+    ) {
+
+      return false;
+    }
+  }
+
+
+  // --------------------------------------
+  // ACHICAR
+  // --------------------------------------
+
+  display.clearDisplay();
+
+  display.setTextColor(
+    SSD1306_WHITE
+  );
+
+  display.setTextSize(
+    tamanoBase
+  );
+
+  display.setCursor(
+    0,
+    0
+  );
+
+  display.print(
+    texto
+  );
+
+  display.display();
+
+
+  if (
+    !pausaControlada(350)
+  ) {
+
+    return false;
+  }
+
+
+  return true;
+}
+
+
+// ======================================================
+// CONTROL DE BRILLO
+// ======================================================
+
+void cambiarBrillo(int porcentaje) {
+
+  int valorBrillo =
+    map(porcentaje, 0, 100, 0, 255);
+
+  display.ssd1306_command(
+    SSD1306_SETCONTRAST
+  );
+
+  display.ssd1306_command(
+    valorBrillo
+  );
+}
+
+
+// ======================================================
+// TEXTO CON BRILLO CONTROLADO
+// ======================================================
+
+bool mostrarConBrillo(
+  const char *texto,
+  int velocidad,
+  int brillo
+) {
+
+  leerControles();
+
+  if (cancelarReproduccion) {
+    return false;
+  }
+
+
+  cambiarBrillo(brillo);
+
+
+  display.clearDisplay();
+
+  display.setTextColor(
+    SSD1306_WHITE
+  );
+
+  display.setTextSize(
+    leerTamanoLetra()
+  );
+
+  display.setCursor(
+    0,
+    0
+  );
+
+
+  for (
+    int i = 0;
+    texto[i] != '\0';
+    i++
+  ) {
+
+    leerControles();
+
+    if (cancelarReproduccion) {
+      return false;
+    }
+
+
+    display.print(
+      texto[i]
+    );
+
+    display.display();
+
+
+    if (
+      !pausaControlada(
+        velocidad
+      )
+    ) {
+
+      return false;
+    }
+  }
+
+
+  return true;
+}
+
+
+// ======================================================
+// EFECTO REVOLVER
+// ======================================================
+
+bool moverRevolver(
+  const char *texto
+) {
+
+  // movimiento circular/repetitivo
+  // relacionado con la acción de revolver
+
+
+  int posicionesX[] = {
+    18, 28, 38, 28
+  };
+
+  int posicionesY[] = {
+    8, 14, 8, 2
+  };
+
+
+  for (
+    int vuelta = 0;
+    vuelta < 3;
+    vuelta++
+  ) {
+
+    for (
+      int i = 0;
+      i < 4;
+      i++
+    ) {
+
+      leerControles();
+
+      if (cancelarReproduccion) {
+        return false;
+      }
+
+
+      display.clearDisplay();
+
+      display.setTextColor(
+        SSD1306_WHITE
+      );
+
+      display.setTextSize(
+        leerTamanoLetra()
+      );
+
+      display.setCursor(
+        posicionesX[i],
+        posicionesY[i]
+      );
+
+      display.print(
+        texto
+      );
+
+      display.display();
+
+
+      if (
+        !pausaControlada(120)
+      ) {
+
+        return false;
+      }
+    }
+  }
+
+
+  return true;
+}
+
+
+// ======================================================
+// CRUCIFIJO
+// ======================================================
+
+bool mostrarCrucifix(
+  const char *texto
+) {
+
+  leerControles();
+
+  if (cancelarReproduccion) {
+    return false;
+  }
+
+
+  cambiarBrillo(45);
+
+
+  display.clearDisplay();
+
+  display.setTextColor(
+    SSD1306_WHITE
+  );
+
+  display.setTextSize(
+    leerTamanoLetra()
+  );
+
+
+  // palabra "crucifix"
+  display.setCursor(
+    0,
+    0
+  );
+
+  display.print(
+    texto
+  );
+
+
+  // dibujo simple de una cruz
+  display.drawLine(
+    105, 4,
+    105, 28,
+    SSD1306_WHITE
+  );
+
+  display.drawLine(
+    97, 11,
+    113, 11,
+    SSD1306_WHITE
+  );
+
+
+  display.display();
+
+
+  if (
+    !pausaControlada(900)
+  ) {
+
+    return false;
+  }
+
+
+  // volver al brillo normal
+  cambiarBrillo(100);
+
+
+  return true;
+}
+
+
+// ======================================================
+// REPETICION DE "I HEAR"
+// ======================================================
+
+bool mostrarRepeticionBrillo(
+  const char *texto,
+  int brillo
+) {
+
+  cambiarBrillo(brillo);
+
+
+  display.clearDisplay();
+
+  display.setTextColor(
+    SSD1306_WHITE
+  );
+
+  display.setTextSize(
+    leerTamanoLetra()
+  );
+
+  display.setCursor(
+    0,
+    0
+  );
+
+  display.print(
+    texto
+  );
+
+  display.display();
+
+
+  return pausaControlada(500);
+}
+
+
+// ======================================================
+// TRIGGER WARNING
+// ======================================================
+
+bool mostrarWarning(
+  const char *texto
+) {
+
+  // mostrar el trigger warning durante más tiempo
+  // alternar entre fondo negro y fondo blanco
+  // generar un parpadeo visual de advertencia
+
+  for (
+    int i = 0;
+    i < 6;
+    i++
+  ) {
+
+    if (i % 2 == 0) {
+
+      // fondo negro con letras blancas
+
+      cambiarBrillo(100);
+
+      display.clearDisplay();
+
+      display.fillScreen(
+        SSD1306_BLACK
+      );
+
+      display.setTextColor(
+        SSD1306_WHITE
+      );
+
+    }
+
+    else {
+
+      // fondo blanco con letras negras
+
+      display.clearDisplay();
+
+      display.fillScreen(
+        SSD1306_WHITE
+      );
+
+      display.setTextColor(
+        SSD1306_BLACK
+      );
+    }
+
+
+    display.setTextSize(1);
+
+    display.setCursor(
+      0,
+      0
+    );
+
+    display.println(
+      "TRIGGER WARNING"
+    );
+
+    display.println("");
+
+    display.println(
+      "violence and abuse"
+    );
+
+    display.display();
+
+
+    if (
+      !pausaControlada(600)
+    ) {
+
+      return false;
+    }
+  }
+
+
+  // volver a la configuración normal
+
+  cambiarBrillo(100);
+
+  display.clearDisplay();
+
+  display.setTextColor(
+    SSD1306_WHITE
+  );
+
+  display.display();
+
+
+  return pausaControlada(1200);
+}
+
+
+// ======================================================
+// SCREAMING
+// ======================================================
+
+bool mostrarScreaming(
+  const char *texto
+) {
+
+  // empezar con brillo bajo
+  // aumentar progresivamente hasta el maximo
+  // aumentar tambien el tamaño del texto
+
+  for (
+    int tamano = 1;
+    tamano <= 3;
+    tamano++
+  ) {
+
+    int brillo =
+      map(
+        tamano,
+        1,
+        3,
+        30,
+        100
+      );
+
+
+    cambiarBrillo(brillo);
+
+
+    display.clearDisplay();
+
+    display.setTextColor(
+      SSD1306_WHITE
+    );
+
+    display.setTextSize(
+      tamano
+    );
+
+
+    display.setCursor(
+      0,
+      8
+    );
+
+    display.print(
+      texto
+    );
+
+    display.display();
+
+
+    if (
+      !pausaControlada(250)
+    ) {
+
+      return false;
+    }
+  }
+
+
+  cambiarBrillo(100);
+
+
+  return pausaControlada(800);
+}
+
+
+// ------------------------------------------------
+// PRIMERA ESTROFA
+// ------------------------------------------------
+
+// ERROR QUE TUVIMOS:
+// Cuando cambiamos escribirLetraPorLetra() a 2 parametros,
+// la primera estrofa seguia llamandola con:
+// texto, x, y, velocidad, tamano.
+//
+// CORRECCION:
+// Todas las llamadas ahora usan solamente:
+// escribirLetraPorLetra(texto, velocidad)
+
+bool primeraEstrofa() {
+
+  if (
+    !escribirLetraPorLetra(
+      e1_v1,
+      150
+    )
+  ) return false;
+
+  if (!pausaControlada(500))
+    return false;
+
+
+  if (
+    !escribirLetraPorLetra(
+      e1_v2,
+      150
+    )
+  ) return false;
+
+  if (!pausaControlada(500))
+    return false;
+
+
+  if (
+    !escribirLetraPorLetra(
+      e1_v3,
+      150
+    )
+  ) return false;
+
+  if (!pausaControlada(1000))
+    return false;
+
+
+  if (
+    !escribirLetraPorLetra(
+      e1_v4,
+      70
+    )
+  ) return false;
+
+  if (!pausaControlada(700))
+    return false;
+
+
+  if (
+    !escribirLetraPorLetra(
+      e1_v5,
+      100
+    )
+  ) return false;
+
+  if (!pausaControlada(800))
+    return false;
+
+
+  if (
+    !moverMolino(
+      e1_v6
+    )
+  ) return false;
+
+  if (!pausaControlada(800))
+    return false;
+
+
+  if (
+    !escribirLetraPorLetra(
+      e1_v7,
+      120
+    )
+  ) return false;
+
+  if (!pausaControlada(800))
+    return false;
+
+
+  if (
+    !escribirLetraPorLetra(
+      e1_v8,
+      120
+    )
+  ) return false;
+
+  if (!pausaControlada(800))
+    return false;
+
+
+  if (!mostrarGolpe(e1_golpe1))
+    return false;
+
+  if (!mostrarGolpe(e1_golpe2))
+    return false;
+
+  if (!mostrarGolpe(e1_golpe3))
+    return false;
+
+  if (!mostrarGolpe(e1_golpe4))
+    return false;
+
+
+  display.clearDisplay();
+  display.display();
+
+  return pausaControlada(1000);
+}
+
+
+// ======================================================
+// SEGUNDA ESTROFA
+// ======================================================
+
+bool segundaEstrofa() {
+
+  // mostrar "She pours in vinegar and gets Anne to chop five onions"
+  // mantener una velocidad intermedia
+  // hacer que el texto avance de forma relativamente continua
+  // empezar a preparar visualmente la acción de cortar
+
+  if (
+    !escribirLetraPorLetra(
+      e2_v1,
+      70
+    )
+  ) return false;
+
+  if (!pausaControlada(500))
+    return false;
+
+
+  // mostrar "with a whole bulb of garlic"
+  // mantener el mismo ritmo
+  // dejar una pausa breve al terminar
+
+  if (
+    !escribirLetraPorLetra(
+      e2_v2,
+      70
+    )
+  ) return false;
+
+  if (!pausaControlada(600))
+    return false;
+
+
+  // mostrar "Chop them up real fine girl, you hear?"
+  // cortar la frase en partes
+  // mostrar cada parte por separado
+  // hacer que aparezcan más rápido entre sí
+  // relacionar la forma de aparición con la acción de cortar
+
+  if (
+    !escribirLetraPorLetra(
+      e2_v3,
+      50
+    )
+  ) return false;
+
+  if (!pausaControlada(200))
+    return false;
+
+
+  if (
+    !escribirLetraPorLetra(
+      e2_v4,
+      50
+    )
+  ) return false;
+
+  if (!pausaControlada(200))
+    return false;
+
+
+  if (
+    !escribirLetraPorLetra(
+      e2_v5,
+      50
+    )
+  ) return false;
+
+  if (!pausaControlada(400))
+    return false;
+
+
+  // mostrar "And Anne dicing, and crying"
+  // continuar con apariciones fragmentadas
+  // hacer que "dicing" y "crying" aparezcan separadas
+  // aumentar un poco la tensión agrandando y achicando el texto
+
+  if (!mostrarPulso(e2_v6))
+    return false;
+
+  if (!pausaControlada(250))
+    return false;
+
+
+  if (!mostrarPulso(e2_v7))
+    return false;
+
+  if (!pausaControlada(400))
+    return false;
+
+
+  // mostrar "relieved that no belt has blistered her skin"
+  // bajar un poco la velocidad
+  // mostrar más texto junto
+  // mantener una lectura más estable antes del siguiente cambio
+
+  if (
+    !escribirLetraPorLetra(
+      e2_v8,
+      100
+    )
+  ) return false;
+
+  if (!pausaControlada(500))
+    return false;
+
+
+  // mostrar "no knife handle smashed down onto her knuckles"
+  // hacer que el texto aparezca casi de golpe
+  // usando una velocidad muy rapida
+
+  if (
+    !escribirLetraPorLetra(
+      e2_v9,
+      20
+    )
+  ) return false;
+
+  if (!pausaControlada(200))
+    return false;
+
+
+  // mostrar "until they bleed"
+  // mantener la aparición brusca
+  // dejarlo mas tiempo en pantalla
+
+  if (
+    !escribirLetraPorLetra(
+      e2_v10,
+      20
+    )
+  ) return false;
+
+  if (!pausaControlada(800))
+    return false;
+
+
+  // mostrar "for stealing money from she grandmother purse"
+  // volver a una velocidad intermedia
+  // dejar una pausa al terminar la estrofa
+
+  if (
+    !escribirLetraPorLetra(
+      e2_v11,
+      80
+    )
+  ) return false;
+
+  if (!pausaControlada(1000))
+    return false;
+
+
+  return true;
+}
+
+
+// ======================================================
+// TERCERA ESTROFA
+// ======================================================
+
+bool terceraEstrofa() {
+
+  // mostrar "I hear she made Anne pour in the oil and vinegar"
+  // mantener una velocidad intermedia
+  // hacer que "I hear" aparezca primero como una frase
+  // que comienza a repetirse en esta parte
+
+  if (
+    !mostrarRepeticionBrillo(
+      "I hear",
+      30
+    )
+  ) return false;
+
+  if (
+    !pausaControlada(200)
+  ) return false;
+
+
+  if (
+    !mostrarConBrillo(
+      e3_v1 + 7,
+      70,
+      35
+    )
+  ) return false;
+
+  if (
+    !pausaControlada(500)
+  ) return false;
+
+
+  // mostrar "and stir up that hot sauce, how she hold her down"
+  // hacer que "stir up that hot sauce" tenga un movimiento
+  // circular o repetitivo, como las burbujas de Windows
+  // relacionar el movimiento con la acción de revolver
+  // mantener el resto de la frase más estable
+
+  if (
+    !moverRevolver(
+      e3_v2
+    )
+  ) return false;
+
+  if (
+    !mostrarConBrillo(
+      e3_v3,
+      80,
+      100
+    )
+  ) return false;
+
+  if (
+    !pausaControlada(500)
+  ) return false;
+
+
+  // mostrar "I hear she tied that girl to the bedposts"
+  // volver a mostrar "I hear"
+  // ir colocando las letras lentamente como máquina de escribir lenta
+  // mostrar el resto del verso de forma más continua
+  // hacer que este verso empiece con brillo 0
+  // y suba poco a poco hasta 100%
+
+  cambiarBrillo(0);
+
+  if (
+    !escribirLetraPorLetra(
+      e3_v4,
+      100
+    )
+  ) return false;
+
+  cambiarBrillo(100);
+
+  if (
+    !pausaControlada(500)
+  ) return false;
+
+
+  // mostrar "strung her out naked, like she there lying on a crucifix"
+  // mantener una aparición más lenta y pesada
+  // destacar la palabra "crucifix"
+  // hacer aparecer un dibujo simple de una cruz en píxeles junto a la palabra
+  // mantener este verso con menos brillo, aprox entre 40% y 50%
+  // dejar una pausa breve
+
+  if (
+    !mostrarConBrillo(
+      e3_v5,
+      100,
+      45
+    )
+  ) return false;
+
+  if (
+    !mostrarCrucifix(
+      e3_v6
+    )
+  ) return false;
+
+  if (
+    !pausaControlada(500)
+  ) return false;
+
+
+  // mostrar "I hear she spread she out, then say"
+  // volver a mostrar "I hear"
+  // hacer que la repetición se empiece a sentir más insistente
+  // llenar la pantalla de la frase
+  // mantener una velocidad intermedia
+  // hacer que cada repetición de "I hear"
+  // aparezca con más brillo que la anterior
+
+  if (
+    !mostrarRepeticionBrillo(
+      "I hear",
+      40
+    )
+  ) return false;
+
+  if (
+    !mostrarRepeticionBrillo(
+      "I hear",
+      70
+    )
+  ) return false;
+
+  if (
+    !mostrarRepeticionBrillo(
+      "I hear",
+      100
+    )
+  ) return false;
+
+
+  if (
+    !mostrarConBrillo(
+      e3_v7 + 7,
+      70,
+      100
+    )
+  ) return false;
+
+  if (
+    !pausaControlada(500)
+  ) return false;
+
+
+  // mostrar "I go teach you to go and steal from me, Miss Lady"
+  // mostrar primero la frase de forma continua
+  // separar "Miss Lady" del resto
+  // hacer que "Miss Lady" aparezca sola y más grande
+  // dejarla en pantalla por un momento
+  // dejar una pausa antes de continuar con la siguiente estrofa
+
+  if (
+    !mostrarConBrillo(
+      e3_v8,
+      70,
+      100
+    )
+  ) return false;
+
+  if (
+    !pausaControlada(400)
+  ) return false;
+
+
+  display.clearDisplay();
+
+  display.setTextColor(
+    SSD1306_WHITE
+  );
+
+  display.setTextSize(3);
+
+  display.setCursor(
+    0,
+    0
+  );
+
+  display.print(
+    e3_v9
+  );
+
+  display.display();
+
+
+  if (
+    !pausaControlada(1200)
+  ) return false;
+
+
+  cambiarBrillo(100);
+
+  display.clearDisplay();
+  display.display();
+
+
+  return pausaControlada(1000);
+}
+
+
+// ======================================================
+// CUARTA ESTROFA
+// ======================================================
+
+bool cuartaEstrofa() {
+
+  // mostrar un trigger warning antes de comenzar esta parte
+  // avisar que la siguiente sección contiene violencia sexual y abuso
+  // dejar una pausa suficiente para que se pueda leer
+
+  if (
+    !mostrarWarning(
+      "WARNING: violence and abuse"
+    )
+  ) return false;
+
+
+  // mostrar "I hear she scoop that pepper sauce out of a white enamel bowl"
+  // volver a usar "I hear" como inicio repetitivo
+  // mantener una velocidad más lenta y tensa
+  // mostrar el resto de la frase de forma continua
+
+  if (
+    !mostrarRepeticionBrillo(
+      "I hear",
+      40
+    )
+  ) return false;
+
+  if (
+    !mostrarConBrillo(
+      e4_v1 + 7,
+      100,
+      45
+    )
+  ) return false;
+
+  if (
+    !pausaControlada(700)
+  ) return false;
+
+
+  // siguiente verso
+  // evitar una animación demasiado literal
+  // trabajar principalmente con pausas, lentitud y acumulación
+  // hacer que la lectura se sienta más pesada que en las estrofas anteriores
+
+  if (
+    !mostrarConBrillo(
+      e4_v2,
+      130,
+      35
+    )
+  ) return false;
+
+  if (
+    !pausaControlada(1000)
+  ) return false;
+
+
+  // mostrar "I hear there was one piece of screaming in the house that day"
+  // hacer aparecer "I hear" nuevamente
+  // destacar "screaming"
+  // hacer que "screaming" aumente de tamaño o ocupe gran parte de la pantalla
+  // hacer que en este verso el brillo también aumente progresivamente
+  // hasta llegar al máximo
+  // dejar el resto de la frase aparecer después
+
+  if (
+    !mostrarRepeticionBrillo(
+      "I hear",
+      60
+    )
+  ) return false;
+
+  if (
+    !mostrarScreaming(
+      e4_golpe
+    )
+  ) return false;
+
+  if (
+    !mostrarConBrillo(
+      e4_v3 + 7,
+      80,
+      100
+    )
+  ) return false;
+
+
+  // dejar la pantalla vacía por un momento
+  // antes de dejarla vacía, bajar el brillo poco a poco de 100% a 0%
+  // marcar el punto de mayor intensidad hasta ahora
+
+  for (
+    int brillo = 100;
+    brillo >= 0;
+    brillo -= 10
+  ) {
+
+    cambiarBrillo(brillo);
+
+    if (
+      !pausaControlada(100)
+    ) {
+
+      return false;
+    }
+  }
+
+
+  display.clearDisplay();
+
+  display.display();
+
+
+  cambiarBrillo(100);
+
+
+  return pausaControlada(1500);
+}
+
+
+// ======================================================
+// ACUMULACION DE TEXTO
+// ======================================================
+
+bool mostrarAcumulacion(
+  const char *texto1,
+  const char *texto2,
+  const char *texto3,
+  const char *texto4
+) {
+
+  const char *textos[] = {
+    texto1,
+    texto2,
+    texto3,
+    texto4
+  };
+
+
+  // mostrar cada repetición de "bawl"
+  // mantener las anteriores visibles
+  // aumentar progresivamente la intensidad
+
+  for (
+    int cantidad = 1;
+    cantidad <= 4;
+    cantidad++
+  ) {
+
+    leerControles();
+
+    if (cancelarReproduccion) {
+      return false;
+    }
+
+
+    display.clearDisplay();
+
+    display.setTextColor(
+      SSD1306_WHITE
+    );
+
+    display.setTextSize(1);
+
+
+    // acumular los textos anteriores
+    for (
+      int i = 0;
+      i < cantidad;
+      i++
+    ) {
+
+      display.setCursor(
+        0,
+        i * 8
+      );
+
+      display.print(
+        textos[i]
+      );
+    }
+
+
+    display.display();
+
+
+    // cada repetición aparece más rápido
+    // y aumenta la sensación de acumulación
+
+    if (
+      !pausaControlada(
+        500 - (cantidad * 70)
+      )
+    ) {
+
+      return false;
+    }
+  }
+
+
+  return true;
+}
+
+
+// ======================================================
+// QUINTA ESTROFA
+// ======================================================
+
+bool quintaEstrofa() {
+
+  // mostrar "Anne bawl till she turn hoarse"
+  // empezar a acumular más texto en pantalla
+  // aumentar la intensidad respecto a la estrofa anterior
+  // destacar "bawl" como palabra que se repetirá
+
+  if (
+    !mostrarAcumulacion(
+      e5_v1,
+      e5_v2,
+      e5_v3,
+      e5_v4
+    )
+  ) return false;
+
+
+  // mostrar "bawl till the hair on the neighbours skin raise up"
+  // volver a mostrar "bawl"
+  // hacer que aparezca más grande o más rápido que antes
+  // mantener parte del verso anterior visible para generar acumulación
+
+
+  // mostrar "bawl till she start hiss through her teeth"
+  // repetir nuevamente "bawl"
+  // seguir aumentando el tamaño o la velocidad
+  // hacer que la pantalla se sienta cada vez más llena
+
+
+  // mostrar "bawl till she mouth could make no more sound"
+  // mostrar la última repetición de "bawl"
+  // alcanzar el punto de mayor acumulación
+  // hacer que el texto ocupe gran parte de la pantalla
+
+
+  // borrar todo de golpe
+  // dejar la pantalla completamente vacía
+  // mantener una pausa más larga
+
+  display.clearDisplay();
+  display.display();
+
+  if (
+    !pausaControlada(1800)
+  ) return false;
+
+
+  // mostrar "I hear how she turn raw"
+  // volver a una velocidad lenta
+  // hacer que aparezca poco texto a la vez
+  // bajar la intensidad después del momento anterior
+  // hacer que este verso empiece con brillo bajo
+  // y suba suavemente
+
+  for (
+    int brillo = 25;
+    brillo <= 100;
+    brillo += 15
+  ) {
+
+    cambiarBrillo(brillo);
+
+
+    display.clearDisplay();
+
+    display.setTextColor(
+      SSD1306_WHITE
+    );
+
+    display.setTextSize(
+      leerTamanoLetra()
+    );
+
+    display.setCursor(
+      0,
+      0
+    );
+
+
+    // mostrar progresivamente el verso
+    display.print(
+      e5_v5
+    );
+
+    display.display();
+
+
+    if (
+      !pausaControlada(150)
+    ) {
+
+      return false;
+    }
+  }
+
+
+  if (
+    !pausaControlada(700)
+  ) return false;
+
+
+  // mostrar "how that grandmother leave her there all day"
+  // mantener el ritmo lento
+  // mostrar la frase de forma continua
+  // dejar una pausa al terminar
+
+  if (
+    !mostrarConBrillo(
+      e5_v6,
+      100,
+      100
+    )
+  ) return false;
+
+
+  return pausaControlada(1200);
+}
+
+
+// ======================================================
+// ULTIMO VERSO
+// ======================================================
+
+bool ultimoVerso() {
+
+  // mostrar "I hear how she couldn't walk or talk for weeks"
+  // mostrar la frase sola
+  // mantener una aparición lenta
+  // dejarla en pantalla durante más tiempo
+  // hacer que el verso se vaya apagando poco a poco,
+  // bajando el brillo hasta 0
+  // terminar con una pausa larga
+  // dejar la pantalla vacía al final
+
+
+  // comenzar con brillo normal
+  cambiarBrillo(100);
+
+
+  if (
+    !escribirLetraPorLetra(
+      final_v1,
+      100
+    )
+  ) return false;
+
+
+  if (
+    !pausaControlada(1500)
+  ) return false;
+
+
+  // bajar el brillo progresivamente
+  // hasta dejar la pantalla completamente apagada
+
+  for (
+    int brillo = 100;
+    brillo >= 0;
+    brillo -= 10
+  ) {
+
+    cambiarBrillo(brillo);
+
+
+    if (
+      !pausaControlada(120)
+    ) {
+
+      return false;
+    }
+  }
+
+
+  // dejar la pantalla vacía
+
+  display.clearDisplay();
+
+  display.display();
+
+
+  // pausa larga final
+
+  return pausaControlada(2500);
+}
+
+
+// ------------------------------------------------
+// CONTROLADORES
+// ------------------------------------------------
+
+void leerControles() {
+
+  bool play =
+    digitalRead(BOTON_PLAY);
+
+  bool stop =
+    digitalRead(BOTON_STOP);
+
+  bool repeatBtn =
+    digitalRead(BOTON_REPEAT);
+
+
+  // PLAY
+  if (
+    ultimoPlay == HIGH &&
+    play == LOW
+  ) {
+
+    reproduciendo = true;
+    cancelarReproduccion = false;
+  }
+
+  ultimoPlay = play;
+
+
+  // STOP
+  if (
+    ultimoStop == HIGH &&
+    stop == LOW
+  ) {
+
+    reproduciendo = false;
+    cancelarReproduccion = true;
+
+    display.clearDisplay();
+    display.display();
+  }
+
+  ultimoStop = stop;
+
+
+  // REPEAT
+  if (
+    ultimoRepeat == HIGH &&
+    repeatBtn == LOW
+  ) {
+
+    repetir = !repetir;
+  }
+
+  ultimoRepeat = repeatBtn;
+}
+
+
+// ------------------------------------------------
+// REPRODUCIR POEMA
+// ------------------------------------------------
+
+void reproducirPoema() {
+
+  cancelarReproduccion = false;
+
+  if (
+    !primeraEstrofa()
+  ) {
+
+    return;
+  }
+
+  if (
+    cancelarReproduccion == true
+  ) {
+
+    return;
+  }
+
+
+  if (
+    !segundaEstrofa()
+  ) {
+
+    return;
+  }
+
+  if (
+    cancelarReproduccion == true
+  ) {
+
+    return;
+  }
+
+
+  if (
+    !terceraEstrofa()
+  ) {
+
+    return;
+  }
+
+  if (
+    cancelarReproduccion == true
+  ) {
+
+    return;
+  }
+
+
+  if (
+    !cuartaEstrofa()
+  ) {
+
+    return;
+  }
+
+  if (
+    cancelarReproduccion == true
+  ) {
+
+    return;
+  }
+
+
+  if (
+    !quintaEstrofa()
+  ) {
+
+    return;
+  }
+
+  if (
+    cancelarReproduccion == true
+  ) {
+
+    return;
+  }
+
+
+  if (
+    !ultimoVerso()
+  ) {
+
+    return;
+  }
+
+  if (
+    cancelarReproduccion == true
+  ) {
+
+    return;
+  }
+
+
+  display.clearDisplay();
+  display.display();
+}

@@ -14,6 +14,24 @@ Agradezco nuevamente la flexibilidad de los docentes por darme la libertad en po
 
 En simultáneo y no menos importante, era la llegada de Misaa a la clase, se que conversaron de varias cosas, utilizaron mucho la pizarra para las explicaciones y trajo dulces para compartir. 
 
+<table>
+  <tr>
+    <td><img src="./imagenes/republicatipografica-1.jpeg" width="250"></td>
+    <td><img src="./imagenes/republicatipografica-2.jpeg" width="250"></td>
+    <td><img src="./imagenes/republicatipografica-3.jpeg" width="250"></td>
+  </tr>
+  <tr>
+    <td><img src="./imagenes/republicatipografica-4.jpeg" width="250"></td>
+    <td><img src="./imagenes/republicatipografica-5.jpeg" width="250"></td>
+    <td><img src="./imagenes/republicatipografica-6.jpeg" width="250"></td>
+  </tr>
+  <tr>
+    <td><img src="./imagenes/republicatipografica-7.jpeg" width="250"></td>
+    <td><img src="./imagenes/republicatipografica-8.jpeg" width="250"></td>
+    <td><img src="./imagenes/republicatipografica-9.jpeg" width="250"></td>
+  </tr>
+</table>
+
 ### clase
 
 Agradezco mucho a mi compañero Tomás por asistir a la clase de hoy. Como equipo decidimos que lo que él decidiera hoy, nosotros seguimos lo que él nos mencionara y que tomara decisiones. El avanzó en ciertas cosas y tuvo una muy buena idea de agregar motores para representar una parte de nuestro poema. 

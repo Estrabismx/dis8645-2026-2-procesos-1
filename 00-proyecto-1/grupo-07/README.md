@@ -4,11 +4,13 @@ Fecha entrega: 2026-09-11
 
 ## Integrantes:
 
-Emilia Contreras / [hazzaily](https://github.com/hazzaily)
+Emilia Contreras / [hazzaily](https://github.com/hazzaily) 
 
-Monserrat Paredes / [Monserrat-Paredes](https://github.com/Monserrat-Paredes)
+Monserrat Paredes / [Monserrat-Paredes](https://github.com/Monserrat-Paredes) 
 
-Katalina Riquelme / [riyakatalinaa](https://github.com/riyakatalinaa)
+Katalina Riquelme / [riyakatalinaa](https://github.com/riyakatalinaa) 
+
+
 
 ---
 
@@ -114,8 +116,6 @@ Expresa un amor frustrado y posiblemente no correspondido, pero principalmente m
 
 
 
-
-
 ## Proceso código y registro
 
 [intentoUnoPoema](https://github.com/disenoUDP/dis8645-2026-2-procesos-1/tree/main/00-proyecto-1/grupo-07/codigos/intentoUnoPoema) → 28/08/26
@@ -183,3 +183,34 @@ void loop() {
   }
 }
 ```
+
+## Palabras claves representativas 
+
+Como grupo decidimos destacar la parte emocional del poema, identificamos **palabras claves representativas** de mayor intensidad que actúan como puntos de mayor tensión.
+
+Si bien todo el poema transmite una emoción constante, las **palabras claves** las representamos en un tamaño tipográfico más grande al resto del verso. Esta variación de escala busca simular visualmente la sensación de un **grito**, evitando el uso de mayúsculas para mantener la estética y ritmo del poema.
+
+Como se puede apreciar en la imagen, las palabras subrayadas son las **palabras claves** que van en un tamaño mayor
+
+![Captura de pantalla poema con palabras representativas](./imagenes/palabrasrepresentativas.png)
+
+## Animaciones
+
+Animación 1: después del nombre de la poetisa de Alfonsina Storni, titulo "Queja"
+
+**imagen de la animación**
+
+Animación 2: después de la primera estrofa, corazón roto
+
+**imagen de la animación**
+
+
+Animación 3: después de la segunda estrofa, fueguito
+
+**imagen de la animación**
+
+## Roles
+
+- **Emilia:** encargada de las animaciones y sus respectivos códigos
+- **Monserrat:** encargada de los códigos
+- **Katalina:** encargada de registro en github

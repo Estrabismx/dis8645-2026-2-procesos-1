@@ -71,10 +71,10 @@ por mi parte hoy me encargue de mejorar la redacción de los textos para poder s
 **NOTA:** esta fueron las decisiones finales que tomamos y dejamos, mi compañera hazzaily se esta encargando de realizar las animaciones y mi compañera Monserrat-Paredes se esta encargo de los códigos, pero al final de cuenta nos vamos ayudando entre todas para que ni una se abrume con lo que tenga que hacer
 
 
-imagen de como queremos que se vea que se vea y cuales son los palabras claves representativas 
+imagen de como queremos que se vea y cuales son los palabras claves representativas (palabras subrayadas)
 
-**subir imagen de captura de pantalla**
 
+![Captura de pantalla poema con palabras representativas](./imagenes/palabras-representativas.png)
 
 
 
