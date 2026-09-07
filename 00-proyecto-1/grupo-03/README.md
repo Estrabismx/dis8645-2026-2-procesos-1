@@ -41,13 +41,15 @@ Para cumplir con las normativas de derechos de autor nos contactamos directament
 
 ## **3\. Referentes y Valores de Diseño**
 
-## **4\. Proceso de Desarrollo y Storyboard**
+## **4\. Proceso 
 
-Lo primero que hicimos fue escoger el poema que deseamos representar y uno de nuestros integrantes está leyendo el poemario “;p0ema” de Leonor Olmos. 
+Lo primero que hicimos fue entender cada verso para poder representarlo en las pantallas, pero no concretó ya que como mencionamos, era difícil de entender y hasta el último día, entendíamos cosas distintas, pero como grupo no queríamos limitarnos a solo el uso de la pantalla; Es por esto que experimentamos con los límites del hardware. Inicialmente evaluamos usar dos pantallas I2C Y TFT las cuales tienen 2 lenguajes distintos, la cual la TFT nos entrega mayores posibilidades de contenido multimedia (videos).
 
-Escogimos ese extracto en específico porque interpretamos que en esta parte la autora quería volver a la realidad, a su realidad. Que todo lo anterior dicho, 
+A partir de la retroalimentación, se nos entregaron dos pantallas I2C para que estas hablaran el mismo idioma y no se crearán 2 animaciones por separado. Destacamos esta opción, solamente por cómo se veían gráficamente las pantallas. Finalmente, lo que realizamos como grupo fue que en la pantalla TFT se encontrará la animación del poema y en la I2C indicaciones que el usuario debe realizar mediante cada verso. 
 
-(EN DESARROLLO)
+Además, tuvimos la posibilidad de utilizar 3 motores para el proyecto, primero queríamos hacer explotar un diodo representando el caos, pero esto podría afectar el uso del arduino, dejándonos sin ninguna retroalimentación a las pantallas, entonces descartamos la idea al encontrar esta segunda opción. 
+
+Osea, lo que queríamos era que no representar tan sólo gráficamente en las pantallas, sino sonora y sensorialmente. Esto nos dio a entender que ARDUINO no se limita, si no nosotros. 
 
 ## **5\. Carcasa**
 
