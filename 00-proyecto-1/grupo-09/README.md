@@ -1,5 +1,11 @@
 # proyecto 1
 
+***Integrantes:***
+
+> *Magdalena Balart (magdalenabalart)*
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+*Catalina Oyadenel (catalinaoyanedel-01)*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br><br>
+*Yaira Ruiz (yairaruiz)*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Marcela Zuñiga (marcezm)* 
 ## Poema a trabajar
 
 ### Gansos salvajes - Mary Oliver
