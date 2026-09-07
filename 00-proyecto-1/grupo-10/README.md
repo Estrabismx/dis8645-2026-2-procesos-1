@@ -5,23 +5,15 @@ que se muestre un verso cada 2 segundos en pantalla, de derecha a izq.
 
 **Poema elegido: 
 
-
-
-
-
+---------------------------------------
 "Hope is the thing with feathers
-
-
 
 That perches in the soul,
 
-
-
 And sings the tune without the words
 
-
-
 And never stops at all"
+-----------------------------------------
 
 Traducción al español:
 "La esperanza es algo con plumas, que se posa en alma, y canta su canción sin palabras, y jamás se calla."
