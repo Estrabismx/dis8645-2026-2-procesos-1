@@ -1,3 +1,17 @@
+# Proyecto 1/ Grupo 10
+**Integrantes:**
+
+- Belén Castillo / [bombobby](https://github.com/bombobby) 
+
+
+- Martina Fernandez / [pumpkinguurl](https://github.com/pumpkinguurl) 
+
+- Maite Villarroel / [maiteev](https://github.com/maiteev) 
+
+
+- Nacha Zamudio / [nachazamudio](https://github.com/nachazamudio) 
+
+  
 # Poema
 Este proyecto busca exponer el poema "Hope is the thing with feathers" del año 1861 y publicado por primera vez de forma póstuma en 1891. Fue escrito por la poeta estadounidense Emily Dickinson.
 
@@ -66,6 +80,15 @@ Por lo tanto, el poema fue incorporado al corpus bajo la condición de dominio p
 | Obra | Autor/a | Fuente | Licencia / estado | Evidencia |
 | :--- | :--- | :--- | :--- | :--- |
 | *Hope is the thing with feathers* | Emily Dickinson | Academy of American Poets | Dominio público | https://poets.org/poem/hope-thing-feathers-254 |
+
+Evidencia:
+
+![](./imagenes/poema-dominio.png) 
+
+# Flujo de trabajo 
+![](./imagenes/flujo-trabajo.png) 
+
+# Proceso código 
 
 
 
