@@ -41,7 +41,7 @@ Para cumplir con las normativas de derechos de autor nos contactamos directament
 
 ## **3\. Referentes y Valores de Diseño**
 
-## **4\. Proceso 
+## **4\. Proceso**
 
 Lo primero que hicimos fue entender cada verso para poder representarlo en las pantallas, pero no concretó ya que como mencionamos, era difícil de entender y hasta el último día, entendíamos cosas distintas, pero como grupo no queríamos limitarnos a solo el uso de la pantalla; Es por esto que experimentamos con los límites del hardware. Inicialmente evaluamos usar dos pantallas I2C Y TFT las cuales tienen 2 lenguajes distintos, la cual la TFT nos entrega mayores posibilidades de contenido multimedia (videos).
 
