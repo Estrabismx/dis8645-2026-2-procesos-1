@@ -670,7 +670,7 @@ void loop() {
 
 La clase anterior, el seba nos mencionó los milis, y nos pusimos a investigar cómo utilizarlos, ya que nos explicó que delay hace como un corte en el código y luego este como que se vuelve a encender y puede generar errores o pausas en la visualización, o algo así entendimos 
 
-{nachi agrega tu investigación de los milis}
+no lo usaremos en este trabajo pero estuvimos investigando como funciona. 
 
 ```cpp
 #include <SPI.h>
