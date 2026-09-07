@@ -125,7 +125,7 @@ con la oscuridad y la hora de la muerte rodeándolo.
 
 A diferencia de la mayoría de los grupos decidimos utilizar esta pantalla, debido a su mayor tamaño y por su configuración, ya que está pensada para solo mostrar texto, es más sencillo, sumado que posee un controlador estandarizado. Pero todo eso lo veremos ahora con las caracterisiticas de esta pantalla
 
-![display](.imagenes/lcd-1602.webp)
+![display](./imagenes/lcd-1602.webp)
 
 > Directamente desde [Afel](https://afel.cl/products/pantalla-lcd-azul-16x02)
 
