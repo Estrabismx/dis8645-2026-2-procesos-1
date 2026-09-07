@@ -209,6 +209,13 @@ Avance: [LINK YOUTUBE](https://youtube.com/shorts/AT0fQQUXfAs?feature=share)
 
 COLOCAR EJEMPLOS Y EXPLICACIÓN 
 
+Habíamos dejado funcionando en la protoboard el botón y el potenciómetro conectados al Arduino. Esto nos permitió tener una base sobre la cual seguir agregando los demás componentes y comprobar que el circuito que habíamos pensado podía funcionar. A partir de esta conexión, durante esta sesión nos enfocamos en incorporar la pantalla y, al mismo tiempo comenzar a pensar cómo llevar todo este sistema desde la protoboard/Arduino hacia la carcasa. Además de conectar la pantalla, extendimos las conexiones de los componentes para que no quedaran limitadas a la posición que tenían en la protoboard.
+
+Por temas de tiempo, decidimos darle prioridad al desarrollo de la carcasa y terminar los últimos detalles relacionados con la organización de los componentes. Esto fue necesario porque ya teníamos una idea más clara de cómo funcionaría el circuito, por lo que podíamos comenzar a tomar decisiones más concretas sobre el espacio que necesitaríamos para instalarlo.
+
+imagen
+
+
 ### Viernes 04 de septiembre
 Ya teníamos el código funcionando, por lo que solo nos quedó ajustar pequeños detalles y avanzar con la carcasa. 
 
