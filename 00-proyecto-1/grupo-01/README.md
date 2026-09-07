@@ -199,9 +199,11 @@ Además de esto realizamos el primer diagrama de flujo relacionado al funcionami
 
 Conexión representada en Tinkercad
 
-![Tinkercad](./imagenes/sc-09.png)
+[![Tinkercad](./imagenes/sc-12.png)](https://youtu.be/ZCfgRzy07II)
 
-![Tinkercad](./imagenes/sc-10.png)
+>Link de [YouTube](https://youtu.be/ZCfgRzy07II)
+
+![Tinkercad](./imagenes/dis8645-2026.jpg)
 
 <br>
 
@@ -244,6 +246,10 @@ Conexión representada en Tinkercad
 // adjuntar codigo con fallo inicial
 
 ```
+
+![Tinkercad](./imagenes/sc-09.png)
+
+![Tinkercad](./imagenes/sc-10.png)
 
 > Explicar que fallo (todo ocurre en parelelo y sin un desfase, se pelean por quien se muestra en la pantalla)
 >
