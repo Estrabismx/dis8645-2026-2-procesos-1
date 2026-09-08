@@ -19,3 +19,13 @@ encargo02a:
 2. conformar grupos de 3 a 4 personas para la realización del proyecto-1. compartir 2 placas de desarrollo por grupo, documentar estudio conjunto de C++, microcontroladores, botones, potenciómetros.
 
 ## lectura
+
+> Wiener took an ethical turn and declared a new type of science was needed. This science was cybernetics
+
+Me pregunto si Wiener tuvo un momento Oppenheimer en el que tuvo su momento de enlightment post-bomba y durante el proceso estuvo consciente de lo que estaba sucediendo, o si lo descubrió tras la caída de la bomba.
+
+---
+
+La cibernética no se trata solo de computadores o tecnología, sino de cómo los humanos y la tecnología se influyen mutuamente. A medida que usamos y desarrollamos nuevas tecnologías, estas también cambian nuestra forma de vivir, pensar, y relacionarnos con el mundo
+
+Los algoritmos u las matemáticas han estado relacionados con la definición de lo humano desde el comienzo

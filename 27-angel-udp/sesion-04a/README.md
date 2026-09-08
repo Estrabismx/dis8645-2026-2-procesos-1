@@ -12,7 +12,7 @@ En general hicimos experimentación en el proyecto más que nada para saber qué
 
 Dejaré ejemplos de imágenes tomadas en este proceso.
 
-Este es un código que se utilizó para poder encender las 2 pantallas, la TFT y la OLED, que por lo que nos explicó el profe, esto habla 2 idiomas distintos y que es complicado hacer que hablen entre ellas, por eso nos pasó otras pantallas para intentar con esas, ya que tienen el mismo lenguaje y veremos en una próxima imagen, pero al final decidimos descartarlas, ya que no nos gustó cómo se veían estéticamente para lo que queríamos hacer nosotros con nuestro poema:
+Este es un código que se utilizó para poder encender las 2 pantallas, la TFT y la I2C, que por lo que nos explicó el profe, esto habla 2 idiomas distintos y que es complicado hacer que hablen entre ellas, por eso nos pasó otras pantallas para intentar con esas, ya que tienen el mismo lenguaje y veremos en una próxima imagen, pero al final decidimos descartarlas, ya que no nos gustó cómo se veían estéticamente para lo que queríamos hacer nosotros con nuestro poema:
 
 ![Foto proceso 1](./imagenes/codigo-esperimentacion.jpeg)
 
@@ -30,7 +30,7 @@ En esta foto se puede apreciar una de las pantallas TFT (la azul) de las 2 que n
 
 ---
 
-Esta es la imagen de un pato conejo donde el profesor nos dijo que no tenía nada que ver con la materia y que no nos hicieran caso porque esto no iba a entrar en la clase, pero como somos rebeldes XD, lo pusimos en la pantalla OLED con código, lo que al final sí hace que entre en la clase, pero lo más importante es que vemos, ¿un conejo?, ¿un pato? o un Patonejo :V
+Esta es la imagen de un pato conejo donde el profesor nos dijo que no tenía nada que ver con la materia y que no nos hicieran caso porque esto no iba a entrar en la clase, pero como somos rebeldes XD, lo pusimos en la pantalla I2C con código, lo que al final sí hace que entre en la clase, pero lo más importante es que vemos, ¿un conejo?, ¿un pato? o un Patonejo :V
 
 ![Foto proceso 4](./imagenes/experimentacion-3.jpeg)
 
