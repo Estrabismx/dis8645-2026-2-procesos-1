@@ -140,7 +140,7 @@ if (tiempo >= (tiempo2+diferencia))
 ```
 
 - Quisimos agregarle una tipografía que conectara con el poema y se viera más fluído. Estuvimos probando distintos tamaños y aunque pusiéramos el más pequeño, aún así se nos cortaba la visualización del verso, por lo que decidimos separar algunas palabras de su verso, aumentando la cantidad de estos para que el poema fuese legible. 
-(poner foto que te mande maite)
+![](./imagenes/imagen-sector-errores.jpeg) 
 
 - Cuando intentamos conectar el potenciómetro para empezar a hacer pruebas para aplicarlo, lo conectamos una primera vez y funcionó bien, luego lo desconectamos, volvimos a conectar y a los segundos comenzó a salir humo, lo desconectamos. Luego nos pasaron un potenciómetro que tenía las patitas para conectarlo directo a la proto.
 
