@@ -581,7 +581,7 @@ https://www.youtube.com/watch?v=SDmdVimu-xw
 https://www.youtube.com/watch?v=w7oqHxpn4oM
 
 # Declaración de ayuda de inteligencia artificial 
-Ante algunas dudas que se nos generaban al avanzar con el trabajo, se utilizo de ayuda como herramienta la inteligencia artificial Geminis de google. Se entrega un pdf con las preguntas hechas.
+Ante algunas dudas que se nos generaban al avanzar con el trabajo, se utilizo de ayuda como herramienta la inteligencia artificial Chat GPT. Se entrega un pdf con las preguntas hechas.
 
 [Haz clic aquí para ver el documento PDF](imagenes/declaracion-uso-ia.pdf)
 
