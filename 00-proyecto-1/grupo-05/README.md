@@ -196,11 +196,14 @@ Los fotogramas que utilizamos fueron obtenidos de Internet y posteriormente modi
 Durante el desarrollo del proyecto realizamos distintas pruebas para adaptar el código a nuestro objetivo. Uno de los primeros desafíos fue modificar el movimiento del texto para que se desplazara horizontalmente mediante el potenciómetro y pudiera desaparecer al llegar al límite de la pantalla. Después de varias pruebas y modificaciones en el código, logramos el resultado esperado.
 
 Acá tenemos algunas pruebas de como logramos los primeros acercamientos a poder mover la frase con el potenciómetro y además lograr tener una frase completo y larga en toda la pantalla que pudiera desplazarse.
+
 ![alt](./imagenes/holaejemplo.gif)
 
-![alt](./imagenes/fraseejemplo.gif)}
+![alt](./imagenes/fraseejemplo.gif)
 
 También tuvimos problemas con el botón encargado de cambiar las frases, debido a errores en las conexiones y a la falta de una resistencia. Luego de corregir las conexiones y agregar la resistencia correspondiente, conseguimos que funcionara correctamente.
+
+![alt](./imagenes/frasecambia.gif)
 
 Otro error importante fue utilizar inicialmente un potenciómetro de tipo A en lugar de uno de tipo B. Al necesitar un movimiento lineal, reemplazamos el potenciómetro por uno de tipo B, logrando un funcionamiento adecuado.
 
@@ -208,7 +211,25 @@ Finalmente, después de un incidente con el potenciómetro, la pantalla comenzó
 
 ![alt](./imagenes/rayas.jpeg)
 
-![alt](./imagenes/frasecambia.gif)
+### Aciertos
+
+Luego de enfocarnos solo en las frases de nuestro poema, decidimos irnos por lo lleno a las imágenes y fotogramas a realizar, para eso buscamos referentes de cursos pasados, videos en youtube, que fueron de varia ayuda. También en este proceso descubrimos la página <https://www.image2cpp.com/> que fue de gran ayuda a nuestro proyecto, al momento de traspasar nuestras imágenes al código y así realizar las distintas animaciones.
+
+Antes de llegar a las imágenes finales de nuestros fotogramas, las imágenes se veían distorsionadas o no se mostraba de forma clara en nuestra pantalla, por lo cual creíamos que era problemas de los códigos que realizábamos, pero nos dimos cuenta que eran las imágenes, ya que al ser tan grandes, en la pantalla se distorsionaban, por lo que tuvimos que redimensionar todas las imágenes a un formato en el cual se pudiese visualizar en la pantalla.
+
+![titulo](./imagenes/caballocortado.jpeg)
+
+![titulo](./imagenes/imagencaballo.jpeg)
+
+Luego de obtener esa exitosa imagen del caballo, pudimos realizar los bitmap de cada imagen y así poder representarlos en la pantalla en forma de fotograma.
+
+![titulo](./imagenes/animacioncaballo.gif)
+
+![titulo](./imagenes/animacioncorazon.gif)
+
+![titulo](./imagenes/animacionluna.gif)
+
+![titulo](./imagenes/animacionojos.gif)
 
 ### Documentación del uso de inteligencia artificial
 
