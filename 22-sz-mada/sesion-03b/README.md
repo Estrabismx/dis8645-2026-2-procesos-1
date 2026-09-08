@@ -134,6 +134,3 @@ encargo-03b:
 // codigo aqui
 // por ejemplo
 ```
-
-## lectura
-
