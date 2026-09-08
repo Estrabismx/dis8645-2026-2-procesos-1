@@ -156,7 +156,18 @@ Resultado
 ---
 
 # Código
-```cpp
+
+---
+
+### Prompt Corpus
+
+---
+
+### Prompt Animaciones 
+
+---
+
+### Corpus final
 ```cpp
 // conexiones físicas
 
@@ -1068,7 +1079,10 @@ int alturaMontana(int x, int cantidadPuntos, const int perfilX[], const int perf
 ```
 
 # Referentes
-1. "Mira niñita", una canción de los Jaivas.
-2. "La danza de la libélulas", una canción de Manuel García.
-3. "La exiliada del sur", un poema de Violeta Parra.
-4. "Un día más", una canción de Jósean Log
+1. Días sin ti, Elvira Sastre.
+2. Aquella orilla nuestra, Elvira Sastre.
+3. 
+4. "Mira niñita", una canción de los Jaivas.
+5. "La danza de la libélulas", una canción de Manuel García.
+6. "La exiliada del sur", un poema de Violeta Parra.
+7. "Un día más", una canción de Jósean Log
