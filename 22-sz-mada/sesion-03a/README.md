@@ -39,3 +39,11 @@ SCL bigger #, SDA smaller one duh.
 ## encargos
 
 ## lectura
+
+Me llama mucho la atención la frase
+
+> Being is "always already" a question of emobodied perception in the world because being begins on the material ground of anonymous and depersonalized sensation
+
+Existir ya implica percibir y experimentar el mundo desde nuestro cuerpo, lo que me hace pensar "¿hasta qué punto nuestra forma de entender la realidad depende de las herramientas que usamos para medirla?" Si cada vez usamos más tecnología para interpretar lo que vemos, oímos o sentimos, podría esa tecnología terminar cambiando nuestra percepción de la realidad?
+
+La filosofía de la tecnología de Heidegger: la distinción entre la tecnología entendida como una herramienta, y la *techné* (crear, revelar, o hacer aparecer algo). Crear no es simplemente fabricar algo desde cero, sino perimitir que algo llegue a manifestarse eg. Una semilla que se convierte en árbol
