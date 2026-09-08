@@ -1,3 +1,5 @@
+![](./imagenes/chile-mapu-mew)
+
 **Realizado por:**  
 *Francisca Palma (frannciscapalma)*
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
