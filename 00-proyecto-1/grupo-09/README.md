@@ -6,7 +6,11 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
 *Catalina Oyadenel (catalinaoyanedel-01)*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
 *Yaira Ruiz (yairaruiz)*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
->*Marcela Zuñiga (marcezm)* 
+>*Marcela Zuñiga (marcezm)*
+
+
+(Todo este proceso, o gran parte de él, fue documentado en un documento de Google compartido para poder ir trabajando en conjunto. Esto también facilitó después agregar la información a GitHub, ya que fuimos rellenando y ordenando el contenido según la estructura que ya teníamos definida)
+
 ## Poema a trabajar
 
 ### Gansos salvajes - Mary Oliver
