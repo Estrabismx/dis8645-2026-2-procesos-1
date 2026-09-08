@@ -81,7 +81,7 @@ Creemos que, por un momento, hay que ver nuestra propia casa, nuestro propio ent
 
 Es en los momentos de mayor claridad, cuando la luz revela el camino con total lucidez, donde vemos los acontecimientos de la vida con mayor nitidez. Pero, ¿qué sucede cuando lo vivido comienza a convertirse en recuerdo, y la memoria empieza a tomar su lugar por medio de flashbacks, a veces borrosos? Aun así, esos fragmentos nos dan pistas y rastros para volver a sentir, para volver a ilusionarnos, y para recuperar esos impulsos que nos llenan de expectativa y nos hacen sentir nuevamente vivos.
 
-Esta dualidad —luz/lucidez exterior versus memoria/nostalgia interior, es la base central del proyecto, y se sostiene en dos espacios simbólicos y metafóricos en el poema (esto por las experiencias propias de quien es turista en este hermoso país, llamado; Chile):
+Esta dualidad luz/lucidez exterior versus memoria/nostalgia interior, es la base central del proyecto, y se sostiene en dos espacios simbólicos y metafóricos en el poema (esto por las experiencias propias de quien es turista en este hermoso país, llamado; Chile):
 
 - **El afuera**: el territorio, la luz del día, la cordillera, el presente que se vive con los ojos bien abiertos.
 - **El adentro**: la habitación, el living de una casa, donde nos encontramos cara a cara con los recuerdos, y donde la mente (cuando deja de ser traicionera) nos regala flashbacks de aquello que nos mueve el alma.
@@ -106,11 +106,11 @@ Dentro de ese living, cada componente técnico cumple un rol simbólico:
 
 | Elemento técnico | Rol simbólico dentro del concepto |
 |---|---|
-| Sensor de luz (LDR) | La luz del *afuera* — el territorio, la lucidez, el presente — es lo que hace avanzar el poema |
-| Quietud / ausencia de avance | El momento de detenerse, de "quedarse mirando" — dispara los recuerdos (las animaciones) |
+| Sensor de luz (LDR) | **flash**back, el territorio, la lucidez, el presente, es lo que hace avanzar el poema |
+| Quietud / ausencia de avance | flash**back**, aquí, es el momento de detenerse, de quedarse mirando |
 | Potenciómetro | El control manual de quien recuerda: la persona decide el ritmo al que revisita el poema principal |
-| Botón | El umbral de entrada al living — encender es decidir entrar a ese espacio de memoria |
-| Pantalla OLED | La ventana hacia adentro: pequeña, íntima, como mirar un recuerdo a través de una rendija |
+| Botón | Encender la TV |
+| Pantalla OLED | Para ver la memoria |
 | Carcasa de cartón con aspecto antiguo | La materialidad del hogar, de lo domesticado, de lo que ha envejecido junto a quien lo habita |
 
 ---
