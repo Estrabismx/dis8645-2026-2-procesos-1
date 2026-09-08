@@ -6,7 +6,6 @@
 *Nicolás Valdés (nicolasvaldesgreve)*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 *Santiago Cifuentes Vélez (santiagocifuvelez)*
 
-<br>
  <br>
 
 # Poema  
