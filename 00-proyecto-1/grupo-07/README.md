@@ -116,10 +116,38 @@ Expresa un amor frustrado y posiblemente no correspondido, pero principalmente m
 
 
 
-## Proceso código y registro
+## Proceso código y registro (resumen)
 
 
+El proyecto evoluciona desde la reproducción de un poema en texto hacia una experiencia visual e interactiva, donde el tamaño de las palabras, el control de lo que pasa y las animaciones permiten reforzar emocionalmente el contenido de cada verso.
 
+CÓDIGO 1
+Texto
+  ↓
+CÓDIGO 2
+Pantalla OLED
+  ↓
+CÓDIGO 3
+Palabras clave
+  ↓
+CÓDIGO 4
+Potenciómetro
+  ↓
+CÓDIGO 4.2
+Refinamiento visual
+  ↓
+CÓDIGO 5
+Texto optimizado
+  ↓
+CÓDIGO 5.2
+Primera prueba de animación
+  ↓
+┌────────────┬────────────┬────────────┐
+│  CÓDIGO 6  │  CÓDIGO 7  │  CÓDIGO 8  │
+│ ANIMACIÓN 1│ ANIMACIÓN 2│ ANIMACIÓN 3│
+│   QUEJA!    │ 💔 CORAZÓN │    🔥      │
+│            │    ROTO     │   FUEGO    │
+└────────────┴────────────┴────────────┘
 
 
 
