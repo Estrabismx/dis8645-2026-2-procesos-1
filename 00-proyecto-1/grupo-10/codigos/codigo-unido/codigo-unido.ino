@@ -206,11 +206,9 @@ bool plumaPendiente = false;
 
 void setup() {
   Serial.begin(9600);
+  //inicia la pantalla
+  display.begin(SSD1306_SWITCHCAPVCC, SCREEN_ADDRESS);
 
-  if (!display.begin(SSD1306_SWITCHCAPVCC, SCREEN_ADDRESS)) {
-    Serial.println("SSD1306 allocation failed");
-    for (;;);
-  }
 
   // Configuracion del texto del poema
   display.setTextSize(1);
