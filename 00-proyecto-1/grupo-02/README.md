@@ -59,7 +59,10 @@ Dice así:
 *Florecerán...*
 
 > *(Escrito por Santiago Cifuentes Vélez..., para el proyecto 01 de taller semestre 2 del 2026, inspirado en la sutileza de mis amigues Nico y Fran, y la imponente cordillera de los Andes, lugar donde me he encontrado de cara con la vida misma)*
-   
+> 
+##### Licencia
+© 2026 [Santiago Cifuentes Vélez]. El poema está bajo la licencia [Creative Commons Atribución-NoComercial-SinDerivadas 4.0 Internacional (CC BY-NC-ND 4.0)](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es).
+
 # Diagrama de flujo 
 ![](./imagenes/flowchart.jpg)
 
