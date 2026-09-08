@@ -254,7 +254,7 @@ Así que se le pidió a Gemini que integrara la animación dentro de nuestro có
 
 ### Proceso componentes
 
-Durante este día pudimos avanzar principalmente en la organización y conexión de los componentes dentro de la protoboard y el Arduino. Una de las primeras cosas que hicimos fue revisar cómo debíamos distribuir las conexiones para que pudieran funcionar correctamente sin interferirse entre ellos. Antes de intentar conectar todo al mismo tiempo el Seba (gracias seba :-).) nos recomendó probar cada componente por separado, lo que nos permitió identificar si existía algún problema específico en el funcionamiento de cada uno.
+Durante este día pudimos avanzar principalmente en la organización y conexión de los componentes dentro de la protoboard y el Arduino. Una de las primeras cosas que hicimos fue revisar cómo debíamos distribuir las conexiones para que pudieran funcionar correctamente sin interferirse entre ellos. Antes de intentar conectar todo al mismo tiempo el Seba (gracias seba :-).) Nos recomendó probar cada componente por separado, lo que nos permitió identificar si existía algún problema específico en el funcionamiento de cada uno.
 
 Primero trabajamos con el potenciómetro. Realizamos las conexiones correspondientes y lo probamos utilizando el código para comprobar que la lectura de sus valores funcionara correctamente. Luego hicimos un procedimiento similar con el botón para comprobar que al presionarlo el código pudiera detectar correctamente el cambio de estado.
 
