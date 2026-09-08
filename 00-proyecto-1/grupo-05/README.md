@@ -148,10 +148,12 @@ https://youtu.be/fOX_0zksPlA?si=51IJRl3PwZZpNhPD
 
 ### Diagrama de flujo y esquema de conexiones
 > Esquema de conexiones en Tinkercad
+
 ![titulo](./imagenes/tinkercad.png)
 
 > Diagrama de flujo
-agregar aquí
+
+![titulo](./imagenes/diagramaflujo.png)
 
 ### Tabla de materiales
 
@@ -177,9 +179,17 @@ El ataúd está decorado con telas de colores y otros elementos que lo acompaña
 Los fotogramas que utilizamos fueron obtenidos de Internet y posteriormente modificados por nosotras. Realizamos cambios en sus tamaños para poder adaptarlos a las dimensiones y necesidades de nuestro proyecto.
 
 ![titulo](./imagenes/fotogramaluna.jpg)
+
+> *imagen sacada de: <https://cl.pinterest.com/pin/492649954847237/>*
+
 ![titulo](./imagenes/fotogramacorazon.jpg)
+> *imagen sacada de: <https://cl.pinterest.com/pin/747316131952628757/>*
+
 ![titulo](./imagenes/fotogramaojo.jpg)
+> *imagen sacada de: <https://cl.pinterest.com/pin/474989091931851383/>*
+
 ![titulo](./imagenes/fotogramacaballo.jpg)
+> *imagen sacada de: <https://cl.pinterest.com/pin/914230793131591816/>*
 
 ### Prueba y error
 
@@ -200,6 +210,12 @@ Finalmente, después de un incidente con el potenciómetro, la pantalla comenzó
 
 Para el desarrollo de los códigos de nuestro proyecto contamos con la asistencia de las herramientas de inteligencia artificial Gemini y Claude. Toda la información utilizada, junto con las capturas de pantalla y conversaciones que evidencian su uso, se encuentra recopilada en el archivo PDF.
 
+[Ver PDF](./documento.pdf)
+
 ### Bibliografía 
 
 https://www.cervantesvirtual.com/portales/federico_garcia_lorca/biografia/
+
+https://youtu.be/5MpEq0lDoQc?si=dvwloKQcDf7SSaFc 
+
+https://youtu.be/KD_IBIyyrVc?si=9sUbbEoAByGF_JAA 
