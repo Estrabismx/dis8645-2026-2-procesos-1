@@ -13,7 +13,7 @@ No es un poema en prosa, no es tampoco una página con letras que riman, y ya...
 
 Dice así:
 
-"**Chile mapu mew...***
+"**Chile mapu mew...**  
 *En el territorio Chileno*
 
 > *No somos poetas con titulo,*  
