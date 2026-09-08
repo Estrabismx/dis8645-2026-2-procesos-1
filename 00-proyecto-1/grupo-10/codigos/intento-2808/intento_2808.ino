@@ -1,6 +1,4 @@
 
-
-
 char *versos[] = {
    "Hope is the thing with",
    "feathers",
@@ -12,12 +10,18 @@ char *versos[] = {
 
 };
 void setup() {
-  // put your setup code here, to run once:
-Serial.begin(9600);
+
+  Serial.begin(9600);
+
+  // Inicializar pantalla OLED
+  if (!display.begin(SSD1306_SWITCHCAPVCC, SCREEN_ADDRESS)) {
+    Serial.println("SSD1306 allocation failed");
+    for (;;);
+  }
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+ display.begin(versos);
 Serial.println(versos[0]);
 Serial.println(versos[1]);
 Serial.println(versos[2]);
