@@ -135,7 +135,7 @@ El proyecto evolucionó progresivamente desde la reproducción de un poema en el
 | **Código 5.2** | 4 sept. | Prueba de animación | Se incorpora una primera animación. El resultado no se adapta correctamente a las dimensiones de la pantalla. | Explorar la incorporación de movimiento y detectar limitaciones técnicas. |
 | **Código 6** | 6 sept. | **Animación 1🎬** | Animación del título **“Queja”**, utilizada como introducción al poema. | Introducir visualmente el poema en pantalla. |
 | **Código 7** | 7 sept. | **Animación 2💔** | Animación de un **corazón roto**, vinculada al verso "Pero no puedo amar." | Reforzar visualmente el significado emocional del poema. |
-| **Código 8** | 7 sept. | **Animación 3 🔥** | Animación de **fuego**, relacionada con el verso "Me consumo en mi fuego,". | Representar visualmente la intensidad y el consumo emocional. |
+| **Código 8** | 7 sept. | **Animación 3🔥** | Animación de **fuego**, relacionada con el verso "Me consumo en mi fuego,". | Representar visualmente la intensidad y el consumo emocional. |
 
 
 
