@@ -1204,6 +1204,8 @@ int alturaMontana(int x, int cantidadPuntos, const int perfilX[], const int perf
 }
 ```
 
+![Amistad por taller](./imagenes/taller-es-cuando.jpeg)
+
 # Referentes
 1. Días sin ti, Elvira Sastre.
 2. Aquella orilla nuestra, Elvira Sastre.
