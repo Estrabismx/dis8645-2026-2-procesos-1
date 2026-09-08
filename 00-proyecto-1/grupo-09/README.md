@@ -72,6 +72,7 @@ El poema está bajo la licencia de copyright, donde todos los derechos están re
 ## Proceso código
 
 ## Martes 25 de agosto
+
 Empezamos por analizar el código que nos dieron de ejemplo, viendo que era lo que nos servía y lo que no. Eliminamos lo que era animación y movimiento de texto, dejando solo el que se desplaza a la izquierda y reemplazando el texto por el primer verso de nuestro poema hasta que funcionara. En esta etapa tuvimos una serie de errores en cuanto a cómo editábamos las propiedades del texto, algunos ejemplos de estos es que nos quedaba la tipografía expandida, desfasada o superpuesta con la otra frase.
 
 `1,5 display size`
@@ -84,6 +85,14 @@ Empezamos por analizar el código que nos dieron de ejemplo, viendo que era lo q
 
 
 ![errores](./imagenes/error3.png)
+
+Estas pruebas y errores nos ayudaron a entender de mejor manera el funcionamiento de el código:
+
++ Textos sobrepuestos: al utilizar el mismo `setCursor()` para dos textos estos quedaban en la misma posición. Es necesario cambiar las coordenadas para separar las líneas.
+
++ Uso de `display.clearDisplay()`: al ponerlo en el lugar incorrecto de el codigo este nos borraba el texto de manera inmediata después de mostrarse, `clearDisplay()` se debe utilizar cuando queremos eliminar un contenido para mostrar uno nuevo.
+
++ Instrucciones: el orden de `display.display()`, `delay()` y `clear.display()` afecta directamente lo que se muestra y por cuánto tiempo.
 
 
 Ejemplo de la estructura inicial:
