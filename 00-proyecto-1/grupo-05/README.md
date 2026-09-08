@@ -195,6 +195,11 @@ Los fotogramas que utilizamos fueron obtenidos de Internet y posteriormente modi
 
 Durante el desarrollo del proyecto realizamos distintas pruebas para adaptar el código a nuestro objetivo. Uno de los primeros desafíos fue modificar el movimiento del texto para que se desplazara horizontalmente mediante el potenciómetro y pudiera desaparecer al llegar al límite de la pantalla. Después de varias pruebas y modificaciones en el código, logramos el resultado esperado.
 
+Acá tenemos algunas pruebas de como logramos los primeros acercamientos a poder mover la frase con el potenciómetro y además lograr tener una frase completo y larga en toda la pantalla que pudiera desplazarse.
+![alt](./imagenes/holaejemplo.gif)
+
+![alt](./imagenes/fraseejemplo.gif)}
+
 También tuvimos problemas con el botón encargado de cambiar las frases, debido a errores en las conexiones y a la falta de una resistencia. Luego de corregir las conexiones y agregar la resistencia correspondiente, conseguimos que funcionara correctamente.
 
 Otro error importante fue utilizar inicialmente un potenciómetro de tipo A en lugar de uno de tipo B. Al necesitar un movimiento lineal, reemplazamos el potenciómetro por uno de tipo B, logrando un funcionamiento adecuado.
@@ -202,8 +207,7 @@ Otro error importante fue utilizar inicialmente un potenciómetro de tipo A en l
 Finalmente, después de un incidente con el potenciómetro, la pantalla comenzó a mostrar píxeles dispersos y no reproducía correctamente los códigos. Luego de reiniciar el Arduino, el problema se solucionó y el sistema volvió a funcionar con normalidad.
 
 ![alt](./imagenes/rayas.jpeg)
-![alt](./imagenes/holaejemplo.gif)
-![alt](./imagenes/fraseejemplo.gif)
+
 ![alt](./imagenes/frasecambia.gif)
 
 ### Documentación del uso de inteligencia artificial
