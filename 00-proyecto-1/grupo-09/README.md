@@ -48,6 +48,10 @@
 
 Elegimos este poema ya que sentimos que representa la autoexigencia y la idea de tener que ser perfecta en los distintos ámbitos de la vida, dando la posibilidad de luchar contra eso, de rendirse ante las expectativas que están impuestas y darse el tiempo de existir, contemplar y tratarse con más autocompasión.
 
+### biografía autora 
+	
+Mary Oliver (1935–2019) fue una poeta estadounidense cuya obra estuvo profundamente ligada a la naturaleza y a la observación de la vida cotidiana. Pasó gran parte de su vida en Provincetown, Massachusetts, donde los bosques, animales y paisajes cercanos al mar se volvieron parte constante de su escritura. Sus poemas hablan de la vida, la muerte, el dolor y el asombro desde un lenguaje sencillo y cercano. A lo largo de su carrera publicó numerosos libros y recibió reconocimientos como el Premio Pulitzer de Poesía en 1984 y el National Book Award en 1992. Su obra se caracteriza por una mirada atenta y sensible hacia el mundo, encontrando en lo pequeño una forma de pensar sobre cómo vivimos.
+
 
 ### Licencia
 
@@ -684,9 +688,7 @@ Por otra parte, el desarrollo de la carcasa nos hizo cuestionarnos cómo organiz
 
 ## Resultado Final
 
-imagen 
-
-
+![final](./imagenes/listo.png/)
 
 <https://www.youtube.com/watch?v=PrD93Q1XOUg&feature=youtu.be>
 
