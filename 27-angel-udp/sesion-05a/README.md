@@ -4,6 +4,20 @@
 
 ## apuntes sesión
 
+Presentación de proyectos (grupo 03). El nuestro se trató sobre este poema:
+
+;p0ema de Leonor Olmos. Específicamente el extracto del poema 4, página 9:
+Este poema nada puede resolver.
+Adentro del poema, la muerte se consume.
+Ya, dilo de nuevo, el porcentaje de pureza mezclado con un poco de sol.
+Con un poco de hambre
+Todo acaba aquí y de pronto no. 
+Un nuevo servidor, un poema electrónico, un mesías 
+Poema bajando desde el cielo
+Solo los elegidos contemplan su propia destrucción.
+No, en serio, este poema nada puede resolver.
+
+
 ## encargos
 
 ## lectura
