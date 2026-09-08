@@ -127,7 +127,11 @@ El living ***La casa de Tatio*** y el poema, ***Chile mapu mew...*** no es solam
 ![](./imagenes/flowchart.jpg)
 
 # Proceso 
+![](./imagenes/resultado-living.jpeg)
 
+---
+
+### Carcasa
 El concepto de realizar un living de hogar, fue por la calidez que suele ocupar en la casa,
 así mismo como los recuerdos en nuestra mente, que palpitan en el corazón, y sentimos en el estomago.
 
@@ -148,6 +152,8 @@ Bocetos
 
 Resultado
 ![](./imagenes/resultado-living.jpeg)
+
+---
 
 # Código
 ```cpp
