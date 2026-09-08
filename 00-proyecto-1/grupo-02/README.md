@@ -59,9 +59,9 @@ Dice así:
 © 2026 [Santiago Cifuentes Vélez]. El poema está bajo la licencia [Creative Commons Atribución-NoComercial-SinDerivadas 4.0 Internacional (CC BY-NC-ND 4.0)](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es).
 
 # ¿Qué hicimos?
-El pedido del proyecto constataba en realizar y enseñar poesía utilizando una placa de la linea de Arduinos uno r4, una pantalla de libre elección, una carcasa de cartón, un botón y un potenciómetro como mínimo. 
+El pedido del proyecto constataba en realizar y enseñar poesía utilizando una placa de la linea de Arduinos uno r4 wifi, una pantalla de libre elección, una carcasa de cartón, un botón y un potenciómetro como mínimo. 
 
-Este proyecto se sitúa en el concepto de: Los ojos del turista, los momentos de lucidez que trae la claridad de la luz, y la la nostalgia que trae la calma de una habitación donde nos encontramos con los recuerdos caracara..., como lo es la sala de una casa donde las lagrimas caen por :
+Este proyecto se sitúa en el concepto de: Los ojos del turista, los momentos de lucidez que trae la claridad de la luz, y la reflexión y nostalgia que trae la calma de una habitación donde nos encontramos con los recuerdos cara a cara..., como lo es la sala de una casa, donde se viven mil vidas, y también, cuando la mente se olvida de ser traicionera, trae flashbacks de aquello que nos mueve el alma.
 
 1. Nosotres, decidimos escribir nuestro propio poema con la intencionalidad de dar un homenaje a la belleza de las pequeñas cosas que a veces se pasan por desapercibidas; ya sea por la cotidianidad y la rutina del día a día, o la ignorancia que se tiene respecto al territorio que se habita y a su vez, se rodea. Pues nosotres opinamos que por un momento, hay que ver nuestra casa, nuestro entorno con ojos de turista para apropiarnos de lo que somos..., de donde somos.
 
