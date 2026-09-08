@@ -160,10 +160,15 @@ Resultado
 # Código
 
 Para comenzar a entender cómo funcionaban los códigos de la pantalla que se nos entregó (controlador SSD1306), usamos, a nivel de taller, los ejemplos de Adafruit ``ssd1306_128x32_i2c``, por lo que, junto a mi grupo, empezamos a desmenuzar las partes de este código para entender qué rol cumplía cada una de las líneas. Mientras hacíamos esto, logramos cambiar el texto que se muestra en la pantalla al momento de hacer ``scroll``, lo que se veía de la siguiente manera:
+
 ![Primera intervención dentro del código de ejemplo](./imagenes/scroll-ejemplo.gif)
+
 Como logramos cambiar lo que se mostraba, probamos con textos un poco más largos, pero estos se cortaban porque no cabían en la pantalla y el texto se desplazaba automáticamente a la línea de abajo. Luego, gracias a Seba, nos enteramos de que esto se solucionaba haciendo un "Enter", lo cual se logra escribiendo ``\n`` al final de cada frase.
+
 ![Primera frase un poco larga](./imagenes/ejemplo-adafruit.gif)
+
 Una vez que logramos entender cómo poner texto, nuestro siguiente objetivo era mostrar textos aún más largos y poder desplazarnos por ellos pero, para lograrlo, primero debíamos dejar el texto quieto, ya que en el ejemplo de Adafruit el texto se movía de un lado a otro. Para controlar esto, volvimos a leer el código para identificar qué causaba este movimiento, y notamos que, dentro de ``void testscrolltext(void)``, lo siguiente era lo que provocaba el scroll en varias direcciones:
+
 ```cpp
 display.startscrollright(0x00, 0x0F);
   delay(2000);
@@ -180,18 +185,24 @@ display.startscrollright(0x00, 0x0F);
   display.stopscroll();
   delay(1000); 
 ```
+
 Una vez que logramos entender cómo mantener el texto quieto y cómo añadir más líneas, quisimos saber cómo desplazarnos dentro de la pantalla para mostrar varias estrofas de un poema sin que el tamaño de esta lo limitara. Por eso, añadimos un potenciómetro que nos permite recorrer el eje Y de la pantalla mediante ``scrollY``.
+
 Cuando nos pusimos de acuerdo sobre cómo sería la carcasa de nuestro proyecto, decidimos cambiar la pantalla por una más grande, ya que queríamos que diera la impresión de un televisor, algo que la pantalla original no lograba porque era muy baja de altura. Para probar otra pantalla, conseguimos una con Emi, quien nos prestó su pantalla OLED 1.3" I2C 128x64 con controlador SH1106. Al cambiar de pantalla, tuvimos que adaptar el código al nuevo formato, lo cual consistía simplemente en cambiar la declaración de los tamaños de pantalla a los tamaños actuales.
+
 Al hacer este cambio, corrimos el código y notamos que, al tener más espacio, podíamos aumentar la altura en píxeles de los textos. Esto nos hizo notar la libertad que teníamos sobre cómo se veía el display, por lo que decidimos hacer las siguientes modificaciones:
-Crear un offset en el eje Y de la pantalla, para así mostrar el texto de manera más centrada y lograr un mejor enfoque en lo que se dice dentro de esta.
-Mostrar solo dos líneas centradas de texto dentro de la pantalla.
-Ajustar la altura en píxeles del texto, dejándola en 8 píxeles de alto.
+
+1. Crear un offset en el eje Y de la pantalla, para así mostrar el texto de manera más centrada y lograr un mejor enfoque en lo que se dice dentro de esta.
+2. Mostrar solo dos líneas centradas de texto dentro de la pantalla.
+3. Ajustar la altura en píxeles del texto, dejándola en 8 píxeles de alto.
+   
 Una vez satisfechos con estos cambios (ya que buscábamos el mayor enfoque posible de los espectadores en el poema mostrado en la pantalla), probamos mostrar dos textos distintos y experimentamos con distintas maneras de hacer la transición entre ambos.
+
 Para lograr la transición entre estos dos poemas, nos decidimos en usar un potenciómetro que permite pasar de poema1 a poemaLuz, cambio que se puede visualizar al mismo tiempo mediante un LED. Este LED se encuentra dentro de la carcasa simulando una luz hogareña, que cuando se apaga por primera vez (con ayuda del potenciómetro), nos permite enfocarnos aún más en la pantalla OLED, en la que notaremos que el texto ha cambiado, mostrando ahora poemaLuz.
+
 Esto queda funcionando de la siguiente manera:
+
 ![Video corto de cómo se ve en la maqueta… creer x favor](./imagenes/hola-porfa-crean.gif)
-
-
 
 ---
 
