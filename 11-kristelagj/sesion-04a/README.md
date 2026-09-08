@@ -4,7 +4,31 @@
 
 ## clase 010826
 
+### pre-clase (teloneo Aarón) 
+
+1001 discos que escuchar antes de morir. 
+
+Próximo disco: J-DILLA donuts: lo hizo mientras se moría de cáncer. Se llama asi porque son 18 cosas distintas
+
+- AKAI MPC (música producción centro) 
+
+el cuanto toca lo atrasa un poco para que se sienta 
+
+https://es.wikipedia.org/wiki/J_Dilla
+
 ## apuntes
+
+### clase
+
+Como equipo se nos ocurrió que sería buena idea que al tener dos pantallas ambas interactúan
+
+En el arduino se le menciona que el pin y el botón estará haciendo una función. 
+
+como transmite la información le importa a arduino, no la pantalla
+
+otra pantalla de I2C
+
+como saber la direcion de mi I2C
 
 ## encargos
 

@@ -6,6 +6,13 @@ martes 25/08
 
 ### la pantalla de 0.91 pulgadas con controlador SSD1306
 
+Conexión con Arduino
+
++ 5V	: VCC
++ GND	: GND
++ A4 :  SDA
++ A5 :  SCK
+
 la pantalla tiene 4 patitas que se conectan a la protoboard, en el extremo  gnd/vcc:
 
 + sda (señal de datos)
@@ -32,10 +39,15 @@ a5 va a sck
 
 ![IMG](./imagenes/arduino.png)
 
-(display es pantalla)
+para recordar*
+
++ (display es pantalla)
+
++ #include:  buscar archivo o biblioteca e inclúyelo en este código
+
++ display: representa nuestra pantalla dentro del código
 
 
-*Para no olvidar: dato extra de mi amiguita Mai : - ver frieren 
 
 ## encargos
 

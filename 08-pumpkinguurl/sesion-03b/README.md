@@ -117,7 +117,7 @@ líneas arreglo de caracteres
 
 los sueños del profe no caben en un Excel, el crea su propio Excel. Tenemos que crear nuestros propios Excel
 
-* profundidad de programación muy duro
+asterisco - profundidad de programación, muy duro
 
 nos permite hacer un arreglo de arreglos y dejas de preocuparnos de cuanto mide
 

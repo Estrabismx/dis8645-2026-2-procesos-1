@@ -1,231 +1,91 @@
-Este es nuestro código funcional, sin comentarios donde se explicita como en la versión de: [El viernes en clase](https://github.com/santiagocifuvelez/dis8645-2026-2-procesos-1/tree/main/00-proyecto-1/grupo-02/codigos/2026-08-28)
+**Realizado por:**  
+*Francisca Palma (frannciscapalma)*
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+*Nicolás Valdés (nicolasvaldesgreve)*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+*Santiago Cifuentes Vélez (santiagocifuvelez)*
 
-```cpp
-//esta parte es OBLIGATORIA en todas las estructuras con Adafruit, 
-//ya que son las librerias.
-//de aquí:
-#include <SPI.h>
-#include <Wire.h>
-#include <Adafruit_GFX.h>
-#include <Adafruit_SSD1306.h>
+<br>
+ <br>
+  <br>
+   <br>
 
-#define SCREEN_WIDTH 128 // OLED display width, in pixels
-#define SCREEN_HEIGHT 32 // OLED display height, in pixels
+# Poema  
+No es un poema en prosa, no es tampoco una página con letras que rimen, y ya..., es una experiencia que nace de la observación del entorno; el amarillo cálido del sol, la grandeza de la cordillera de los Andes, la ternura de la jerga para hacer sentir cómodo al prójimo, el canto de los colibríes, la sensualidad de vestirse de blanco y desvestirse por el sol, etc...
 
-#define OLED_RESET     -1 // Reset pin # (or -1 if sharing Arduino reset pin)
-#define SCREEN_ADDRESS 0x3C ///< See datasheet for Address; 0x3D for 128x64, 0x3C for 128x32
-Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
+Dice así:
 
-//hasta aquí. 
+"**Chile mapu mew...***
 
-// 'cactus', 32x120px
-const unsigned char epd_bitmap_cactus [] PROGMEM = {
-0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff,
-0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff,
-0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff,
-0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff,
-0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff,
-0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff,
-0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff,
-0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff,
-0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff,
-0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff,
-0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff,
-0xff, 0xff, 0xff, 0xff, 0xff, 0xfc, 0x1f, 0xff, 0xff, 0xf0, 0x0f, 0xff, 0xff, 0xf4, 0x4f, 0xff,
-0xff, 0xf0, 0x2f, 0xff, 0xff, 0xe0, 0x07, 0xff, 0xff, 0xe8, 0x27, 0xff, 0xff, 0xe0, 0x67, 0xff,
-0xff, 0xe1, 0x67, 0xff, 0xf9, 0xe8, 0x67, 0xff, 0xfe, 0x64, 0x67, 0xff, 0xf0, 0x62, 0x77, 0xff,
-0xf0, 0xa0, 0x67, 0xff, 0xf0, 0x21, 0x67, 0xff, 0xf0, 0x22, 0x67, 0xff, 0xf1, 0x22, 0x67, 0xff,
-0xf0, 0x26, 0x77, 0xff, 0xf8, 0x02, 0x47, 0x9f, 0xf8, 0x82, 0x07, 0x1f, 0xfc, 0x0a, 0x04, 0x1f,
-0xfc, 0x83, 0x25, 0x1f, 0xff, 0x02, 0x04, 0x1f, 0xff, 0xc0, 0x02, 0x5f, 0xff, 0xe8, 0x00, 0x3f,
-0xff, 0xe0, 0x04, 0x3f, 0xff, 0xf0, 0x40, 0x7f, 0xff, 0xe0, 0x01, 0xff, 0xff, 0xe0, 0x07, 0xff,
-0xff, 0xe0, 0x0f, 0xff, 0xff, 0xe0, 0x0f, 0xff, 0xff, 0xf0, 0x0f, 0xff, 0xff, 0xff, 0xff, 0xff,
-0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff,
-0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff,
-0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff,
-0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff,
-0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff,
-0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff,
-0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff,
-0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff,
-0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff,
-0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff,
-0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff
-};
+> *No somos poetas con titulo,*  
+*pero las palabras plasmadas aquí, crecieron de nuestro ser*  
+*como las flores en primeravera.*  
 
-// Array of all bitmaps for convenience. (Total bytes used to store images in PROGMEM = 496)
+>*La primavera de Santiago de Chile, ¡Que coincidencia!*  
+*estamos en primavera.*  
 
-const int epd_bitmap_allArray_LEN = 1;
-const unsigned char* epd_bitmap_allArray[1] = {
-epd_bitmap_cactus
-};
+>*Bienvenidx*  
 
-const int tasa = 9600;
-const int potePatita = A0;
-int poteLectura = -1;
-int poteFiltrado = -1;
+>*Con amor: Francisca, Nicolas y Santiago.*  
 
-const char poem[] =  // hay que investigar arrays y strings
-"Aprendi de la vida\n"
-"a quererte\n"
-"de igual modo,\n"
-"\n"
-"a amar este\n"
-"equilibrio nuestro,\n"
-"\n"
-"la igualdad\n"
-"de latido,\n"
-"\n"
-"a confiar\n"
-"sin atender el tiempo\n"
-"\n"
-"que tarda uno\n"
-"en encontrar\n"
-"la calma,\n"
-"\n"
-"a buscar lo urgente\n"
-"sin ninguna prisa,\n"
-"\n"
-"y a llegar a casa,\n"
-"\n"
-"y que mi casa\n"
-"sea mi casa\n"
-"porque tu me esperas\n"
-"\n"
-"y que tu casa\n"
-"sea tu casa\n"
-"porque siempre vuelvo";
+*¿Qué pasa cuando la luz del sol aparece detrás de la cordillera?*  
 
-int totalLines = 30; //no son las lineas de este código,
-int lineHeight = 8;  //sino que son la cantidad de líneas que se muestran en la pantalla (contando los \n)
-int totalTextHeight;
-int maxScroll;
+*En Chile, los Romeros florecen*    
+*- (FLores creciendo)*  
 
-//setup() — se ejecuta una sola vez al encender
-void setup() {
+*En Chile, los Colibríes cantan*  
+*- (Colibries revoloteando)*  
 
-  Serial.begin(tasa);  //inicialización de la pantalla
+*En Chile, el cielo es rosado, y cuando te ofrecen un peda**CITO**, significa que es uno grande**CITO***  
+*- (Pedazo de queque)*  
 
-  // hola lo siguiente comentado no está haciendo nada ayuda chavales
+*En Chile, los Andes se visten de novia en las noches, y se desvisten revelándose de día.*  
+*- (Cordillera en pixeles épicos)*  
 
-  // while (!Serial) {}
-  // Serial.println("Elvira Sastre"); // se muestra luego de la ilustración del cactus
-  // delay(2000);   // Wait for display para prenderse
+*Pero...*  
 
-//Esta parte igual, es obligatoria por el bien de la sociedad.
-//Esta parte es por si a la pantalla no le llega la suficiente energía y hay un error, 
-//ella pueda procesarlo y resistir, y nosotres actuar.
-  // SSD1306_SWITCHCAPVCC = generate display voltage from 3.3V internally
-  if(!display.begin(SSD1306_SWITCHCAPVCC, SCREEN_ADDRESS)) {
-    Serial.println(F("SSD1306 allocation failed"));
-    for(;;); // Don't proceed, loop forever
-  }
+*En Chile, los chirihues dan conciertos, y las libélulas danzan.*  
+*- Bandera de Chile*  
 
-  display.setTextColor(SSD1306_WHITE);
+*Mientras el sol siga saliendo detrás de la cordillera,*  
+*y se pose sobre tu cabeza,*  
+*es un día más para sentirlo.*  
 
-  totalTextHeight = totalLines * lineHeight;
-  maxScroll = totalTextHeight - SCREEN_HEIGHT;
-  if (maxScroll < 0) maxScroll = 0;
+*En Chile, las Chinchineras saltan y las Turcas cabriolean.*  
+*En Chile, el Zorro culpeo no tiene la culpa.*  
+*En Chile, el Romero florece...*  
+*Pero también, ya en tu pecho florecerán,*
+*colores de amor.*  
 
-// después de saludar,
-// y decir Elvira Sastre
-// muestra un cactus
+*Florecerán...*
 
- display.setRotation(3); // gira el sistema de coordenadas, 
-          // 0 = normal (por defecto)
-          // 1 = 90° en sentido horario
-          // 2 = 180° en sentido horario
-          // 3 = 270° en sentido horario
-  display.clearDisplay();
+> *(Escrito por Santiago Cifuentes Vélez..., inspirado en la sutileza de mis amigues Nico y Fran, y la imponente cordillera de los Andes, lugar donde me he encontrado de cara con la vida misma)*
+   
+# Diagrama de flujo 
+![](./imagenes/flowchart.jpg)
 
-  display.drawBitmap(
-    0, 0,                  // ahora (0,0) es la esquina del "lienzo alto"
-    epd_bitmap_cactus,     
-    32, 120,               // ancho x alto REALES del bitmap (32x120)
-    SSD1306_WHITE
-  );
-  display.display();
-  delay(5000);
+# Esquemático 
 
-// Al inicializarse, la biblioteca carga automáticamente un logo de Adafruit en el buffer. 
-//display.display() lo muestra en pantalla, y se queda 2 segundos.
-  // display.display();
-  // delay(2000); // Pause for 2 seconds
-  // para borrar el buffer, lo que apareció en la pantalla
+El concepto de realizar un living de hogar, fue por la calidez que suele ocupar en la casa,
+así mismo como los recuerdos en nuestra mente, que palpitan en el corazón, y sentimos en el estomago.
 
-  display.clearDisplay();
+Nostálgico, de silencio y cuidado.
+Donde se atienden a lxs amigues, 
+así como el país que le habitamos, nos atiende, y nos sorprende. 
 
-  testdrawstyles(); // llama a la función (ya definida más abajo)
+## Bocetos:
+El escenario consta de 2 partes: 
 
-//si no quieres poner lo de la animación de cambiar de color que está en el
-//siguiente parrafo de código...,
-//se borra, duhh, pero, se debe cerrar entonces esta parte con un "}"
+*1. El living.*  
+*2. El control remoto del tv y la lampara del techo.*  
 
-//SOLO SI SE QUIERE CAMBIAR EL COLOR.
-//si queremos invertir los colores de la pantalla (recordemos que la pantalla es monocromatica
-//podemos hacerlo así).
-  display.invertDisplay(true); //esa función es para cambiar el colorrrrrrr. periodo.
-  delay(1000);
-  display.invertDisplay(false);
-  delay(1000);
-}
-//Hay dos display.invertDisplay, porque hace como una pequeña animación.
+![](./imagenes/prototipo.jpg)
+![](./imagenes/prototipo2.jpg)
+![](./imagenes/control.jpg)
 
+# Código
 
-    // queremos mostrar líneas de texto más largas
-    // ya que queremos mostrar una estrofa de un poema mediante la pantalla
-    // por lo que para lograr esto
-    // integraremos un potenciómetro
-    // para poder avanzar o retroceder en el texto
-    // así podremos leer una línea completa sin que esta se corte por la pantalla
-
-    // para conectar el potenciómetro a nuestro Arduino UNO R4 WiFi
-    // conectamos lo siguiente
-    // pin 1 de potenciómetro a 5V del Arduino
-    // pin 2 del potenciómetro a un pin Analog del Arduino
-    // en nuestro caso fue al pin A0
-    // pin 3 del potenciómetro a GND del Arduino
-
-  void loop() {
-
-    // leer y filtrar
-  poteLectura = analogRead(potePatita);
-  poteFiltrado = filtrarConDivision(poteLectura, 4); // 0–255 approx
-
-  // convertir el valor filtrado en posición de scroll
-  int scrollY = map(poteFiltrado, 0, 255, 0, maxScroll);
-
-  // dibujar el poema desplazado
-  display.clearDisplay();
-  display.setTextSize(1);
-  display.setCursor(0, -scrollY); // se desplaza mediante el eje Y
-  display.print(poem);
-  display.display();
-
-  Serial.print("valor filtrado: ");
-  Serial.println(poteFiltrado);
-
-  delay(100); // delay de lo que se muestra en el monitor serial (valores potenciómetro)
-              // también afecta en la velocidad a la que reacciona el potenciómetro
-              // con como se muestra el desplazamiento en la pantalla
-              // mientras más delay, más tarda en reaccionar la pantalla al movimiento del potenciómetro
-              // menos delay, más rápido reacciona
-  }
-
-  // Aquí, AFUERA de setup() y loop(), defines las funciones:
-    void testdrawstyles(void) {
-      display.setRotation(0); // volvemos a rotar la pantalla para que el texto se pueda leer de manera horizontal
-      display.clearDisplay();
-      display.setTextSize(2); //tamaño de la letra
-      display.setTextColor(SSD1306_WHITE);
-      display.setCursor(0, 0); //esta es la posición en x,y
-      display.println(F("Elvira \n Sastre")); //recordad que la "F", siempre va igual para que no se nos tueste la RAM del Arduino.
-      display.display();  // muestra el texto en pantalla
-      delay(2000);
-    }
-
-    int filtrarConDivision(int valor, int divisor) {
-  int resultado = valor / divisor;
-  return resultado;
-}
-
-```
+# Referentes
+1. "Mira niñita", una canción de los Jaivas.
+2. "La danza de la libélulas", una canción de Manuel García.
+3. "La exiliada del sur", un poema de Violeta Parra.
+4. "Un día más", una canción de Jósean Log
