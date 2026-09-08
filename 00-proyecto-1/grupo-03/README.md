@@ -27,7 +27,7 @@ Nuestro grupo eligió ;p0ema de Leonor Olmos. Es el extracto del poema 4, págin
 
 Es difícil decir el porqué escogimos este extracto porque nuestra respuesta sería “nos gusto por lo complejo que es”. Cada uno, hasta el día de hoy, mientras más lo leemos, más significados encontramos, pero esta es la gracia de este poema, no entender y creemos que jamás lo comprenderemos porqué si lo analizamos—teniendo en cuenta todo el libro— la autora habla siempre de su cuerpo pero a su vez lo que pasa alrededor como lo es la quimica, música, sistema económico, etc. 
 
-Lo que nosotros queremos hacer con esta entrega es poder hacer más cercano este poema, presentar como lo entendemos y experimentar en la marca. 
+Lo que nosotros queremos hacer con esta entrega es poder hacer más cercano este poema, presentar como lo entendemos y experimentar en la marcha. 
 
 ## **2\. Corpus y Licencias**
 
@@ -59,6 +59,33 @@ Y en el proceso vimos bastantes videos o proyectos que estaban en redes sociales
 | Proceso 3 | Proceso 4 |
 |:---:|:---:|
 | ![Proceso 3](./imagenes/proceso-3.jpeg) | ![Proceso 4](./imagenes/proceso-4.jpeg) |
+
+## **4\. Idea general**
+
+Lo primero que hicimos fue entender cada verso para poder representarlo en las pantallas, pero no completo ya que, como mencionamos, era difícil de entender y hasta el último día entendíamos cosas distintas. 
+Como grupo no queríamos limitarnos a solo el uso de la pantalla; es por esto que experimentamos con los límites del hardware. Inicialmente, evaluamos usar dos pantallas, una I2C y otra TFT las cuales tienen 2 lenguajes distintos; la TFT nos entrega mayores posibilidades de contenido multimedia (videos).
+
+| Código I2C TFT | Pruebas pantalla TFT | Experimentación I2C 1 |
+|:---:|:---:|:---:|
+| ![Código I2C TFT](./imagenes/codigo-i2c-tft.jpeg) | ![Pruebas pantallas TFT](./imagenes/pantallas-pueba-tft.jpeg) | ![Experimentación I2C 1](./imagenes/experimentacion-12c-1.jpeg) |
+
+| Experimentación I2C 2 | Experimentación I2C 3 | Experimentación I2C 4 |
+|:---:|:---:|:---:|
+| ![Experimentación I2C 2](./imagenes/experimentacion-12c-2.jpeg) | ![Experimentación I2C 3](./imagenes/experimentacion-12c-3.jpeg) | ![Experimentación I2C 4](./imagenes/experimentacion-12c-4.jpeg) |
+
+A partir de la retroalimentación, se nos entregaron dos pantallas I2C para que estas hablaran el mismo idioma y no se crearan 2 animaciones por separado. Destacamos esta opción solamente por cómo se veían gráficamente las pantallas. Finalmente, lo que realizamos como grupo fue que en la pantalla TFT se encontrará la animación del poema y en la I2C indicaciones que el usuario debe realizar mediante cada verso.  
+
+| Pantallas | 2 pantallas funcionando |
+|:---:|:---:|
+| ![Pantallas](./imagenes/pantallas.jpeg) | ![2 pantallas funcionando](./imagenes/2pantallas-funcionando.jpeg) |
+
+Además, tuvimos la posibilidad de utilizar 3 motores para el proyecto; primero queríamos hacer explotar un diodo representando el caos, pero esto podría afectar el uso del Arduino, dejándonos sin ninguna retroalimentación a las pantallas, entonces descartamos la idea al encontrar esta segunda opción.
+
+O sea, lo que queríamos era que no representara tan solo gráficamente en las pantallas, sino sonora y sensorialmente. Esto nos dio a entender que ARDUINO no se limita, sino nosotros. 
+
+<p align="center">
+  <img src="./imagenes/motor-ejemplo.jpeg" alt="Motor ejemplo" width="500">
+</p>
 
 ### Poema proceso tecnico 
 
@@ -147,33 +174,6 @@ En la escena 8 tiene prioridad «Presiona el botón»; pulsarlo es opcional.
 
 LED en la escena 8: `LED_NORMAL_MS=500` alterna encendido y apagado cada medio segundo. Al pulsar, `LED_FAST_MS=100` alterna cada 100 ms durante `FAST_BLINK_DURATION_MS=1800`. Al salir de la escena, el LED se apaga inmediatamente. La pulsación y la vibración siguen siendo opcionales.
 Configuración actual: tres motores en D3, D5 y D6, activos durante todo el tiempo que mantengas presionado el botón en la escena 8. Al soltar el botón o salir de la escena, se apagan. El motor averiado; D9 no se utiliza y queda apagado. Se conserva el parpadeo continuo del LED y su aceleración al pulsar.
-
-
-## **4\. Proceso**
-
-Lo primero que hicimos fue entender cada verso para poder representarlo en las pantallas, pero no concretó ya que como mencionamos, era difícil de entender y hasta el último día, entendíamos cosas distintas, pero como grupo no queríamos limitarnos a solo el uso de la pantalla; Es por esto que experimentamos con los límites del hardware. Inicialmente evaluamos usar dos pantallas I2C Y TFT las cuales tienen 2 lenguajes distintos, la cual la TFT nos entrega mayores posibilidades de contenido multimedia (videos).
-
-| Código I2C TFT | Pruebas pantalla TFT | Experimentación I2C 1 |
-|:---:|:---:|:---:|
-| ![Código I2C TFT](./imagenes/codigo-i2c-tft.jpeg) | ![Pruebas pantallas TFT](./imagenes/pantallas-pueba-tft.jpeg) | ![Experimentación I2C 1](./imagenes/experimentacion-12c-1.jpeg) |
-
-| Experimentación I2C 2 | Experimentación I2C 3 | Experimentación I2C 4 |
-|:---:|:---:|:---:|
-| ![Experimentación I2C 2](./imagenes/experimentacion-12c-2.jpeg) | ![Experimentación I2C 3](./imagenes/experimentacion-12c-3.jpeg) | ![Experimentación I2C 4](./imagenes/experimentacion-12c-4.jpeg) |
-
-A partir de la retroalimentación, se nos entregaron dos pantallas I2C para que estas hablaran el mismo idioma y no se crearán 2 animaciones por separado. Destacamos esta opción, solamente por cómo se veían gráficamente las pantallas. Finalmente, lo que realizamos como grupo fue que en la pantalla TFT se encontrará la animación del poema y en la I2C indicaciones que el usuario debe realizar mediante cada verso. 
-
-| Pantallas | 2 pantallas funcionando |
-|:---:|:---:|
-| ![Pantallas](./imagenes/pantallas.jpeg) | ![2 pantallas funcionando](./imagenes/2pantallas-funcionando.jpeg) |
-
-Además, tuvimos la posibilidad de utilizar 3 motores para el proyecto, primero queríamos hacer explotar un diodo representando el caos, pero esto podría afectar el uso del arduino, dejándonos sin ninguna retroalimentación a las pantallas, entonces descartamos la idea al encontrar esta segunda opción. 
-
-Osea, lo que queríamos era que no representar tan sólo gráficamente en las pantallas, sino sonora y sensorialmente. Esto nos dio a entender que ARDUINO no se limita, si no nosotros.
-
-<p align="center">
-  <img src="./imagenes/motor-ejemplo.jpeg" alt="Motor ejemplo" width="500">
-</p>
 
 ## **5\. Carcasa**
 
