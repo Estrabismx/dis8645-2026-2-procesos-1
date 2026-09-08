@@ -37,5 +37,3 @@ Recordatorio para mí mismo: ```\n``` es equivalente al ```println``` de Arduino
 Noté que el markdownlint me muestra un error que lee *cannot open source file "hardware/adc.h"* a pesar de haber agregado el hardware_adc en CMakeLists.txt, no sé si ese es un error que siempre se muestra? se soluciona solo eventualmente? o si realmente hice algo mal.
 
 ![Error markdownlint](./imagenes/error-markdownlint.png)
-
-## lectura
