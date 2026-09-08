@@ -66,7 +66,10 @@ Dice así:
 # ¿Qué hicimos?
 El pedido del proyecto constataba en realizar y enseñar poesía utilizando una placa de la linea de Arduinos uno r4, una pantalla cualquiera, una carcasa de cartón, un botón y un potenciómetro como mínimo. 
 
-Nosotres, decidimos escribir nuestro propio poema con la intencionalidad de dar un homenaje a la belleza de las pequeñas cosas que a veces se pasan por desapercibidas; ya sea por la cotidianidad y la rutina del día a día, o la ignorancia que se tiene respecto al territorio que se habita y a su vez, se rodea. Pues nosotres opinamos que por un momento, hay que ver nuestra casa, nuestro entorno con ojos de turista para apropiarnos de lo que somos..., de donde somos.
+Este proyecto se situa en 2 contextos complementarios el uno del otro:
+
+1. Nosotres, decidimos escribir nuestro propio poema con la intencionalidad de dar un homenaje a la belleza de las pequeñas cosas que a veces se pasan por desapercibidas; ya sea por la cotidianidad y la rutina del día a día, o la ignorancia que se tiene respecto al territorio que se habita y a su vez, se rodea. Pues nosotres opinamos que por un momento, hay que ver nuestra casa, nuestro entorno con ojos de turista para apropiarnos de lo que somos..., de donde somos.
+2. Creamos a manera de escenario representativo 
 
 # Diagrama de flujo 
 ![](./imagenes/flowchart.jpg)
