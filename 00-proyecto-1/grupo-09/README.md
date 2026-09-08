@@ -598,7 +598,7 @@ Por temas de tiempo, decidimos darle prioridad al desarrollo de la carcasa y ter
 Esta clase fue súper proactiva porque, si bien todas estábamos preocupadas de que todo funcionara como un mismo “cerebro”, cada una se dedicó a avanzar en alguna zona del proyecto, como los componentes, el código, la carcasa y la parte conceptual.
 
 
-### Viernes 04 de septiembre: Finalización del código 
+## Viernes 04 de septiembre: Finalización del código 
 
 En esta clase terminamos de ajustar varias cosas del código para que todo funcionara mejor. Aplicamos lo que habíamos visto antes de **separar la animación del código principal**, dejando los cuadros en otra pestaña y llamándolos desde el archivo principal para que quedara más ordenado.
 
