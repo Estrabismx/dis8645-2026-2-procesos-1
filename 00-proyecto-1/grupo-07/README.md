@@ -13,7 +13,11 @@ Katalina Riquelme / [riyakatalinaa](https://github.com/riyakatalinaa)
 
 
 ---
+## Importante
 
+Todo las imágenes son de nuestra autoría.
+
+Todos los gifs se encuentran subidos en la carpeta de "imagenes".
 
 ## Poetisa escogida → **Alfonsina Storni**
 
@@ -51,6 +55,8 @@ De amor me estoy muriendo,
 
 Pero no puedo amar.
 
+
+
 Persigo lo perfecto
 
 En mí y en los demás,
@@ -59,6 +65,8 @@ Persigo lo perfecto
 
 Para poder amar.
 
+
+
 Me consumo en mi fuego,
 
 ¡Señor, piedad, piedad!
@@ -66,6 +74,8 @@ Me consumo en mi fuego,
 De amor me estoy muriendo,
 
 ¡Pero no puedo amar!.
+
+
 
 Poema sacado de → https://www.cultura.gob.ar/9-poemas-imprescindibles-de-alfonsina-storni-8463/
 
@@ -89,6 +99,8 @@ Expresa un amor frustrado y posiblemente no correspondido, pero principalmente m
 |Kit resistencias|3|$4.990|<https://afel.cl/products/kit-600-resistencias-1-4w-30-valores?_pos=1&_sid=aa6abbe0f&_ss=r>|
 |cables|7|$1.000|<https://afel.cl/products/pack-20-cables-de-conexion-macho-macho>|
 |Potenciómetro B10k|1|$500|<https://afel.cl/products/potenciometro-10k-ohm>|
+|Kit cables caimán|6|$3000|<https://afel.cl/products/kit-10-cables-conectores-tipo-caiman?srsltid=AfmBOorPXCoNA5FfnVv3FukZopGL348V9KtyglGtKEOZ-cGqXj8U1g1_>|
+|Pack cables Dupont|18|$2500|<https://afel.cl/products/pack-60-cables-de-conexion?variant=45125231935640&country=CL&currency=CLP&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&utm_term=&utm_campaign=@+Smart+Shopping&utm_source=adwords&utm_medium=ppc&hsa_acc=1808722794&hsa_cam=18405560573&hsa_grp=&hsa_ad=&hsa_src=x&hsa_tgt=&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=17613659948&gbraid=0AAAAADBMsFQIbGQpkhnrUNPR5LmXeViHp&gclid=CjwKCAjwwfnUBhAtEiwAfQpAYgm7J5jNss5OV1btE3F0jvFZ52Ixl_uZo3bNBxeZTep7EVkxkVaXWRoC7ZAQAvD_BwE>|
 
 
 ---
@@ -115,7 +127,6 @@ Expresa un amor frustrado y posiblemente no correspondido, pero principalmente m
 - Entre medio de las dos primeras estrofas, la pantalla reproduce una animación visual de fuego subiendo de abajo hacia arriba
 
 
-
 ## Proceso código y registro (resumen)
 
 
@@ -131,14 +142,58 @@ El proyecto evolucionó progresivamente desde la reproducción de un poema en el
 | **Código 3** | 2 sept. | Jerarquía visual | Se destacan determinadas **palabras clave e intensas** del poema mediante un tamaño mayor, mientras el resto mantiene un tamaño normal. | Representar visualmente la intensidad emocional del poema. |
 | **Código 4** | 3 sept. | Interacción | Se incorpora un **potenciómetro** para controlar manualmente el avance de los versos, reemplazando el avance automático. | tener control total del ritmo del poema. |
 | **Código 4.2** | 3 sept. | cambio visual | Se agrega el **nombre de la poetisa**, al comienzo del poema, se centra y alinea el texto y se establece una jerarquía tipográfica: palabras clave de **16 px** y texto normal de **8 px**. | Mejorar la composición y legibilidad en pantalla. |
-| **Código 5** | 4 sept. | Optimización | Se detectan problemas de espacio en pantalla. Se reduce la cantidad de palabras destacadas para asegurar que todos los versos sean visibles correctamente. | Terminar de daptar el poema al formato de la pantalla. |
+| **Código 5** | 4 sept. | Optimización | Se detectan problemas de espacio en pantalla. Se reduce la cantidad de palabras destacadas para asegurar que todos los versos sean visibles correctamente. | Terminar de adaptar el poema al formato de la pantalla. |
 | **Código 5.2** | 4 sept. | Prueba de animación | Se incorpora una primera animación. El resultado no se adapta correctamente a las dimensiones de la pantalla. | Explorar la incorporación de movimiento y detectar limitaciones técnicas. |
 | **Código 6** | 6 sept. | **Animación 1🎬** | Animación del título **“Queja”**, utilizada como introducción después del nombre de la poetisa. | Introducir visualmente el poema en pantalla. |
 | **Código 7** | 7 sept. | **Animación 2💔** + 3 LEDs rojos| Animación de un **corazón roto**, vinculada al verso "Pero no puedo amar" después de la primera estrofa se agregan 3 LEDs rojos, que se encienden cada vez que aparecen las palabras clave e intensas del poema. | Reforzar la carga emocional del poema mediante una respuesta visual y física sincronizada con el poema. |
 | **Código 8** | 7 sept. | **Animación 3🔥** | Animación de **fuego**, relacionada con el verso "Me consumo en mi fuego" después de la segunda estrofa. | Representar visualmente la intensidad y el consumo emocional. |
 
 
+## Registro en imagen y vídeo por código
 
+Código 1: Reproducción del poema en el **Serial Monitor**, mediante un loop. Código base modificado a partir del código entregado en clases.
+
+![gif reproducción del poema en el Serial Monitor mediante un loop](./imagenes/codigo-1-serialmonitor.gif)
+
+Código 2: Llevar el poema desde el monitor serial a la pantalla.
+
+![imagen del poema reproduciéndose en la pantalla](./imagenes/codigo2.jpg)
+
+![gif del poema reproduciéndose en la pantalla](./imagenes/codigo2.gif)
+
+Código 3: Representar visualmente la intensidad emocional del poema.
+
+![imagen del circuito y cómo se ven las palabras más grandes en la pantalla](./imagenes/c3.jpg)
+
+Código 4: Añadir potenciómetro para controlar manualmente el avance de los versos.
+
+![imagen del circuito actualizado con el potenciómetro](./imagenes/codigo4.jpg)
+
+Código 4.2: Se agrega el nombre de la poetisa al comienzo del poema.
+
+![imagen del nombre de la poetisa en la pantalla](./imagenes/c4-2.jpg)
+
+Código 5: Terminar de adaptar el poema al formato de la pantalla.
+
+![gif del poema adaptado al formato de la pantalla](./imagenes/codigo5.gif)
+
+Código 5.2: Prueba de animación.
+
+![gif de la prueba de animación](./imagenes/codigo5-2.gif)
+
+Código 6: Animación del título **“Queja”**, utilizada como introducción después del nombre de la poetisa.
+
+![gif de la animación queja](./imagenes/animacion-queja.gif)
+
+Código 7: Animación de un **corazón roto**, vinculada al verso "Pero no puedo amar" después de la primera estrofa se agregan 3 LEDs rojos.
+
+![imagen de los LEDs ya incorporados al circuito](./imagenes/codigo7.jpg)
+
+![gif de la animación corazón](./imagenes/animacion-corazon.gif)
+
+Código 8: Animación de **fuego**, relacionada con el verso "Me consumo en mi fuego" después de la segunda estrofa.
+
+![gif de la animación llamas](./imagenes/animacion-llamas.gif)
 
 ## Palabras claves representativas 
 
@@ -154,19 +209,88 @@ Como se puede apreciar en la imagen, las palabras subrayadas son las **palabras 
 
 Animación 1: después del nombre de la poetisa de Alfonsina Storni, titulo "Queja"
 
-**imagen de la animación**
+**gif de la animación**
+
+![gif de la animación queja](./imagenes/animacion-queja.gif)
 
 Animación 2: después de la primera estrofa, corazón roto
 
-**imagen de la animación**
+**gif de la animación**
 
+![gif de la animación corazón](./imagenes/animacion-corazon.gif)
 
-Animación 3: después de la segunda estrofa, fueguito
+Animación 3: después de la segunda estrofa, llamas
 
-**imagen de la animación**
+**gif de la animación**
+
+![gif de la animación llamas](./imagenes/animacion-llamas.gif)
+
+## Frames animaciones
+
+Frames de la animación de queja.
+
+![Frames de la animación de queja](./imagenes/frames-queja.jpg)
+
+Frames de la animación de corazón.
+
+![Frames de la animación de corazón](./imagenes/frames-corazon.jpg)
+
+Frame de la animación de llama.
+
+![Frame de la animación de llama](./imagenes/llamafinal.png)
+
+## Herramienta para animaciones pixel a pixel
+
+No logramos encontrar imágenes adecuadas para lo que estábamos buscando representar, es por esto que buscamos una solución para poder desarrollar nuestros "frames" desde cero para generar las animaciones.
+
+Es así que llegamos a [Pixelorama](https://pixelorama.org/) que es una aplicación que se utiliza para generar animaciones pixel a pixel, la cual tiene distintas formas de descargar y nosotras la descargamos desde su GitHub.
+
+Captura de pantalla de la aplicación Pixelorama mientras hacía los frames de llamas.
+
+![Captura de pantalla de la aplicación Pixelorama mientras hacía los frames de llamas](./imagenes/pixelorama-llamas.png)
+
+Captura de pantalla de la aplicación Pixelorama mientras hacía los frames de corazón.
+
+![Captura de pantalla de la aplicación Pixelorama mientras hacía los frames de corazón](./imagenes/pixelorama-corazon.png)
+
+Captura de pantalla de la aplicación Pixelorama mientras hacía los frames de queja.
+
+![Captura de pantalla de la aplicación Pixelorama mientras hacía los frames de queja](./imagenes/pixelorama-queja.png)
+
+## Herramienta para animaciones en arduino (bitmap)
+
+Esta herramienta nos la enseño Seba (grande Seba c:), y se llama [Stonez56](https://tools.stonez56.com/u8g2/getBitmap.php) y sirve para ingresar una imagen en el formato y que la reescriba pixel por pixel para generar una imagen en arduino.
+
+Captura de pantalla de la página convirtiendo una imagen en bitmap pt. 1.
+
+![Captura de pantalla de la página convirtiendo una imagen en bitmap pt. 1](./imagenes/stonez56-1.png)
+
+Captura de pantalla de la página convirtiendo una imagen en bitmap pt. 2.
+
+![Captura de pantalla de la página convirtiendo una imagen en bitmap pt. 2](./imagenes/stonez56-2.png)
+
+Captura de pantalla de la página convirtiendo una imagen en bitmap pt. 3.
+
+![Captura de pantalla de la página convirtiendo una imagen en bitmap pt. 3](./imagenes/stonez56-3.png)
+
+## Proceso de carcasa
+
+Imágenes del proceso de la carcasa.
+
+![Imágenes del proceso de la carcasa](./imagenes/proceso-carcasa1.jpg)
+
+Imagen del proceso de la carcasa pt. 2.
+
+![Imagen del proceso de la carcasa pt. 2](./imagenes/proceso-carcasa2.jpg)
+
+## Resultado carcasa
+
+Imagen de la carcasa final.
+
+![Imagen de la carcasa final](./imagenes/carcasa-final.jpeg)
 
 ## Roles
 
-- **Emilia:** encargada de las animaciones y sus respectivos códigos
+- **Emilia:** encargada de las animaciones y sus respectivos códigos. carcasa
 - **Monserrat:** encargada de los códigos
 - **Katalina:** encargada de registro en github

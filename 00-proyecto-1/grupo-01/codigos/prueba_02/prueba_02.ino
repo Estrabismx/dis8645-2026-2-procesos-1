@@ -118,4 +118,3 @@ void loop() {
     lcd.clear();
   }
 }
-
