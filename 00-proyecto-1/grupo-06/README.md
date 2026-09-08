@@ -337,3 +337,10 @@ Como en el último verso del poema dice “irse para no volver” tuvimos la ide
 + [arduinoLeds](https://cl.pinterest.com/pin/701646816990186067/ )
 
 Este es un claro ejemplo del uso del botón y que al pulsarlo haga que vaya cambiando de pantalla, en nuestro caso al pulsar el botón lo que sucede es que la pantalla muestra automáticamente las diferentes pantallas que van pasando a medida que uno mueve la perilla del potenciómetro.
+
+## Registro Audiovisual 
+
++ Prueba DVD: <https://youtube.com/shorts/z-0BPoiBQfk?si=0qSdlS1f18qVM-iO>
++ Bmp fondo blanco: <https://youtube.com/shorts/AxZaHyCdHzo?si=08-Gyri_ptey6Hnq>
++ Prueba en protoboard: <https://youtube.com/shorts/1N-9M-5V0MI?si=x_T6ccilc9W6-WuB>
++ Resultado final: <https://youtu.be/i0yggEGqufM?feature=shared>
