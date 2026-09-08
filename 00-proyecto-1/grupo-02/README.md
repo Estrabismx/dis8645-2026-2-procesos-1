@@ -69,7 +69,9 @@ El pedido del proyecto constataba en realizar y enseñar poesía utilizando una 
 Este proyecto se situa en 2 contextos complementarios el uno del otro:
 
 1. Nosotres, decidimos escribir nuestro propio poema con la intencionalidad de dar un homenaje a la belleza de las pequeñas cosas que a veces se pasan por desapercibidas; ya sea por la cotidianidad y la rutina del día a día, o la ignorancia que se tiene respecto al territorio que se habita y a su vez, se rodea. Pues nosotres opinamos que por un momento, hay que ver nuestra casa, nuestro entorno con ojos de turista para apropiarnos de lo que somos..., de donde somos.
-2. Creamos a manera de escenario representativo 
+
+Luego, vienen esos momentos de lucidez donde la luz es  reveladora y el camino es claro
+3. Creamos a manera de escenario representativo 
 
 # Diagrama de flujo 
 ![](./imagenes/flowchart.jpg)
@@ -94,6 +96,916 @@ El escenario consta de 2 partes:
 ![](./imagenes/control.jpg)
 
 # Código
+```cpp
+```cpp
+// conexiones físicas
+
+
+// para conectar la pantalla OLED 1.3" 128x64 a nuestro Arduino UNO R4 WiFi
+// se conecta el pin de Vcc de la pantalla al 3.3V del Arduino
+// GND de la pantalla va a GND del Arduino
+// SCK (señal de clock) de la pantalla va al pin analógico (Analog In) A5 del Arduino
+// SDA (señal de datos) de la pantalla va al pin analógico (Analog In) A4 del Arduino
+
+
+// para conectar el push button a nuestro Arduino UNO R4 WiFi
+// las conexiones del botón se hacen en diagonal
+// patita 1 del botón a 3.3V del Arduino
+// patita B del botón (la que está diagonal a la A) se conecta a dos cosas
+// una de ellas es el pin digital 2 del Arduino
+// mientras que la otra va a una resistencia de 1kΩ
+// la otra patita de la resistencia va a GND del Arduino
+
+
+// para conectar el potenciómetro 1 a nuestro Arduino UNO R4 WiFi
+// pin 1 de potenciómetro a 3.3V del Arduino
+// pin 2 del potenciómetro a un pin Analog del Arduino
+// en nuestro caso fue al pin A0
+// pin 3 del potenciómetro a GND del Arduino
+
+
+// el segundo potenciómetro se conecta de la siguiente manera
+// pin 1 del potenciómetro a 3.3V del Arduino
+// pin 2 del potenciómetro al pin analógico A1 del Arduino
+// pin 3 del potenciómetro va a GND del Arduino
+
+
+// para conectar el LED al Arduino UNO R4 WiFi
+// el pin digital 3 del Arduino va a una patita de una resistencia de 1k
+// la otra patita de esta resistencia va a la patita positiva de nuestro LED
+// la patita negativa del LED va a GND del Arduino
+
+
+// para conectar el LDR a nuestro Arduino UNO R4 WiFi
+// patita 1 del LDR va a 3.3V del Arduino
+// patita 2 del LDR se conecta a dos puntos distintos
+// una de ellas es el pin analógico A2 del Arduino
+// mientras que la otra va a una patita de una resistencia de 1kΩ
+// la otra patita de la resistencia va a GND del Arduino
+
+
+
+
+// esta parte es OBLIGATORIA en todas las estructuras con Adafruit,
+// ya que son las bibliotecas.
+// de aquí:
+#include <SPI.h>
+#include <Wire.h>
+#include <Adafruit_GFX.h>
+#include <Adafruit_SH110X.h>   // cambio de biblioteca, antes era Adafruit_SSD1306.h
+                              // lo cambiamos ya que el controlador de nuestra pantalla es SH1106
+
+
+#define SCREEN_WIDTH 128 // OLED display width, in pixels
+#define SCREEN_HEIGHT 64 // tamaño original de la pantalla actual
+                        // nos dimos cuenta de que con los 32 se cortaba el texto
+                        // y se veía todo más grande
+                        // era por el tamaño de la altura de la pantalla... estaba mal definido
+
+
+                       // usaremos toda la pantalla  
+                       // al final era solo yo el que no quería el amarillo
+                       // a mis compañeros les gustaba
+                       // todos contra mi
+                       // para pensar....
+                       
+#define OLED_RESET     -1 // Reset pin # (or -1 if sharing Arduino reset pin)
+#define SCREEN_ADDRESS 0x3C ///< dirección I2C típica para pantallas SH1106 de 128x64
+
+
+// se cambia, ya no es Adafruit_SSD1306, ahora es Adafruit_SH1106G
+Adafruit_SH1106G display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
+//hasta aquí.
+
+
+
+
+// comunicación serial y potenciómetro 1 (scroll de poema1)
+const int tasa = 9600;
+const int potePatita = A0;
+int poteLectura = -1;
+int poteFiltrado = -1;
+
+
+
+
+// botón (push button) para prender y apagar la pantalla
+
+
+// push button para prender y apagar la pantalla
+// usamos una resistencia física de pull-down
+// en reposo el pin lee LOW, y al presionar el botón lee HIGH
+const int botonPin = 2; // pin digital del Arduino R4 WiFi   donde se conecta el botón (2)
+bool pantallaEncendida = false; // la pantalla parte apagada
+
+
+int estadoBotonEstable = LOW;    // último estado del botón (LOW = no presionado)
+int estadoBotonAnterior = LOW;   // última lectura cruda, para detectar cambios
+unsigned long ultimoCambioBoton = 0; // instante (millis) del último cambio detectado
+const unsigned long debounceDelay = 50; // ms que debe mantenerse estable una lectura para validarla
+
+
+// potenciómetro 2, controla LED y nos permimte cambiar de poema1 a poemaLuz
+
+
+// con el segundo potenciómetro se elige el texto que se muestra (pasa de poema1 a poemaLuz)
+// dependiendo de el lugar en el que se encuentre la perilla del segundo potenciómetro
+// cuando el potenciómetro muestre en el LED una intensidad de luz baja
+// se muestra poemaLuz
+// luego de que suceda esto, el potenciómetro solo controlará la intensidad de la luz del LED
+// no vuelve a poema1
+const int potePatita2 = A1; // pin analógico donde se conecta el segundo potenciómetro
+int pote2Lectura = -1;
+
+
+// umbral del potenciómetro para decidir cuándo se muestra poemaLuz
+const int umbralPote2 = 100; // rango 0–1023, 512 es el punto medio
+                            // usaremos 100 porque queremos que el texto alternativo (poemaLuz)
+                            // se vea cuando hay poca "luz" en el ambiente
+
+
+// LED
+
+
+// LED que vamos a manejar su intensidad mediante un potenciómetro
+// más específico, pote2
+// el mismo que muestra poemaLuz
+int LED_PIN = 3; // pin del Arduino R4 WiFi
+
+
+
+
+// LDR (motor de avance de poemaLuz)
+
+
+// el LDR ahora controla el scrollY de poemaLuz
+// con luz directa, el texto avanza
+// sin luz, se queda quieto
+// esto solo aplica cuando se muestra poemaLuz
+// si estamos en poema1, el LDR no hace nada
+const int ldrPin = A2; // pin analógico donde se conecta el LDR (divisor de voltaje)
+int ldrLectura = -1;
+const int umbralLuzLDR = 50; // rango 0–1023, esto se puede cambiar dependiendo del ambiente en el que estemos
+                              // hoy, dentro de LID a las 11:46 AM funciona con el umbral a 100
+
+
+// una vez que poemaLuz se activa (LED con intensidad baja), se muestra poemaLuz sin volver atrás
+// después el LED suba de intensidad, ya no se vuelve a mostrar poema1
+// esto se reinicia cuando se apaga la pantalla con el botón
+bool poemaLuzActivado = false;
+
+
+// el LDR ahora funciona como el scrollY de poemaLuz
+// mientras reciba luz directa, el scroll avanza
+// sin luz, se queda quieto en la línea donde estaba
+int scrollYLuz = 0; // posición de scroll de poemaLuz
+                    // este no es afectado por potenciómetro1
+unsigned long ultimoAvanceLuz = 0;
+const unsigned long intervaloAvanceLuz = 100; // ms de luz sostenida antes de avanzar una línea
+
+
+// para detectar cuánto tiempo lleva quieta la línea actual de poemaLuz
+int lineaAnteriorLuz = -1;
+unsigned long inicioLineaActualLuz = 0;
+const unsigned long tiempoQuietoAnimacion = 1000; // ms que debe estar quieta la línea para animar
+
+
+// línea que gatilla la animación de las flores creciendo,
+// en las líneas en blanco después de "los Romeros florecen"
+const int lineaTrasRomeros = 8;
+
+
+// línea que gatilla la animación del colibrí
+// cuando el scroll (avanzado por el LDR) se queda quieto en ella
+// por al menos "tiempoQuietoAnimacion" ms
+const int lineaTrasColibries = 12;   // justo después de "los Colibries cantan"
+
+
+// línea que gatilla la animación de la montaña
+// en las líneas en blanco después de "revelandose de dia"
+// y antes de "Pero..."
+const int lineaTrasRevelandose = 28;
+
+
+// margen de líneas! como el scroll con el LDR solo avanza y no se devuelve
+// es casi imposible achuntarle a una línea en específico para que se gatille la animación
+const int tolLinea = 1;
+
+
+
+
+// textos de poemas
+
+
+const char poemaLuz[] =
+"Que pasa\n"
+"cuando la luz del sol\n"
+"aparece detras\n"
+"de la cordillera?\n"
+"\n"
+"En Chile,\n"
+"los Romeros florecen\n"
+"\n"
+"\n"
+"\n"
+"En Chile,\n"
+"los Colibries cantan\n"
+"\n"
+"\n"
+"En Chile,\n"
+"el cielo es rosado,\n"
+"y cuando te ofrecen\n"
+"un pedacito,\n"
+"significa\n"
+"que es grandecito\n"
+"\n"
+"En Chile,\n"
+"los Andes\n"
+"visten de novia\n"
+"en las noches,\n"
+"y se desvisten\n"
+"revelandose de dia\n"
+"\n"
+"\n"
+"\n"
+"Pero..\n"
+"En Chile,\n"
+"los chirihues\n"
+"dan conciertos,\n"
+"y las libelulas\n"
+"danzan\n"
+"\n"
+"Mientras el sol\n"
+"siga saliendo detras\n"
+"de la cordillera,\n"
+"y se pose\n"
+"sobre tu cabeza\n"
+"es un dia mas\n"
+"para sentirlo\n"
+"\n"
+"En Chile,\n"
+"las Chinchineras\n"
+"saltan\n"
+"y las Turcas\n"
+"cabriolean\n"
+"En Chile,\n"
+"el Zorro culpeo\n"
+"no tiene la culpa\n"
+"En Chile,\n"
+"el Romero florece\n"
+"Pero tambien,\n"
+"ya en tu pecho\n"
+"floreceran\n"
+"colores de amor\n"
+"\n"
+"Floreceran...";
+
+
+int totalLinesLuz = 91; // cantidad de líneas de poemaLuz (contando los \n)
+                        // al igual que los espacios que hay dentro
+                        // de los rectángulos negros en la pantalla
+                        // (los que nos permiten mostrar solo dos líneas de texto)
+                        // (solo lo hacemos para hacernos los misteriosos)
+int totalTextHeightLuz;
+int maxScrollLuz;
+
+
+const char poema1[] =
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"No somos poetas\n"
+"con titulo,\n"
+"pero las palabras\n"
+"plasmadas aqui,\n"
+"crecieron\n"
+"de nuestro ser,\n"
+"como las flores\n"
+"en primavera.\n"
+"La primavera\n"
+"de Santiago de Chile.\n"
+"Que coincidencia!\n"
+"estamos en primavera\n"
+"\n"
+"Bienvenide\n"
+"\n"
+"Con amor:\n"
+"Francisca,\n"
+"Nicolas\n"
+"y Santiago";
+
+
+int totalLines = 32; //no son las lineas de este código,
+int lineHeight = 8;  //sino que son la cantidad de líneas que se muestran en la pantalla (contando los \n)
+int totalTextHeight;
+int maxScroll;
+
+
+
+
+// layout de la pantalla (ventana visible y centrado con offset)
+
+
+const int visibleLines = 2; // cantidad de líneas completas que queremos ver en la pantalla
+const int windowHeight = visibleLines * lineHeight; // alto real de la ventana visible (16 px = 2 líneas)
+
+
+// offsetY centra el bloque de líneas visibles
+// dentro del alto total de la pantalla (64 px)
+const int offsetY = (SCREEN_HEIGHT - windowHeight) / 2;
+
+
+
+
+// el setup sucede solo una sola vez al encender
+
+
+void setup() {
+
+
+  Serial.begin(tasa);  // parte la pantalla
+
+
+  pinMode(LED_PIN, OUTPUT); // hola declaro el pin para el LED para que sea un output
+
+
+
+
+  // esta parte igual, es obligatoria por el bien de la sociedad
+  // esta parte es por si a la pantalla no le llega la suficiente energía y hay un error
+  // ella pueda procesarlo y resistir, y nosotres actuar
+
+
+  // display.begin() ahora recibe (dirección I2C, reset)
+  // "true" le pide a la librería que resetee la pantalla por software al iniciar
+  if(!display.begin(SCREEN_ADDRESS, true)) {
+    Serial.println(F("SH1106 allocation failed"));
+    for(;;); // don't proceed, loop forever
+  }
+
+
+  // SSD1306_WHITE -> SH110X_WHITE (la librería SH110X usa su propio nombre de color)
+  display.setTextColor(SH110X_WHITE);
+
+
+  totalTextHeight = totalLines * lineHeight;
+  maxScroll = totalTextHeight - SCREEN_HEIGHT;
+  if (maxScroll < 0) maxScroll = 0;
+
+
+  totalTextHeightLuz = totalLinesLuz * lineHeight;
+  maxScrollLuz = totalTextHeightLuz - SCREEN_HEIGHT;
+  if (maxScrollLuz < 0) maxScrollLuz = 0;
+
+
+  display.clearDisplay();
+  display.display();
+  display.oled_command(SH110X_DISPLAYOFF); // apaga la pantalla OLED
+}
+
+
+
+
+// loop que se repite todo el tiempo mientras el Arduino esté encendido
+
+
+  void loop() {
+
+
+    // aquí sucede la lectura del botón con debounce
+    // cosa que nos ayuda a detectar de inmediato cuando fue presionado el botón
+    // pasa de "hola aún no me presionan" a "omg me presionaron"  
+    int lecturaBoton = digitalRead(botonPin);
+
+
+    // el segundo potenciómetro también controla al LED
+    // este lo controla siempre, sin importar si la pantalla está prendida o no
+    // ya que el LED es independiente, su presencia no depende de la pantalla
+    pote2Lectura = analogRead(potePatita2);
+    int brightness = map(pote2Lectura, 0, 1023, 0, 255);
+    analogWrite(LED_PIN, brightness);
+
+
+    Serial.print("Pote 2: ");
+    Serial.print(pote2Lectura);
+    Serial.print(", Brightness: ");
+    Serial.println(brightness);
+
+
+    if (lecturaBoton != estadoBotonAnterior) {
+      ultimoCambioBoton = millis(); // al cambiar la lectura, se reinicia el rebounce
+    }
+
+
+    if ((millis() - ultimoCambioBoton) > debounceDelay) {
+
+
+      if (lecturaBoton != estadoBotonEstable) {
+        estadoBotonEstable = lecturaBoton;
+
+
+        if (estadoBotonEstable == HIGH) { // high si el botón fue presionado
+          pantallaEncendida = !pantallaEncendida; // el toggle prende si es que estaba apagada
+                                                  // y apaga si estaba prendida
+
+
+          if (pantallaEncendida) {
+            display.oled_command(SH110X_DISPLAYON); // prendemos la pantalla
+
+
+            } else {
+            display.oled_command(SH110X_DISPLAYOFF); // apagamos la pantalla
+            poemaLuzActivado = false; // se reinicia, la próxima vez hay que
+                                       // volver a bajar la intensidad del LED para ver poemaLuz
+            scrollYLuz = 0; // y el scroll de poemaLuz vuelve al principio
+          }
+        }
+      }
+    }
+    estadoBotonAnterior = lecturaBoton;
+
+
+    if (!pantallaEncendida) {
+      return; // mientras esté apagada, no leemos el potenciómetro ni aparece nada en ella
+    }
+
+
+    // cuando no hay suficiente luz, poemaLuz queda quieto
+    // este no vuelve a poema1 aunque el LED suba de intensidad después
+    // desde ese momento, pote2 solo controla el brillo del LED (arriba),
+    // sin afectar nada de lo que pasa en la pantalla
+    if (!poemaLuzActivado && pote2Lectura < umbralPote2) {
+      poemaLuzActivado = true;
+    }
+    bool mostrarPoemaLuz = poemaLuzActivado;
+
+
+    // lee y filtra el primer potenciómetro (es para scroll de poema1)
+    poteLectura = analogRead(potePatita);
+    poteFiltrado = filtrarConDivision(poteLectura, 4); // 0–255 approx
+
+
+    // lectura del LDR
+    // solo importa cuando se está mostrando poemaLuz
+    ldrLectura = analogRead(ldrPin);
+    bool hayLuzLDR = ldrLectura > umbralLuzLDR;
+
+
+    display.clearDisplay();
+    display.setTextSize(1);
+
+
+    if (mostrarPoemaLuz) {
+    // el LDR avanza el scrollY de poemaLuz mientras reciba luz directa
+    // avanza por altura de la pantalla que estamos usando (2 líneas)
+    // así no se repite ninguna línea
+      if (hayLuzLDR) {
+        if (millis() - ultimoAvanceLuz >= intervaloAvanceLuz) {
+          scrollYLuz += windowHeight;
+          if (scrollYLuz > maxScrollLuz) scrollYLuz = maxScrollLuz;
+          ultimoAvanceLuz = millis();
+        }
+      } else {
+        // sin luz no avanza, y reiniciamos el temporizador para que no
+        // se salte varias líneas cuando le llegue la luz de vuelta
+        ultimoAvanceLuz = millis();
+      }
+
+
+      int lineaActualLuz = scrollYLuz / lineHeight;
+
+
+      // si la línea actual cambió, reiniciamos el conteo
+      // de la pantalla estando quieta en una misma línea
+      if (lineaActualLuz != lineaAnteriorLuz) {
+        lineaAnteriorLuz = lineaActualLuz;
+        inicioLineaActualLuz = millis();
+      }
+
+
+      bool quietaSuficiente = (millis() - inicioLineaActualLuz) >= tiempoQuietoAnimacion;
+
+
+      if (quietaSuficiente && cercaDe(lineaActualLuz, lineaTrasRomeros)) {
+        mostrarAnimacion1();
+        Serial.println("4+ seg quieto después de Romeros -> animación flores");
+      } else if (quietaSuficiente && cercaDe(lineaActualLuz, lineaTrasColibries)) {
+        mostrarAnimacion2();
+        Serial.println("4+ seg quieto después de Colibries -> animación colibrí");
+      } else if (quietaSuficiente && cercaDe(lineaActualLuz, lineaTrasRevelandose)) {
+        mostrarAnimacion3();
+        Serial.println("4+ seg quieto después de revelandose de dia -> animación montaña");
+      } else {
+        // mostramos poemaLuz en la línea actual (fija si no hay luz,
+        // avanzando si hay luz), con el mismo centrado y enmascarado de siempre
+        dibujarTextoEnScroll(poemaLuz, scrollYLuz);
+
+
+        Serial.print("poemaLuz, linea actual: ");
+        Serial.println(lineaActualLuz);
+      }
+    } else {
+
+
+      // con poemaLuz aún no activado, mostramos el poema principal
+      mostrarTextoConScroll(poema1, maxScroll);
+
+
+      Serial.print("valor filtrado: ");
+      Serial.println(poteFiltrado);
+    }
+
+
+    display.display();
+
+
+  delay(200); // delay de lo que se muestra en el monitor serial (valores potenciómetro)
+              // también afecta en la velocidad a la que reacciona el potenciómetro
+              // con como se muestra el desplazamiento en la pantalla
+              // mientras más delay, más tarda en reaccionar la pantalla al movimiento del potenciómetro
+              // menos delay, más rápido reacciona
+  }
+
+
+  // esto aplica scroll según el potenciómetro 1 (se usa solo para poema1),
+  // centra el bloque de líneas visibles en la pantalla, y tapa todo lo que
+  // quede fuera de esa ventana central
+  void mostrarTextoConScroll(const char* texto, int maxScrollTexto) {
+    // convertir el valor filtrado en posición de scroll
+
+
+    int scrollY = map(poteFiltrado, 0, 255, maxScrollTexto, 0);
+
+
+   // redondeamos scrollY al múltiplo de windowHeight (2 líneas) más cercano,
+   // así el scroll avanza de a un PAR de líneas completas, sin repetir ninguna
+    scrollY = (scrollY / windowHeight) * windowHeight;
+
+
+    dibujarTextoEnScroll(texto, scrollY);
+  }
+
+
+  // dibuja texto con un scrollY que ya está calculado
+  // no lo controla ningún potenciómetro
+  // centra el bloque de líneas visibles y tapa lo que quede
+  // fuera de esa ventana
+  void dibujarTextoEnScroll(const char* texto, int scrollY) {
+    display.setCursor(0, offsetY - scrollY); // offsetY centra el bloque de líneas visibles,
+                                              // y scrollY lo desplaza línea por línea
+    display.print(texto);
+
+
+    // pintamos de negro todo lo que quede fuera de la ventana central
+   // esto es lo que asegura que siempre se vean exactamente líneas visibles,
+   // sin importar cuánto se mueva el scroll
+   // SSD1306_BLACK -> SH110X_BLACK
+    display.fillRect(0, 0, SCREEN_WIDTH, offsetY, SH110X_BLACK); // tapa la franja superior
+    display.fillRect(0, offsetY + windowHeight, SCREEN_WIDTH,
+                      SCREEN_HEIGHT - (offsetY + windowHeight), SH110X_BLACK); // tapa la franja inferior
+  }
+
+
+// filtro lololololololol
+ int filtrarConDivision(int valor, int divisor) {
+  int resultado = valor / divisor;
+  return resultado;
+}
+
+
+// revisa si una línea está cerca de
+// una línea objetivo
+bool cercaDe(int linea, int objetivo) {
+  return abs(linea - objetivo) <= tolLinea;
+}
+
+
+
+
+// aquí van las animaciones
+// animación 1, flores creciendo (3 flores, crecen -> pausa -> se achican -> repiten)
+void mostrarAnimacion1() {
+  static bool inicializado = false;
+  static unsigned long tiempoAnimAnterior = 0;
+  static float progresoFlor = 0;        // 0 a 100, qué tan crecida está la flor
+  static int direccionFlor = 1;         // 1 = creciendo, -1 = achicándose
+  static bool enPausaArriba = false;
+  static unsigned long tiempoPausaInicio = 0;
+
+
+  const unsigned long pausaArribaMs = 1200; // cuánto se queda "florecida" antes de achicarse
+  const float velocidad = 30; // esto se puede ajustar con el potenciómetro
+                              // pero no es tan necesario la verdad
+
+
+  const int xFlores[3] = {24, 64, 104}; // posiciones de las 3 flores en la pantalla
+  const int baseY = 58; // el suelo de donde nacen los tallos, cerca del borde inferior
+
+
+  // la primera vez que se llama esta función (recién se activó la animación),
+  // inicializamos el reloj para que no salte un numero gigante de milisegundos
+  if (!inicializado) {
+    tiempoAnimAnterior = millis();
+    inicializado = true;
+  }
+
+
+  unsigned long ahora = millis();
+  float deltaSeg = (ahora - tiempoAnimAnterior) / 1000.0;
+  tiempoAnimAnterior = ahora;
+
+
+  if (enPausaArriba) {
+    if (ahora - tiempoPausaInicio > pausaArribaMs) {
+      enPausaArriba = false;
+      direccionFlor = -1; // empieza a achicarse
+    }
+  } else {
+    progresoFlor += direccionFlor * velocidad * deltaSeg;
+
+
+    if (progresoFlor >= 100) {
+      progresoFlor = 100;
+      enPausaArriba = true;
+      tiempoPausaInicio = ahora;
+    } else if (progresoFlor <= 0) {
+      progresoFlor = 0;
+      direccionFlor = 1; // vuelve a crecer
+    }
+  }
+
+
+  // línea de piso, para que se vea que las flores nacen desde ahí
+  display.drawLine(0, baseY, SCREEN_WIDTH - 1, baseY, SH110X_WHITE);
+
+
+  for (int i = 0; i < 3; i++) {
+    dibujarUnaFlor(xFlores[i], baseY, progresoFlor);
+  }
+}
+
+
+// dibuja una sola flor en (x, baseYFlor), según el progreso (0-100):
+// de 0 a 60: crece el tallo
+// de 40 a 100: crece la flor (el centro y los pétalos), superpuesto con el tallo
+// para que se vea como que el capullo va abriéndose mientras el tallo termina de subir
+void dibujarUnaFlor(int x, int baseYFlor, float progreso) {
+  const int alturaTalloMax = 26; // alto máximo del tallo cuando la flor está 100% crecida
+  const int radioFlorMax = 7;    // radio máximo de los pétalos
+
+
+  //tallo
+  float progresoTallo = constrain(progreso, 0, 60); // usa solo el primer 60% del progreso
+  int alturaTallo = map(progresoTallo, 0, 60, 0, alturaTalloMax);
+  int puntaTalloY = baseYFlor - alturaTallo;
+  display.drawLine(x, baseYFlor, x, puntaTalloY, SH110X_WHITE);
+
+
+  // una hojita simple a mitad de tallo, una vez que el tallo ya creció algo
+  if (alturaTallo > 10) {
+    int yHoja = baseYFlor - (alturaTallo / 2);
+    display.drawLine(x, yHoja, x - 6, yHoja + 4, SH110X_WHITE);
+  }
+
+
+  // flor
+  if (progreso <= 40) return; // todavía no empieza a florecer
+
+
+  float progresoFlorLocal = map(constrain(progreso, 40, 100), 40, 100, 0, 100);
+  int radioPetalo = map(progresoFlorLocal, 0, 100, 1, radioFlorMax);
+  int radioCentro = max(1, radioPetalo / 2);
+
+
+  int cx = x;
+  int cy = puntaTalloY;
+
+
+  // 5 pétalos distribuidos en círculo alrededor del centro
+  const int numPetalos = 5;
+  for (int p = 0; p < numPetalos; p++) {
+    float angulo = p * (360.0 / numPetalos) * (PI / 180.0);
+    int px = cx + (radioPetalo + 1) * cos(angulo);
+    int py = cy + (radioPetalo + 1) * sin(angulo);
+    display.fillCircle(px, py, max(1, radioPetalo / 2), SH110X_WHITE);
+  }
+
+
+  // centro de la flor, encima de los pétalos
+  display.fillCircle(cx, cy, radioCentro, SH110X_WHITE);
+}
+
+
+// animación 2, colibrí volando + notas musicales
+// (usa variables "static" para recordar su estado entre llamadas,
+// en vez de variables globales sueltas)
+void mostrarAnimacion2() {
+  static bool inicializado = false;
+  static float xColibri = SCREEN_WIDTH / 2;
+  static float yBaseColibri = 26;
+  static int dirXColibri = 1;
+  static unsigned long tiempoMovAnterior = 0;
+  static bool alaArriba = false;
+  static unsigned long tiempoAlaAnterior = 0;
+  static unsigned long tiempoNotaAnterior = 0;
+
+
+  const int maxNotas = 3;
+  static float notaX[maxNotas];
+  static float notaY[maxNotas];
+  static bool notaActiva[maxNotas];
+
+
+  const float velocidad = 0.8; // esto también se puede ajustar con potenciómetro lol
+
+
+  // la primera vez que se llama esta función (recién se activó la animación),
+  // inicializamos los relojes para que no salte un numero gigante de milisegundos
+  if (!inicializado) {
+    tiempoMovAnterior = millis();
+    tiempoAlaAnterior = millis();
+    tiempoNotaAnterior = millis();
+    for (int i = 0; i < maxNotas; i++) notaActiva[i] = false;
+    inicializado = true;
+  }
+
+
+  unsigned long ahora = millis();
+
+
+  // movimiento horizontal, rebotando en los bordes
+  float deltaSeg = (ahora - tiempoMovAnterior) / 1000.0;
+  tiempoMovAnterior = ahora;
+
+
+  float velocidadHorizontal = 25.0 * velocidad;
+  xColibri += dirXColibri * velocidadHorizontal * deltaSeg;
+
+
+  if (xColibri > SCREEN_WIDTH - 20) {
+    xColibri = SCREEN_WIDTH - 20;
+    dirXColibri = -1;
+  } else if (xColibri < 20) {
+    xColibri = 20;
+    dirXColibri = 1;
+  }
+
+
+  // aleteo
+  unsigned long intervaloAla = map(velocidad * 100, 20, 100, 160, 60);
+  if (ahora - tiempoAlaAnterior > intervaloAla) {
+    alaArriba = !alaArriba;
+    tiempoAlaAnterior = ahora;
+  }
+
+
+  // altura de "hover", usando una onda seno para que suba y baje suavemente
+  float bobbing = 4.0 * sin(millis() / 200.0);
+  float yColibri = yBaseColibri + bobbing;
+
+
+  int x = (int)xColibri;
+  int y = (int)yColibri;
+
+
+  // dibujo del colibrí
+  display.fillCircle(x, y, 5, SH110X_WHITE); // cuerpo
+
+
+  int xCabeza = x + dirXColibri * 6;
+  int yCabeza = y - 2;
+  display.fillCircle(xCabeza, yCabeza, 3, SH110X_WHITE); // cabeza
+
+
+  int xPico = xCabeza + dirXColibri * 6;
+  display.drawLine(xCabeza + dirXColibri * 3, yCabeza, xPico, yCabeza, SH110X_WHITE); // pico
+
+
+  int xCola = x - dirXColibri * 8;
+  display.drawLine(x - dirXColibri * 4, y, xCola, y + 4, SH110X_WHITE); // cola
+  display.drawLine(x - dirXColibri * 4, y, xCola, y - 2, SH110X_WHITE);
+
+
+  int xAla = x - dirXColibri * 2;
+  if (alaArriba) {
+    display.drawTriangle(xAla, y - 1, xAla - dirXColibri * 10, y - 9, xAla, y - 3, SH110X_WHITE);
+  } else {
+    display.drawTriangle(xAla, y + 1, xAla - dirXColibri * 10, y + 9, xAla, y + 3, SH110X_WHITE);
+  }
+
+
+  // notas musicales que salen del pajarito
+  unsigned long intervaloNota = map(velocidad * 100, 20, 100, 1200, 500);
+  if (ahora - tiempoNotaAnterior > intervaloNota) {
+    tiempoNotaAnterior = ahora;
+    for (int i = 0; i < maxNotas; i++) {
+      if (!notaActiva[i]) {
+        notaX[i] = xPico;
+        notaY[i] = yCabeza;
+        notaActiva[i] = true;
+        break;
+      }
+    }
+  }
+
+
+  for (int i = 0; i < maxNotas; i++) {
+    if (notaActiva[i]) {
+      notaY[i] -= 12.0 * velocidad * 0.05;
+      notaX[i] += dirXColibri * 3.0 * velocidad * 0.05;
+      if (notaY[i] < 4) notaActiva[i] = false;
+
+
+      if (notaActiva[i]) {
+        int nx = (int)notaX[i];
+        int ny = (int)notaY[i];
+        display.fillCircle(nx, ny, 2, SH110X_WHITE);
+        display.drawLine(nx + 2, ny, nx + 2, ny - 6, SH110X_WHITE);
+        display.drawLine(nx + 2, ny - 6, nx + 5, ny - 4, SH110X_WHITE);
+      }
+    }
+  }
+}
+
+
+// animación 3, atardecer sobre la cordillera
+void mostrarAnimacion3() {
+  static bool inicializado = false;
+  static unsigned long tiempoSolAnterior = 0;
+  static float ySol = -10; // posición vertical del sol; empieza arriba, fuera de la pantalla
+
+
+  const int radioSol = 8;
+  const int xSol = SCREEN_WIDTH / 2; // el sol baja siempre por el centro de la pantalla
+
+
+  // puntos que definen el perfil de la cordillera,
+  // de x=0 a x=127, para que ocupe todo el ancho de la pantalla
+  const int cantidadPuntos = 9;
+  const int perfilX[cantidadPuntos] = {0,   16,  32,  48,  62,  78,  92,  110, 127};
+  const int perfilY[cantidadPuntos] = {46,  28,  40,  20,  36,  18,  38,  30,  44};
+
+
+  const float velocidad = 1.2; // velocidad fija de descenso del sol
+                                // si más adelante quieren ligarla a un potenciómetro,
+                                // aquí es donde reemplazarían este valor fijo
+
+
+  // la primera vez que se llama esta función (recién se activó la animación),
+  // inicializamos el reloj para que no salte un numero gigante de milisegundos
+  if (!inicializado) {
+    tiempoSolAnterior = millis();
+    inicializado = true;
+  }
+
+
+  // actualizamos la posición del sol
+  unsigned long ahora = millis();
+  float deltaSeg = (ahora - tiempoSolAnterior) / 1000.0;
+  tiempoSolAnterior = ahora;
+
+
+  ySol += velocidad * 20.0 * deltaSeg;
+
+
+  if (ySol > SCREEN_HEIGHT + radioSol) {
+    ySol = -radioSol; // vuelve a aparecer arriba, empieza otro atardecer
+  }
+
+
+  // dibujamos el sol
+  display.fillCircle(xSol, (int)ySol, radioSol, SH110X_WHITE);
+
+
+  // dibujamos la cordillera encima, para que "tape" al sol a medida que baje
+  for (int x = 0; x < SCREEN_WIDTH; x++) {
+    int h = alturaMontana(x, cantidadPuntos, perfilX, perfilY);
+    display.drawFastVLine(x, h, SCREEN_HEIGHT - h, SH110X_BLACK);
+  }
+
+
+  for (int x = 0; x < SCREEN_WIDTH - 1; x++) {
+    int h1 = alturaMontana(x, cantidadPuntos, perfilX, perfilY);
+    int h2 = alturaMontana(x + 1, cantidadPuntos, perfilX, perfilY);
+    display.drawLine(x, h1, x + 1, h2, SH110X_WHITE);
+  }
+}
+
+
+// calcula la altura del perfil de la cordillera en una posición x dada,
+// interpolando entre los puntos definidos en perfilX/perfilY
+int alturaMontana(int x, int cantidadPuntos, const int perfilX[], const int perfilY[]) {
+  for (int i = 0; i < cantidadPuntos - 1; i++) {
+    if (x >= perfilX[i] && x <= perfilX[i + 1]) {
+      return map(x, perfilX[i], perfilX[i + 1], perfilY[i], perfilY[i + 1]);
+    }
+  }
+  return perfilY[cantidadPuntos - 1]; // por si acaso, para el último punto
+}
+```
 
 # Referentes
 1. "Mira niñita", una canción de los Jaivas.
