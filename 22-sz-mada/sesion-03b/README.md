@@ -121,8 +121,6 @@ for (int i = 0; i < 5; i++) {
 }
 ```
 
-### Bloque 11:00 - 12:50
-
 ## encargos
 
 encargo-03b:

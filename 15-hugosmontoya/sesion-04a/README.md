@@ -1,7 +1,9 @@
 # sesion-04a
 
 ## apuntes sesión
+Cambiamos de poeta, escogimos Edgar Allan Poe, buscando entre sus poemas encontramos uno que nos intereso que era el poema llamado Tamerlán, que trataba sobre la melancolía y la pérdida del amor verdadero. Una vez escogido el poema nos pusimos a probar cosas con la pantalla de Arduino, conseguimos hacer que una parte del poema pasará la pantalla, reutilizando el código que usamos la semana anterior. Pero aparecían errores entonces, había algunas palabras que se movían muy rápidamente en la pantalla. Entonces decidimos dejar de probar cosas y enfocarnos en clarificar lo que queríamos hacer con el arduino y describirlo en un documento para seguidamente describir los pasos y las funciones que vamos a utilizar.
 
+Nos cambiaron de grupo y estamos en el grupo de la poetisa Alejandra Pizarnik, el poema se llama puerto adelante. La descripción de lo que queremos hacer con arduino, la pantalla, el botón y el potenciómetro es mostrar en tres niveles que se pueden seleccionar usando el potenciómetro, el primero que muestra texto del poema, el segundo muestra una imagen y el texto y el último muestra una imagen. La función del botón es que cuando lo pulsas las fases se van pasando automáticamente. Hemos hecho el proceso de describir que es lo que va a pasar exactamente con el programa.
 ## encargos
 
 ## lectura
