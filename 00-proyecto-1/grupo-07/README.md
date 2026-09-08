@@ -85,8 +85,9 @@ Expresa un amor frustrado y posiblemente no correspondido, pero principalmente m
 |Arduino UNO R4 WIFI|1|$32.990|<https://mcielectronics.cl/shop/product/arduino-uno-r4-minima/>|
 |Pantalla LCD Oled 0,91" I2C|1|$3.990|<https://afel.cl/products/pantalla-lcd-oled-0-91?_pos=1&_sid=f1b122119&_ss=r>|
 |Protoboard|1|$1.500|<https://afel.cl/products/mini-protoboard-400-puntos>|
-|Botón Táctil|1|$400|<https://afel.cl/products/boton-tactil-tapa-12x12x7-3-interruptor?_pos=3&_sid=a0018323a&_ss=r>|
-|cables|6|$1.000|<https://afel.cl/products/pack-20-cables-de-conexion-macho-macho>|
+|LEDS|3|$70|<https://afel.cl/products/diodo-led-5mm-ultrabrillante-rojo?_pos=10&_sid=9ca2bb29d&_ss=r>|
+|Kit resistencias|3|$4.990|<https://afel.cl/products/kit-600-resistencias-1-4w-30-valores?_pos=1&_sid=aa6abbe0f&_ss=r>|
+|cables|7|$1.000|<https://afel.cl/products/pack-20-cables-de-conexion-macho-macho>|
 |Potenciómetro B10k|1|$500|<https://afel.cl/products/potenciometro-10k-ohm>|
 
 
@@ -117,71 +118,14 @@ Expresa un amor frustrado y posiblemente no correspondido, pero principalmente m
 
 ## Proceso código y registro
 
-[intentoUnoPoema](https://github.com/disenoUDP/dis8645-2026-2-procesos-1/tree/main/00-proyecto-1/grupo-07/codigos/intentoUnoPoema) → 28/08/26
 
-versión 0 que solo visualiza el poema en el serial monitor en loop
 
-```cpp
-// poema "queja"
-// de alfonsina storni
 
-// Señor, mi queja es ésta,
-// Tú me comprenderás;
-// De amor me estoy muriendo,
-// Pero no puedo amar.
-// Persigo lo perfecto
-// En mí y en los demás,
-// Persigo lo perfecto
-// Para poder amar.
-// Me consumo en mi fuego,
-// ¡Señor, piedad, piedad!
-// De amor me estoy muriendo,
-// ¡Pero no puedo amar.
 
-// char = caracter
-// por ende
-// esta parte del codigo
-// separa el poema en versos
-// y al haber definido en clases
-// que una linea como un arreglo de caracteres
-// por eso se utiliza char
 
-char *misVersos[] = {
-  "Señor, mi queja es ésta,",
-  "Tú me comprenderás",
-  "De amor me estoy muriendo,",
-  "Pero no puedo amar.",
-  "Persigo lo perfecto",
-  "En mí y en los demás,",
-  "Persigo lo perfecto",
-  "Para poder amar.",
-  "Me consumo en mi fuego,",
-  "¡Señor, piedad, piedad!",
-  "De amor me estoy muriendo,",
-  "¡Pero no puedo amar!"
-};
 
-void setup() {
 
-  // 9600 baud (simbolos) es un numero moderado
-  // y no puede ser cualquiera
-  // debe ser el resultado de un 2 elevado a algo
-  Serial.begin(9600);
-}
 
-void loop() {
-
-  // recorrer el arreglo
-  // for es para recorrer conjuntos
-  // adentro tiene 3 mini lineas
-  // inicio de los tiempos
-  // oye pero cuando paro
-  // que hago despues de cada iteracion
-  for (int i = 0; i < 5; i++) {
-    Serial.println(misVersos[i]);
-  }
-}
-```
 
 ## Palabras claves representativas 
 
