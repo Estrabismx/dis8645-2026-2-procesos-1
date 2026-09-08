@@ -580,6 +580,10 @@ https://www.youtube.com/watch?v=SDmdVimu-xw
 
 https://www.youtube.com/watch?v=w7oqHxpn4oM
 
+# Declaración de ayuda de inteligencia artificial 
+Ante algunas dudas que se nos generaban al avanzar con el trabajo, se utilizo de ayuda como herramienta la inteligencia artificial Geminis de google. Se entrega un pdf con las preguntas hechas.
+![](./imagenes/declaracion-uso-ia.pdf) 
+
 # Bibliografía 
 
 AleCondeando. (22 de septiembre de 2019). Funcion Millis con Arduino [Video]. YouTube. https://www.youtube.com/watch?v=yyYjdyGImFM
