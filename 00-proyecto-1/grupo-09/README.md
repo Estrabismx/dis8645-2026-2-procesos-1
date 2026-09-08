@@ -574,7 +574,7 @@ Uno de los principales problemas estaba en el botón. A veces, al presionarlo un
 
 Como queríamos que la lógica fuera **una presión = una pantalla**, quedamos con la idea de ajustar el código para que después de aceptar una presión Arduino espere a que el botón sea soltado antes de permitir avanzar nuevamente.
 
-### Proceso omponentes
+### Proceso componentes
 
 Avance: [LINK YOUTUBE](https://youtube.com/shorts/AT0fQQUXfAs?feature=share)
 
@@ -690,6 +690,6 @@ Por otra parte, el desarrollo de la carcasa nos hizo cuestionarnos cómo organiz
 
 ![final](./imagenes/listo.png/)
 
-<https://www.youtube.com/watch?v=PrD93Q1XOUg&feature=youtu.be>
+[LINK YOTUBE]<https://www.youtube.com/watch?v=PrD93Q1XOUg&feature=youtu.be>
 
 
