@@ -59,7 +59,6 @@ Dice así:
 © 2026 [Santiago Cifuentes Vélez]. El poema está bajo la licencia [Creative Commons Atribución-NoComercial-SinDerivadas 4.0 Internacional (CC BY-NC-ND 4.0)](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es).
 
 # ¿Qué hicimos?
-### Concepto de proyecto
 
 ---
 
