@@ -4,7 +4,11 @@
 
 Investigacion millis, 
 
-EJEMPLO DESDE UN VIDEO, como usar millis o como funciona principalmente para cronometrar tiempos y crear intervalos para las funciones que usemos
+vi un ejemplo en videos, pero era solo para que por medio de las pantallas se vieran los segundos transcurridos.
+pero aprendi que usar millis o como funciona principalmente para cronometrar tiempos y crear intervalos para las funciones que usemos.
+
+a partir de ese código quería saber cómo aplicarlo de otra forma, por medio de la IA llegué a este ejemplo en el que hice anotaciones y entendí que por medio de las funciones IF podría desarrollar las acciones que quería
+
 ```cpp
 //unsing long pq es el que tiene mayor capacidad de almacenamiento(32bites) y cuenta hasta por aproximadamente hasta por 49 días. 
 //tiempo cuenta desde 0
