@@ -141,9 +141,13 @@ El escenario está conformado por:
 *1. El living.*  
 *2. Un Tv*
 
+Bocetos
 ![](./imagenes/prototipo.jpg)
 ![](./imagenes/prototipo2.jpg)
 ![](./imagenes/control.jpg)
+
+Resultado
+![](./imagenes/resultado-living.jpeg)
 
 # Código
 ```cpp
