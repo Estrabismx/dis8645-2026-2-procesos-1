@@ -591,7 +591,7 @@ Habíamos dejado funcionando en la protoboard el botón y el potenciómetro cone
 
 ![IMG](./imagenes/avance01.png)
 
-## Desarrollo carcasa
+### Desarrollo carcasa
 
 Por temas de tiempo, decidimos darle prioridad al desarrollo de la carcasa y terminar los últimos detalles relacionados con la organización de los componentes. Esto fue necesario porque ya teníamos una idea más clara de cómo funcionaría el circuito, por lo que podíamos comenzar a tomar decisiones más concretas sobre el espacio que necesitaríamos para instalarlo.
 
