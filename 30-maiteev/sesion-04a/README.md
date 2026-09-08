@@ -1,7 +1,53 @@
 # sesion-04a
 
 ## apuntes sesión
-- trabajo en readme grupo 10
+- - En esta clase probamos cambiar la tipografía y el tamaño de letra ya que, ya teníamos corriendo el poema.
+ ```cpp
+#include <tipografia que a uno le guste>
+ ```
+
+todaaas las tipografias
+ ```cpp
+FreeMono12pt7b.h		FreeSansBoldOblique12pt7b.h<font></font>
+FreeMono18pt7b.h		FreeSansBoldOblique18pt7b.h<font></font>
+FreeMono24pt7b.h		FreeSansBoldOblique24pt7b.h<font></font>
+FreeMono9pt7b.h			FreeSansBoldOblique9pt7b.h<font></font>
+FreeMonoBold12pt7b.h		FreeSansOblique12pt7b.h<font></font>
+FreeMonoBold18pt7b.h		FreeSansOblique18pt7b.h<font></font>
+FreeMonoBold24pt7b.h		FreeSansOblique24pt7b.h<font></font>
+FreeMonoBold9pt7b.h		FreeSansOblique9pt7b.h<font></font>
+FreeMonoBoldOblique12pt7b.h	FreeSerif12pt7b.h<font></font>
+FreeMonoBoldOblique18pt7b.h	FreeSerif18pt7b.h<font></font>
+FreeMonoBoldOblique24pt7b.h	FreeSerif24pt7b.h<font></font>
+FreeMonoBoldOblique9pt7b.h	FreeSerif9pt7b.h<font></font>
+FreeMonoOblique12pt7b.h		FreeSerifBold12pt7b.h<font></font>
+FreeMonoOblique18pt7b.h		FreeSerifBold18pt7b.h<font></font>
+FreeMonoOblique24pt7b.h		FreeSerifBold24pt7b.h<font></font>
+FreeMonoOblique9pt7b.h		FreeSerifBold9pt7b.h<font></font>
+FreeSans12pt7b.h		FreeSerifBoldItalic12pt7b.h<font></font>
+FreeSans18pt7b.h		FreeSerifBoldItalic18pt7b.h<font></font>
+FreeSans24pt7b.h		FreeSerifBoldItalic24pt7b.h<font></font>
+FreeSans9pt7b.h			FreeSerifBoldItalic9pt7b.h<font></font>
+FreeSansBold12pt7b.h		FreeSerifItalic12pt7b.h<font></font>
+FreeSansBold18pt7b.h		FreeSerifItalic18pt7b.h<font></font>
+FreeSansBold24pt7b.h		FreeSerifItalic24pt7b.h<font></font>
+FreeSansBold9pt7b.h		FreeSerifItalic9pt7b.h
+ ```
+ ```cpp
+ display.setTextSize(1);
+  display.setTextColor(SSD1306_WHITE);
+  display.setFont(&FreeSerifItalic9pt7b);
+ ```
+- map / define los valores del potenciómetro 
+- 0,1023 (rango potenciómetro)
+- Dimensiones de la pantalla (128x32)
+- Estudiamos los milis, porque nos recomendo el seba pero al final no lo ocupamos.
+
+
+
+
+
+
   
 ## encargos
 
