@@ -133,9 +133,9 @@ El proyecto evolucionó progresivamente desde la reproducción de un poema en el
 | **Código 4.2** | 3 sept. | cambio visual | Se agrega el **nombre de la poetisa**, al comienzo del poema, se centra y alinea el texto y se establece una jerarquía tipográfica: palabras clave de **16 px** y texto normal de **8 px**. | Mejorar la composición y legibilidad en pantalla. |
 | **Código 5** | 4 sept. | Optimización | Se detectan problemas de espacio en pantalla. Se reduce la cantidad de palabras destacadas para asegurar que todos los versos sean visibles correctamente. | Terminar de daptar el poema al formato de la pantalla. |
 | **Código 5.2** | 4 sept. | Prueba de animación | Se incorpora una primera animación. El resultado no se adapta correctamente a las dimensiones de la pantalla. | Explorar la incorporación de movimiento y detectar limitaciones técnicas. |
-| **Código 6** | 6 sept. | **Animación 1🎬** | Animación del título **“Queja”**, utilizada como introducción al poema. | Introducir visualmente el poema en pantalla. |
-| **Código 7** | 7 sept. | **Animación 2💔** | Animación de un **corazón roto**, vinculada al verso "Pero no puedo amar." | Reforzar visualmente el significado emocional del poema. |
-| **Código 8** | 7 sept. | **Animación 3🔥** | Animación de **fuego**, relacionada con el verso "Me consumo en mi fuego,". | Representar visualmente la intensidad y el consumo emocional. |
+| **Código 6** | 6 sept. | **Animación 1🎬** | Animación del título **“Queja”**, utilizada como introducción después del nombre de la poetisa. | Introducir visualmente el poema en pantalla. |
+| **Código 7** | 7 sept. | **Animación 2💔** | Animación de un **corazón roto**, vinculada al verso "Pero no puedo amar" después de la primera estrofa. | Reforzar visualmente el significado emocional del poema. |
+| **Código 8** | 7 sept. | **Animación 3🔥** | Animación de **fuego**, relacionada con el verso "Me consumo en mi fuego" después de la segunda estrofa. | Representar visualmente la intensidad y el consumo emocional. |
 
 
 
