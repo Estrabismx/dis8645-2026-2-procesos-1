@@ -125,19 +125,33 @@ Para que el usuario pueda interactuar con el proyecto y leer el fragmento del po
 
 https://youtu.be/fOX_0zksPlA?si=51IJRl3PwZZpNhPD
 
+### Pasos del proceso
+
+1. **Seleccionar el libro:** *Romancero gitano*.
+2. **Seleccionar el poema:** *Romance de la luna, luna*.
+3. **Seleccionar las estrofas** que se utilizarán: 3, 4 y 5.
+4. **Definir cómo se visualizará** el contenido.
+5. **Determinar los recursos visuales:** se utilizarán frases y animaciones.
+6. **Conectar el Arduino y la pantalla** para realizar las pruebas.
+7. **Probar los códigos** y comprobar su funcionamiento.
+8. **Verificar y corregir posibles errores** en el código y las conexiones.
+9. **Construir y ensamblar la carcasa** del proyecto.
+
 ### Coreografía y secuencia 
-1. se enciende el arduino y aparece la primera frase en la pantalla.
-2. para avanzar se deberá manipular el potenciómetro y así la frase se desplazará hacia la derecha.
-3. la frase llegará a su fin.
-4. para cambiar a la siguiente frase, se deberá presionar el botón.
-5. repetir hasta el final. 
-6. una vez que se llega al final del poema, vuelve la frase inicial. 
+1. Se enciende el arduino y aparece la primera frase en la pantalla.
+2. Para avanzar se deberá manipular el potenciómetro y así la frase se desplazará hacia la derecha.
+3. La frase llegará a su fin.
+4. Para cambiar a la siguiente frase, se deberá presionar el botón.
+5. Repetir hasta el final. 
+6. Una vez que se llega al final del poema, vuelve la frase inicial. 
 
 ### Diagrama de flujo y esquema de conexiones
 > Esquema de conexiones en Tinkercad
 ![titulo](./imagenes/tinkercad.png)
+
 > Diagrama de flujo
-agregar aquí 
+agregar aquí
+
 ### Tabla de materiales
 
 |Componente|Cantidad|Precio|Link|
