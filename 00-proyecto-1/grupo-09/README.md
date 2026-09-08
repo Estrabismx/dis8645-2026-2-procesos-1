@@ -619,9 +619,27 @@ Para conectar el Arduino a la protoboard, primero conectamos 5V del Arduino UNO 
 Luego conectamos el potenciómetro, dejando la patita 1 conectada a VCC, la patita 3 a GND y la patita central al pin A0 del Arduino. Para el botón, utilizamos una resistencia de 470  conectada a GND, mientras que otra patita del botón se conectó a VCC y la restante al pin 12 del Arduino.
 Incorporamos la pantalla, conectando VCC, GND, SDA al pin A4 del Arduino y SCK al pin A5 del Arduino. Finalmente, agregamos un LED, conectando su patita larga al pin 9 y la otra patita a GND mediante una resistencia.
 
+## Materiales
+
+| # | Componente | Cantidad | Especificación |
+| --- | --- | --- | --- |
+| 1 | Resistencia | 1 | 470 Ω |
+| 2 | Potenciómetro | 1 | B20K |
+| 3 | Botón | 1 | Pulsador |
+| 4 | Arduino UNO R4 WiFi | 1 | Placa de desarrollo |
+| 5 | LED | 1 | —  |
+| 6 | Resistencia para LED | 1 | — |
+| 7 | Cables Dupont | — | Macho/Hembra |
+| 8 | Protoboard | 1 | 400 puntos |
+| 9 | Cable USB-C | 1 | Para conexión del Arduino |
+
 ## Carcasa
 
 Para generar la idea de la carcasa, partimos desde el querer relacionarla al significado del poema y fuimos explorando referentes, hasta llegar a uno que nos llamó la atención por su forma. Este referente en forma de cofre nos hizo pensar en el poema dentro de él, como un tesoro, un recordatorio, algo que se pudiera revisar con cuidado. 
+
+![referente](./imagenes/referente.png)
+
+*(Nuestro referente fue el cyberdeck de CocoasAesthetic, quien convirtió una caja de Dunkin’ Donuts en una consola. Nos interesó cómo utilizó un objeto cotidiano para contener la tecnología y hacer que este también fuera parte del diseño.)*
 
 La idea de este cofre también nos permite mostrar los componentes sin necesidad de que queden tan expuestos, haciendo que formen parte de la experiencia. Al levantar la tapa el usuario podrá encontrarse directamente con la pantalla, el botón y el potenciómetro. De igual manera en la parte inferior se podrá observar el proceso que permite llegar a este resultado: los cables, el Arduino y la protoboard. De esta forma buscamos que la interacción se sienta más cercana y que el usuario pueda ver tanto el resultado como lo que hay detrás de su funcionamiento.
 
@@ -663,17 +681,11 @@ Nuestro principal aprendizaje durante este proceso fue acercarnos a la programac
 
 Por otra parte, el desarrollo de la carcasa nos hizo cuestionarnos cómo organizar físicamente los componentes y, al mismo tiempo, cómo integrar a la persona que invitamos a leer el poema para que no fuera solamente una espectadora, sino que pudiera formar parte de la experiencia. Finalmente, buscamos que la interacción reforzara el mensaje del poema: detenerse, dejar de exigirse constantemente y reconocer que cada persona tiene un lugar dentro de todo lo que habitamos.
 
-## Materiales
 
-| # | Componente | Cantidad | Especificación |
-| --- | --- | --- | --- |
-| 1 | Resistencia | 1 | 470 Ω |
-| 2 | Potenciómetro | 1 | B20K |
-| 3 | Botón | 1 | Pulsador |
-| 4 | Arduino UNO R4 WiFi | 1 | Placa de desarrollo |
-| 5 | LED | 1 | —  |
-| 6 | Resistencia para LED | 1 | — |
-| 7 | Cables Dupont | — | Macho/Hembra |
-| 8 | Protoboard | 1 | 400 puntos |
-| 9 | Cable USB-C | 1 | Para conexión del Arduino |
+## Resultado Final
+
+imagen 
+
+<https://www.youtube.com/watch?v=PrD93Q1XOUg&feature=youtu.be>
+
 
