@@ -59,14 +59,70 @@ Dice así:
 © 2026 [Santiago Cifuentes Vélez]. El poema está bajo la licencia [Creative Commons Atribución-NoComercial-SinDerivadas 4.0 Internacional (CC BY-NC-ND 4.0)](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es).
 
 # ¿Qué hicimos?
-El pedido del proyecto constataba en realizar y enseñar poesía utilizando una placa de la linea de Arduinos uno r4 wifi, una pantalla de libre elección, una carcasa de cartón, un botón y un potenciómetro como mínimo. 
+### Concepto de proyecto
 
-Este proyecto se sitúa en el concepto de: Los ojos del turista, los momentos de lucidez que trae la claridad de la luz, y la reflexión y nostalgia que trae la calma de una habitación donde nos encontramos con los recuerdos cara a cara..., como lo es la sala de una casa, donde se viven mil vidas, y también, cuando la mente se olvida de ser traicionera, trae flashbacks de aquello que nos mueve el alma.
+---
 
-1. Nosotres, decidimos escribir nuestro propio poema con la intencionalidad de dar un homenaje a la belleza de las pequeñas cosas que a veces se pasan por desapercibidas; ya sea por la cotidianidad y la rutina del día a día, o la ignorancia que se tiene respecto al territorio que se habita y a su vez, se rodea. Pues nosotres opinamos que por un momento, hay que ver nuestra casa, nuestro entorno con ojos de turista para apropiarnos de lo que somos..., de donde somos.
+## 1. Contexto del encargo
 
-Luego, vienen esos momentos de lucidez donde la luz es  reveladora y el camino es claro
-3. Creamos a manera de escenario representativo 
+El proyecto solicitaba desarrollar y enseñar poesía a través de una placa de la línea Arduino Uno R4 WiFi, una pantalla de libre elección, una carcasa de cartón, y como mínimo un botón y un potenciómetro.
+
+---
+
+## 2. Concepto 1: mirar lo propio con ojos de turista
+
+Nosotres decidimos escribir nuestro propio poema con la intencionalidad de rendir homenaje a la belleza de las pequeñas cosas que muchas veces pasan desapercibidas, ya sea por la cotidianidad y la rutina del día a día, o por la ignorancia que a veces se tiene respecto al territorio que se habita y que, a su vez, nos rodea. En este contexto...el territorio es Santiago de Chile.
+
+Creemos que, por un momento, hay que ver nuestra propia casa, nuestro propio entorno, con ojos de turista para así apropiarnos de lo que somos y de dónde somos. El poema nace de esa mirada: los Romeros que florecen, los colibríes que cantan, el cielo rosado de Santiago, la cordillera que enmarca cada atardecer, eventos tan cotidianos para quien vive en Santiago de Chile que se vuelven invisibles.
+
+---
+
+## 3. Concepto 2: La dualidad; luz/lucidez y memoria/nostalgia
+
+Es en los momentos de mayor claridad, cuando la luz revela el camino con total lucidez, donde vemos los acontecimientos de la vida con mayor nitidez. Pero, ¿qué sucede cuando lo vivido comienza a convertirse en recuerdo, y la memoria empieza a tomar su lugar por medio de flashbacks, a veces borrosos? Aun así, esos fragmentos nos dan pistas y rastros para volver a sentir, para volver a ilusionarnos, y para recuperar esos impulsos que nos llenan de expectativa y nos hacen sentir nuevamente vivos.
+
+Esta dualidad —luz/lucidez exterior versus memoria/nostalgia interior, es la base central del proyecto, y se sostiene en dos espacios simbólicos y metafóricos en el poema (esto por las experiencias propias de quien es turista en este hermoso país, llamado; Chile):
+
+- **El afuera**: el territorio, la luz del día, la cordillera, el presente que se vive con los ojos bien abiertos.
+- **El adentro**: la habitación, el living de una casa, donde nos encontramos cara a cara con los recuerdos, y donde la mente (cuando deja de ser traicionera) nos regala flashbacks de aquello que nos mueve el alma.
+
+---
+
+## 5. Unión de conceptos y la metáfora que creamos a partir de ello:
+
+Lo que hace fuerte nuestro concepto no es solo la intención poética, sino que **la forma en que logramos reproducir, literalmente, la idea que el poema plantea**:
+
+> *"¿Qué pasa cuando la luz del sol aparece detrás de la cordillera?"*
+
+En nuestro sistema, la luz directa sobre el sensor LDR es, literalmente, lo que hace que el poema avance, cada estrofa se revela solo cuando hay luz, igual que el paisaje se revela cuando el sol aparece tras la cordillera. Y cuando la luz se retira, el texto se detiene, se queda fijo, como el recuerdo que se congela en la memoria, esperando ser revisitado.
+
+---
+
+## 4. Materialización: el living interactivo
+
+A partir de lo anteriormente mencionado, creamos un **La casa de Tatio** con un aspecto antiguo, que representa un espacio doméstico de remembranza y valoración del mundo en el que estamos sumergidos.
+
+Dentro de ese living, cada componente técnico cumple un rol simbólico:
+
+| Elemento técnico | Rol simbólico dentro del concepto |
+|---|---|
+| Sensor de luz (LDR) | La luz del *afuera* — el territorio, la lucidez, el presente — es lo que hace avanzar el poema |
+| Quietud / ausencia de avance | El momento de detenerse, de "quedarse mirando" — dispara los recuerdos (las animaciones) |
+| Potenciómetro | El control manual de quien recuerda: la persona decide el ritmo al que revisita el poema principal |
+| Botón | El umbral de entrada al living — encender es decidir entrar a ese espacio de memoria |
+| Pantalla OLED | La ventana hacia adentro: pequeña, íntima, como mirar un recuerdo a través de una rendija |
+| Carcasa de cartón con aspecto antiguo | La materialidad del hogar, de lo domesticado, de lo que ha envejecido junto a quien lo habita |
+
+---
+
+## 6. Síntesis
+
+El living ***La casa de Tatio*** y el poema, ***Chile mapu mew...*** no es solamente un poema montado sobre una pantalla: es un objeto que **actúa** su propio contenido. Invita a mirar el territorio chileno y donde estes leyendo esto, con ojos de turista, a experimentar la luz como revelación y la quietud como memoria, y a habitar aunque sea por un momento, dentro de un living de cartón, ese espacio donde lo cotidiano vuelve a asombrarnos.
+
+---
+
+*Con amor: Francisca, Nicolás y Santiago.*
+
 
 # Diagrama de flujo 
 ![](./imagenes/flowchart.jpg)
@@ -81,10 +137,10 @@ Donde se atienden a lxs amigues,
 así como el país que le habitamos, nos atiende, y nos sorprende. 
 
 ## Bocetos:
-El escenario consta de 2 partes: 
+El escenario está conformado por: 
 
 *1. El living.*  
-*2. El control remoto del tv y la lampara del techo.*  
+*2. Un Tv*
 
 ![](./imagenes/prototipo.jpg)
 ![](./imagenes/prototipo2.jpg)
