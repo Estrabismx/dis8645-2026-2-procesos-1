@@ -134,7 +134,7 @@ El proyecto evolucionó progresivamente desde la reproducción de un poema en el
 | **Código 5** | 4 sept. | Optimización | Se detectan problemas de espacio en pantalla. Se reduce la cantidad de palabras destacadas para asegurar que todos los versos sean visibles correctamente. | Terminar de daptar el poema al formato de la pantalla. |
 | **Código 5.2** | 4 sept. | Prueba de animación | Se incorpora una primera animación. El resultado no se adapta correctamente a las dimensiones de la pantalla. | Explorar la incorporación de movimiento y detectar limitaciones técnicas. |
 | **Código 6** | 6 sept. | **Animación 1🎬** | Animación del título **“Queja”**, utilizada como introducción después del nombre de la poetisa. | Introducir visualmente el poema en pantalla. |
-| **Código 7** | 7 sept. | **Animación 2💔** | Animación de un **corazón roto**, vinculada al verso "Pero no puedo amar" después de la primera estrofa. | Reforzar visualmente el significado emocional del poema. |
+| **Código 7** | 7 sept. | **Animación 2💔** + 3 LEDs rojos| Animación de un **corazón roto**, vinculada al verso "Pero no puedo amar" después de la primera estrofa se agregan 3 LEDs rojos, que se encienden cada vez que aparecen las palabras clave e intensas del poema. | Reforzar la carga emocional del poema mediante una respuesta visual y física sincronizada con el poema. |
 | **Código 8** | 7 sept. | **Animación 3🔥** | Animación de **fuego**, relacionada con el verso "Me consumo en mi fuego" después de la segunda estrofa. | Representar visualmente la intensidad y el consumo emocional. |
 
 
