@@ -210,7 +210,7 @@ Finalmente, después de un incidente con el potenciómetro, la pantalla comenzó
 
 Para el desarrollo de los códigos de nuestro proyecto contamos con la asistencia de las herramientas de inteligencia artificial Gemini y Claude. Toda la información utilizada, junto con las capturas de pantalla y conversaciones que evidencian su uso, se encuentra recopilada en el archivo PDF.
 
-[Ver PDF](./documento.pdf)
+[Ver PDF](https://github.com/isipm08/dis8645-2026-2-procesos-1/blob/main/00-proyecto-1/grupo-05/imagenes/documentacionia.pdf)
 
 ### Bibliografía 
 
