@@ -1,6 +1,6 @@
 # Proyecto 01
 
-![imagenes](./imagenes/poema-puerto-adelante.gif)
+![preview poema](./imagenes/poema-puerto-adelante.gif)
 
 **Integrantes:**
 
@@ -48,7 +48,7 @@ Según la [Biblioteca Del Congreso Nacional De Chile](https://www.bcn.cl/leychil
 > “Artículo 71 M. Es lícito, sin remunerar ni obtener autorización del autor, reproducir y traducir para fines educacionales, en el marco de la educación formal o autorizada por el Ministerio de Educación, pequeños fragmentos de obras o de obras aisladas de carácter plástico, fotográfico o figurativo, excluidos los textos escolares y los manuales universitarios, cuando tales actos se hagan únicamente para la ilustración de las actividades educativas, en la medida justificada y sin ánimo de lucro, siempre que se trate de obras ya divulgadas y se incluyan el nombre del autor y la fuente, salvo en los casos en que esto resulte imposible. ” (Biblioteca Del Congreso Nacional De Chile, 2 Octubre 1970, artículo 71 M).
 
 En este trabajo utilizaremos un pequeño fragmento del poema Puerto Adelante de Alejandra Pizarnik, como no podemos exponer el poema completo utilizaremos un breve contexto sobre una persona que en una noche tranquila, observa el puerto que desea escapar y desaparecer.
-Con el fragmento podemos explicar y complementar la actividad de nuestra solemne 01, por la cual no habrá ganancia monetaria, sin ánimo de lucro. Solo existirá ganancia de conocimiento.
+Con el fragmento podemos explicar y complementar la actividad de nuestro proyecto 01, por el cual no habrá ganancia monetaria, sin ánimo de lucro. Solo existirá ganancia de conocimiento.
 
 ## Diagrama de flujo
 
