@@ -686,6 +686,8 @@ Por otra parte, el desarrollo de la carcasa nos hizo cuestionarnos cómo organiz
 
 imagen 
 
+
+
 <https://www.youtube.com/watch?v=PrD93Q1XOUg&feature=youtu.be>
 
 
