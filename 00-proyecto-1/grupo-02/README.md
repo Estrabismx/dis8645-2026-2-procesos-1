@@ -151,6 +151,7 @@ Bocetos
 ![](./imagenes/control.jpg)
 
 Resultado
+
 ![](./imagenes/process-living.gif)
 ![](./imagenes/resultado-living.jpeg)
 
