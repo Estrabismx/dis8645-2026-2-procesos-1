@@ -7,7 +7,7 @@ El primer paso fue entender el código, identificar qué debíamos agregar y có
 De a poco empezamos a aterrizar lo que realmente queríamos lograr. El grupo fue creciendo y con ello llegaron nuevas ideas y miradas que nos ayudaron a definir mejor el proyecto. Nos quedamos después de clases para avanzar y concretar decisiones, y realizamos un boceto que nos permitió visualizar lo que estábamos discutiendo.
 
 Aunque fue difícil organizarnos, paso a paso logramos ordenar el proceso y darle dirección al trabajo:)))))
-
+![ideasideas](./imagenes/ideasideas.png)
 
 ## lectura
 ![lecturita](./imagenes/lecturita.png)
