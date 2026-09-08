@@ -56,6 +56,33 @@ Con el fragmento podemos explicar y complementar la actividad de nuestra solemne
 
 ![imagenes](./imagenes/diagrama-flujo-puerto-adelante.png)
 
+## Materiales 
+|Componente|Cantidad|
+|---|---|
+|Arduino UNO R4 WIFI|1|
+|Pantalla LCD Oled 0,91" I2C|1|
+|Botón táctil|1|
+|Potenciómetro B100k|1|
+|Cables dupont|11|
+|Protoboard|1|
+|Cartón dúplex|1|
+|Doble contacto|1|
+
+## Conexiones 
+
+| Componente        | Pata                        | Va a                                |
+|-------------------|------------------------------|--------------------------------------|
+| Pantalla OLED      | GND                          | GND                                   |
+| Pantalla OLED      | VCC                          | 5V                                     |
+| Pantalla OLED      | SCK                          | A5                                     |
+| Pantalla OLED      | SDA                          | A4                                     |
+| Potenciómetro      | Pata extremo 1               | 5V (mismo riel que la pantalla)        |
+| Potenciómetro      | Pata extremo 2               | GND (mismo riel que la pantalla)       |
+| Potenciómetro      | Pata central (wiper)         | A0                                     |
+| Botón              | Pata 1                       | Pin digital 2                          |
+| Botón              | Pata 2                       | GND (mismo riel)                       |
+
+
 ## Desarrollo de código 
 Este es el proceso mediante el cual fuimos armando el código de este proyecto. No es un historial literal palabra por palabra, sino una versión ordenada y representativa de las preguntas que nos hicimos y las decisiones técnicas que fuimos tomando, con ayuda de Claude como asistente de programación.
 
@@ -273,7 +300,7 @@ Se realizaron dos dibujos basados en estas imágenes, en los que notamos que las
 
 La animación se trabajó en un canvas de 128 x 32 px, simulando la pantalla OLED del proyecto, donde se ordenaron 4 copias del velero para simular su movimiento a través de la pantalla. Con la idea de evitar que la animación se viese estática, en cada fotograma se rotó levemente el barco, simulando el balanceo causado por las olas.
 
-![imagenes](./imagenes/rotacion-velero.png)
+![imagenes](./imagenes/frames-velero.png)
 
 **Resultado final**
 
@@ -282,10 +309,17 @@ Finalmente, la animación termina viéndose así:
 ![imagenes](./imagenes/velero-bmp.gif)
 
 ## Carcasa 
+
+Decidimos que parte de nuestro componente fundamental tuviera sentido con lo que quiere transmitir el poema, así que decidimos hacer una botella para hacer referencia a las cartas que viajaban sin rumbo dentro de una botella de vidrio, enviadas por mar, a lo desconocido. La botella no es solo un contenedor, es una metáfora del mensaje que se abandona a la deriva. Si bien la materialidad es parte de los aspectos esenciales, consideramos que el cartón también logra un mensaje ya que es un material frágil y perecedero, un objeto simbólico.
+
 ![imagenes](./imagenes/procesocarcasa.png)
-## Materiales 
+
+## Conclusiones 
+
+Puerto adelante habla de una partida sin retorno, este proyecto, en cambio, fue exactamente lo contrario, un punto de partida al que sabemos que vamos a volver. Aprendimos que `millis()` puede sostener un ritmo sin detener el tiempo, que una máquina de estados no es solo un concepto abstracto sino la forma más honesta de decirle a un programa "recuerda dónde estás". El barco que cierra la animación son cuatro arreglos de ceros y unos guardados en la memoria flash del microcontrolador, y aun así logra parecer que navega hacia algún lugar.Si algo nos deja esta primera experiencia programando es la certeza de que una pantalla de 128x32 píxeles puede ser tan buen lugar para leer a Alejandra Pizarnik como el papel, solo hace falta traducir con cuidado, línea por línea, bit por bit.
 
 ## Referencias 
+
 Nuestra mayor referencia fue el mismo poema, para poder procesar figuras, movimientos, objetos. En parte de referentes de arduino.
 
 + [dibujoConPixeles](https://cl.pinterest.com/pin/425238389838553781/)
@@ -303,7 +337,3 @@ Como en el último verso del poema dice “irse para no volver” tuvimos la ide
 + [arduinoLeds](https://cl.pinterest.com/pin/701646816990186067/ )
 
 Este es un claro ejemplo del uso del botón y que al pulsarlo haga que vaya cambiando de pantalla, en nuestro caso al pulsar el botón lo que sucede es que la pantalla muestra automáticamente las diferentes pantallas que van pasando a medida que uno mueve la perilla del potenciómetro.
-
-## 
-
-
