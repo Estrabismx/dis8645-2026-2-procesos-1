@@ -127,7 +127,7 @@ El living ***La casa de Tatio*** y el poema, ***Chile mapu mew...*** no es solam
 ![](./imagenes/flowchart.jpg)
 
 # Proceso 
-![](./imagenes/resultado-living.jpeg)
+![](./imagenes/proceso-epico.png)
 
 ---
 
