@@ -23,7 +23,6 @@ La obra de Elizabeth que elegimos se llama Soneto 22 y es parte de la colección
 Según la *Academia de Poetas Americanos* el poema se encuentra en dominio público.
 
 Interpretamos el poema como la intención de rehusarse a la muerte por la causa del amor. Desprenderse de lo terrenal implicaría dejar de sentir y vivir el amor romántico como se vive día a día, para someter amor al cielo y a la eternidad, lugar en el que ya no sería permitido el estar con su ser amado.
-Conceptos como 
 
 <br>
 
@@ -113,6 +112,37 @@ con la oscuridad y la hora de la muerte rodeándolo.
 
 ---
 
+## Bill of materials
+
+| Componente | Cantidad | Link de compra |
+| :--- | :---: | ---: |
+| Arduino UNO R4 Wifi | 1 | Dato 3 |
+| Pantalla LCD Azul 16x02 | 1 | Dato 3 |
+| Potenciómetro lineal (valor) | 1 | Dato 3 |
+| Botón (tipo) | 2 | Dato 3 |
+
+### Pantalla LCD Azul 16X02
+
+A diferencia de la mayoría de los grupos decidimos utilizar esta pantalla, debido a su mayor tamaño y por su configuración, ya que está pensada para solo mostrar texto, es más sencillo, sumado que posee un controlador estandarizado. Pero todo eso lo veremos ahora con las caracterisiticas de esta pantalla
+
+![display](./imagenes/lcd-1602.webp)
+
+> Directamente desde [Afel](https://afel.cl/products/pantalla-lcd-azul-16x02)
+
+#### Caracteristicas
+
+- **Formato** 16 caracteres por 2 lineas
+
+- **Voltaje funcionamiento** 5V
+
+- **Controlador** SPLC780D1 o compatible con HD44780
+
+- **Retroiluminación (Backlight)** LED de color azul con caracteres blancos.
+
+- **Interfaz** Paralela, configurable para operación de 4 bits u 8 bits.
+
+- **Tipo de Pantalla** STN (Super-twisted Nematic) de tipo negativo.
+
 <br>
 
 ## Código
@@ -169,6 +199,102 @@ Además de esto realizamos el primer diagrama de flujo relacionado al funcionami
 
 Conexión representada en Tinkercad
 
+[![Tinkercad](./imagenes/sc-12.png)](https://youtu.be/ZCfgRzy07II)
+
+>Link de [YouTube](https://youtu.be/ZCfgRzy07II)
+
+![Tinkercad](./imagenes/dis8645-2026.jpg)
+
+<br>
+
+## Proceso
+
+### Etapa inicial
+
+- chao poema de victoria Ramírez 
+
+- por copyright (xd)
+
+- buscar alguna solución
+
+- Encontrar poema
+
+- Traducir poema
+
+- Acreditar licencia
+
+- Conceptualizar
+
+### Pseudo código
+
+- Hacer listado de pasos
+
+- Ponerse en situaciones que podrían entrar en conflicto (del código, no nosotras xd)
+
+- Realizar esquema / hacer pruebas
+
+- definir variables
+
+- definir posibles funciones
+
+### Codi-Gooooo
+
+- Realizar un test funcionamiento del inicio (licencia, nombre y autora del poema)
+
+```cpp
+
+// adjuntar codigo con fallo inicial
+
+```
+
 ![Tinkercad](./imagenes/sc-09.png)
 
 ![Tinkercad](./imagenes/sc-10.png)
+
+> Explicar que fallo (todo ocurre en parelelo y sin un desfase, se pelean por quien se muestra en la pantalla)
+>
+> Mencionar elementos claves del código, funciones, variables, etc
+>
+> > set.display(0,0) por ejemplo
+
+```cpp
+
+// codigo con inicio listo
+
+```
+
+> Explicar que se solucionó, que cambiamos y que mantuvimos (el porque)
+
+- Agregamos la parte que visualiza el poema de manera completa
+
+  
+```cpp
+
+// codigo con poema (el que genero la daya)
+
+```
+> hablar de que elementos podemos entender que aparecen y porque, mencionar que instrucciones se le dieron a la ia, agregar prompt
+>
+> mencionar como pensamos agregar la siguiente función y que conflictos podriamos tener el código
+
+- Agregar pote
+
+```cpp
+
+// codigo pote xd
+
+```
+> que cambio, genero algun error?, existe algun valor que queramos editar
+>
+> mencionar ejercicio en clase que fue utilizado como base
+
+- agregar botones (solo congelar)
+
+```cpp
+// codigo botones solo congelar xddd
+```
+> que se le pidió a la ia, que sabemos de lo que se generó, algo que solucionar??
+
+- agregar botones (palabra clave)
+
+- codigo final

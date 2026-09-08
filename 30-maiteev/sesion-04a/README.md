@@ -1,7 +1,8 @@
 # sesion-04a
 
 ## apuntes sesión
-
+- trabajo en readme grupo 10
+  
 ## encargos
 
 ## lectura

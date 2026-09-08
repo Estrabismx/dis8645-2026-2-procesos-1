@@ -20,6 +20,12 @@ Los String tienen funciones como por ejemplo charAt() o setCharAt() para decir, 
 Programar no es solo escribir el código también es importante describir o explicar que va a hacer el código como lo va a hacer y en que orden, esto se puede hacer de varias maneras como por ejemplo con diagramas. (mirar proyectos del año pasado.)
 
 
+Proyecto: 
+
+Hemos estado decidiendo el poeta y escogimos Joana Raspall, entonces hemos estado buscando poemas para hacer el proyecto.
+Hemos probado códigos para saber que cosas podemos hacer con este proyecto y hasta el momento hemos podido mostrar palabras en la pantalla del arduino.
+
+
 
 
 ## encargos
