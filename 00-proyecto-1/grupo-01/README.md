@@ -384,85 +384,165 @@ un lugar donde estar y amar por un día,
 
 con la oscuridad y la hora de la muerte rodeándolo.
 
+hicimos nuestra traducción con apoyo de claude, modificando palabras para hacerla propia.
+
+> dato: en chile, la ley n° 17.336 de propiedad intelectual protege solo las obras hechas por personas naturales, por lo que las obras creadas de forma 100% con ia entrarían en dominio público.
+
+
+**relación entre el poema final y las ideas del proyecto**
+
+el poema trata justamente de dos almas que se encuentran "frente a frente" y juntas generan algo mayor (el fuego, el canto). pero el poema también marca un límite: en vez de fundirse del todo con lo divino, eligen quedarse en la tierra, incompletas respecto a esa unión perfecta. esto encaja con la lógica de los botones: un botón solo no completa la acción (como quedarse a medio camino de esa elevación); se necesitan los dos —las dos almas— presionados juntos para que la acción se complete.
+
+en base a nuestras palabras clave y a de qué trata el texto, tomamos las siguientes decisiones:
+- para **aceleración**: decidimos trabajar con la velocidad del texto, cómo este se va a mostrar y a leer.
+- para **fragmentar - pausar - revelar**: pensamos en revelar fragmentos del texto mientras este va avanzando.
+- buscamos generar una acción que dependa de otra, para que juntas puedan formar algo nuevo.
+
+**asignación de elementos a las acciones**
+
+- **potenciómetro**: define la velocidad del poema, cómo este avanza o retrocede.
+- **botones**: presionando solo un botón, el texto se detiene; con dos botones, una pulsación breve revela una palabra; manteniendo los dos botones presionados, se puede ver un poema nuevo.
 
 ### Pseudo código
 
-Definimos elementos y conceptos claves necesarios para el desarrollo de nuestra propuesta, estos fueron mutando y cambiando según lo ibamos requeriendo
+**listado de pasos**
+
+1. inicia el arduino.
+2. el texto avanza de manera continua hasta que se presionen los botones o se manipule el potenciómetro.
+3. si se presiona solo 1 botón, el texto se congela y no sigue avanzando hasta que se deje de presionar.
+4. si se presionan los 2 botones, el texto se detiene y desaparece.
+5. mientras esto ocurre, se consulta en qué sección del texto se encuentra.
+6. en base a la sección del texto mostrado, se visualiza una palabra clave.
+7. al dejar de presionar un botón, vuelve a ocurrir el punto 3.
+8. si se sueltan ambos botones, desaparece la palabra.
+9. luego continúa avanzando el texto desde el mismo punto en el que quedó.
+10. en caso de ser manipulado el potenciómetro, se modifica la velocidad del texto (mientras más lejos del centro, más rápido el cambio).
+11. si se rota hacia la derecha, avanza de manera normal solo variando la velocidad.
+12. si se rota hacia la izquierda, retrocede el texto según qué tan lejos del centro esté.
+
+**ituaciones que podrían entrar en conflicto
+
+- botones presionados en distinto orden o con distinto timing**: qué pasa si se presiona primero A y luego B con unos milisegundos de diferencia — ¿debería contar como "2 botones" igual, o solo si están presionados exactamente al mismo tiempo?
+- límites del arreglo `versosPoema[]`**: qué ocurre si `versoActual` llega al último verso mientras el potenciómetro sigue "avanzando" — hay que definir si se detiene, hace loop, o muestra un mensaje de fin.
+- **potenciómetro en el centro exacto**: si "más lejos del centro = más rápido", hay que decidir qué pasa justo en el centro (¿velocidad 0, o un mínimo definido para que no quede completamente detenido?).
+- rebote de botones (debounce)**: una sola pulsación física puede leerse como varias si no se filtra, lo que podría hacer parpadear la palabra clave o saltar versos de más.
+- **transición entre 1 botón y 2 botones**: si ya se está mostrando la palabra clave (1 botón) y se presiona el segundo, hay que definir si pasa directo a "texto desaparece" o si necesita soltar primero.
+
+***esquema / pruebas
+
+**los tres estados del poema
+
+1. **versos del poema**: aparecen los versos completos del poema original, constantes en pantalla. su velocidad de avance y retroceso se modifica con el potenciómetro.
+2. **segundo poema**: a partir de fragmentos del primer poema se generó un nuevo poema. aparece mientras los dos botones se mantienen presionados por **más de 2 segundos**.
+3. **palabra por verso**: son palabras clave de cada verso. aparecen cuando se presionan los dos botones por **menos de 2 segundos**, dentro del rango del verso que se esté mostrando en pantalla.
+
+**ejemplo:
+
+| verso completo | palabra clave |
+|---|---|
+| Cuando nuestras dos almas se eleven, firmes y fuertes, | firme y fuerte |
+| frente a frente, en silencio, acercandose mas y mas, | acercándose |
+| hasta que las alas que se alargan estallan en fuego | estallan |
+| en cada punta curva que mal amargo | en cada |
+
+ **variables y arreglos
 
 ```cpp
+// poema principal, un verso por casilla
+char *versosPoema[] = {
+  "Cuando nuestras dos almas se eleven, firmes y fuertes,",
+  "frente a frente, en silencio, acercandose mas y mas,",
+  "hasta que las alas que se alargan estallan en fuego",
+  "en cada punta curva que mal amargo",
+  "puede hacernos la tierra, que no debieramos",
+  "quedarnos aqui, contentos? Piensalo. Al subir mas alto,",
+  "los angeles nos oprimirian y aspirarian",
+  "a dejar caer algun aureo orbe de canto perfecto",
+  "en nuestro hondo, querido silencio. Quedemonos",
+  "mejor en la tierra, Amado mio, donde los animos",
+  "contrarios e injustos de los hombres retroceden",
+  "y aislan a los espiritus puros, y permiten",
+  "un lugar donde estar y amar por un dia,",
+  "con la oscuridad y la hora de la muerte rodeandolo.",
+};
+const int cantidadVersos = 14;
 
-//botón es false o true
-//si uno de los dos es true ocurre el punto 4
-//si ambos botones son true ocurre el 5, 6 y 7
+// segundo poema: se muestra mientras se mantienen ambos botones (> 2 seg)
+char *segundoPoema[] = {
+  "firme y fuerte",
+  "acercandose",
+  "estallan",
+  "en cada",
+  "tierra",
+  "contentos",
+  "oprimiran",
+  "algun",
+  "silencio",
+  "amado mio",
+  "injusto",
+  "y aislan",
+  "un lugar",
+  "de la muerte",
+};
 
-leerBotones (botón a, botón b) {
-if (bóton a + botón b)
-return true: // devolver true si ambos botones son 1
-return false: // devolver false si un botón es 1 y el otro 0
-} 
+// palabra por verso: aparece con pulsacion corta de ambos botones (<= 2 seg)
+char *palabraVerso[] = {
+  "firme y fuerte",
+  "acercandose",
+  "estallan",
+  "en cada",
+  "tierra",
+  "contentos",
+  "oprimiran",
+  "algun",
+  "silencio",
+  "amado mio",
+  "injusto",
+  "aislan",   // nota: sin "y"
+  "lugar",    // nota: sin "un"
+  "muerte",   // nota: sin "de la"
+};
+```
 
-leerPote()
-poteAvanzar()
-poteRetroceder()
-mostrarTextoInicial
+***como se va a montrar y dividir el texto 
 
-leerVerso() 
-detenerVerso()
-mostrarPalabra()
-deshacerPalabra()
-
-variables: 
-
-mostrar verso por verso.
+**variables
 
 
-
-
-
+```cpp
 char *versosPoema[] = {
   "Cuando estan nuestras almas frente a frente,",
   "mudas, erguidas, fuertes, ya muy proximas,",
   "y sus alas se encienden al tocarse,",
 };
 
-// estado del boton A: true si esta presionado ahora mismo
+bool botonA = true;        // true si el boton A esta presionado
+bool botonB = true;        // true si el boton B esta presionado
 
+const int botonAPin = 2;   // pin del boton A
+const int botonBPin = 3;   // pin del boton B
 
-bool botonA = false;
-// primero se 
-// estado del boton B: true si esta presionado ahora mismo
-
-bool botonB = true;
-
-// pin fisico donde esta conectado el boton A
-
-const int botonAPin = 2;
-
-// pin fisico donde esta conectado el boton B
-
-const int botonBPin = 3;
-
-// indice del verso que se esta mostrando en este momento
-
-int versoActual = 0;
-
-// bandera: true cuando el texto esta congelado y no debe avanzar
-
-bool versoDetenido = false;
-
-// bandera: true cuando la palabra clave esta visible en pantalla
-
-bool palabraVisible = false;
-
-// arreglo con las palabras clave, una por seccion del poema
+int versoActual = 0;       // indice del verso actual
+bool versoDetenido = false; // true si el texto esta congelado
+bool palabraVisible = false; // true si la palabra clave esta en pantalla
 
 char *palabrasClave[] = {
-“PLACEHOLDER1”,
-“PLACEHOLDER2”,
+  "mano",
+  "deseo",
+  "cordel",
 };
 
+int posX = 128;             // posicion horizontal del texto
+const int intervalo = 3000; // duracion de cada verso (ms)
+unsigned long tiempoAnterior = 0; // ultimo momento actualizado (millis())
 ```
 
+**funciones 
+
+- `textoInicial()`
+- `mostrarPoema()`
+- `mostrarPalabra()`
+- `mostrarNuevoPoema()
 
 ### Codi-Gooooo
 
