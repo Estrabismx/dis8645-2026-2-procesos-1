@@ -1,6 +1,7 @@
 **PROYECTO 1 — BITÁCORA DE PROCESO**
 
 Integrantes: Isidora Díaz — Natalia Gutiérrez — Carlo Martínez
+
 Poema escogido: Pepper Sauce — Malika Booker
 
 Antes de leerlo queremos informar que el poema contiene situaciones de violencia y abuso que pueden ser sensibles para algunos espectadores.
@@ -478,8 +479,8 @@ Ahí entendimos algo muy simple pero súper útil:
 
 menos tiempo = texto más rápido = más intensidad.
 
-![primercodigo](./imagenes/pantalla1.HEIC)
-![primercodigo](./imagenes/pantalla2.HEIC)
+![primercodigo](./imagenes/pantalla1.png)
+![primercodigo](./imagenes/pantalla2.png)
 
 No necesitábamos crear una función nueva cada vez que quisiéramos cambiar la sensación de una frase.
 
