@@ -123,6 +123,7 @@ El proyecto consiste en reproducir, mediante una pantalla LCD OLED de 0,91", un 
 
 Para que el usuario pueda interactuar con el proyecto y leer el fragmento del poema que se reproduce en la pantalla, se utiliza un potenciómetro, cuya principal función es desplazar la frase por la pantalla para poder leerla de manera correcta y completa. También se utiliza un botón que, al ser presionado, permite cambiar a la siguiente frase. De esta manera, el usuario puede controlar tanto el desplazamiento del texto como el momento en que desea avanzar a la siguiente frase.
 
+![alt](./imagenes/proyecto.jpeg)
 https://youtu.be/fOX_0zksPlA?si=51IJRl3PwZZpNhPD
 
 ### Pasos del proceso
@@ -172,6 +173,9 @@ La carcasa consiste en una caja de cartón representada como un ataúd, haciendo
 El ataúd está decorado con telas de colores y otros elementos que lo acompañan, haciendo referencia a los gitanos, su cultura y su forma de vestir. De esta manera, buscamos que la carcasa tenga sentido tanto con la temática del poema como con su contexto y la cultura gitana presente en la obra.
 
 ### Fotogramas
+
+Los fotogramas que utilizamos fueron obtenidos de Internet y posteriormente modificados por nosotras. Realizamos cambios en sus tamaños para poder adaptarlos a las dimensiones y necesidades de nuestro proyecto.
+
 ![titulo](./imagenes/fotogramaluna.jpg)
 ![titulo](./imagenes/fotogramacorazon.jpg)
 ![titulo](./imagenes/fotogramaojo.jpg)
