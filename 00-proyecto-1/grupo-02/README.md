@@ -9,11 +9,12 @@
  <br>
 
 # Poema  
-No es un poema en prosa, no es tampoco una página con letras que rimen, y ya..., es una experiencia que nace de la observación del entorno; el amarillo cálido del sol, la grandeza de la cordillera de los Andes, la ternura de la jerga para hacer sentir cómodo al prójimo, el canto de los colibríes, la sensualidad de vestirse de blanco y desvestirse por el sol, etc...
+No es un poema en prosa, no es tampoco una página con letras que riman, y ya..., es una experiencia que nace de la observación del entorno; el amarillo cálido del sol, la grandeza de la cordillera de los Andes, la ternura de la jerga para hacer sentir cómodo al prójimo, el canto de los colibríes, la sensualidad de vestirse de blanco y desvestirse por el sol, etc...
 
 Dice así:
 
 "**Chile mapu mew...***
+*En el territorio Chileno*
 
 > *No somos poetas con titulo,*  
 *pero las palabras plasmadas aquí, crecieron de nuestro ser*  
