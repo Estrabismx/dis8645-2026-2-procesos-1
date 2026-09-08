@@ -16,4 +16,8 @@ Algo random que descubrí durante el break, hace unas clases, subí un archivo .
 
 Aparentemente solo los archivos de Arduino (.ino) usan el guíon bajo
 
+---
+
+TIL hay disintos tipos de potenciómetros??? están los tipo A (logarítmicos) que son principalmente para audio, y luego están los B (lineales), los cuales son los que principalmente usamos en este taller
+
 ## lectura
