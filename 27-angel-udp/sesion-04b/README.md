@@ -4,8 +4,6 @@
 
 ## apuntes sesión
 
-Sesión 04B
-
 En esta sesión el grupo continuó trabajando en la propuesta del poema y en cómo llevarlo a una experiencia interactiva.
 
 Uno de los aprendizajes fue reconocer las limitaciones del hardware que estamos utilizando, en esoecial al intentar trabajar con dos pantallas y contenido en video.
