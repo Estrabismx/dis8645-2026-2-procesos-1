@@ -10,7 +10,17 @@
 Las obras originales de Federico García Lorca se encuentran en dominio público, por lo que su uso no requiere autorización previa ni el pago de derechos de explotación.
 
 ## Federico García Lorca
-poner info 
+
+Federico García Lorca (1898–1936) fue un poeta y dramaturgo español, considerado uno de los escritores más importantes de la Generación del 27. Nació el 5 de junio de 1898 en Fuente Vaqueros, Granada. Su obra se caracteriza por el uso de un lenguaje poético, la presencia de elementos de la cultura popular andaluza y temas como el amor, la muerte, la libertad y el destino.
+
+Entre sus obras más conocidas se encuentra Romancero gitano, publicado en 1928. Esta obra reúne una serie de romances en los que Lorca combina la tradición popular con un lenguaje poético y elementos simbólicos.
+
+Como proyecto, seleccionamos la obra Romancero gitano y trabajaremos específicamente con el poema “Romance de la luna, luna”. En este poema, Lorca presenta un encuentro entre la luna y un niño gitano. La luna es un elemento importante dentro del poema y tiene un significado simbólico. A través de sus versos, se pueden apreciar algunos de los principales elementos de la poesía de Lorca, como el lenguaje poético, el simbolismo, la muerte y la cultura gitana.
+
+![alt](./imagenes/fgl.png)
+
+Figura 1. Retrato de Federico García Lorca. Fuente: Historia National Geographic (2024).
+
 
 ### Poema
 **“Romance de la luna, luna”**
@@ -113,23 +123,35 @@ El proyecto consiste en reproducir, mediante una pantalla LCD OLED de 0,91", un 
 
 Para que el usuario pueda interactuar con el proyecto y leer el fragmento del poema que se reproduce en la pantalla, se utiliza un potenciómetro, cuya principal función es desplazar la frase por la pantalla para poder leerla de manera correcta y completa. También se utiliza un botón que, al ser presionado, permite cambiar a la siguiente frase. De esta manera, el usuario puede controlar tanto el desplazamiento del texto como el momento en que desea avanzar a la siguiente frase.
 
-### Documentación del uso de inteligencia artificial
+![alt](./imagenes/proyecto.jpeg)
+https://youtu.be/fOX_0zksPlA?si=51IJRl3PwZZpNhPD
 
-Para el desarrollo de los códigos de nuestro proyecto contamos con la asistencia de las herramientas de inteligencia artificial Gemini y Claude. Toda la información utilizada, junto con las capturas de pantalla y conversaciones que evidencian su uso, se encuentra recopilada en el archivo PDF.
+### Pasos del proceso
+
+1. **Seleccionar el libro:** *Romancero gitano*.
+2. **Seleccionar el poema:** *Romance de la luna, luna*.
+3. **Seleccionar las estrofas** que se utilizarán: 3, 4 y 5.
+4. **Definir cómo se visualizará** el contenido.
+5. **Determinar los recursos visuales:** se utilizarán frases y animaciones.
+6. **Conectar el Arduino y la pantalla** para realizar las pruebas.
+7. **Probar los códigos** y comprobar su funcionamiento.
+8. **Verificar y corregir posibles errores** en el código y las conexiones.
+9. **Construir y ensamblar la carcasa** del proyecto.
 
 ### Coreografía y secuencia 
-1. se enciende el arduino y aparece la primera frase en la pantalla.
-2. para avanzar se deberá manipular el potenciómetro y así la frase se desplazará hacia la derecha.
-3. la frase llegará a su fin.
-4. para cambiar a la siguiente frase, se deberá presionar el botón.
-5. repetir hasta el final. 
-6. una vez que se llega al final del poema, vuelve la frase inicial. 
+1. Se enciende el arduino y aparece la primera frase en la pantalla.
+2. Para avanzar se deberá manipular el potenciómetro y así la frase se desplazará hacia la derecha.
+3. La frase llegará a su fin.
+4. Para cambiar a la siguiente frase, se deberá presionar el botón.
+5. Repetir hasta el final. 
+6. Una vez que se llega al final del poema, vuelve la frase inicial. 
 
-### Diagrama de flujo 
-
-### Arduino
-> representación proyecto en Tinkercad
+### Diagrama de flujo y esquema de conexiones
+> Esquema de conexiones en Tinkercad
 ![titulo](./imagenes/tinkercad.png)
+
+> Diagrama de flujo
+agregar aquí
 
 ### Tabla de materiales
 
@@ -151,12 +173,12 @@ La carcasa consiste en una caja de cartón representada como un ataúd, haciendo
 El ataúd está decorado con telas de colores y otros elementos que lo acompañan, haciendo referencia a los gitanos, su cultura y su forma de vestir. De esta manera, buscamos que la carcasa tenga sentido tanto con la temática del poema como con su contexto y la cultura gitana presente en la obra.
 
 ### Fotogramas
+
+Los fotogramas que utilizamos fueron obtenidos de Internet y posteriormente modificados por nosotras. Realizamos cambios en sus tamaños para poder adaptarlos a las dimensiones y necesidades de nuestro proyecto.
+
 ![titulo](./imagenes/fotogramaluna.jpg)
-
 ![titulo](./imagenes/fotogramacorazon.jpg)
-
 ![titulo](./imagenes/fotogramaojo.jpg)
-
 ![titulo](./imagenes/fotogramacaballo.jpg)
 
 ### Prueba y error
@@ -169,4 +191,15 @@ Otro error importante fue utilizar inicialmente un potenciómetro de tipo A en l
 
 Finalmente, después de un incidente con el potenciómetro, la pantalla comenzó a mostrar píxeles dispersos y no reproducía correctamente los códigos. Luego de reiniciar el Arduino, el problema se solucionó y el sistema volvió a funcionar con normalidad.
 
+![alt](./imagenes/rayas.jpeg)
+![alt](./imagenes/holaejemplo.gif)
+![alt](./imagenes/fraseejemplo.gif)
+![alt](./imagenes/frasecambia.gif)
+
+### Documentación del uso de inteligencia artificial
+
+Para el desarrollo de los códigos de nuestro proyecto contamos con la asistencia de las herramientas de inteligencia artificial Gemini y Claude. Toda la información utilizada, junto con las capturas de pantalla y conversaciones que evidencian su uso, se encuentra recopilada en el archivo PDF.
+
 ### Bibliografía 
+
+https://www.cervantesvirtual.com/portales/federico_garcia_lorca/biografia/
