@@ -126,16 +126,16 @@ El proyecto evolucionó progresivamente desde la reproducción de un poema en el
 
 | Versión | Fecha | Etapa | Cambios principales | Objetivo |
 |:---:|:---:|---|---|---|
-| **Código 1** | 28 ago. | Poema base | Reproducción del poema en el **Serial Monitor**, mediante un loop. Código base modificado a partir del código entregado por el profesor. | Crear la primera versión funcional del poema. |
-| **Código 2** | 1 sept. | Pantalla OLED | Se incorpora una pantalla **OLED 0,91" I2C**. El poema comienza a visualizarse físicamente y los versos cambian automáticamente cada 2 segundos. | Llevar el poema desde el monitor serial a una interfaz física. |
+| **Código 1** | 28 ago. | Poema base | Reproducción del poema en el **Serial Monitor**, mediante un loop. Código base modificado a partir del código entregado en clases. | Crear la primera versión funcional del poema. |
+| **Código 2** | 1 sept. | Pantalla OLED | Se incorpora una pantalla **OLED 0,91" I2C**. El poema comienza a visualizarse físicamente y los versos cambian automáticamente cada 2 segundos. | Llevar el poema desde el monitor serial a la pantalla. |
 | **Código 3** | 2 sept. | Jerarquía visual | Se destacan determinadas **palabras clave e intensas** del poema mediante un tamaño mayor, mientras el resto mantiene un tamaño normal. | Representar visualmente la intensidad emocional del poema. |
-| **Código 4** | 3 sept. | Interacción | Se incorpora un **potenciómetro** para controlar manualmente el avance de los versos, reemplazando el avance automático. | Dar al usuario control sobre el ritmo del poema. |
-| **Código 4.2** | 3 sept. | Refinamiento visual | Se agrega el **nombre de la poetisa**, se centra y alinea el texto y se establece una jerarquía tipográfica: palabras clave de **16 px** y texto normal de **8 px**. | Mejorar la composición y legibilidad en pantalla. |
-| **Código 5** | 4 sept. | Optimización | Se detectan problemas de espacio en pantalla. Se reduce la cantidad de palabras destacadas para asegurar que todos los versos sean visibles correctamente. | Adaptar definitivamente el poema al formato de la pantalla OLED. |
+| **Código 4** | 3 sept. | Interacción | Se incorpora un **potenciómetro** para controlar manualmente el avance de los versos, reemplazando el avance automático. | tener control total del ritmo del poema. |
+| **Código 4.2** | 3 sept. | cambio visual | Se agrega el **nombre de la poetisa**, al comienzo del poema, se centra y alinea el texto y se establece una jerarquía tipográfica: palabras clave de **16 px** y texto normal de **8 px**. | Mejorar la composición y legibilidad en pantalla. |
+| **Código 5** | 4 sept. | Optimización | Se detectan problemas de espacio en pantalla. Se reduce la cantidad de palabras destacadas para asegurar que todos los versos sean visibles correctamente. | Terminar de daptar el poema al formato de la pantalla. |
 | **Código 5.2** | 4 sept. | Prueba de animación | Se incorpora una primera animación. El resultado no se adapta correctamente a las dimensiones de la pantalla. | Explorar la incorporación de movimiento y detectar limitaciones técnicas. |
-| **Código 6** | 7 sept. | **Animación 1🎬** | Animación del título **“Queja”**, utilizada como introducción al poema. | Introducir visualmente la obra. |
-| **Código 7** | 7 sept. | **Animación 2💔** | Animación de un **corazón roto**, vinculada al verso sobre la imposibilidad de amar. | Reforzar visualmente el significado emocional del poema. |
-| **Código 8** | 7 sept. | **Animación 3 🔥** | Animación de **fuego**, relacionada con el verso donde la protagonista expresa que “se consume”. | Representar visualmente la intensidad y el consumo emocional. |
+| **Código 6** | 6 sept. | **Animación 1🎬** | Animación del título **“Queja”**, utilizada como introducción al poema. | Introducir visualmente el poema en pantalla. |
+| **Código 7** | 7 sept. | **Animación 2💔** | Animación de un **corazón roto**, vinculada al verso "Pero no puedo amar." | Reforzar visualmente el significado emocional del poema. |
+| **Código 8** | 7 sept. | **Animación 3 🔥** | Animación de **fuego**, relacionada con el verso "Me consumo en mi fuego,". | Representar visualmente la intensidad y el consumo emocional. |
 
 
 
