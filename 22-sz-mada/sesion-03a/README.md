@@ -36,8 +36,6 @@ En Arduino IDE instalamos la biblioteca de SSD1306 de Adafruit
 
 SCL bigger #, SDA smaller one duh.
 
-## encargos
-
 ## lectura
 
 Me llama mucho la atención la frase
