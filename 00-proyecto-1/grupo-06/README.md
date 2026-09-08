@@ -4,17 +4,17 @@
 
 **Integrantes:**
 
-*Antonia Loch (antoloch)*
+- *Antonia Loch (antoloch)*
 
-*Anais Marschhausen (anaisbmg)*
+- *Anais Marschhausen (anaisbmg)*
 
-*Hugo Montoya (hugosantos)*
+- *Hugo Montoya (hugosmontoya)*
 
-*Carla Nuñez (ccarlabelenn)*
+- *Carla Nuñez (ccarlabelenn)*
 
-*Natalia Pilar (szmada)*
+- *Natalia Pilar (sz-mada)*
 
-## Descripción de proyecto 
+## Descripción de proyecto
 
 **"Irse y no volver..."** nació como nuestra primera aproximación a la programación dentro del taller, el desafío era elegir un poema y encontrar la forma de traducirlo a un objeto físico e interactivo, usando código. Elegimos un fragmento de Puerto adelante, de Alejandra Pizarnik, y detrás de esa elección hubo que resolver, cómo convertir un verso en algo programable.
 
@@ -28,39 +28,38 @@ El efecto visual más particular es el texto ondulando letra por letra, como si 
 
 ## Poema
 
-**Sobre el poema**
+### Sobre el poema
 
 No incluimos el poema completo por derechos de autor, solo el fragmento que da forma a esta instalación.
 
 > "Irse y no volver... / puerto adelante"
 — Alejandra Pizarnik
 
+## Licencia
 
+Al ser una edición colombiana, buscamos en la [Fundación Pública de Colombia](https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=3431) sobre la ley de los derechos de autor, la ley 23 de 1982 que está en vigencia, los temas son de derechos de autor y dirección nacional de derechos de autor.
 
-## Licencia 
-
-Al ser una edición colombiana, buscamos en la Fundación Pública de Colombia sobre la ley de los derechos de autor, [webFundaciónPublica](https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=3431) La ley 23 de 1982 que está en vigencia, los temas son de derechos de autor y dirección nacional de derechos de autor.
-
-> “ARTÍCULO 31.- Es permitido citar a un autor transcribiendo los pasajes necesarios, siempre que éstos no sean tantos y seguidos que razonadamente puedan considerarse como una reproducción simulada y sustancial, que redunde en perjuicio del autor de la obra de donde se toman. En cada cita deberá mencionarse el nombre del autor de la obra citada y el título de dicha obra.” (Departamento Administrativo de la Función Pública, 28 Enero 1982, artículo 31). 
+> “ARTÍCULO 31.- Es permitido citar a un autor transcribiendo los pasajes necesarios, siempre que éstos no sean tantos y seguidos que razonadamente puedan considerarse como una reproducción simulada y sustancial, que redunde en perjuicio del autor de la obra de donde se toman. En cada cita deberá mencionarse el nombre del autor de la obra citada y el título de dicha obra.” (Departamento Administrativo de la Función Pública, 28 Enero 1982, artículo 31).
 
 Además buscamos la información de Chile sobre los derechos de autor
 
-[bibliotecaDelCongresoNacionalDeChile](https://www.bcn.cl/leychile/navegar?idNorma=28933) Ley 17336 sobre la propiedad intelectual y derechos de autor de 1970
+Según la [Biblioteca Del Congreso Nacional De Chile](https://www.bcn.cl/leychile/navegar?idNorma=28933) Ley 17336 sobre la propiedad intelectual y derechos de autor de 1970
 
->  “    Artículo 71 M. Es lícito, sin remunerar ni obtener autorización del autor, reproducir y traducir para fines educacionales, en el marco de la educación formal o autorizada por el Ministerio de Educación, pequeños fragmentos de obras o de obras aisladas de carácter plástico, fotográfico o figurativo, excluidos los textos escolares y los manuales universitarios, cuando tales actos se hagan únicamente para la ilustración de las actividades educativas, en la medida justificada y sin ánimo de lucro, siempre que se trate de obras ya divulgadas y se incluyan el nombre del autor y la fuente, salvo en los casos en que esto resulte imposible. ” (Biblioteca Del Congreso Nacional De Chile, 2 Octubre 1970, artículo 71 M).
+> “Artículo 71 M. Es lícito, sin remunerar ni obtener autorización del autor, reproducir y traducir para fines educacionales, en el marco de la educación formal o autorizada por el Ministerio de Educación, pequeños fragmentos de obras o de obras aisladas de carácter plástico, fotográfico o figurativo, excluidos los textos escolares y los manuales universitarios, cuando tales actos se hagan únicamente para la ilustración de las actividades educativas, en la medida justificada y sin ánimo de lucro, siempre que se trate de obras ya divulgadas y se incluyan el nombre del autor y la fuente, salvo en los casos en que esto resulte imposible. ” (Biblioteca Del Congreso Nacional De Chile, 2 Octubre 1970, artículo 71 M).
 
 En este trabajo utilizaremos un pequeño fragmento del poema Puerto Adelante de Alejandra Pizarnik, como no podemos exponer el poema completo utilizaremos un breve contexto sobre una persona que en una noche tranquila, observa el puerto que desea escapar y desaparecer.
 Con el fragmento podemos explicar y complementar la actividad de nuestra solemne 01, por la cual no habrá ganancia monetaria, sin ánimo de lucro. Solo existirá ganancia de conocimiento.
 
-## Diagrama de flujo 
+## Diagrama de flujo
 
-![imagenes](./imagenes/diagrama-flujo-puerto-adelante.png)
+![Diagrama de flujo](./imagenes/diagrama-flujo-puerto-adelante.png)
 
-## Materiales 
+## Materiales
+
 |Componente|Cantidad|
 |---|---|
 |Arduino UNO R4 WIFI|1|
-|Pantalla LCD Oled 0,91" I2C|1|
+|Pantalla LCD OLED 0,91" I2C|1|
 |Botón táctil|1|
 |Potenciómetro B100k|1|
 |Cables dupont|11|
@@ -68,11 +67,11 @@ Con el fragmento podemos explicar y complementar la actividad de nuestra solemne
 |Cartón dúplex|1|
 |Doble contacto|1|
 
-## Conexiones 
+## Conexiones
 
-| Componente        | Pata                        | Va a                                |
-|-------------------|------------------------------|--------------------------------------|
-| Pantalla OLED      | GND                          | GND                                   |
+| Componente         | Pata                         | Va a                                   |
+|--------------------|------------------------------|----------------------------------------|
+| Pantalla OLED      | GND                          | GND                                    |
 | Pantalla OLED      | VCC                          | 5V                                     |
 | Pantalla OLED      | SCK                          | A5                                     |
 | Pantalla OLED      | SDA                          | A4                                     |
@@ -82,8 +81,8 @@ Con el fragmento podemos explicar y complementar la actividad de nuestra solemne
 | Botón              | Pata 1                       | Pin digital 2                          |
 | Botón              | Pata 2                       | GND (mismo riel)                       |
 
+## Desarrollo de código
 
-## Desarrollo de código 
 Este es el proceso mediante el cual fuimos armando el código de este proyecto. No es un historial literal palabra por palabra, sino una versión ordenada y representativa de las preguntas que nos hicimos y las decisiones técnicas que fuimos tomando, con ayuda de Claude como asistente de programación.
 
 La idea de dejar este registro es doble: por un lado, mostrar que programar rara vez es un proceso lineal, se avanza a tropezones, se prueba, se corrige y por otro, dejar documentado *por qué* el código quedó estructurado como quedó, más allá de *qué* hace cada línea.
@@ -109,7 +108,6 @@ const int NUM_PAGINAS = 7;
 
 Esa decisión temprana, convertir versos en páginas numeradas, terminó siendo la columna vertebral de todo el programa, casi todas las funciones que vinieron después giran en torno a la pregunta "¿en qué página estamos?".
 
-
 ## 2. Los versos del poema (y por qué no aparece completo)
 
 **Prompt:**
@@ -134,7 +132,6 @@ const char LINEA_AUTOR_1[] = "Alejandra Pizarnik";
 
 Separar el fragmento palabra por palabra (en vez de mostrarlo todo junto) fue también una decisión de lectura, en pantallas tan pequeñas (128x32 píxeles), forzar todo el verso de una vez lo haría ilegible, así que el propio límite técnico terminó dictando el ritmo de lectura del poema, verso a verso.
 
-
 ## 3. Primeros pasos con la pantalla OLED
 
 **Prompt:**
@@ -153,7 +150,6 @@ Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 
 También aprendimos algo que nos costó un rato entender: nada de lo que se "dibuja" con `display.print()` aparece en la pantalla física hasta llamar a `display.display()`. Todo se arma primero en un buffer en memoria.
 
-
 ## 4. Que el potenciómetro "pase las páginas"
 
 **Prompt:**
@@ -171,7 +167,6 @@ int determinarPaginaPorPotenciometro() {
 ```
 
 Aquí surgió una duda técnica interesante: ¿por qué usar `long` en vez de `int` para el cálculo intermedio? Porque al multiplicar `valorPotenciometro * NUM_PAGINAS` antes de dividir, el resultado temporal podía acercarse al límite de un entero normal en Arduino. Usar `long` es una costumbre de seguridad frente a ese tipo de *overflow*, aunque en este caso específico el número nunca llegara a ser tan grande.
-
 
 ## 5. El botón no es tan simple como parece
 
@@ -197,7 +192,6 @@ bool debounceBoton() {
 
 También configuramos el pin como `INPUT_PULLUP`, lo que evitó tener que añadir una resistencia física externa: el pin queda en `HIGH` por defecto y baja a `LOW` solo cuando se presiona el botón.
 
-
 ## 6. Convertir el botón en un interruptor de modos
 
 **Prompt:**
@@ -212,7 +206,6 @@ ModoOperacion modoActual = MODO_POTENCIOMETRO;
 ```
 
 Cada vez que `debounceBoton()` confirma una pulsación real, `leerBoton()` simplemente invierte el estado actual. Fue la primera vez en el proyecto donde el programa "recuerda" en qué situación está, en vez de solo reaccionar a lo que lee en el instante.
-
 
 ## 7. El modo demo: que el poema respire solo
 
@@ -238,7 +231,6 @@ if (millis() - tiempoInicioPaginaDemo >= DURACIONES_PAGINA[paginaActual]) {
 
 Este fue un punto de inflexión conceptual: entender que en Arduino "esperar" no significa "detener todo", sino "seguir revisando el reloj en cada vuelta del `loop()`".
 
-
 ## 8. Que las letras "floten": la animación de olas
 
 **Prompt:**
@@ -246,7 +238,8 @@ Este fue un punto de inflexión conceptual: entender que en Arduino "esperar" no
 
 **Así lo resolvimos:**
 La solución involucró tres ideas combinadas:
-1. Dibujar la palabra **letra por letra** en vez de de una sola vez, midiendo el ancho de cada carácter con `getTextBounds()`.
+
+1. Dibujar la palabra **letra por letra** en vez de de una sola vez, midiendo el ancho de cada carácter con `getTextBounds()`
 2. Aplicar a cada letra un pequeño desplazamiento vertical calculado con una función seno.
 3. Desfasar esa función según la *posición* de la letra en la palabra, para que no se muevan todas al mismo tiempo:
 
@@ -255,7 +248,6 @@ int desplazamiento = (int)(sin(fase + i * 0.65) * 2.5);
 ```
 
 La variable `fase` (`faseOlas`) se incrementa constantemente en el `loop()`, así que la ola nunca se detiene, incluso si el texto en pantalla no cambia.
-
 
 ## 9. Armar todas las piezas en el `loop()`
 
@@ -277,70 +269,61 @@ void loop() {
 
 El único `delay()` que sobrevivió en todo el programa es ese último, de apenas 5 milisegundos — más una formalidad para darle un respiro al procesador que un bloqueo real.
 
-
 ## Animación
 
-**La animación del barco**
+### La animación del barco
 
 Ya que el poema de Pizarnik alude al mar, comenzamos con la idea de incluir una animación de 4 fotogramas que fuera acorde al texto. Como el fragmento que trabajamos es *"...irse, y no volver"*, decidimos utilizar el verso completo como referencia: *"Muy junto a ese barco gigante de rayas rojas y blancas y verdes... irse, y no volver"*. Por lo tanto, se realizó un dibujo de un barco navegando desde el lado izquierdo de la pantalla hasta el derecho, simbolizando este viaje sin retorno.
 
-**Referentes visuales**
+### Referentes visuales
 
 El desarrollo de la animación comenzó mirando referentes. Principalmente mezclamos el diseño de dos imágenes referenciales que encontramos, ambas con licencia Creative Commons.
 
-![imagenes](./imagenes/referentesvelero.png)
+![Referentes velero](./imagenes/referentesvelero.png)
 
-**Bocetos y digitalización**
+### Bocetos y digitalización
 
 Se realizaron dos dibujos basados en estas imágenes, en los que notamos que las velas de estos botes eran notoriamente rectas. Por eso, al tercer dibujo se le agregó dinamismo por medio de curvatura en las velas, simbolizando el movimiento del viento. Este dibujo se pasó luego a Photoshop para digitalizarlo.
 
-![imagenes](./imagenes/dibujosvelero.png)
+![Dibujos velero](./imagenes/dibujosvelero.png)
 
-**Composición del canvas y rotación**
+## Composición del canvas y rotación
 
 La animación se trabajó en un canvas de 128 x 32 px, simulando la pantalla OLED del proyecto, donde se ordenaron 4 copias del velero para simular su movimiento a través de la pantalla. Con la idea de evitar que la animación se viese estática, en cada fotograma se rotó levemente el barco, simulando el balanceo causado por las olas.
 
-![imagenes](./imagenes/frames-velero.png)
+![Fotogramas velero](./imagenes/frames-velero.png)
 
-**Resultado final**
+## Resultado final
 
 Finalmente, la animación termina viéndose así:
 
-![imagenes](./imagenes/velero-bmp.gif)
+![Animación final](./imagenes/velero-bmp.gif)
 
-## Carcasa 
+## Carcasa
 
 Decidimos que parte de nuestro componente fundamental tuviera sentido con lo que quiere transmitir el poema, así que decidimos hacer una botella para hacer referencia a las cartas que viajaban sin rumbo dentro de una botella de vidrio, enviadas por mar, a lo desconocido. La botella no es solo un contenedor, es una metáfora del mensaje que se abandona a la deriva. Si bien la materialidad es parte de los aspectos esenciales, consideramos que el cartón también logra un mensaje ya que es un material frágil y perecedero, un objeto simbólico.
 
-![imagenes](./imagenes/procesocarcasa.png)
+![Procesos carcasa](./imagenes/procesocarcasa.png)
 
-## Conclusiones 
+## Conclusiones
 
 Puerto adelante habla de una partida sin retorno, este proyecto, en cambio, fue exactamente lo contrario, un punto de partida al que sabemos que vamos a volver. Aprendimos que `millis()` puede sostener un ritmo sin detener el tiempo, que una máquina de estados no es solo un concepto abstracto sino la forma más honesta de decirle a un programa "recuerda dónde estás". El barco que cierra la animación son cuatro arreglos de ceros y unos guardados en la memoria flash del microcontrolador, y aun así logra parecer que navega hacia algún lugar.Si algo nos deja esta primera experiencia programando es la certeza de que una pantalla de 128x32 píxeles puede ser tan buen lugar para leer a Alejandra Pizarnik como el papel, solo hace falta traducir con cuidado, línea por línea, bit por bit.
 
-## Referencias 
+## Referencias
 
 Nuestra mayor referencia fue el mismo poema, para poder procesar figuras, movimientos, objetos. En parte de referentes de arduino.
 
-+ [dibujoConPixeles](https://cl.pinterest.com/pin/425238389838553781/)
+Para poder mostrar imágenes y no solo texto en la pantalla, investigamos diferentes formas, primero aprendimos como funcionan los [mapas de bits](https://cl.pinterest.com/pin/425238389838553781/), y fue el método que usamos para poder agregar la animación del barco en nuestro proyecto.
 
-Para poder mostrar imágenes y no solo texto en la pantalla, investigamos diferentes formas, primero aprendimos como funcionan los mapas de bits, y fue el método que usamos para poder agregar la animación del barco en nuestro proyecto.
+Con este ejemplo exploramos las diferentes maneras que podían ir pasando las palabras que aparecían en la pantalla, y que no solo aparecieran de forma secuencial, en nuestro caso nos inspiramos de [esta referencia](https://cl.pinterest.com/pin/936537685030039604/) para hacer que las letras vayan pasando como si fueran las olas del mar.
 
-+ [trabajarBlancoyNegro](https://cl.pinterest.com/pin/936537685030039604/)
+Como en el último verso del poema dice “irse para no volver” tuvimos la idea en su momento de usar [sensores](https://cl.pinterest.com/pin/332492385014077254/) de distancia de manera que a medida que el usuario se vaya alejando o acercando al sensor, el código haga una cosa u otra.
 
-Con este ejemplo exploramos las diferentes maneras que podían ir pasando las palabras que aparecían en la pantalla, y que no solo aparecieran de forma secuencial, en nuestro caso nos inspiramos de esta referencia para hacer que las letras vayan pasando como si fueran las olas del mar.
+[Este](https://cl.pinterest.com/pin/701646816990186067/) es un claro ejemplo del uso del botón y que al pulsarlo haga que vaya cambiando de pantalla, en nuestro caso al pulsar el botón lo que sucede es que la pantalla muestra automáticamente las diferentes pantallas que van pasando a medida que uno mueve la perilla del potenciómetro.
 
-+ [sensor](https://cl.pinterest.com/pin/332492385014077254/ )
+## Registro Audiovisual
 
-Como en el último verso del poema dice “irse para no volver” tuvimos la idea en su momento de usar sensores de distancia de manera que a medida que el usuario se vaya alejando o acercando al sensor, el código haga una cosa u otra.
-
-+ [arduinoLeds](https://cl.pinterest.com/pin/701646816990186067/ )
-
-Este es un claro ejemplo del uso del botón y que al pulsarlo haga que vaya cambiando de pantalla, en nuestro caso al pulsar el botón lo que sucede es que la pantalla muestra automáticamente las diferentes pantallas que van pasando a medida que uno mueve la perilla del potenciómetro.
-
-## Registro Audiovisual 
-
-+ Prueba DVD: <https://youtube.com/shorts/z-0BPoiBQfk?si=0qSdlS1f18qVM-iO>
-+ Bmp fondo blanco: <https://youtube.com/shorts/AxZaHyCdHzo?si=08-Gyri_ptey6Hnq>
-+ Prueba en protoboard: <https://youtube.com/shorts/1N-9M-5V0MI?si=x_T6ccilc9W6-WuB>
-+ Resultado final: <https://youtu.be/i0yggEGqufM?feature=shared>
+- Prueba DVD: <https://youtube.com/shorts/z-0BPoiBQfk?si=0qSdlS1f18qVM-iO>
+- Bmp fondo blanco: <https://youtube.com/shorts/AxZaHyCdHzo?si=08-Gyri_ptey6Hnq>
+- Prueba en protoboard: <https://youtube.com/shorts/1N-9M-5V0MI?si=x_T6ccilc9W6-WuB>
+- Resultado final: <https://youtu.be/i0yggEGqufM?feature=shared>
