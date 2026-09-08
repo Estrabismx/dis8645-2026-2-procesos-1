@@ -153,13 +153,13 @@ El proyecto evolucionó progresivamente desde la reproducción de un poema en el
 
 Código 1: Reproducción del poema en el **Serial Monitor**, mediante un loop. Código base modificado a partir del código entregado en clases.
 
-<img width="400" height="552" alt="codigo-1-serialmonitor" src="https://github.com/user-attachments/assets/753dafd7-3a39-4fd6-bddc-847f390f84e4" />
+![gif reproducción del poema en el Serial Monitor mediante un loop](./imagenes/codigo-1-serialmonitor.gif)
 
 Código 2: Llevar el poema desde el monitor serial a la pantalla.
 
-![imagen de el poema reproduciéndose en la pantalla](./imagenes/codigo2.jpg)
+![imagen del poema reproduciéndose en la pantalla](./imagenes/codigo2.jpg)
 
-<img width="400" height="662" alt="codigo2" src="https://github.com/user-attachments/assets/6d16b5bb-9ad7-46ec-9244-672493dc1ff4" />
+![gif del poema reproduciéndose en la pantalla](./imagenes/codigo2.gif)
 
 Código 3: Representar visualmente la intensidad emocional del poema.
 
@@ -175,25 +175,25 @@ Código 4.2: Se agrega el nombre de la poetisa al comienzo del poema.
 
 Código 5: Terminar de adaptar el poema al formato de la pantalla.
 
-<img width="400" height="711" alt="codigo5" src="https://github.com/user-attachments/assets/60b94be7-7a92-4cf9-b9f3-b0e0c64d9309" />
+![gif del poema adaptado al formato de la pantalla](./imagenes/codigo5.gif)
 
 Código 5.2: Prueba de animación.
 
-<img width="1280" height="720" alt="c5-2" src="https://github.com/user-attachments/assets/b13f6d80-d7e8-4d7f-b26b-1a604b5c6d19" />
+![gif de la prueba de animación](./imagenes/codigo5-2.gif)
 
 Código 6: Animación del título **“Queja”**, utilizada como introducción después del nombre de la poetisa.
 
-<img width="472" height="848" alt="animacion-queja" src="https://github.com/user-attachments/assets/960b3e03-4710-4541-b12b-b3b33db29110" />
+![gif de la animación queja](./imagenes/animacion-queja.gif)
 
 Código 7: Animación de un **corazón roto**, vinculada al verso "Pero no puedo amar" después de la primera estrofa se agregan 3 LEDs rojos.
 
 ![imagen de los LEDs ya incorporados al circuito](./imagenes/codigo7.jpg)
 
-<img width="472" height="848" alt="animacion-corazon" src="https://github.com/user-attachments/assets/3048b3ac-83d5-4eb1-a113-33ed9509471f" />
+![gif de la animación corazón](./imagenes/animacion-corazon.gif)
 
 Código 8: Animación de **fuego**, relacionada con el verso "Me consumo en mi fuego" después de la segunda estrofa.
 
-<img width="472" height="848" alt="animacion-llamas" src="https://github.com/user-attachments/assets/b67f2a95-1e2e-41ec-967f-e19623636866" />
+![gif de la animación llamas](./imagenes/animacion-llamas.gif)
 
 ## Palabras claves representativas 
 
@@ -211,19 +211,19 @@ Animación 1: después del nombre de la poetisa de Alfonsina Storni, titulo "Que
 
 **gif de la animación**
 
-<img width="472" height="848" alt="animacion-queja" src="https://github.com/user-attachments/assets/960b3e03-4710-4541-b12b-b3b33db29110" />
+![gif de la animación queja](./imagenes/animacion-queja.gif)
 
 Animación 2: después de la primera estrofa, corazón roto
 
 **gif de la animación**
 
-<img width="472" height="848" alt="animacion-corazon" src="https://github.com/user-attachments/assets/3048b3ac-83d5-4eb1-a113-33ed9509471f" />
+![gif de la animación corazón](./imagenes/animacion-corazon.gif)
 
 Animación 3: después de la segunda estrofa, llamas
 
 **gif de la animación**
 
-<img width="472" height="848" alt="animacion-llamas" src="https://github.com/user-attachments/assets/b67f2a95-1e2e-41ec-967f-e19623636866" />
+![gif de la animación llamas](./imagenes/animacion-llamas.gif)
 
 ## Frames animaciones
 
