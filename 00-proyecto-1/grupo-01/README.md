@@ -1,5 +1,15 @@
 # proyecto-01
 
+## Acerca del proyecto
+
+- Grupo 01: 2al+
+
+- Integrantes:
+  - Dayana Pañitrur / [dayanapanitrur](https://github.com/dayanapanitrur)
+  - Camila Ramírez / [Estrabismx](https://github.com/Estrabismx)
+  - Bianka Vilchez / [biankavilchezs](https://github.com/biankavilchez)
+  
+
 ## Licencia 
 
 Esta obra y su documentación están bajo una [Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional](https://creativecommons.org/licenses/by-sa/4.0/).
@@ -121,10 +131,11 @@ con la oscuridad y la hora de la muerte rodeándolo.
 
 | Componente | Cantidad | Link de compra |
 | :--- | :---: | ---: |
-| Arduino UNO R4 Wifi | 1 | Dato 3 |
-| Pantalla LCD Azul 16x02 | 1 | Dato 3 |
-| Potenciómetro lineal (valor) | 1 | Dato 3 |
-| Botón (tipo) | 2 | Dato 3 |
+| Arduino UNO R4 Wifi | 1 | https://arduino.cl/products/arduino-uno-r4-wifi |
+| Pantalla LCD Azul 16x02 | 1 | https://afel.cl/products/pantalla-lcd-azul-16x02 |
+| Potenciómetro lineal (10k ohm) | 1 | https://afel.cl/products/potenciometro-10k-ohm |
+| Botón pulsador | 2 | https://afel.cl/products/boton-tactil-tapa-12x12x7-3-interruptor |
+
 
 ### Pantalla LCD Azul 16X02
 
@@ -204,37 +215,254 @@ Además de esto realizamos el primer diagrama de flujo relacionado al funcionami
 
 ## Proceso
 
+### Referentes
+
+1. [los vengadores mish](https://github.com/disenoUDP/dis8645-2025-2-procesos/tree/main/00-proyecto-01/grupo04)
+
+Proyecto desarrollado en el curso el año pasado.
+
+Este se carecterizo por trabajar y prototipar software online, similares a TinkerCad
+
+Además nos llamó la atención el como desarrollan y explican su proceso, más allá de los resultados o los elementos que utilizaron para trabajar
+
+![foto](./imagenes/sc-13.png)
+
+<br>
+
+2. [Francisco Roco - Arducover](https://www.tiktok.com/@aeroroco)
+
+Esta persona consta en su perfil de diversos covers a canciones, realizados en un Arduino UNO R3
+
+La peculiaridad es que además muestra la letra de las canciones en un display LCD Verde 16X02
+
+En estos videos, por cada canción existe una visualización del texto difernete. Algo bastante llamativo a pode lograr 
+
+Listado de algunos videos relevantes:
+
+- [Mira Niñita](https://www.tiktok.com/@aeroroco/video/7682581195867163922)
+
+- [Por que no se van](https://www.tiktok.com/@aeroroco/video/7667037271639526664)
+
+- [Mienteme una vez](https://www.tiktok.com/@aeroroco/video/7627724582861950226)
+
+![foto](./imagenes/sc-14.png)
+
+<br>
+
+3. [Wireless Altoids Display](https://atmega32-avr.com/wireless-altoids-display/)
+
+Proyecto que utiliza un microntrolador para tener un visualizar de datos inalambrico utiliza tambien una pantalla del tipo LCD 16 x 02
+
+A pesar de ser un proyecto enfocado en mostrar datos duros, nos comparte una visión de poder incluir y configurar una pantalla, tratando de salir de carcasas tan sofisticadas cuando no son necesarias
+
+![foto](./imagenes/wirless.jpg)
+
+<br>
+
+### Imagenes
+|  |  |  |
+|- | - | - |
+| ![proceso](./imagenes/proceso00.jpg) | ![proceso](./imagenes/proceso01.jpg) | ![proceso](./imagenes/proceso02.jpg) | 
+| ![proceso](./imagenes/proceso03.jpg) | ![proceso](./imagenes/proceso04.jpg) | ![proceso](./imagenes/proceo05.jpg) |
+| ![proceso](./imagenes/proceso06.jpg) | ![proceso](./imagenes/proceso07.jpg) |
+
+
 ### Etapa inicial
 
-- poema descartado (copyright)
-- 
+**poema descartado (copyright)**
+
+**como primer inicio, el poema que elegimos fue "cine" de victoria ramírez mansilla, el cual no logramos ocupar por el copyright. sin embargo, nos ayudó a encaminar y aportó a la conceptualización del proyecto.**
+
 cine — victoria ramírez mansilla
 
-> 
+CINE
 
-- por copyright (xd)
+luces bajas y escaleras de lava negra
+me toman la mano y es una mano áspera
+casi todas las manos de mujer son suaves
 
+el deseo se me presenta como una cuenca
+acomodo las palmas y ellas se adaptan
+a las cosas que sospecho amar
+
+me dejo llevar por el cordel
+apenas logro concentrarme en la historia
+mi pecho es un instrumento de viento
+demasiado distante
+
+quiero decir que admiro la manera
+en que el cuello sostiene su cabeza
+
+quiero decir que entiendo
+la entrega de la fracción
+de la fracción de la fracción.
+
+
+- El poema habla de dos personas en un cine: mientras se supone que ven la película, la persona que narra se distrae completamente tocando y observando a la otra (su mano, su cuello), sin poder concentrarse en la historia. Al final dice que solo logra recibir un poquito de esa cercanía, no todo.
+
+**luego de ya saber de qué trataba el poema, decidimos hacer una lluvia de ideas con acciones clave, por ejemplo acciones típicas de un cine y cómo se ven visualmente. de esa lluvia de ideas seleccionamos algunas finales**
+
+**acciones típicas del cine de suspenso (lluvia de ideas):**
+aparecer lentamente, desaparecer lentamente, parpadear, interrumpirse, cortar, congelarse, acercarse/zoom, alejarse, temblar, vibrar, perder el foco, desenfocarse, repetirse, esperar, pausar, perseguir, seguir, observar, ocultar, revelar, fragmentar, distorsionar, desvanecer, acelerar, frenar, interrumpir abruptamente
+
+**palabras clave visuales (lluvia de ideas):**
+tensión, silencio, espera, oscuridad, sombra, distancia, cercanía, secreto, duda, misterio, presencia, ausencia, rastro, huella, fragmento, vacío, eco, respiración, susurro, persecución, inquietud, anticipación, revelación, ocultamiento, interferencia
+
+**selección final:**
+- congelarse
+- pausar
+- revelar
+- fragmentar
+- acelerar
+- distancia
+- cercanía
+- respiración
+- interferencia
 - buscar alguna solución
 
-- Encontrar poema
+**luego de nuestro trabajo conceptual y la lluvia de ideas, decidimos cambiar el poema por los derechos :(. como ya teníamos algo encaminado, buscamos un poema que abordara la misma temática y donde pudiéramos utilizar nuestras palabras clave.**
 
-- Traducir poema
 
-- Acreditar licencia
+- **nuevo poema**
 
-- Conceptualizar
+**elegimos un poema de elizabeth barret browning, el cual cumple con los plazos que necesitábamos para que fuera de dominio público). luego, hicimos nuestra propia traducción del poema.**
+
+When our two souls stand up erect and strong,
+
+Face to face, silent, drawing nigh and nigher,
+
+Until the lengthening wings break into fire
+
+At either curvèd point,—what bitter wrong
+
+Can the earth do to us, that we should not long
+
+Be here contented? Think. In mounting higher,
+
+The angels would press on us and aspire
+
+To drop some golden orb of perfect song
+
+Into our deep, dear silence. Let us stay
+
+Rather on earth, Belovèd,—where the unfit
+
+Contrarious moods of men recoil away
+
+And isolate pure spirits, and permit
+
+A place to stand and love in for a day,
+
+With darkness and the death-hour rounding it.
+
+
+Cuando nuestras dos almas se eleven, firmes y fuertes,
+
+frente a frente, en silencio, acercándose más y más, 
+
+hasta que las alas que se alargan estallan en fuego 
+
+en cada punta curva ¿qué mal amargo 
+
+puede hacernos la tierra, que no debiéramos 
+
+quedarnos aquí, contentos? Piénsalo. Al subir más alto, 
+
+los ángeles nos oprimirían y aspirarían 
+
+a dejar caer algún áureo orbe de canto perfecto
+
+en nuestro hondo, querido silencio. Quedémonos
+
+mejor en la tierra, Amado mío, donde los ánimos
+
+contrarios e injustos de los hombres retroceden
+
+y aíslan a los espíritus puros, y permiten
+
+un lugar donde estar y amar por un día,
+
+con la oscuridad y la hora de la muerte rodeándolo.
+
 
 ### Pseudo código
 
-- Hacer listado de pasos
+Definimos elementos y conceptos claves necesarios para el desarrollo de nuestra propuesta, estos fueron mutando y cambiando según lo ibamos requeriendo
 
-- Ponerse en situaciones que podrían entrar en conflicto (del código, no nosotras xd)
+```cpp
 
-- Realizar esquema / hacer pruebas
+//botón es false o true
+//si uno de los dos es true ocurre el punto 4
+//si ambos botones son true ocurre el 5, 6 y 7
 
-- definir variables
+leerBotones (botón a, botón b) {
+if (bóton a + botón b)
+return true: // devolver true si ambos botones son 1
+return false: // devolver false si un botón es 1 y el otro 0
+} 
 
-- definir posibles funciones
+leerPote()
+poteAvanzar()
+poteRetroceder()
+mostrarTextoInicial
+
+leerVerso() 
+detenerVerso()
+mostrarPalabra()
+deshacerPalabra()
+
+variables: 
+
+mostrar verso por verso.
+
+
+
+
+
+char *versosPoema[] = {
+  "Cuando estan nuestras almas frente a frente,",
+  "mudas, erguidas, fuertes, ya muy proximas,",
+  "y sus alas se encienden al tocarse,",
+};
+
+// estado del boton A: true si esta presionado ahora mismo
+
+
+bool botonA = false;
+// primero se 
+// estado del boton B: true si esta presionado ahora mismo
+
+bool botonB = true;
+
+// pin fisico donde esta conectado el boton A
+
+const int botonAPin = 2;
+
+// pin fisico donde esta conectado el boton B
+
+const int botonBPin = 3;
+
+// indice del verso que se esta mostrando en este momento
+
+int versoActual = 0;
+
+// bandera: true cuando el texto esta congelado y no debe avanzar
+
+bool versoDetenido = false;
+
+// bandera: true cuando la palabra clave esta visible en pantalla
+
+bool palabraVisible = false;
+
+// arreglo con las palabras clave, una por seccion del poema
+
+char *palabrasClave[] = {
+“PLACEHOLDER1”,
+“PLACEHOLDER2”,
+};
+
+```
+
 
 ### Codi-Gooooo
 
@@ -1466,12 +1694,63 @@ unsigned long tiempoPresionado = millis() - tiempoInicioDosBotones;
 
 ```
 
-<br>
+Dentro de la lógica también se encuentra la acción de presionar un solo botón, es decir, cuando el texto se queda congelado. 
+
+```cpp   
     
+    else if (b1 || b2) {
+    // Si se presiona solo 1 botón (o se soltó uno estando en la Acción B)
+
+    // NUEVO: Si venimos de soltar los dos botones y fue un toque corto, pausamos 3 segundos
+    if (estadoActual == 2 && (millis() - tiempoInicioDosBotones) < 1200) {
+      delay(3000); // Mantiene la palabra clave en pantalla exactamente 3 segundos
+    }
+
+    if (estadoActual != 1) {
+      estadoActual = 1;
+      lcd.clear(); // Limpia para asegurar que se borre el poemaNuevo si veníamos de ahí
+    }
+    
+    // Imprime el texto original tal cual estaba, congelado en su posición actual
+    int largoVerso = strlen(versosPoema[v]);
+    lcd.setCursor(0, 0);
+    for (int i = 0; i < 16; i++) {
+      if (pos + i < largoVerso && pos + i >= 0) {
+        lcd.print(versosPoema[v][pos + i]);
+      } else {
+        lcd.print(' ');
+      }
+    }
+    return; // Sale del loop para que no actualice la posición y se quede congelado
+  } 
+
+    ```
+    
+Y al dejar de presionar el botón, el texto vuelve al último punto en que quedó congelado y pasa a funcionar nuevamente con el potenciómetro.
+    
+```cpp
+    
+    else {
+    // Ningún botón presionado: Funcionamiento normal con el potenciómetro
+
+    // Si venimos de soltar los dos botones y fue un toque corto
+    if (estadoActual == 2 && (millis() - tiempoInicioDosBotones) < 1200) {
+      delay(2000); // Mantiene la palabra clave en pantalla exactamente 2 segundos
+    }
+    
+ ```
+
+
+ Además, colocamos un delay de 2 segundos para que la palabra clave se logre leer al momento de aparecer en pantalla.
+
+ <br>
+
+ [![video](./imagenes/vid04.png)](https://youtube.com/shorts/qPF3jfDAklU)
+
 #### Resultado
-    
+
 Finalmente tenemos la última versión del código, se corrigieron los elementos relacionados al monitor serial:
-    
+
 ```cpp
 
 Serial.begin(9600);
@@ -1518,10 +1797,14 @@ Se edito de manera manual y más directamente la visualización del nombre del p
                        
 Resultado final
                        
-- [![miniatura](./imagenes/vid05.png)](LINK DE YOUTUBE)                    
- <br>                      
-                       
-Conexión representada en Tinkercad
+- [![miniatura](./imagenes/vid05.png)](https://youtu.be/S8riqjUto7U)
+ 
+- [![miniatura](./imagenes/vid06.png)](https://youtube.com/shorts/CUCcAnlpkV4?feature=share)
+
+
+ <br>
+ 
+ Conexión representada en Tinkercad
 
 [![Tinkercad](./imagenes/sc-12.png)](https://youtu.be/ZCfgRzy07II)
 
