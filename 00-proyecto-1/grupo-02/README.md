@@ -7,7 +7,11 @@
 *Santiago Cifuentes Vélez (santiagocifuvelez)*
 
  <br>
+ 
+> *Código desarrollado con asistencia de Claude (Anthropic).*
 
+ <br>
+ 
 # Poema  
 No es un poema en prosa, no es tampoco una página con letras que riman, y ya..., es una experiencia que nace de la observación del entorno; el amarillo cálido del sol, la grandeza de la cordillera de los Andes, la ternura de la jerga para hacer sentir cómodo al prójimo, el canto de los colibríes, la sensualidad de vestirse de blanco y desvestirse por el sol, etc...
 
@@ -56,7 +60,10 @@ Dice así:
 > *(Escrito por Santiago Cifuentes Vélez..., para el proyecto 01 de taller semestre 2 del 2026, inspirado en la sutileza de mis amigues Nico y Fran, y la imponente cordillera de los Andes, lugar donde me he encontrado de cara con la vida misma)*
 > 
 ##### Licencia
-© 2026 [Santiago Cifuentes Vélez]. El poema está bajo la licencia [Creative Commons Atribución-NoComercial-SinDerivadas 4.0 Internacional (CC BY-NC-ND 4.0)](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es).
+
+© 2026 [Santiago Cifuentes Vélez]. El poema está bajo la licencia Creative Commons Atribución-NoComercial-SinDerivadas 4.0 Internacional (CC BY-NC-ND 4.0).
+
+Excepción: los versos "Pero también, ya en tu pecho florecerán, colores de amor. Florecerán..." pertenecen a la canción "Mira Niñita" de Los Jaivas, compuesta por Carlos Cabezas, Claudio Parra, Mario Mutis, Juanita Parra y Ankatu Alquinta. Ese fragmento no está cubierto por la licencia CC de este poema; todos los derechos sobre él pertenecen a sus autores originales. Se cita aquí con fines no comerciales y académicos, en el contexto de un proyecto de taller.
 
 # ¿Qué hicimos?
 
@@ -99,7 +106,7 @@ En nuestro sistema, la luz directa sobre el sensor LDR es, literalmente, lo que 
 
 ## 4. Materialización: el living interactivo
 
-A partir de lo anteriormente mencionado, creamos un **La casa de Tatio** con un aspecto antiguo, que representa un espacio doméstico de remembranza y valoración del mundo en el que estamos sumergidos.
+A partir de lo anteriormente mencionado, creamos **La casa de Tatio** con un aspecto antiguo, que representa un espacio doméstico de remembranza y valoración del mundo en el que estamos sumergidos.
 
 Dentro de ese living, cada componente técnico cumple un rol simbólico:
 
@@ -163,9 +170,81 @@ Resultado
 
 ### Prompt Corpus
 
+- **Paso 1 — Fundamentos**
+
+I'm learning C++ and working on an exercise projecting text on a 0.91" I2C OLED with an SSD1306 controller, but I want to learn how to manage text size, position, etc.
+
+- **Paso 2 — Confirmar que las funciones son correctas**
+
+Before I start practicing, I want to confirm if these are the right codes to manage C++ for this screen: [pego el código de setup con Adafruit_SSD1306, setTextSize, setCursor, getTextBounds, etc.]
+
+- **Paso 3 — Entender una línea específica**
+
+What is Serial.begin(9600); for?
+
+- **Paso 4 — Debuggear estructura del código**
+
+I got this error: [pego el error del compilador]. What's wrong with this: [pego el código con la función mal anidada dentro de otra]
+
+- **Paso 5 — Revisar la versión corregida**
+
+Is this okay? [pego el código ya corregido]
+
+- **Paso 6 — Simplificar código innecesario**
+
+Can I eliminate this function, or is it necessary? [pego testdrawchar()]
+
+- **Paso 7 — Confirmación final del código base**
+
+This is how it ended up: [pego versión final limpia]. Is this ready?
+
+- **Paso 8 — Documentación**
+
+Make me a table of every function used in this exercise and what it does, in Spanish. / Can you give it to me in markdown to put in my GitHub README?
+
+- **Paso 9 — Reemplazar el logo por defecto**
+
+Could I change the "Adafruit" logo at the beginning with another symbol?
+
+- **Paso 10 — Convertir una imagen a bitmap**
+
+We don't know how to draw our own image bitmap. Is there a website or something?
+
+- **Paso 11 — Integrar el bitmap generado**
+
+We got this code, how do we put it in the code: [pego el array epd_bitmap_cactus]
+
+- **Paso 12 — Orientación vertical**
+
+We took the decision to put it vertically, to show all the cactus. How can I make it show on the screen vertically?
+
+- **Paso 13 — Agregar potenciómetro y texto largo con scroll**
+
+Now I want to put a poem that is large like a paragraph, and I want to make a scroll with a potentiometer B100K. How can I do that, with which functions? / I got this example of code for the potentiometer: [pego código de lectura+filtrado del potenciómetro]. With this code, can I do the scroll thing of the poem?
+
+- **Paso 14 — Entender el código combinado**
+
+Explain me the parts of the code to understand it, and know what I'm doing.
+
+- **Paso 15 — Cambiar de pantalla**
+
+Now I'm using a "Pantalla LCD OLED 1.3" I2C 128x64, controlador SH1106". I need you to update this code to the Adafruit library "Adafruit_SH110X.h" and the screen size.
+
+- **Paso 16 — Agregar botón, segundo potenciómetro, LED y sensor de luz (LDR)**
+
+[pega el código actual] I want to add: a push button to turn the screen on/off with debounce, a second potentiometer that controls an LED's brightness and also decides which poem shows (poema1 or poemaLuz), and an LDR that controls the scroll advance of poemaLuz — with light it advances automatically, without light it freezes.
+
 ---
 
 ### Prompt Animaciones 
+
+Necesito 3 animaciones específicas, cada una ligada a un punto exacto del poema:  
+Después de "En Chile, los Romeros florecen" → una animación de flores creciendo (crecen, hacen pausa, se achican, repiten)  
+Después de "En Chile, los Colibríes cantan" → un colibrí volando de un lado a otro, aleteando, con notas musicales saliendo de su pico  
+Después de "los Andes... revelándose de día" → un atardecer detrás de la silueta de la cordillera  
+Cada animación debe aparecer SIN tapar ninguna línea real del poema (necesito que insertes líneas en blanco donde haga falta para lograr esto, ya que la pantalla avanza de a pares de líneas).
+
+Todas las animaciones deben escribirse como funciones con variables static (no globales sueltas), para que puedan llamarse repetidamente desde loop() y recuerden su estado entre llamadas — es el mismo patrón que usarías para cualquier animación nueva que yo te pida después  
 
 ---
 
