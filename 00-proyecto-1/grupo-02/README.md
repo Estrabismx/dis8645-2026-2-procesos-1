@@ -116,7 +116,7 @@ Dentro de ese living, cada componente técnico cumple un rol simbólico:
 
 ## 6. Síntesis
 
-El living ***La casa de Tatio*** y el poema, ***Chile mapu mew...*** no es solamente un poema montado sobre una pantalla: es un objeto que **actúa** su propio contenido. Invita a mirar el territorio chileno y donde estes leyendo esto, con ojos de turista, a experimentar la luz como revelación y la quietud como memoria, y a habitar aunque sea por un momento, dentro de un living de cartón, ese espacio donde lo cotidiano vuelve a asombrarnos.
+El living ***La casa de Tatio*** y el poema, ***Chile mapu mew...*** no es solamente un poema, tiene la intención de invitarte a mirar el territorio, en este caso, chileno y donde estés leyendo esto, con ojos de turista, a experimentar la luz como revelación y la quietud como memoria, y a habitar aunque sea por un momento, dentro de un living de cartón, ese espacio donde lo cotidiano vuelve a asombrarnos.
 
 ---
 
@@ -126,7 +126,7 @@ El living ***La casa de Tatio*** y el poema, ***Chile mapu mew...*** no es solam
 # Diagrama de flujo 
 ![](./imagenes/flowchart.jpg)
 
-# Esquemático 
+# Proceso 
 
 El concepto de realizar un living de hogar, fue por la calidez que suele ocupar en la casa,
 así mismo como los recuerdos en nuestra mente, que palpitan en el corazón, y sentimos en el estomago.
