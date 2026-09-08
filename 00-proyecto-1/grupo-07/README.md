@@ -21,7 +21,7 @@ Esta poetisa argentina nacida en 1892 en Suiza es uno de los íconos de la liter
 
 Toda su obra refleja dramatismo, lucha y una audacia inusual para la época. Su temática es, sobre todo, amorosa, feminista y profunda, en donde se refleja un carácter singular, marcado muchas veces por la neurosis.
 
-Su muerte, continúa la huella de su transgresora personalidad. Su trágico suicidio, en las aguas de la playa "La Perla", de Mar del Plata, el 25 de octubre de 1938, le permitió huir de una penosa enfermedad oncológica y de la soledad que la invadía.
+Su muerte, continúa la huella de su transgresora personalidad. Su trágico suicidio, en las aguas de la playa "La Perla", de Mar del Plata, el 25 de octubre de 1938, le permitió huir de una penosa enfermedad oncológica (crecimiento descontrolado y la multiplicación rápida de células anormales) y de la soledad que la invadía.
 
 Información sacada de → https://www.poemas-del-alma.com/alfonsina-storni.htm#block-bio
 
@@ -85,104 +85,60 @@ Expresa un amor frustrado y posiblemente no correspondido, pero principalmente m
 |Arduino UNO R4 WIFI|1|$32.990|<https://mcielectronics.cl/shop/product/arduino-uno-r4-minima/>|
 |Pantalla LCD Oled 0,91" I2C|1|$3.990|<https://afel.cl/products/pantalla-lcd-oled-0-91?_pos=1&_sid=f1b122119&_ss=r>|
 |Protoboard|1|$1.500|<https://afel.cl/products/mini-protoboard-400-puntos>|
-|Botón Táctil|1|$400|<https://afel.cl/products/boton-tactil-tapa-12x12x7-3-interruptor?_pos=3&_sid=a0018323a&_ss=r>|
-|cables|6|$1.000|<https://afel.cl/products/pack-20-cables-de-conexion-macho-macho>|
+|LEDS|3|$70|<https://afel.cl/products/diodo-led-5mm-ultrabrillante-rojo?_pos=10&_sid=9ca2bb29d&_ss=r>|
+|Kit resistencias|3|$4.990|<https://afel.cl/products/kit-600-resistencias-1-4w-30-valores?_pos=1&_sid=aa6abbe0f&_ss=r>|
+|cables|7|$1.000|<https://afel.cl/products/pack-20-cables-de-conexion-macho-macho>|
 |Potenciómetro B10k|1|$500|<https://afel.cl/products/potenciometro-10k-ohm>|
 
 
 ---
 
 ## ¿Qué queremos que pase? (texto)
-- Cambio de dirección 2: de derecha a izquierda. Lo que queremos es que lo que se proyecte en la pantalla represente el poema, por ende, puede ser que solo se proyectan ciertas palabras y no todo el texto, que son palabras claves representativas (palabras intensas).
+
+- Poner al comienzo el nombre de la poetisa Alfonsina Storni
+- Cambio de dirección 1: Dirección inicial del texto (arriba hacia abajo)
+- Cambio de dirección 2: de izquierda a derecha
 - Que la velocidad del texto cambie según la perilla del potenciómetro (verso por verso).
 - A través de un botón, tener la posibilidad de presionarlo y que se inviertan los colores mostrando las palabras claves representativas (palabras intensas).
 - Que a ciertas palabras del poema se les pueda bajar o subir la opacidad con el potenciómetro.
 - perfeccionismo = control = pausar/reanudar (botón)
-- cambio = velocidad de reproducción (potenciómetro)
-- cambio = dirección del texto (botón)
-- dirección inicial del texto: arriba hacia abajo
-- cambio de dirección 1: de izquierda a derecha
-- poner al comienzo el nombre de la poetisa Alfonsina Storni
+- Cada palabra intensa que aparezca se encenderan leds rojos
+
 
 ## Paso a paso de que queremos que suceda
 
-- lo primero en proyectarse en la pantalla es el nombre de la poetisa "Alfonsina Storni"
-- se despliega la animación inicial con el nombre del poema "Queja"
-- el poema comienza a proyectarse y avanza verso por verso de manera interactiva a medida que el usuario gira la perilla del potenciometro
-- al llegar a versos con palabras claves representativas (palabras intensas), el tamaño de la tipografía es mas grande que el resto del verso, para simular un efecto de "grito"
-- entre medio de las dos primeras estrofas, la pantalla reproduce una animación visual
-- al presionar el botón, se invierte los colores de la pantalla y se muestran únicamente las palabras clave representativas (palabras de tamaño de la tipografía es mas grande)
+- Lo primero en proyectarse en la pantalla es el nombre de la poetisa "Alfonsina Storni"
+- Se despliega la animación inicial con el nombre del poema "Queja"
+- El poema comienza a proyectarse y avanza verso por verso de manera interactiva a medida que el usuario gira la perilla del potenciometro
+- Al llegar a versos con palabras claves representativas (palabras intensas), el tamaño de la tipografía es mas grande que el resto del verso, para simular un efecto de "grito", esto hace que se enciendan 3 leds para intensificar estas palabras claves
+- Despues de la primera estrofa, la pantalla reproduce una animación visual de un corazón roto expandiendose por la pantalla
+- Entre medio de las dos primeras estrofas, la pantalla reproduce una animación visual de fuego subiendo de abajo hacia arriba
 
 
 
+## Proceso código y registro (resumen)
 
-## Proceso código y registro
 
-[intentoUnoPoema](https://github.com/disenoUDP/dis8645-2026-2-procesos-1/tree/main/00-proyecto-1/grupo-07/codigos/intentoUnoPoema) → 28/08/26
+El proyecto evolucionó progresivamente desde la reproducción de un poema en el monitor serial hacia una experiencia visual e interactiva, incorporando jerarquía tipográfica, control manual y animaciones vinculadas al contenido emocional de la obra.
 
-versión 0 que solo visualiza el poema en el serial monitor en loop
 
-```cpp
-// poema "queja"
-// de alfonsina storni
+## Evolución del proyecto
 
-// Señor, mi queja es ésta,
-// Tú me comprenderás;
-// De amor me estoy muriendo,
-// Pero no puedo amar.
-// Persigo lo perfecto
-// En mí y en los demás,
-// Persigo lo perfecto
-// Para poder amar.
-// Me consumo en mi fuego,
-// ¡Señor, piedad, piedad!
-// De amor me estoy muriendo,
-// ¡Pero no puedo amar.
+| Versión | Fecha | Etapa | Cambios principales | Objetivo |
+|:---:|:---:|---|---|---|
+| **Código 1** | 28 ago. | Poema base | Reproducción del poema en el **Serial Monitor**, mediante un loop. Código base modificado a partir del código entregado en clases. | Crear la primera versión funcional del poema. |
+| **Código 2** | 1 sept. | Pantalla OLED | Se incorpora una pantalla **OLED 0,91" I2C**. El poema comienza a visualizarse físicamente y los versos cambian automáticamente cada 2 segundos. | Llevar el poema desde el monitor serial a la pantalla. |
+| **Código 3** | 2 sept. | Jerarquía visual | Se destacan determinadas **palabras clave e intensas** del poema mediante un tamaño mayor, mientras el resto mantiene un tamaño normal. | Representar visualmente la intensidad emocional del poema. |
+| **Código 4** | 3 sept. | Interacción | Se incorpora un **potenciómetro** para controlar manualmente el avance de los versos, reemplazando el avance automático. | tener control total del ritmo del poema. |
+| **Código 4.2** | 3 sept. | cambio visual | Se agrega el **nombre de la poetisa**, al comienzo del poema, se centra y alinea el texto y se establece una jerarquía tipográfica: palabras clave de **16 px** y texto normal de **8 px**. | Mejorar la composición y legibilidad en pantalla. |
+| **Código 5** | 4 sept. | Optimización | Se detectan problemas de espacio en pantalla. Se reduce la cantidad de palabras destacadas para asegurar que todos los versos sean visibles correctamente. | Terminar de daptar el poema al formato de la pantalla. |
+| **Código 5.2** | 4 sept. | Prueba de animación | Se incorpora una primera animación. El resultado no se adapta correctamente a las dimensiones de la pantalla. | Explorar la incorporación de movimiento y detectar limitaciones técnicas. |
+| **Código 6** | 6 sept. | **Animación 1🎬** | Animación del título **“Queja”**, utilizada como introducción después del nombre de la poetisa. | Introducir visualmente el poema en pantalla. |
+| **Código 7** | 7 sept. | **Animación 2💔** + 3 LEDs rojos| Animación de un **corazón roto**, vinculada al verso "Pero no puedo amar" después de la primera estrofa se agregan 3 LEDs rojos, que se encienden cada vez que aparecen las palabras clave e intensas del poema. | Reforzar la carga emocional del poema mediante una respuesta visual y física sincronizada con el poema. |
+| **Código 8** | 7 sept. | **Animación 3🔥** | Animación de **fuego**, relacionada con el verso "Me consumo en mi fuego" después de la segunda estrofa. | Representar visualmente la intensidad y el consumo emocional. |
 
-// char = caracter
-// por ende
-// esta parte del codigo
-// separa el poema en versos
-// y al haber definido en clases
-// que una linea como un arreglo de caracteres
-// por eso se utiliza char
 
-char *misVersos[] = {
-  "Señor, mi queja es ésta,",
-  "Tú me comprenderás",
-  "De amor me estoy muriendo,",
-  "Pero no puedo amar.",
-  "Persigo lo perfecto",
-  "En mí y en los demás,",
-  "Persigo lo perfecto",
-  "Para poder amar.",
-  "Me consumo en mi fuego,",
-  "¡Señor, piedad, piedad!",
-  "De amor me estoy muriendo,",
-  "¡Pero no puedo amar!"
-};
 
-void setup() {
-
-  // 9600 baud (simbolos) es un numero moderado
-  // y no puede ser cualquiera
-  // debe ser el resultado de un 2 elevado a algo
-  Serial.begin(9600);
-}
-
-void loop() {
-
-  // recorrer el arreglo
-  // for es para recorrer conjuntos
-  // adentro tiene 3 mini lineas
-  // inicio de los tiempos
-  // oye pero cuando paro
-  // que hago despues de cada iteracion
-  for (int i = 0; i < 5; i++) {
-    Serial.println(misVersos[i]);
-  }
-}
-```
 
 ## Palabras claves representativas 
 
