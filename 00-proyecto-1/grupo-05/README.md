@@ -124,7 +124,10 @@ El proyecto consiste en reproducir, mediante una pantalla LCD OLED de 0,91", un 
 Para que el usuario pueda interactuar con el proyecto y leer el fragmento del poema que se reproduce en la pantalla, se utiliza un potenciómetro, cuya principal función es desplazar la frase por la pantalla para poder leerla de manera correcta y completa. También se utiliza un botón que, al ser presionado, permite cambiar a la siguiente frase. De esta manera, el usuario puede controlar tanto el desplazamiento del texto como el momento en que desea avanzar a la siguiente frase.
 
 ![alt](./imagenes/proyecto.jpeg)
+
 https://youtu.be/fOX_0zksPlA?si=51IJRl3PwZZpNhPD
+
+https://youtu.be/BCbU4XNFgXw?si=Q2fGhKfy3B3KhqLM
 
 ### Pasos del proceso
 
