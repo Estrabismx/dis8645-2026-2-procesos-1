@@ -37,3 +37,4 @@ Este verso fue el eje poético del proyecto, marcando la idea de partida, distan
 - **Poema y legalidad**: se discutió cómo incorporar el texto sin caer en problemas de derechos, buscando un uso respetuoso y creativo.  
 
 ![velero.gif](./imagenes/velero.gif)
+![carcasaaa](./imagenes/carcasaaa.png)
