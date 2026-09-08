@@ -663,3 +663,17 @@ Nuestro principal aprendizaje durante este proceso fue acercarnos a la programac
 
 Por otra parte, el desarrollo de la carcasa nos hizo cuestionarnos cómo organizar físicamente los componentes y, al mismo tiempo, cómo integrar a la persona que invitamos a leer el poema para que no fuera solamente una espectadora, sino que pudiera formar parte de la experiencia. Finalmente, buscamos que la interacción reforzara el mensaje del poema: detenerse, dejar de exigirse constantemente y reconocer que cada persona tiene un lugar dentro de todo lo que habitamos.
 
+## Materiales
+
+| # | Componente | Cantidad | Especificación |
+| --- | --- | --- | --- |
+| 1 | Resistencia | 1 | 470 Ω |
+| 2 | Potenciómetro | 1 | B20K |
+| 3 | Botón | 1 | Pulsador |
+| 4 | Arduino UNO R4 WiFi | 1 | Placa de desarrollo |
+| 5 | LED | 1 | —  |
+| 6 | Resistencia para LED | 1 | — |
+| 7 | Cables Dupont | — | Macho/Hembra |
+| 8 | Protoboard | 1 | 400 puntos |
+| 9 | Cable USB-C | 1 | Para conexión del Arduino |
+
