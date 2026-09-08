@@ -4,15 +4,15 @@
 
 **Integrantes:**
 
-- *Antonia Loch (antoloch)*
+- *Antonia Loch ([antoloch](https://github.com/antoloch/))*
 
-- *Anais Marschhausen (anaisbmg)*
+- *Anais Marschhausen ([anaisbmg](https://github.com/anaisbmg/))*
 
-- *Hugo Montoya (hugosmontoya)*
+- *Hugo Montoya ([hugosmontoya](https://github.com/hugosmontoya/))*
 
-- *Carla Nuñez (ccarlabelenn)*
+- *Carla Nuñez ([ccarlabelenn](https://github.com/ccarlabelenn/))*
 
-- *Natalia Pilar (sz-mada)*
+- *Natalia Pilar ([sz-mada](https://github.com/sz-mada/))*
 
 ## Descripción de proyecto
 
