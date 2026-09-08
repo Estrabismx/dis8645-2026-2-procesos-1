@@ -237,7 +237,7 @@ Frames de la animación de corazón.
 
 Frame de la animación de llama.
 
-![Frame de la animación de llama](./imagenes/llama-final.png)
+![Frame de la animación de llama](./imagenes/llamafinal.png)
 
 ## Herramienta para animaciones pixel a pixel
 
