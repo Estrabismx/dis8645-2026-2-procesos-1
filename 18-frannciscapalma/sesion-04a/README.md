@@ -14,3 +14,10 @@ En ese momento no teníamos la pantalla y la íbamos a comprar hasta que el Sant
 ## encargos
 
 ## lectura
+
+en estas páginas negroponte explica que en un futuro tendremos mucha capacidad para enviar información por fibra, pero que enviar información por el aire siempre habrá menos espacio disponible ya que es un recurso compartido, es por eso que propone que lo que se manda por cable ahora se haga por aire y viceversa, que la cosas fijas como televisores sean por fibra y que los celulares por aire, al mismo tiempo dice que puede que no sea buena idea(? porque estaríamos abrumados de tanta información.
+
+
+cita1: “In fact, unlimited bandwidth can have the paradoxical and negative effect of swamping people with too many bits and of allowing machines at the periphery to be needlessly dumb. Unlimited bandwidth is hardly wrong or bad to have, but like free sex, it is not necessarily good either. Do we really want or need all those bits?”
+
+cita2: “If current cross-ownership policies remain in existence, isn’t the American citizen being deprived of the richest possible information environment? We are shortchanging ourselves grotesquely if we forbid certain bits to commingle with others.”
