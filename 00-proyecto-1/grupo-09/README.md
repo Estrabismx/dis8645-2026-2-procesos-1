@@ -67,8 +67,8 @@ El poema está bajo la licencia de copyright, donde todos los derechos están re
 
 ## Proceso código
 
-### Martes 25 de agosto
-Empezamos por analizar el código que nos dieron de ejemplo, viendo que era lo que nos servía y lo que no. Eliminamos lo que era animación y movimiento de texto, dejando solo el que se desplaza a la izquierda y reemplazando el texto por el primer verso de nuestro poema hasta que funcionara. En esta etapa tuvimos una serie de errores en cuanto a cómo editábamos las propiedades del texto, algunos ejemplos de estos es que nos quedaba la tipografía expandida, desfazada o superpuesta con la otra frase.
+## Martes 25 de agosto
+Empezamos por analizar el código que nos dieron de ejemplo, viendo que era lo que nos servía y lo que no. Eliminamos lo que era animación y movimiento de texto, dejando solo el que se desplaza a la izquierda y reemplazando el texto por el primer verso de nuestro poema hasta que funcionara. En esta etapa tuvimos una serie de errores en cuanto a cómo editábamos las propiedades del texto, algunos ejemplos de estos es que nos quedaba la tipografía expandida, desfasada o superpuesta con la otra frase.
 
 `1,5 display size`
 
@@ -80,8 +80,6 @@ Empezamos por analizar el código que nos dieron de ejemplo, viendo que era lo q
 
 
 ![errores](./imagenes/error3.png)
-
-AQUÍ AGREGAR ERRORES DE CÓDIGO Y LECCIONES 
 
 
 Ejemplo de la estructura inicial:
@@ -117,11 +115,10 @@ void testscrolltext(void) {
 ```
 
 ## Viernes 28 de agosto
-### Avances de la clase
 
 En esta clase terminamos de incorporar todos los versos al código, definimos el diagrama de flujo para estructurar la interacción, comenzamos a desarrollar la animación y organizamos los componentes en la protoboard. También comprobamos que cada componente funcionara por separado y empezamos a programarlos.
 
-## Organización de la estructura del código
+### Organización de la estructura del código
 
 El viernes también para ordenar la estructura del código, utilizamos un prompt en ChatGPT que nos ayudó a transformar la idea general del proyecto en una lógica más clara y menos abstracta.
 
@@ -168,7 +165,7 @@ La estructura general del código queda entonces organizada de la siguiente mane
 ```
 Con este texto logramos dirigir de forma más ordenada el proceso de construcción del código, evitando enredarnos con los nuevos conceptos y estructuras que íbamos incorporando al proyecto.
 
-## Interacción 
+### Interacción 
 Para realizar el diagrama, utilizamos Chat GPT y utilizamos el siguiente prompt:
 
 _"Crea estructura conceptual del siguiente flujo para trabajar Arduino con pantalla pantalla OLED I2C SSD1306, con potenciómetro y botón._
@@ -181,7 +178,7 @@ Nos dio de resultado el orden del diagrama, el cual rediseñamos y quedó el sig
 
 ![diagrama de flujo](./imagenes/diagrama.png)
 
-## Animación
+### Animación
 Para poder realizar la animación, primero elegimos un video en pixabay subido por Bell Alvarez. Gracias a su licencia, desde esta página se permite usar el contenido gratis,  sin tener que dar crédito al autor (aunque siempre es apreciado) y modificar o adaptar el contenido en obras nuevas. 
 
 Elegimos este video donde se muestran a gansos salvajes volando, ya que referencia explícitamente el título y versos del poema, donde se utilizan como un recurso para hacerle recordar al receptor que hay un mundo para observar más allá  de su mente, y para aceptar nuestra propia naturaleza, como la de un suave animal.
@@ -242,13 +239,13 @@ Así que se le pidió a Gemini que integrara la animación dentro de nuestro có
 
 ![integrar animación](./gifs/avance-animacion.gif)
 
-## Componentes
+### Proceso componentes
 
 Durante este día pudimos avanzar principalmente en la organización y conexión de los componentes dentro de la protoboard y el Arduino. Una de las primeras cosas que hicimos fue revisar cómo debíamos distribuir las conexiones para que pudieran funcionar correctamente sin interferirse entre ellos. Antes de intentar conectar todo al mismo tiempo el Seba (gracias seba :-).) nos recomendó probar cada componente por separado, lo que nos permitió identificar si existía algún problema específico en el funcionamiento de cada uno.
 
 Primero trabajamos con el potenciómetro. Realizamos las conexiones correspondientes y lo probamos utilizando el código para comprobar que la lectura de sus valores funcionara correctamente. Luego hicimos un procedimiento similar con el botón para comprobar que al presionarlo el código pudiera detectar correctamente el cambio de estado.
 
-Una vez que comprobamos que ambos componentes funcionaban de manera independiente, tuvimos que conseguir que los dos pudieran estar conectados y funcionar al mismo tiempo dentro de una misma protoboard. En este proceso contamos con la ayuda de Seba, a quien agradecemos mucho por su amabilidad para ayudarnos en todo momento. Con su ayudda pudimos entender mejor cómo ordenar las conexiones dentro de la protoboard y conectarlo al Arduino. Después de realizar las conexiones, volvimos a probar el circuito utilizando el código, que fue importante porque no solo queríamos comprobar que los componentes estuvieran conectados físicamente sino que el código pudiera correr correctamente la información de ambos al mismo tiempo.
+Una vez que comprobamos que ambos componentes funcionaban de manera independiente, tuvimos que conseguir que los dos pudieran estar conectados y funcionar al mismo tiempo dentro de una misma protoboard. Pudimos entender mejor cómo ordenar las conexiones dentro de la protoboard y conectarlo al Arduino. Después de realizar las conexiones, volvimos a probar el circuito utilizando el código, que fue importante porque no solo queríamos comprobar que los componentes estuvieran conectados físicamente sino que el código pudiera correr correctamente la información de ambos al mismo tiempo.
 
 ````
 //1. Declaración y prueba de los componentes
@@ -284,11 +281,11 @@ Finalmente, se declaran los pines correspondientes al potenciómetro, botón y L
 
 ![ejemplo](./gifs/componentes.gif)
 
-# Martes 01 de septiembre
+## Martes 01 de septiembre
 
 Este día tras la explicación de Aarón, se ordenó el código para que estuviera más estructurado y simplificar su extensión en cuanto a las funciones del texto, se conectaron los componentes a la pantalla y se agregaron pasos de la interacción. por otro lado se avanzó en el prototipo de la carcasa y su conceptualidad
 
-## Organización de la estructura del código
+### Organización de la estructura del código
 
 Para esta parte fuimos ordenando el código por secciones, trabajando cada una por separado para entender mejor su función dentro del proyecto. Primero comenzamos con las **librerías**, que ya habíamos configurado en la clase anterior y que funcionaban como la base de nuestro código.
 
@@ -565,7 +562,7 @@ En esta parte también fuimos pidiendo ayuda a ChatGPT, pero no para construir t
 
 Así fuimos trabajando función por función y **apilándolas de a poco**, en vez de pedir el bloque completo desde el comienzo. Esto nos sirvió para no perdernos dentro de un código demasiado largo y para ir entendiendo qué hacía cada parte antes de pasar a la siguiente.
 
-## Ajustes pendientes para la siguiente clase
+### Ajustes pendientes para la siguiente clase
 
 Hasta este punto habíamos avanzado harto en la construcción del código y ya teníamos funcionando gran parte del recorrido pero nos quedaron algunos detalles por corregir y probar en la siguiente clase.
 
@@ -573,31 +570,22 @@ Uno de los principales problemas estaba en el botón. A veces, al presionarlo un
 
 Como queríamos que la lógica fuera **una presión = una pantalla**, quedamos con la idea de ajustar el código para que después de aceptar una presión Arduino espere a que el botón sea soltado antes de permitir avanzar nuevamente.
 
-## Componentes
+### Proceso omponentes
 
 Avance: [LINK YOUTUBE](https://youtube.com/shorts/AT0fQQUXfAs?feature=share)
 
-COLOCAR EJEMPLOS Y EXPLICACIÓN Y FOTOS DE LOOS COMPONENTES QUE LA YAI ARREGLÓ ESA CLASE 
-
 Habíamos dejado funcionando en la protoboard el botón y el potenciómetro conectados al Arduino. Esto nos permitió tener una base sobre la cual seguir agregando los demás componentes y comprobar que el circuito que habíamos pensado podía funcionar. A partir de esta conexión, durante esta sesión nos enfocamos en incorporar la pantalla y, al mismo tiempo comenzar a pensar cómo llevar todo este sistema desde la protoboard/Arduino hacia la carcasa. Además de conectar la pantalla, extendimos las conexiones de los componentes para que no quedaran limitadas a la posición que tenían en la protoboard.
+
+![IMG](./imagenes/avance01.png)
 
 ## Desarrollo carcasa
 
 Por temas de tiempo, decidimos darle prioridad al desarrollo de la carcasa y terminar los últimos detalles relacionados con la organización de los componentes. Esto fue necesario porque ya teníamos una idea más clara de cómo funcionaría el circuito, por lo que podíamos comenzar a tomar decisiones más concretas sobre el espacio que necesitaríamos para instalarlo.
 
-## Trabajo de la clase
-
 Esta clase fue súper proactiva porque, si bien todas estábamos preocupadas de que todo funcionara como un mismo “cerebro”, cada una se dedicó a avanzar en alguna zona del proyecto, como los componentes, el código, la carcasa y la parte conceptual.
 
-![IMG](./imagenes/avance01.png)
 
-
-
-### Viernes 04 de septiembre
-
-## Finalización del código 
-
-## Finalización del código
+### Viernes 04 de septiembre: Finalización del código 
 
 En esta clase terminamos de ajustar varias cosas del código para que todo funcionara mejor. Aplicamos lo que habíamos visto antes de **separar la animación del código principal**, dejando los cuadros en otra pestaña y llamándolos desde el archivo principal para que quedara más ordenado.
 
@@ -623,13 +611,27 @@ Por último, alargamos un poco la animación, pero no modificando los cuadros, s
 
 Ya teníamos el código funcionando, por lo que solo nos quedó ajustar pequeños detalles y avanzar con la carcasa. 
 
-## Componentes
+### Componentes
 
-COLOCAR EJEMPLO
+Con estas conexiones logramos integrar todos los componentes en la misma protoboard y dejarlos preparados para continuar con el proyecto: 
+
+Para conectar el Arduino a la protoboard, primero conectamos 5V del Arduino UNO 4R WIFI,  al VCC de la protoboard y el GND, para poder distribuir la alimentación a los componentes.
+Luego conectamos el potenciómetro, dejando la patita 1 conectada a VCC, la patita 3 a GND y la patita central al pin A0 del Arduino. Para el botón, utilizamos una resistencia de 470  conectada a GND, mientras que otra patita del botón se conectó a VCC y la restante al pin 12 del Arduino.
+Incorporamos la pantalla, conectando VCC, GND, SDA al pin A4 del Arduino y SCK al pin A5 del Arduino. Finalmente, agregamos un LED, conectando su patita larga al pin 9 y la otra patita a GND mediante una resistencia.
 
 ## Carcasa
 
-# Proceso resumido 
+Para generar la idea de la carcasa, partimos desde el querer relacionarla al significado del poema y fuimos explorando referentes, hasta llegar a uno que nos llamó la atención por su forma. Este referente en forma de cofre nos hizo pensar en el poema dentro de él, como un tesoro, un recordatorio, algo que se pudiera revisar con cuidado. 
+
+La idea de este cofre también nos permite mostrar los componentes sin necesidad de que queden tan expuestos, haciendo que formen parte de la experiencia. Al levantar la tapa el usuario podrá encontrarse directamente con la pantalla, el botón y el potenciómetro. De igual manera en la parte inferior se podrá observar el proceso que permite llegar a este resultado: los cables, el Arduino y la protoboard. De esta forma buscamos que la interacción se sienta más cercana y que el usuario pueda ver tanto el resultado como lo que hay detrás de su funcionamiento.
+
+Por lo tanto, la finalidad de la estructura genera esta conversación entre los supuestos de perfección e imperfección, donde hay cosas que se puedan ver más prolijas y otras expuestas, pero sobre todo dejando el poema en el centro como el foco principal para darle su importancia.
+Para el proceso durante clases fuimos generando distintos bocetos manteniendo la idea del cofre, mientras avanzabamos definimos la estructura de este y como se distribuyeron los componentes.
+
+En cuanto a la estructura diseñamos el boceto final en Rhino, esto nos ayudó para confirmar medidas y alturas. Una vez que tuvimos el modelo 3D, separamos cada una de sus piezas para enviarlas a corte láser en el cartón, de esta manera ahorramos tiempo y nos aseguramos de que las piezas quedarán en las medidas precisas. 
+
+![boceto Rhino](./imagenes/boceto-final.png)
+
 
 ## Resumen del proceso para llegar al código final
 
@@ -651,4 +653,13 @@ COLOCAR EJEMPLO
 | 13 | Agregamos un botón de inicio y corregimos la conexión del LED externo, cambiándolo del pin `13` al pin `9`. |
 | 14 | Separamos finalmente la animación del código principal, dejándola en un `New Tab`, y ajustamos desde el código cuánto tiempo duraba. |
 | 15 | Hicimos las últimas pruebas y ajustes hasta dejar funcionando el recorrido completo. |
+
+
+## Conclusión
+
+En el desarrollo de nuestro Proyecto 01 pudimos trabajar con el poema Gansos salvajes de Mary Oliver, combinando texto, imagen, programación y electrónica. Desde el inicio, nuestra interpretación del poema estuvo relacionada con la autoexigencia y las expectativas de perfección que muchas veces nos imponemos. A partir de esto, buscamos crear una experiencia que permitiera a las personas interactuar con el poema de una forma más personal, introspectiva y pausada.
+
+Nuestro principal aprendizaje durante este proceso fue acercarnos a la programación, entendiendo que programar básicamente consiste en aprender a ordenar nuestras ideas y transformarlas en instrucciones exactas para que el sistema pueda responder de la manera que esperamos. Tuvimos diferentes problemas, tanto con la visualización y organización del texto como con la integración de la animación.
+
+Por otra parte, el desarrollo de la carcasa nos hizo cuestionarnos cómo organizar físicamente los componentes y, al mismo tiempo, cómo integrar a la persona que invitamos a leer el poema para que no fuera solamente una espectadora, sino que pudiera formar parte de la experiencia. Finalmente, buscamos que la interacción reforzara el mensaje del poema: detenerse, dejar de exigirse constantemente y reconocer que cada persona tiene un lugar dentro de todo lo que habitamos.
 
