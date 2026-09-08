@@ -1,4 +1,4 @@
-![](./imagenes/chile-mapu-mew.gif)
+![](./imagenes/chile-mapu-meww.gif)
 
 **Realizado por:**  
 *Francisca Palma (frannciscapalma)*
