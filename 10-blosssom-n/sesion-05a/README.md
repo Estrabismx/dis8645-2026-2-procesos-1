@@ -19,16 +19,19 @@ También aparece Oulipo, que trabajaba con reglas para crear textos. Por ejemplo
 
 Después habla de cómo, a medida que los computadores fueron avanzando, también aumentaron las posibilidades para hacer este tipo de poesía.
 
+
 ---
 
->####Citas
+
+
+>**Citas**
 >
 >“Poems are either permutational, combinatoric, or slotted into syntactic templates.” (p. 36)
 >
 >The artist’s job is to compose, to place together in a meaningful arrangement a number of independent elements.” (p. 32)
 >
 
-####Cosas que me quedaron
+**Cosas que me quedaron**
 
 Me quedó dando vueltas la idea de que para hacer algo nuevo no necesariamente hay que crear elementos nuevos. Se puede trabajar con cosas que ya existen y cambiar la forma en que están juntas.
 
