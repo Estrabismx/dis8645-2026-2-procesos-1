@@ -20,7 +20,11 @@ También aparece Oulipo, que trabajaba con reglas para crear textos. Por ejemplo
 Después habla de cómo, a medida que los computadores fueron avanzando, también aumentaron las posibilidades para hacer este tipo de poesía.
 
 
+
+
 ---
+
+
 
 
 
@@ -30,6 +34,8 @@ Después habla de cómo, a medida que los computadores fueron avanzando, tambié
 >
 >The artist’s job is to compose, to place together in a meaningful arrangement a number of independent elements.” (p. 32)
 >
+
+
 
 **Cosas que me quedaron**
 
