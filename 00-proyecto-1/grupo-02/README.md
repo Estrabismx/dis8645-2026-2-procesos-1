@@ -1,3 +1,4 @@
+
 ![](./imagenes/chile-mapu-meww.gif)
 
 **Realizado por:**  
@@ -13,23 +14,23 @@
  <br>
  
 # Poema  
-No es un poema en prosa, no es tampoco una página con letras que riman, y ya..., es una experiencia que nace de la observación del entorno; el amarillo cálido del sol, la grandeza de la cordillera de los Andes, la ternura de la jerga para hacer sentir cómodo al prójimo, el canto de los colibríes, la sensualidad de vestirse de blanco y desvestirse por el sol, etc...
+No es un poema en prosa, no es tampoco una página con letras que riman, y ya, es una experiencia que nace de la observación del entorno; el amarillo cálido del sol, la grandeza de la Cordillera de los Andes, la ternura de la jerga para hacer sentir cómodo al prójimo, el canto de los colibríes, la sensualidad de vestirse de blanco y desvestirse por el sol, etc...
 
 Dice así:
 
 "**Chile mapu mew...**  
 *En el territorio Chileno*
 
-> *No somos poetas con titulo,*  
+> *No somos poetas con título,*  
 *pero las palabras plasmadas aquí, crecieron de nuestro ser*  
-*como las flores en primeravera.*  
+*como las flores en primavera.*  
 
 >*La primavera de Santiago de Chile, ¡Que coincidencia!*  
 *estamos en primavera.*  
 
->*Bienvenidx*  
+>*Bienvenide*  
 
->*Con amor: Francisca, Nicolas y Santiago.*  
+>*Con amor: Francisca, Nicolás y Santiago.*  
 
 *¿Qué pasa cuando la luz del sol aparece detrás de la cordillera?*  
 
@@ -57,13 +58,13 @@ Dice así:
 
 *Florecerán...*
 
-> *(Escrito por Santiago Cifuentes Vélez..., para el proyecto 01 de taller semestre 2 del 2026, inspirado en la sutileza de mis amigues Nico y Fran, y la imponente cordillera de los Andes, lugar donde me he encontrado de cara con la vida misma)*
+> *(Escrito por Santiago Cifuentes Vélez..., para el proyecto 01 de taller semestre 2 del 2026, inspirado en la sutileza de mis amigues Nico y Fran, y la imponente Cordillera de los Andes, lugar donde me he encontrado de cara con la vida misma)*
 > 
 ##### Licencia
 
 © 2026 [Santiago Cifuentes Vélez]. El poema está bajo la licencia Creative Commons Atribución-NoComercial-SinDerivadas 4.0 Internacional (CC BY-NC-ND 4.0).
 
-Excepción: los versos "Pero también, ya en tu pecho florecerán, colores de amor. Florecerán..." pertenecen a la canción "Mira Niñita" de Los Jaivas, compuesta por Carlos Cabezas, Claudio Parra, Mario Mutis, Juanita Parra y Ankatu Alquinta. Ese fragmento no está cubierto por la licencia CC de este poema; todos los derechos sobre él pertenecen a sus autores originales. Se cita aquí con fines no comerciales y académicos, en el contexto de un proyecto de taller.
+Excepción: los versos "Pero también, ya en tu pecho florecerán, colores de amor. Florecerán..." pertenecen a la canción "Mira Niñita" de Los Jaivas (1972), compuesta por Mario Arístides, Gabriel Parra, Eduardo Parra, Claudio Parra y Eduardo Alquinta. Ese fragmento no está cubierto por la licencia CC de este poema; todos los derechos sobre él pertenecen a sus autores originales. Se cita aquí con fines no comerciales y académicos, en el contexto de un proyecto de taller.
 
 # ¿Qué hicimos?
 
@@ -71,13 +72,13 @@ Excepción: los versos "Pero también, ya en tu pecho florecerán, colores de am
 
 ## 1. Contexto del encargo
 
-El proyecto solicitaba desarrollar y enseñar poesía a través de una placa de la línea Arduino Uno R4 WiFi, una pantalla de libre elección, una carcasa de cartón, y como mínimo un botón y un potenciómetro.
+El proyecto solicitaba desarrollar y enseñar poesía a través de una placa de la línea Arduino Uno R4 WiFi, una pantalla de libre elección, una carcasa de cartón y como mínimo, un botón y un potenciómetro.
 
 ---
 
-## 2. Concepto 1: mirar lo propio con ojos de turista
+## 2. Concepto 1: Mirar lo propio con ojos de turista
 
-Nosotres decidimos escribir nuestro propio poema con la intencionalidad de rendir homenaje a la belleza de las pequeñas cosas que muchas veces pasan desapercibidas, ya sea por la cotidianidad y la rutina del día a día, o por la ignorancia que a veces se tiene respecto al territorio que se habita y que, a su vez, nos rodea. En este contexto...el territorio es Santiago de Chile.
+Nosotres decidimos escribir nuestro propio poema con la intencionalidad de rendir homenaje a la belleza de las pequeñas cosas que muchas veces pasan desapercibidas, ya sea por la cotidianidad y la rutina del día a día, o por la ignorancia que a veces se tiene respecto al territorio que se habita y que, a su vez, nos rodea. En este contexto... el territorio es Santiago de Chile.
 
 Creemos que, por un momento, hay que ver nuestra propia casa, nuestro propio entorno, con ojos de turista para así apropiarnos de lo que somos y de dónde somos. El poema nace de esa mirada: los Romeros que florecen, los colibríes que cantan, el cielo rosado de Santiago, la cordillera que enmarca cada atardecer, eventos tan cotidianos para quien vive en Santiago de Chile que se vuelven invisibles.
 
@@ -87,7 +88,7 @@ Creemos que, por un momento, hay que ver nuestra propia casa, nuestro propio ent
 
 Es en los momentos de mayor claridad, cuando la luz revela el camino con total lucidez, donde vemos los acontecimientos de la vida con mayor nitidez. Pero, ¿qué sucede cuando lo vivido comienza a convertirse en recuerdo, y la memoria empieza a tomar su lugar por medio de flashbacks, a veces borrosos? Aun así, esos fragmentos nos dan pistas y rastros para volver a sentir, para volver a ilusionarnos, y para recuperar esos impulsos que nos llenan de expectativa y nos hacen sentir nuevamente vivos.
 
-Esta dualidad luz/lucidez exterior versus memoria/nostalgia interior, es la base central del proyecto, y se sostiene en dos espacios simbólicos y metafóricos en el poema (esto por las experiencias propias de quien es turista en este hermoso país, llamado; Chile):
+Esta dualidad luz/lucidez exterior versus memoria/nostalgia interior, es la base central del proyecto, y se sostiene en dos espacios simbólicos y metafóricos en el poema (esto por las experiencias propias de quien es turista en este hermoso país, llamado Chile):
 
 - **El afuera**: el territorio, la luz del día, la cordillera, el presente que se vive con los ojos bien abiertos.
 - **El adentro**: la habitación, el living de una casa, donde nos encontramos cara a cara con los recuerdos, y donde la mente (cuando deja de ser traicionera) nos regala flashbacks de aquello que nos mueve el alma.
@@ -96,7 +97,7 @@ Esta dualidad luz/lucidez exterior versus memoria/nostalgia interior, es la base
 
 ## 5. Unión de conceptos y la metáfora que creamos a partir de ello:
 
-Lo que hace fuerte nuestro concepto no es solo la intención poética, sino que **la forma en que logramos reproducir, literalmente, la idea que el poema plantea**:
+Lo que hace fuerte nuestro concepto no es solo la intención poética, sino **la forma en que logramos reproducir, literalmente, la idea que el poema plantea**:
 
 > *"¿Qué pasa cuando la luz del sol aparece detrás de la cordillera?"*
 
@@ -119,6 +120,18 @@ Dentro de ese living, cada componente técnico cumple un rol simbólico:
 | Pantalla OLED | Para ver la memoria |
 | Carcasa de cartón con aspecto antiguo | La materialidad del hogar, de lo domesticado, de lo que ha envejecido junto a quien lo habita |
 
+## BOM
+
+| Componente | Valor Unidad | Cantidad | Link |
+| --- | --- | --- | --- |
+| Arduino UNO R4 WiFi | $35.990 | 1 | <https://arduino.cl/products/arduino-uno-r4-wifi> |
+| Pantalla LCD Oled 1.3" 128x64 caracteres azules | $5.000 | 1 | <https://afel.cl/products/pantalla-lcd-oled-1-3-128x64-caracteres-azules> |
+| Protoboard 830 puntos | $2.500 | 1 | <https://afel.cl/products/protoboard-mb-102-830-puntos> |
+| Potenciómetro B100kΩ | $500 | 2 | <https://afel.cl/products/potenciometro-100k-ohm> |
+| Fotoresistor GL5528 (LDR) | $500 | 1 | <https://afel.cl/products/pack-5-fotoresistores-gl5528-ldr> |
+| Botón pulsador 4 pines | $400 | 1 | <https://afel.cl/products/boton-tactil-tapa-12x12x7-3-interruptor> |
+| Cables Dupont | $1.000 | 1 Pack | <https://afel.cl/products/pack-20-cables-de-conexion-macho-macho> |
+
 ---
 
 ## 6. Síntesis
@@ -140,11 +153,11 @@ El living ***La casa de Tatio*** y el poema, ***Chile mapu mew...*** no es solam
 
 ### Carcasa
 El concepto de realizar un living de hogar, fue por la calidez que suele ocupar en la casa,
-así mismo como los recuerdos en nuestra mente, que palpitan en el corazón, y sentimos en el estomago.
+así mismo como los recuerdos en nuestra mente, que palpitan en el corazón, y sentimos en el estómago.
 
 Nostálgico, de silencio y cuidado.
 Donde se atienden a lxs amigues, 
-así como el país que le habitamos, nos atiende, y nos sorprende. 
+así como el país que habitamos, nos atiende, y nos sorprende. 
 
 ## Bocetos:
 El escenario está conformado por: 
@@ -1209,8 +1222,7 @@ int alturaMontana(int x, int cantidadPuntos, const int perfilX[], const int perf
 # Referentes
 1. Días sin ti, Elvira Sastre.
 2. Aquella orilla nuestra, Elvira Sastre.
-3. 
-4. "Mira niñita", una canción de los Jaivas.
-5. "La danza de la libélulas", una canción de Manuel García.
-6. "La exiliada del sur", un poema de Violeta Parra.
-7. "Un día más", una canción de Jósean Log
+3. "Mira niñita", canción de los Jaivas.
+4. "La danza de la libélulas", una canción de Manuel García.
+5. "La exiliada del sur", un poema de Violeta Parra.
+6. "Un día más", una canción de Jósean Log
