@@ -1,232 +1,336 @@
-**PROYECTO 1 — BITÁCORA DE PROCESO**
+# PROYECTO 1 — BITÁCORA DE PROCESO
 
-Integrantes: Isidora Díaz — Natalia Gutiérrez — Carlo Martínez
+## Acerca del proyecto
 
-Poema escogido: Pepper Sauce — Malika Booker
+
+### Integrantes
+
+Isidora Díaz — Natalia Gutiérrez — Carlo Martínez
+
+
+### Poema y autora
+
+
+**Pepper Sauce — Malika Booker**
 
 Antes de leerlo queremos informar que el poema contiene situaciones de violencia y abuso que pueden ser sensibles para algunos espectadores.
 
-```cpp
-I pray for that grandmother, grinding her teeth,
-one hand pushing in fresh hot peppers, seeds and all, turning
-the handle of that old iron mill, squeezing the limes, knowing
-          they will burn and cut raw like acid.
 
-She pours in vinegar and gets Anne to chop five onions
-          with a whole bulb of garlic,
-          Chop them up real fine girl, you hear?
-And Anne dicing, and crying, relieved that no belt has blistered her
-skin,
-          no knife handle smashed down onto her knuckles
-until they bleed for stealing money from she grandmother purse.
- 
+> 
+> I pray for that grandmother, grinding her teeth,  
+> one hand pushing in fresh hot peppers, seeds and all, turning  
+> the handle of that old iron mill, squeezing the limes, knowing  
+>           they will burn and cut raw like acid.
+>
+> She pours in vinegar and gets Anne to chop five onions  
+>           with a whole bulb of garlic,  
+>           Chop them up real fine girl, you hear?  
+> And Anne dicing, and crying, relieved that no belt has blistered her  
+> skin,  
+>           no knife handle smashed down onto her knuckles  
+> until they bleed for stealing money from she grandmother purse.
+>
+> I hear she made Anne pour in the oil and vinegar  
+>           and stir up that hot sauce, how she hold her down.  
+> I hear she tied that girl to the bedposts,  
+>           strung her out naked, like she there lying on a crucifix.  
+> I hear she spread she out, then say,  
+>           I go teach you to go and steal from me, Miss Lady.
+>
+> I hear she scoop that pepper sauce out of a white enamel bowl,  
+>           and pack it deep into she granddaughter’s pussy,  
+> I hear there was one piece of screaming in the house that day.
+>
+>           Anne bawl till she turn hoarse,  
+>                bawl till the hair on the neighbours skin raise up,  
+>                bawl till she start hiss through her teeth,  
+>                bawl till she mouth could make no more sound,  
+>           I hear how she turn raw,  
+>           how that grandmother leave her there all day,
+>
+>           I hear how she couldn’t walk or talk for weeks.
+>   
 
-I hear she made Anne pour in the oil and vinegar
-          and stir up that hot sauce, how she hold her down.
-I hear she tied that girl to the bedposts,
-          strung her out naked, like she there lying on a crucifix.
-I hear she spread she out, then say,
-          I go teach you to go and steal from me, Miss Lady.
+
+   
+  
+### ¿Qué queremos hacer con el poema?
+
+Elegimos *Pepper Sauce* porque muestra cómo la violencia familiar puede estar conectada con traumas heredados desde la esclavitud y el colonialismo en el Caribe. También elegimos a Malika Booker porque su trabajo habla mucho de memoria, identidad caribeña y de cómo esas heridas históricas siguen presentes entre generaciones.
 
 
-I hear she scoop that pepper sauce out of a white enamel bowl,
-          and pack it deep into she granddaughter’s pussy,
-I hear there was one piece of screaming in the house that day.
+
+### Copyright
 
 
-          Anne bawl till she turn hoarse,
-               bawl till the hair on the neighbours skin raise up,
-               bawl till she start hiss through her teeth,
-               bawl till she mouth could make no more sound, 
-          I hear how she turn raw,
-          how that grandmother leave her there all day,
-         
-          I hear how she couldn’t walk or talk for weeks.
-```
+**Copyright © 2013 Malika Booker. All rights reserved.**
 
-Elegimos Pepper Sauce porque muestra cómo la violencia familiar puede estar conectada con traumas 
-heredados desde la esclavitud y el colonialismo en el Caribe. También elegimos a Malika Booker porque 
-su trabajo habla mucho de memoria, identidad caribeña y de cómo esas heridas históricas siguen presentes entre generaciones.
+El poema no presenta una licencia Creative Commons o licencia abierta. Su reproducción y la creación de obras derivadas requieren autorización del titular de los derechos, salvo las excepciones legales aplicables a usos educativos, investigación o cita.
 
-Licencia: Copyright © 2013 Malika Booker. All rights reserved. 
-El poema no presenta una licencia Creative Commons o licencia abierta. 
-Su reproducción y la creación de obras derivadas requieren autorización del titular de los derechos, 
-salvo las excepciones legales aplicables a usos educativos, investigación o cita.
 
-**Inicio del proyecto**
 
-Partimos entendiendo que el objetivo no era simplemente poner el poema en una pantalla OLED, sino interpretarlo mediante código.
+  ---
 
-Como todavía estamos aprendiendo C++ y trabajando con una pantalla OLED muy pequeña de 128 × 32 px, 
-decidimos partir con recursos relativamente simples y reutilizables:
+    
 
-cambios de velocidad;
-cambios de tamaño;
-movimiento;
-pausas;
-pantalla vacía;
-acumulación de texto;
-brillo;
-dibujos simples en píxeles.
 
-Desde el comienzo descartamos hacer una animación completamente distinta para cada frase porque probablemente 
-terminaríamos con un caos de código. La idea era construir unas pocas herramientas y reutilizarlas dependiendo 
-de lo que necesitara cada parte del poema.
+## 1. Primer acercamiento al poema
 
-También agregamos un aviso dentro del código indicando que el poema pertenece a Malika Booker, que lo estamos
-utilizando para un proyecto académico sin fines de lucro y que nuestra intervención corresponde a una reinterpretación visual.
 
-Mientras comenzábamos a trabajar con el texto aprendimos a usar arreglos de caracteres en vez de depender solamente de String.
+### Elección del poema
+
+Elegimos *Pepper Sauce* de Malika Booker porque nos llamó la atención la forma en que el poema cuenta una situación de violencia familiar a través de algo tan cotidiano como preparar una salsa.
+
+También nos interesó el trasfondo del poema y su relación con la memoria, la esclavitud y el colonialismo en el Caribe.
+
+
+
+### Entender el poema
+
+
+Al leerlo entendimos que el poema cuenta la violencia que Anne vive por parte de su abuela y cómo esta violencia se va haciendo cada vez más fuerte.
+
+También nos llamó la atención que el poema no muestra la violencia de una sola vez, sino que la va aumentando progresivamente. Por eso empezamos a pensar que esa misma progresión podía aparecer en la forma en que el poema se mostraría en la pantalla.
+
+
+
+### División del poema
+
+
+Primero dividimos el poema en sus cinco estrofas y después fuimos separando los versos o palabras que tenían acciones o momentos que queríamos trabajar de manera distinta.
+
+Algunos ejemplos fueron:
+
+`I pray` / `for that` / `grandmother`
+
+`turning the handle of that old iron mill`
+
+`BURN` / `CUT` / `RAW` / `ACID`
+
+`dicing` / `crying`
+
+`I hear`
+
+`crucifix`
+
+`Miss Lady`
+
+`SCREAMING`
+
+`bawl`
+
+El objetivo era que cada parte pudiera tener un comportamiento diferente dependiendo de lo que estaba pasando en el poema.
+
+
+
+### ¿Qué queremos que pase en cada parte?
+
+
+Desde el principio pensamos que la intensidad debía ir aumentando junto con el poema.
+
+Al comienzo queríamos poco texto, movimientos lentos y pausas largas. Después queríamos ir sumando velocidad, tamaño, brillo, movimiento y acumulación de texto.
+
+La primera estrofa parte más tranquila y termina con un cambio fuerte en `BURN`, `CUT`, `RAW` y `ACID`.
+
+En la segunda estrofa aparece más la acción de cortar, por lo que usamos fragmentación y cambios de tamaño en `dicing` y `crying`.
+
+En la tercera estrofa quisimos trabajar la repetición de `I hear`, el movimiento de revolver, el dibujo de `crucifix` y dejar `Miss Lady` sola y más grande.
+
+En la cuarta estrofa agregamos un *trigger warning* y decidimos no representar literalmente la violencia sexual. Queríamos trabajarla principalmente con lentitud, pausas, brillo y acumulación. `SCREAMING` sería uno de los momentos de mayor intensidad.
+
+En la quinta estrofa queríamos que la repetición de `bawl` fuera llenando la pantalla hasta llegar a un punto de saturación. Después todo desaparecería y la intensidad comenzaría a bajar hasta llegar al último verso, que aparecería solo y lentamente.
+
+
+ ---
+
+   
+
+## 2. Primeras pruebas con código
+
+
+### Strings y arreglos
+
+
+El inicio del proceso de programación fue a la par con las clases en las que comenzamos a trabajar con `String`, arreglos y `for`. Esto nos permitió encontrar una forma de ordenar el poema dentro del código y trabajar sus versos de manera independiente.
+
+Como queríamos que el proyecto pudiera seguir funcionando fuera de las soluciones propias de Arduino, comenzamos a utilizar arreglos de caracteres para guardar el texto.
 
 ```cpp
 char nombre[6] = "aaron";
 ```
 
-Esto nos ayudó a entender el texto como una secuencia de caracteres 
-y apareció una idea que después fue súper útil para ordenar el proyecto:
+A partir de esto entendimos el texto como una secuencia de caracteres y pudimos llevar esa lógica al poema.
 
-un poemario es un arreglo de páginas → una página es un arreglo de líneas → una línea es un arreglo de caracteres.
+> un poemario es un arreglo de páginas → una página es un arreglo de líneas → una línea es un arreglo de caracteres
 
-También empezamos a trabajar con for, que primero usamos para recorrer conjuntos y después terminaría siendo 
-importante para controlar posiciones, movimientos, brillo y otras animaciones.
+También comenzamos a utilizar `for` para recorrer conjuntos. Esto después fue útil no solamente para recorrer los versos, sino también para controlar posiciones, movimientos y otras animaciones.
 
-**Interpretar el poema**
 
-Antes de escribir las animaciones en C++, decidimos definir qué queríamos que ocurriera visualmente en cada parte.
 
-La idea general fue que el poema partiera tranquilo y aumentara progresivamente su intensidad.
+### Variables
 
-Al comienzo queríamos:
 
-- poco texto;
-- bastante espacio;
-- movimientos lentos;
-- pausas largas.
+Una vez que entendimos cómo trabajar con arreglos, comenzamos a dividir `Pepper Sauce` dentro del código.
 
-A medida que avanzara:
+Usamos nombres como:
 
-- más velocidad;
-- más tamaño;
-- movimientos más bruscos;
-- más brillo;
-- menos descanso;
-- más acumulación.
+```cpp
+e1_v1
+e1_v2
+e2_v1
+```
 
-Y después del punto de mayor intensidad queríamos volver a disminuir todo hasta terminar en una pantalla vacía.
+donde:
 
-Primera estrofa
+* `e` = estrofa
+* `v` = verso o fragmento
 
-Para:
+También dejamos algunas palabras separadas porque necesitaban un comportamiento visual propio:
 
-I pray / for that / grandmother
+```cpp
+BURN
+CUT
+RAW
+ACID
+```
 
-pensamos en una aparición lenta y separada.
+Esta forma de ordenar el poema nos permitió separar el **contenido** de lo que queríamos hacer visualmente con él.
 
-Luego, en:
 
-grinding her teeth
 
-aumentaríamos un poco la velocidad.
 
-En:
+### Pasar el poema a código
 
-turning the handle of that old iron mill
+Antes de programar cada parte, escribimos dentro del código instrucciones que indicaban qué debía hacer cada verso. Estas instrucciones funcionaron como una guía para ir reemplazando poco a poco las indicaciones por código.
 
-queríamos un movimiento horizontal repetitivo relacionado con el movimiento del molino.
+Por ejemplo, para la primera estrofa comenzamos con:
 
-Y para:
+```cpp
+// mostrar "I pray for that grandmother" lentamente
+// hacer que aparezca primero i pray
+// for that
+// grandmother
+// dejar una pausa al terminar
 
-BURN / CUT / RAW / ACID
+// mostrar "grinding her teeth"
+// aumentar un poco la velocidad respecto a la frase anterior
+// hacer que se sienta como el primer cambio de intensidad
 
-queríamos golpes visuales completamente distintos al resto: 
-fondo blanco, letras negras, tamaño grande y apariciones rápidas.
+// mostrar "turning the handle of that old iron mill"
+// mover el texto horizontalmente
+// hacer que el texto rebote y se vaya hacía la izquierda
 
-Desde ahí empezamos a establecer una lógica que se repetiría durante todo el proyecto:
+// mostrar "they will burn and cut raw like acid"
+// aumentar nuevamente la intensidad
+// destacar las palabras "burn", "cut", "raw" y "acid"
+// hacer que aparezcan de forma más brusca o rápida
+```
 
-contenido del poema → decisión gráfica → comportamiento en código.
+La idea era no intentar programar todo de una vez. Primero definíamos **qué debía ocurrir**, y después buscábamos la función o estructura necesaria para hacerlo.
 
-Segunda estrofa
 
-En esta parte aparece constantemente la acción de cortar.
 
-Por eso decidimos fragmentar:
+### Primeras funciones
 
-Chop them up / real fine girl / you hear?
 
-y hacer que aparecieran rápidamente uno después del otro.
+Una de las primeras funciones que desarrollamos fue:
 
-Para:
+```cpp
+escribirLetraPorLetra()
+```
 
-dicing / crying
+Esta recorre el texto carácter por carácter y permite controlar cuánto tiempo pasa entre cada letra.
 
-queríamos seguir con la fragmentación, pero además hacer que las palabras crecieran y disminuyeran.
+La lógica era:
 
-Cuando aparece la violencia de manera más directa, como en:
+```text
+I
+I p
+I pr
+I pra
+I pray
+```
 
-no knife handle smashed down onto her knuckles
+Al cambiar la velocidad podíamos reutilizar la misma función para generar distintas intensidades.
 
-decidimos cambiar de golpe el comportamiento del texto para marcar que la intensidad estaba aumentando.
+Por ejemplo:
 
-Tercera estrofa
+**menos tiempo entre letras → texto más rápido → mayor intensidad**
 
-Acá aparece constantemente:
+Para el movimiento del molino creamos:
 
-I hear
+```cpp
+moverMolino()
+```
 
-y nos pareció que esa repetición podía transformarse en un recurso visual.
+y utilizamos `for` para cambiar la posición del texto horizontalmente:
 
-Nuestra idea fue que cada nueva aparición tuviera cada vez más presencia.
+```text
+derecha → izquierda → derecha
+```
 
-Para:
+También creamos:
 
-stir up that hot sauce
+```cpp
+mostrarGolpe()
+```
 
-pensamos en un movimiento repetitivo que recordara la acción de revolver.
+para `BURN`, `CUT`, `RAW` y `ACID`. En este caso la función cambia completamente la apariencia de la pantalla:
 
-En:
+```text
+pantalla blanca
+↓
+letras negras
+↓
+texto grande
+↓
+aparición rápida
+↓
+pantalla vacía
+```
 
-crucifix
 
-decidimos usar por primera vez un dibujo simple en píxeles: una cruz.
 
-Y:
+### ¿Por qué lo hicimos de esta forma?
 
-Miss Lady
 
-quedaría completamente sola y en tamaño grande.
+Desde el comienzo decidimos no crear una animación completamente distinta para cada verso. Como todavía estábamos aprendiendo C++ y trabajando con una pantalla OLED de `128 × 32 px`, nos parecía más útil construir pocas funciones que pudiéramos reutilizar.
 
-Cuarta estrofa
+Así comenzamos a trabajar con una lógica que se mantuvo durante el proyecto:
 
-Esta parte contiene el momento más explícito del poema, por lo que decidimos colocar un ***trigger warning*** antes de mostrarla.
+```text
+VARIABLE
+↓
+qué texto es
 
-También decidimos no hacer una representación literal de la violencia sexual. En vez de eso trabajaríamos principalmente mediante:
+FUNCIÓN
+↓
+cómo aparece
 
-- lentitud;
-- brillo;
-- pausas;
-- tensión;
-- acumulación.
+ESTROFA
+↓
+combinación de texto y comportamiento
+```
 
-Para SCREAMING sí queríamos un cambio muy fuerte: que la palabra creciera progresivamente hasta 
-convertirse en uno de los puntos de mayor intensidad del poema.
+Esto nos permitió ir construyendo el poema por partes y modificar los comportamientos sin tener que escribir nuevamente todo el código cada vez.
 
-Quinta estrofa y final
 
-En la repetición de bawl queríamos que el texto dejara de desaparecer inmediatamente y comenzara a acumularse.
 
-La pantalla se iría llenando progresivamente hasta llegar a un punto de saturación.
+ ---
 
-Después:
+  
 
-todo desaparece de golpe.
+## 3. Interpretación del poema
 
-La pantalla queda completamente vacía durante un momento y desde ahí comienza una bajada de intensidad.
 
-El último verso:
+Antes de comenzar a programar las animaciones, definimos qué queríamos que ocurriera visualmente en cada parte del poema. La idea general era que comenzara con una intensidad baja y que esta fuera aumentando progresivamente, para después disminuir hasta terminar nuevamente en una pantalla vacía.
 
-I hear how she couldn’t walk or talk for weeks
 
-aparecería lentamente, completamente solo, y terminaría apagándose hasta dejar nuevamente la pantalla vacía.
+
+### Primera estrofa
+
+
+Al comienzo queríamos trabajar con poco texto, bastante espacio, movimientos lentos y pausas largas.
 
 ```cpp
 // primera estrofa
@@ -234,7 +338,7 @@ aparecería lentamente, completamente solo, y terminaría apagándose hasta deja
 // mostrar "I pray for that grandmother" lentamente
 // hacer que aparezca primero i pray
 // for that
-// grandmother 
+// grandmother
 // dejar una pausa al terminar
 
 // mostrar "grinding her teeth"
@@ -249,20 +353,30 @@ aparecería lentamente, completamente solo, y terminaría apagándose hasta deja
 // mover el texto horizontalmente
 // hacer que el texto rebote y se vaya hacía la izquierda
 
-
 // mostrar "squeezing the limes, knowing"
 // volver a una lectura más estable
 // mantener una pausa breve antes del cierre de la estrofa
 
 // mostrar "they will burn and cut raw like acid"
 // aumentar nuevamente la intensidad
-// destacar las palabras "burn", "cut", "raw" y "acid" en fondo blanco con letras negra y tamaño de toda la pantalla.
+// destacar las palabras "burn", "cut", "raw" y "acid"
+// fondo blanco con letras negras y tamaño de toda la pantalla
 // hacer que aparezcan de forma más brusca o rápida
 
 // dejar la pantalla vacía por un momento
 // terminar la primera estrofa
+````
+
+La primera estrofa establece la lógica inicial de la experiencia: comenzar de manera pausada y aumentar gradualmente la intensidad hasta llegar a los golpes visuales de `BURN`, `CUT`, `RAW` y `ACID`.
 
 
+
+### Segunda estrofa
+
+
+En esta parte aparece constantemente la acción de cortar, por lo que decidimos relacionar la forma de aparición del texto con esa acción.
+
+```cpp
 // segunda estrofa
 
 // mostrar "She pours in vinegar and gets Anne to chop five onions"
@@ -303,8 +417,18 @@ aparecería lentamente, completamente solo, y terminaría apagándose hasta deja
 // volver a mostrar más texto junto
 // mantener una velocidad intermedia
 // dejar una pausa al terminar la estrofa
+```
+
+La fragmentación de `Chop them up` busca que la acción de cortar también esté presente en el comportamiento del texto. En `dicing` y `crying`, el cambio de tamaño permite aumentar la tensión sin abandonar el recurso de fragmentación.
 
 
+
+### Tercera estrofa
+
+
+En esta parte comienza a repetirse `I hear`, por lo que decidimos convertir esa repetición en un recurso visual. Cada aparición debía adquirir progresivamente mayor presencia.
+
+```cpp
 // tercera estrofa
 
 // mostrar "I hear she made Anne pour in the oil and vinegar"
@@ -312,7 +436,7 @@ aparecería lentamente, completamente solo, y terminaría apagándose hasta deja
 // hacer que "I hear" aparezca primero como una frase que comienza a repetirse en esta parte
 
 // mostrar "and stir up that hot sauce, how she hold her down"
-// hacer que "stir up that hot sauce" tenga un movimiento circular o repetitivo, como las burbujas de windows 
+// hacer que "stir up that hot sauce" tenga un movimiento circular o repetitivo, como las burbujas de windows
 // relacionar el movimiento con la acción de revolver
 // mantener el resto de la frase más estable
 
@@ -320,17 +444,20 @@ aparecería lentamente, completamente solo, y terminaría apagándose hasta deja
 // volver a mostrar "I hear"
 // ir colocando las letras lentamente como máquina de escribir lenta
 // mostrar el resto del verso de forma más continua
+// hacer que este verso empiece con brillo 0 y suba poco a poco hasta 100%
 
 // mostrar "strung her out naked, like she there lying on a crucifix"
 // mantener una aparición más lenta y pesada
 // destacar la palabra "crucifix"
 // hacer aparecer un dibujo simple de una cruz en píxeles junto a la palabra
+// mantener este verso con menos brillo, aprox entre 40% y 50%
 // dejar una pausa breve
 
 // mostrar "I hear she spread she out, then say"
 // volver a mostrar "I hear"
-// hacer que la repetición se empiece a sentir más insistente, llenar la pantalla de la frase 
+// hacer que la repetición se empiece a sentir más insistente, llenar la pantalla de la frase
 // mantener una velocidad intermedia
+// hacer que cada repetición de "I hear" aparezca con más brillo que la anterior
 
 // mostrar "I go teach you to go and steal from me, Miss Lady"
 // mostrar primero la frase de forma continua
@@ -338,8 +465,18 @@ aparecería lentamente, completamente solo, y terminaría apagándose hasta deja
 // hacer que "Miss Lady" aparezca sola y más grande
 // dejarla en pantalla por un momento
 // dejar una pausa antes de continuar con la siguiente estrofa
+```
+
+En esta estrofa incorporamos nuevos recursos: control de brillo, movimiento, dibujo en píxeles y cambios de tamaño. La repetición de `I hear` comienza a adquirir cada vez más presencia dentro de la estrofa.
 
 
+
+### Cuarta estrofa
+
+
+Esta parte contiene el momento más explícito del poema, por lo que decidimos colocar un `trigger warning` antes de comenzar y evitar una representación literal de la violencia sexual.
+
+```cpp
 // cuarta estrofa
 
 // mostrar un trigger warning antes de comenzar esta parte
@@ -351,7 +488,7 @@ aparecería lentamente, completamente solo, y terminaría apagándose hasta deja
 // mantener una velocidad más lenta y tensa
 // mostrar el resto de la frase de forma continua
 
-// mostrar la “ and pack it deep into she granddaughter’s pussy,”
+// mostrar "and pack it deep into she granddaughter’s pussy,"
 // evitar una animación demasiado literal
 // trabajar principalmente con pausas, lentitud y acumulación
 // hacer que la lectura se sienta más pesada que en las estrofas anteriores
@@ -360,13 +497,24 @@ aparecería lentamente, completamente solo, y terminaría apagándose hasta deja
 // hacer aparecer "I hear" nuevamente
 // destacar "screaming"
 // hacer que "screaming" aumente de tamaño o ocupe gran parte de la pantalla
+// hacer que en este verso el brillo también aumente progresivamente hasta llegar al máximo
 // dejar el resto de la frase aparecer después
 
 // dejar la pantalla vacía por un momento
+// antes de dejarla vacía, bajar el brillo poco a poco de 100% a 0%
 // marcar el punto de mayor intensidad hasta ahora
+```
+
+En esta estrofa la intensidad llega a uno de sus puntos más altos. El brillo y el tamaño trabajan juntos para que `screaming` tenga un peso visual mayor, mientras que la disminución progresiva del brillo permite comenzar a bajar la intensidad.
 
 
 
+### Quinta estrofa y final
+
+
+Para la repetición de `bawl`, queríamos que el texto dejara de desaparecer inmediatamente y comenzara a acumularse. La pantalla debía sentirse cada vez más llena hasta llegar a un punto de saturación.
+
+```cpp
 // quinta estrofa
 
 // mostrar "Anne bawl till she turn hoarse"
@@ -397,6 +545,7 @@ aparecería lentamente, completamente solo, y terminaría apagándose hasta deja
 // volver a una velocidad lenta
 // hacer que aparezca poco texto a la vez
 // bajar la intensidad después del momento anterior
+// hacer que este verso empiece con brillo bajo y suba suavemente
 
 // mostrar "how that grandmother leave her there all day"
 // mantener el ritmo lento
@@ -404,247 +553,70 @@ aparecería lentamente, completamente solo, y terminaría apagándose hasta deja
 // dejar una pausa al terminar
 
 
-// ultimo verso
+// último verso
 
 // mostrar "I hear how she couldn’t walk or talk for weeks"
 // mostrar la frase sola
 // mantener una aparición lenta
 // dejarla en pantalla durante más tiempo
+// hacer que el verso se vaya apagando poco a poco, bajando el brillo hasta 0
 // terminar con una pausa larga
 // dejar la pantalla vacía al final
 ```
 
-**Ideas a código**
 
-Una vez que tuvimos definida la interpretación, guardamos todo el poema en la parte superior del código.
+La quinta estrofa concentra primero la acumulación y luego comienza a bajar la intensidad. Después del momento de mayor saturación, la pantalla queda vacía y el último verso aparece solo y lentamente, terminando nuevamente en negro.
 
-Usamos nombres como:
 
-```cpp
-e1_v1
-e1_v2
-e2_v1
-```
-donde:
 
-e = estrofa
-v = verso o fragmento
+## 4. Cómo funciona el código
 
-Algunas palabras como:
 
-BURN
-CUT
-RAW
-ACID
+El código funciona como un sistema en el que los textos del poema se combinan con distintas funciones de animación. El `loop()` se encarga de mantener el sistema funcionando y de revisar los controles mientras el poema está en reproducción.
 
-las guardamos individualmente porque iban a tener comportamientos propios.
 
-Esto terminó siendo una decisión súper importante porque apareció una estructura 
-que seguimos utilizando hasta ahora:
 
-VARIABLE = qué texto es
-FUNCIÓN = cómo aparece
-ESTROFA = combinación de ambos
+### Controles
 
-Así dejamos de meter cada frase directamente dentro del programa y empezamos a construir un 
-sistema mucho más ordenado.
 
-**Primera estrofa**
+El proyecto cuenta con tres botones y un potenciómetro. Los botones permiten controlar la reproducción del poema y el potenciómetro permite modificar el tamaño del texto mientras la animación está funcionando.
 
-Ya teníamos la función:
+```text
+PLAY → comienza el poema
+STOP → detiene el poema
+REPEAT → activa o desactiva la repetición
+POTENCIÓMETRO → modifica el tamaño del texto
+````
+
+Los botones están conectados de la siguiente manera:
 
 ```cpp
-escribirLetraPorLetra()
-```
-
-que recorre el texto carácter por carácter.
-
-La usamos para:
-
-I pray / for that / grandmother
-
-cambiando solamente los tiempos.
-
-La lógica era algo como:
-
-I
-I p
-I pr
-I pra
-I pray
-
-Para grinding her teeth reutilizamos exactamente la misma función, pero disminuimos el tiempo entre caracteres.
-
-Ahí entendimos algo muy simple pero súper útil:
-
-menos tiempo = texto más rápido = más intensidad.
-
-![primercodigo](./imagenes/pantalla1.png)
-![primercodigo](./imagenes/pantalla2.png)
-
-No necesitábamos crear una función nueva cada vez que quisiéramos cambiar la sensación de una frase.
-
-Después apareció uno de los primeros límites reales del proyecto: la pantalla es MINI.
-
-Con solo 128 × 32 px, los versos largos no caben fácilmente. Decidimos no quedarnos pegados todavía r
-esolviendo eso y avanzar primero con los comportamientos principales.
-
-Para el molino sí necesitábamos algo nuevo, así que creamos:
-
-```cpp
-moverMolino()
-```
-Usamos un for para cambiar la posición X del texto:
-
-derecha → izquierda → derecha
-
-Fue la primera animación donde realmente vimos el texto desplazándose.
-
-Y para:
-
-BURN / CUT / RAW / ACID
-
-creamos:
-
-```cpp
-mostrarGolpe()
-```
-
-La función utiliza:
-
-pantalla blanca → letras negras → texto grande → poca duración → vacío
-
-y funcionó.
-
-Por primera vez la estrofa empezaba a tener una progresión visual que se parecía a lo que 
-habíamos pensado inicialmente.
-
-Después de ACID dejamos la pantalla vacía para separar ambas partes.
-
-**Ordenar el código antes de seguir**
-
-Cuando empezamos la segunda estrofa nos dimos cuenta de que cada vez había más variables, funciones y fragmentos repartidos por todas partes.
-
-Llegó un punto donde simplemente:
-
-NOS PERDIMOS EN EL CÓDIGO.
-
-Así que paramos antes de seguir agregando cosas y reorganizamos todo.
-
-La estructura quedó:
-
-LIBRERÍAS
-↓
-CONFIGURACIÓN OLED
-↓
-TEXTOS DEL POEMA
-↓
-DECLARACIONES DE FUNCIONES
-↓
-SETUP
-↓
-LOOP
-↓
-FUNCIONES DE ANIMACIÓN
-↓
-ESTROFAS
-
-También dejamos de reemplazar el código completo cada vez que hacíamos un cambio. Desde ahí empezamos a trabajar solamente con los fragmentos que había que agregar o reemplazar.
-
-Eso hizo muchísimo más fácil seguir el proceso.
-
-**Botones y potenciometros**
-
-Hasta este punto el poema era principalmente una animación preprogramada.
-
-Después empezamos a agregar los controles físicos:
-
-BOTÓN 1 → PLAY
-BOTÓN 2 → STOP
-BOTÓN 3 → REPEAT
-POTENCIÓMETRO → tamaño de letra
-
-Definimos:
-
 PLAY → pin 2
 STOP → pin 3
 REPEAT → pin 4
 POTENCIÓMETRO → A0
-
-Y empezamos a trabajar con variables como:
-
-reproduciendo
-repetir
-
-La lógica inicial era:
-
-PLAY → comienza el poema
-STOP → detiene el poema
-REPEAT → activa o desactiva la repetición
-
-Potenciómetro
-
-El potenciómetro entrega valores entre 0 y 1023.
-
-Decidimos dividirlos en tres rangos y transformarlos en:
-
-tamaño 1 / tamaño 2 / tamaño 3
-
-Para eso creamos:
-
-```cpp
-leerTamanoLetra()
 ```
 
-Lo que más nos gustó fue que la función podía consultar constantemente el valor del potenciómetro.
-
-Eso significa que el tamaño del texto puede cambiar mientras el poema está corriendo.
-
-Acá el proyecto dejó de ser solamente una animación preprogramada y comenzó realmente a tener interacción.
+Para evitar que una sola pulsación sea registrada varias veces se agregó `debounce`, utilizando el estado anterior del botón y el tiempo transcurrido desde la última pulsación.
 
 
-**ERROR STOP**
 
-Después apareció un problema importante.
+### PLAY, STOP y REPEAT
 
-Si utilizábamos:
 
-delay(2000)
+`PLAY` inicia la reproducción del poema. Una vez que comienza, el código va ejecutando las distintas estrofas en orden.
 
-Arduino quedaba esperando esos dos segundos.
+`STOP` permite interrumpir la reproducción incluso durante una pausa o animación. Para conseguirlo reemplazamos parte de los `delay()` por una función llamada:
 
-Si apretábamos STOP durante ese tiempo, el programa simplemente no lo detectaba hasta terminar el delay().
-
-Entonces creamos:
-
+```cpp
 pausaControlada()
+```
 
-Esta función sigue esperando, pero durante la espera ejecuta constantemente:
+Durante la pausa, esta función continúa revisando los controles mediante `leerControles()`.
 
-leerControles()
+También modificamos algunas funciones para que devuelvan un valor `bool`. De esta forma pueden indicar si terminaron normalmente o si fueron interrumpidas por `STOP`.
 
-Desde ahí empezamos a reemplazar gran parte de los delay().
-
-Para permitir que STOP pudiera interrumpir una animación también tuvimos que modificar varias funciones.
-
-Algunas dejaron de ser:
-
-void
-
-y pasaron a ser:
-
-bool
-
-Si todo termina correctamente:
-
-return true
-
-Si STOP interrumpe:
-
-return false
-
-Entonces el error va subiendo:
-
+```text
 STOP
 ↓
 animación = false
@@ -653,550 +625,355 @@ estrofa = false
 ↓
 poema = false
 ↓
-se detiene todo
-
-Después agregamos debounce, porque los botones físicos pueden generar varias señales muy seguidas aunque uno los presione solamente una vez.
-
-Guardamos:
-
-estado anterior;
-tiempo de última pulsación;
-tiempo de antirrebote.
-
-Con eso cada presión comenzó a registrarse de manera mucho más estable.
-
-Volvimos a la segunda estrofa.
-
-Los primeros versos siguieron utilizando escritura letra por letra a una velocidad media.
-
-Para:
-
-Chop them up / real fine girl / you hear?
-
-como ya habíamos guardado cada fragmento por separado, simplemente los mostramos uno tras otro mucho más rápido.
-
-No necesitamos ninguna función nueva.
-
-Separar previamente el texto había sido un acierto.
-
-Para:
-
-dicing / crying
-
-queríamos sumar un pequeño cambio de tamaño.
-
-Pero antes de hacerlo dejamos funcionando toda la estrofa de manera normal para asegurarnos de que compilara.
-
-Y ahí:
-
-ERRORRRRRR.
-
-Arduino mostró:
-
-```cpp
-ambiguating new declaration of 'bool segundaEstrofa()'
+se detiene la reproducción
 ```
 
-y después varios:
+`REPEAT` fue pensado para activar o desactivar la repetición del poema. En el estado actual, el botón presenta un problema: si el poema ya está reproduciéndose y se presiona `REPEAT`, no se activa la repetición. Actualmente funciona cuando se presiona `STOP`, se activa `REPEAT` y luego se vuelve a iniciar el ciclo.
 
-too few arguments
+Este problema quedó pendiente de resolver.
 
-Descubrimos que teníamos dos versiones del código mezcladas.
 
-En una parte aparecía:
 
-void segundaEstrofa();
+### Potenciómetro
 
-y en otra:
 
-bool segundaEstrofa();
+El potenciómetro entrega valores entre `0` y `1023`. Estos valores se dividen en tres rangos para obtener los tamaños:
 
-La declaración y la función tenían que coincidir.
-
-Así que dejamos únicamente:
-
-bool segundaEstrofa();
-
-Después encontramos otro problema del mismo caos.
-
-Había quedado una versión antigua de:
-
-escribirLetraPorLetra()
-
-que pedía:
-
-texto / x / y / velocidad / tamaño
-
-mientras el código nuevo la estaba utilizando solamente con:
-
-texto / velocidad
-
-Decidimos unificar todo.
-
-Desde ese momento:
-
-```cpp
-escribirLetraPorLetra(texto, velocidad)
+```text
+0 – 341     → tamaño 1
+342 – 682   → tamaño 2
+683 – 1023  → tamaño 3
 ```
 
-y el tamaño dejó de entregarse manualmente porque se obtiene directamente desde el potenciómetro.
+Para leer este valor creamos:
 
-COMPILA.
+```cpp
+leerTamanoLetra()
+```
 
-Pulso
+El tamaño se consulta mientras el poema está funcionando, por lo que puede cambiarse durante la reproducción.
 
-Ahora sí creamos:
+Esto también permitió simplificar `escribirLetraPorLetra()`. En vez de entregar el tamaño manualmente cada vez que llamamos a la función, el tamaño se obtiene directamente desde el potenciómetro.
 
-mostrarPulso()
 
-El tamaño base viene del potenciómetro.
 
-Si está en 1:
+### Diagrama de flujo
 
-1 → 2 → 1
 
-Si está en 2:
+El diagrama debe mostrar el recorrido general del programa desde que Arduino comienza hasta que termina o vuelve a iniciar el poema.
 
-2 → 3 → 2
-
-Lo usamos solamente para:
-
-dicing
-crying
-
-La primera versión funcionó, pero físicamente aparecía demasiado rápido.
-
-No modificamos nada de la estrofa, solamente cambiamos los tiempos internos de la función.
-
-Pasamos aproximadamente de:
-
-120 / 180 ms
-
-a:
-
-300 / 350 ms
-
-y quedó mucho más legible.
-
-**Tercera estrofa**
-
-En vez de llenar terceraEstrofa() con instrucciones repetidas, decidimos crear varias funciones nuevas:
-
-cambiarBrillo()
-mostrarConBrillo()
-moverRevolver()
-mostrarCrucifix()
-mostrarRepeticionBrillo()
-
-A esta altura la estructura ya estaba muchísimo más clara:
-
-variables = contenido
-funciones = comportamiento
-estrofas = combinación
-
-Brillo
-
-La pantalla OLED controla el contraste entre 0 y 255.
-
-Como no queríamos trabajar pensando constantemente en esos valores, hicimos que nuestra función recibiera porcentajes entre 0 y 100.
-
-Entonces podíamos escribir, por ejemplo:
-
-cambiarBrillo(45)
-
-y la función hacía internamente la conversión.
-
-El brillo pasó a ser otra herramienta narrativa.
-
-Para I hear decidimos aumentar progresivamente su presencia:
-
-40 % → 70 % → 100 %
-
-Así la repetición no dependía únicamente del contenido del texto, sino también de su intensidad visual.
-
-Revolver
-
-Para:
-
-stir up that hot sauce
-
-creamos un movimiento utilizando distintas posiciones X/Y.
-
-No es un círculo perfecto, sino una serie de pequeños desplazamientos que dan la sensación de estar dando una vuelta.
-
-La referencia mental eran esas burbujitas o movimientos antiguos de Windows JAJA.
-
-Crucifijo
-
-En crucifix usamos por primera vez dibujo real.
-
-Con display.drawLine() hicimos:
-
-línea vertical + línea horizontal = cruz
-
-Además disminuimos el brillo para que ese momento se sintiera más pesado y no como otro golpe rápido.
-
-Miss Lady
-
-Al final de la estrofa borramos todo lo anterior y dejamos:
-
-Miss Lady
-
-sola, en tamaño 3, durante un momento.
-
-También queríamos hacer un efecto donde el brillo aumentara de 0 a 100 mientras aparecía cada letra.
-
-Nuestra primera versión todavía no hacía un fade completamente sincronizado.
-
-Por ahora hacía:
-
-brillo 0 → escribe → brillo 100
-
-Decidimos dejarlo así temporalmente.
-
-Primero queríamos conseguir que todo el poema compilara y después refinar detalles.
-
-**CUARTA ESTROFA**
-
-Antes de entrar en esta parte agregamos un trigger warning.
-
-La primera versión simplemente mostraba:
-
-TRIGGER WARNING
-violence and abuse
-
-durante unos segundos.
-
-Funcionaba, pero visualmente no tenía suficiente presencia.
-
-Sin modificar el resto de la estrofa, reemplazamos solamente:
-
-mostrarWarning()
-
-La nueva versión alternaba:
-
-NEGRO + TEXTO BLANCO
+```text
+INICIO
 ↓
-BLANCO + TEXTO NEGRO
+Configurar OLED
 ↓
-NEGRO
+Configurar botones y potenciómetro
 ↓
-BLANCO
-
-Usamos:
-
-i % 2
-
-para saber si cada repetición era par o impar.
-
-Hicimos seis cambios de aproximadamente 600 ms y después una pausa.
-
-Quedó muchísimo mejor y decidimos dejarlo.
-
-SCREAMING
-
-Creamos:
-
-mostrarScreaming()
-
-Acá aumentan simultáneamente:
-
-tamaño + brillo
-
-Entonces ocurre algo como:
-
-pequeño + tenue
+Cargar variables y textos del poema
 ↓
-mediano + más brillante
+SETUP
 ↓
-grande + brillo máximo
-
-Este terminó siendo uno de los peaks visuales del poema.
-
-Después hicimos exactamente lo contrario.
-
-El brillo comienza en 100 y baja progresivamente hasta terminar en negro.
-
-Así la transición no pasa directamente de máxima intensidad a pantalla vacía, sino que se va apagando.
-
-
-**QUINTA ESTROFA**
-
-Para la repetición de bawl apareció una idea nueva.
-
-En vez de reemplazar cada verso queríamos que lo anterior siguiera presente.
-
-Creamos:
-
-mostrarAcumulacion()
-
-La lógica fue:
-
-primera vuelta: 1
-segunda: 1 + 2
-tercera: 1 + 2 + 3
-cuarta: 1 + 2 + 3 + 4
-
-Además, cada aparición ocurre un poco más rápido que la anterior.
-
-La intención era que la pantalla se sintiera progresivamente más llena y saturada.
-
-Obviamente apareció nuevamente nuestro problema principal:
-
-128 × 32 px.
-
-Cuatro versos largos no caben cómodamente.
-
-Pero preferimos probar primero el concepto de acumulación y después resolver los límites físicos de la pantalla.
-
-Después de la acumulación:
-
-borramos TODO de golpe.
-
-Dejamos la pantalla completamente vacía durante un momento.
-
-Luego el texto reaparece con un brillo bajo que aumenta poco a poco:
-
-25 → 40 → 55 → 70 → 85
-
-La idea es que después del peak anterior el poema comience a bajar nuevamente.
-
-El problema de las palabras cortadas
-
-Cuando el poema ya estaba casi completo quisimos solucionar otro problema.
-
-A veces aparecía:
-
-fre
-
-y en la siguiente línea:
-
-sh
-
-Queríamos que fresh comenzara directamente en la siguiente línea, pero sin perder el efecto:
-
-f → fr → fre → fres → fresh
-
-Primer intento: bug horrible
-
-Agregamos una función para evitar que las palabras se cortaran.
-
-Y de repente empezaron a aparecer cosas como:
-
-hoholalala
-comomo
-essstasass
-
-Al principio pensamos que el problema podía ser:
-
-la quinta estrofa;
-REPEAT;
-la acumulación;
-dos funciones ejecutándose al mismo tiempo.
-
-Así que hicimos una prueba simple:
-
-sacamos la nueva lógica de corte de palabras.
-
-Y todo volvió a funcionar.
-
-Entonces pudimos aislar el problema.
-
-La quinta estrofa estaba bien.
-REPEAT no era el responsable.
-La acumulación tampoco.
-
-El error estaba en la función nueva.
-
-Lo que ocurría era que la escritura letra por letra muestra estados parciales:
-
-h → ho → hol → hola
-
-Pero la función nueva intentaba reorganizar esos estados parciales como si fueran textos terminados.
-
-Cada frame terminaba redibujando partes anteriores y aparecían las duplicaciones.
-
-Decidimos sacarla y seguir.
-
-Primero terminaríamos el poema y después volveríamos al problema.
-
-Último verso
-
-Creamos:
-
-ultimoVerso()
-
-La frase final aparece sola y lentamente.
-
-Se mantiene un momento y después el brillo comienza a disminuir:
-
-100 → 90 → 80 → … → 0
-
-Finalmente queda la pantalla vacía y hacemos una pausa larga.
-
-Con eso conseguimos tener el poema completo funcionando desde el inicio hasta el final.
-
-Segundo intento con las palabras
-
-Una vez terminado el poema volvimos al problema.
-
-En el primer intento nuevo decidimos no mostrar ninguna palabra hasta que estuviera completamente formada.
-
-Técnicamente solucionaba el salto de línea, pero destruía por completo nuestra escritura letra por letra.
-
-No servía.
-
-Entonces cambiamos la lógica.
-
-Antes de empezar cada palabra calculamos:
-
-¿la palabra completa cabe en el espacio restante de esta línea?
-
-Si cabe, comienza ahí.
-
-Si no cabe, su posición inicial pasa directamente a la siguiente línea.
-
-Pero una vez elegida esa posición seguimos mostrando:
-
-f → fr → fre → fres → fresh
-
-Eso sí mantenía ambas cosas:
-
-palabra completa dentro de una línea;
-efecto letra por letra.
-
-En la última estrofa todavía existen algunos casos donde pueden cortarse palabras porque estamos combinando:
-
-pantalla de 128 × 32;
-versos largos;
-potenciómetro;
-posibilidad de llegar a tamaño 3.
-
-Podríamos seguir agregando excepciones, pero también corríamos el riesgo de volver a romper funciones que ya estaban estables.
-
-Así que decidimos priorizar:
-
-que funcione → que siga letra por letra → que funcionen las animaciones → que funcionen los controles.
-
-**COMO QUEDO**
-
-Actualmente tenemos funcionando:
-
-pantalla OLED;
-
-portada;
-
-poema completo;
-
-primera, segunda, tercera, cuarta y quinta estrofa;
-
-trigger warning;
-
-último verso;
-
-PLAY;
-
-STOP;
-
-REPEAT;
-
-debounce;
-
-potenciómetro;
-
-tamaños 1, 2 y 3;
-
-cambio de tamaño en vivo;
-
-escritura letra por letra;
-
-distintas velocidades;
-
-movimiento del molino;
-
-pulso en dicing / crying;
-
-control de brillo;
-
-movimiento de revolver;
-
-cruz en píxeles;
-
-repetición de I hear;
-
-Miss Lady en tamaño grande;
-
-warning parpadeante;
-
-crecimiento de SCREAMING;
-
-acumulación de texto;
-
-fade out;
-
-pantalla vacía final.
-
-Algo que nos queda súper claro mirando todo el proceso es que al principio pensábamos casi verso por verso:
-
-“¿qué animación le ponemos a esto?”
-
-Ahora el código funciona mucho más como un sistema:
-
-TEXTOS
+LOOP
 ↓
-guardan el poema
+¿Se presionó PLAY?
+├── NO → seguir revisando controles
+└── SÍ
+     ↓
+  comenzar poema
+     ↓
+  ¿STOP presionado?
+  ├── SÍ → detener reproducción
+  │        ↓
+  │     volver a revisar controles
+  │
+  └── NO
+       ↓
+  leer potenciómetro
+       ↓
+  obtener tamaño de letra
+       ↓
+  ejecutar primera estrofa
+       ↓
+  ejecutar segunda estrofa
+       ↓
+  ejecutar tercera estrofa
+       ↓
+  ejecutar cuarta estrofa
+       ↓
+  ejecutar quinta estrofa
+       ↓
+  ejecutar último verso
+       ↓
+  ¿REPEAT activado?
+  ├── SÍ → volver al inicio del poema
+  └── NO → terminar reproducción
+              ↓
+           volver a LOOP
+```
 
-FUNCIONES
-↓
-definen comportamientos
-
-ESTROFAS
-↓
-combinan texto y comportamiento
-
-CONTROLES
-↓
-permiten que el usuario intervenga
-
-***DESARROLLO DE CAJA**
-![boceto](./imagenes/boceto.jpeg)
-
-Sumando a todo esto empezamos a pensar en la caja del proyecto.
-
-Como el poema gira en torno a la preparación de la salsa, se nos ocurrió que la caja podía tener forma de tabla de picar.
-
-Y de ahí salió otra idea que nos gustó MUCHO: que uno de los controles no fuera simplemente un botón puesto porque sí.
-
-Queremos crear un contacto en la tabla para que, cuando el cuchillo toque una zona determinada, el poema se pause.
-
-Así el botón empieza a tener relación con el mismo objeto y con las acciones que aparecen en el poema, en vez de sentirse como algo aparte.
-
-Todavía estamos viendo bien cómo hacerlo físicamente, pero la idea de la tabla ya quedó como base para seguir desarrollando la caja.
-
-
-**PROBLEMA CON REPEAT**
-
-Cuando por fin empezamos a probar los botones de verdad apareció otro problema
-
-El botón REPEAT no está funcionando como esperábamos.
-
-Nos dimos cuenta de que sí funciona si:
-
-STOP
-↓
-activamos REPEAT
-↓
-volvemos a empezar el ciclo.
-
-PERO si el poema ya está corriendo y apretamos REPEAT…
-
-no pasa nada.
-
-Queda como si el botón no estuviera haciendo nada mientras el poema está en reproducción.
-
-Por ahora sabemos que el problema está ahí, pero todavía tenemos que revisar bien la lógica para entender por qué REPEAT solamente se está leyendo correctamente en ese momento.
-
-Así que intentamos arreglarlo pero no logramos encontrar la causa del problema.
+Dentro de cada estrofa, las funciones de animación se ejecutan en el orden definido para cada verso. Mientras existen pausas controladas, el código continúa revisando los botones para permitir que `STOP` interrumpa la reproducción.
 
 
+
+### Cosas que funcionan como esperábamos
+
+
+| Función                       | Estado   | Descripción                                                         |
+| ----------------------------- | -------- | ------------------------------------------------------------------- |
+| Pantalla OLED                 | Funciona | Muestra la portada y el poema completo.                             |
+| Escritura letra por letra     | Funciona | El texto aparece progresivamente carácter por carácter.             |
+| Velocidad                     | Funciona | Permite generar diferentes niveles de intensidad.                   |
+| Movimiento del molino         | Funciona | El texto se desplaza horizontalmente.                               |
+| `mostrarGolpe()`              | Funciona | Permite los cambios visuales de `BURN`, `CUT`, `RAW` y `ACID`.      |
+| `mostrarPulso()`              | Funciona | Permite variar el tamaño en `dicing` y `crying`.                    |
+| Control de brillo             | Funciona | Permite aumentar y disminuir progresivamente la intensidad.         |
+| Movimiento de revolver        | Funciona | Genera pequeños desplazamientos que simulan la acción de revolver.  |
+| Cruz en píxeles               | Funciona | `crucifix` incorpora un dibujo realizado con píxeles.               |
+| Repetición visual de `I hear` | Funciona | Las apariciones pueden aumentar progresivamente su brillo.          |
+| `Miss Lady`                   | Funciona | Aparece sola y en tamaño grande.                                    |
+| Trigger warning               | Funciona | Aparece antes de la cuarta estrofa.                                 |
+| `SCREAMING`                   | Funciona | Aumenta progresivamente en tamaño y brillo.                         |
+| Acumulación de `bawl`         | Funciona | El texto permanece y se acumula durante las repeticiones.           |
+| Fade out                      | Funciona | El brillo puede disminuir progresivamente hasta llegar a 0.         |
+| PLAY                          | Funciona | Inicia la reproducción del poema.                                   |
+| STOP                          | Funciona | Permite detener la reproducción durante el recorrido.               |
+| Debounce                      | Funciona | Estabiliza la lectura de los botones.                               |
+| Potenciómetro                 | Funciona | Permite modificar el tamaño entre 1, 2 y 3 durante la reproducción. |
+
+
+
+### Cosas que no funcionan
+
+
+| Problema                         | Estado actual                                                                                                                                                       |
+| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `REPEAT` durante la reproducción | Si el poema ya está corriendo y se presiona `REPEAT`, no se activa. Actualmente funciona después de presionar `STOP`, activar `REPEAT` y volver a iniciar el ciclo. |
+| Corte de palabras                | Todavía existen algunos casos en que una palabra puede quedar dividida entre líneas debido al tamaño de la pantalla y al tamaño de letra.                           |
+| Ajuste perfecto de versos largos | La pantalla de `128 × 32 px` limita cuánto texto puede mostrarse simultáneamente, especialmente cuando se utiliza tamaño 3.                                         |
+
+
+
+## 5. Evolución del código
+
+
+### Tabla de versiones
+
+
+La evolución del código fue principalmente de **probar primero las funciones por separado, completar progresivamente el poema y después corregir problemas específicos de visualización y control**. En el caso de `codigo09-06-error`, el nombre no significa que el código haya dado un error de compilación: el problema apareció al incorporar la separación de palabras, porque la nueva lógica hizo que algunos versos y palabras comenzaran a solaparse en la pantalla.
+
+| Versión               | Qué incorporamos / cambiamos                                                                                                                                                                                                                                                                                                                                                          | Problemas o aprendizajes                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **codigo08-28**       | Primera prueba del proyecto. Se configuró la pantalla OLED y se trabajó la **introducción del poema**, mostrando el título y la autora letra por letra. También se creó por primera vez la función `escribirLetraPorLetra()`.                                                                                                                                                         | Fue la base para entender cómo llevar un texto a la pantalla y hacerlo aparecer progresivamente.  [Ver codigo08-28 en GitHub](https://github.com/disenoUDP/dis8645-2026-2-procesos-1/blob/main/00-proyecto-1/grupo-04/codigos/codigo08-28.md?utm_source=chatgpt.com)                                                                                                                                                                                                               |
+| **codigo09-01**       | Se pasó de la prueba inicial a trabajar directamente con el poema. Se incorporaron las **cinco estrofas**, el verso final, los botones `PLAY`, `STOP` y `REPEAT`, el potenciómetro y las primeras funciones de animación. También se programó la primera estrofa con diferentes velocidades, el movimiento de `moverMolino()` y los golpes visuales de `BURN`, `CUT`, `RAW` y `ACID`. | El código ya tenía la estructura general del proyecto, pero todavía estaba en una etapa inicial: la reproducción solo estaba desarrollada hasta la segunda estrofa y los controles eran más simples.  [Ver codigo09-01 en GitHub](https://github.com/disenoUDP/dis8645-2026-2-procesos-1/blob/main/00-proyecto-1/grupo-04/codigos/codigo09-01?utm_source=chatgpt.com)                                                                                                              |
+| **codigo09-06**       | Se reorganizó el código y se mejoró el funcionamiento de los controles. Se agregó **antirrebote (`DEBOUNCE`)**, lectura del potenciómetro en tres niveles y una `pausaControlada()` que permite seguir leyendo los botones durante las pausas. Se mantuvo el trabajo de la primera y segunda estrofa.                                                                                 | En esta etapa el control del sistema se volvió más estable y se preparó la estructura para poder interrumpir la reproducción con `STOP`.  [Ver codigo09-06 en GitHub](https://github.com/disenoUDP/dis8645-2026-2-procesos-1/blob/main/00-proyecto-1/grupo-04/codigos/codigo09-06?utm_source=chatgpt.com)                                                                                                                                                                          |
+| **codigo09-06-error** | Se completó la **interpretación de todo el poema**: tercera, cuarta y quinta estrofa, trigger warning, cambios de brillo, `crucifix`, repetición de `I hear`, `SCREAMING`, acumulación de `bawl` y el resto de las animaciones. En esta versión también se intentó incorporar la lógica para **separar palabras y evitar que se cortaran entre líneas**.                              | El problema no fue un error de compilación. Al agregar la separación de palabras, la lógica de impresión provocó que **versos y palabras se solaparan en la pantalla**. Por eso primero se priorizó terminar el poema con las animaciones funcionando y después solucionar la separación de palabras.  [Ver codigo09-06-error en GitHub](https://github.com/disenoUDP/dis8645-2026-2-procesos-1/blob/main/00-proyecto-1/grupo-04/codigos/codigo09-06-error?utm_source=chatgpt.com) |
+| **codigo09-06-final** | Se corrigió la forma en que se procesaba el texto para mantener la escritura **letra por letra**, pero calculando la posición de cada palabra antes de mostrarla. Así se intentó evitar que una palabra quedara partida entre líneas. Además, se incorporó el **último verso como una función independiente** y se mantuvo la interpretación completa del poema.                      | Esta versión corresponde al código final del proceso: se conserva la interpretación completa y se integra la solución para el problema de separación de palabras.  [Ver codigo09-06-final en GitHub](https://github.com/disenoUDP/dis8645-2026-2-procesos-1/blob/main/00-proyecto-1/grupo-04/codigos/codigo09-06-final?utm_source=chatgpt.com)                                                                                                                                     |
+La idea fue **primero hacer que la interpretación completa funcionara y después solucionar la distribución del texto**, en vez de detener el desarrollo del poema mientras se intentaba resolver la separación de palabras.
+
+
+
+
+## 6. Problemas y pruebas
+
+
+Durante el proceso fuimos probando el código directamente en la pantalla OLED y ajustando las funciones según lo que ocurría al ejecutar el poema. Los problemas más importantes aparecieron al intentar controlar la reproducción, adaptar los versos al espacio reducido de la pantalla y evitar que las palabras se cortaran.
+
+
+
+### STOP y los `delay()`
+
+
+Uno de los primeros problemas apareció con el botón `STOP`. En las primeras versiones utilizábamos `delay()` para controlar cuánto tiempo permanecía cada verso en pantalla. Mientras el programa estaba dentro de un `delay()`, no podía volver a revisar los botones.
+
+Por ejemplo, si un verso tenía un `delay(1000)`, durante ese segundo el programa no estaba leyendo `STOP`. Aunque presionáramos el botón, la reproducción continuaba hasta que terminara la pausa.
+
+Para solucionarlo creamos `pausaControlada()`. En vez de esperar todo el tiempo de una sola vez, esta función utiliza `millis()` y durante la espera sigue ejecutando `leerControles()`. De esta manera `STOP` puede interrumpir la reproducción.
+
+También tuvimos que modificar las funciones de las estrofas para que pudieran devolver `false` cuando la reproducción fuera cancelada. Así, la interrupción de `STOP` puede pasar desde las animaciones hasta `reproducirPoema()`.
+
+
+
+### Botones y debounce
+
+
+Al comenzar a trabajar con los botones físicos también tuvimos que considerar que una sola pulsación podía ser detectada varias veces.
+
+Para evitarlo incorporamos un sistema de debounce de `120 ms` y guardamos el estado anterior de cada botón.
+
+```cpp
+bool ultimoPlay = HIGH;
+bool ultimoStop = HIGH;
+bool ultimoRepeat = HIGH;
+```
+
+De esta manera podemos comparar el estado anterior con el actual y reconocer una pulsación como una acción individual.
+
+
+
+### Tamaño y espacio de la pantalla
+
+
+La pantalla OLED tiene un espacio muy reducido de `128 × 32` píxeles. Esto se volvió especialmente importante al trabajar con versos largos y con los tres tamaños de letra disponibles mediante el potenciómetro.
+
+Al aumentar el tamaño, disminuye el espacio disponible para mostrar cada verso. Por eso tuvimos que probar distintas combinaciones de tamaño y velocidad y considerar el espacio disponible al escribir cada palabra.
+
+Este problema también fue el que nos llevó a trabajar posteriormente en una solución para evitar que una palabra quedara dividida entre dos líneas.
+
+
+
+### Problema con el corte de palabras
+
+
+Al escribir los versos letra por letra, algunas palabras podían quedar cortadas cuando llegaban al límite de la pantalla.
+
+Por ejemplo, una palabra podía comenzar al final de una línea y continuar en la siguiente. Queríamos mantener el efecto de escritura progresiva, pero hacer que cada palabra comenzara completa en una nueva línea cuando no hubiera espacio suficiente.
+
+Para solucionar esto desarrollamos una función llamada `imprimirTextoSinCortar()` y modificamos la lógica de `escribirLetraPorLetra()` para calcular previamente el espacio necesario para cada palabra.
+
+
+
+### Versión `codigo09-06-error`
+
+
+Esta versión corresponde a una prueba realizada específicamente para solucionar el problema del corte de palabras.
+
+El código no produjo un error de compilación. El problema apareció al ejecutarlo: después de incorporar la nueva lógica, los textos comenzaron a **solaparse** y algunas letras y palabras aparecían repetidas o superpuestas en la pantalla.
+
+Como esta modificación afectaba directamente la reproducción del poema, decidimos eliminarla temporalmente y volver a una versión estable.
+
+Primero terminamos de hacer funcionar el poema completo con sus estrofas y animaciones. Una vez que tuvimos esa versión funcionando, retomamos nuevamente el problema de la separación de palabras.
+
+La solución posterior permitió mejorar la distribución de las palabras, pero el problema no quedó completamente resuelto. Debido al tamaño reducido de la OLED y a que el usuario puede cambiar el tamaño de letra con el potenciómetro, todavía existen algunos casos en que ciertas palabras pueden cortarse.
+
+
+
+### Problema con `REPEAT`
+
+
+Otro problema apareció al probar el botón `REPEAT`.
+
+La intención era que este botón permitiera repetir el poema, pero durante las pruebas comprobamos que **no funciona como esperábamos mientras el poema está reproduciéndose**.
+
+Cuando el poema está corriendo y presionamos `REPEAT`, no comienza una nueva reproducción ni se produce un cambio visible inmediato.
+
+En cambio, comprobamos que `REPEAT` funciona cuando el poema se encuentra detenido mediante `STOP`.
+
+En el código, el botón cambia el estado de la variable:
+
+```cpp
+repetir = !repetir;
+```
+
+pero la repetición del poema no ocurre inmediatamente al presionar el botón mientras la reproducción está en curso. 
+
+Por ahora decidimos dejar este comportamiento como parte del estado actual del proyecto, ya que el resto de la reproducción y los controles principales quedaron funcionando.
+
+
+
+
+## 7. Desarrollo de la caja
+
+
+
+### Primer boceto
+
+
+![Boceto de la caja](./imagenes/boceto.jpeg)
+
+El primer boceto parte de la idea de construir una caja relacionada directamente con el universo del poema y con la preparación de la salsa.
+
+La propuesta fue que la caja tuviera la forma de una **tabla de picar**, tomando como referencia uno de los elementos presentes en el poema.
+
+
+
+### Relación entre la caja y el poema
+
+
+La forma de tabla de picar busca que el objeto físico no sea solamente un soporte para la pantalla OLED y los componentes electrónicos, sino que también tenga relación con las acciones que aparecen en *Pepper Sauce*.
+
+El poema habla de preparar la salsa, cortar ingredientes y utilizar distintos elementos de cocina. Por eso decidimos llevar esa idea al objeto que contiene el proyecto.
+
+De esta manera, la pantalla, los controles y la forma de la caja pertenecen al mismo universo del poema.
+
+
+
+### Control con cuchillo
+
+
+A partir de la idea de la tabla de picar pensamos en incorporar un control que estuviera integrado al objeto: **un contacto que se active cuando el cuchillo toque una zona determinada de la tabla**.
+
+La intención era que este contacto pudiera funcionar como una forma de pausar el poema.
+
+Así, el control tendría una relación directa con la acción de cortar que aparece en el poema, en vez de ser simplemente un botón externo.
+
+Esta idea quedó solamente en la etapa conceptual. **No llegamos a probar físicamente el contacto con el cuchillo**, por lo que no forma parte de los controles que actualmente funcionan en el proyecto.
+
+
+## 10. Bill of Materials
+
+| Cantidad | Componente                          | Descripción / uso                                                                      |
+| -------: | ----------------------------------- | -------------------------------------------------------------------------------------- |
+|        1 | Arduino UNO R4 WiFi                 | Microcontrolador utilizado para ejecutar el código y controlar la instalación.         |
+|        1 | Pantalla OLED SSD1306 128 × 32 px   | Pantalla donde se muestra e interpreta visualmente el poema. Utiliza comunicación I2C. |
+|        3 | Botones                             | Controles físicos para **PLAY**, **STOP** y **REPEAT**.                                |
+|        1 | Potenciómetro                       | Permite controlar el tamaño de letra en tiempo real entre los tamaños 1, 2 y 3.        |
+|        1 | Protoboard                          | Utilizada para realizar las conexiones y pruebas del circuito.                         |
+|        — | Cables jumper                       | Utilizados para conectar el Arduino, la pantalla OLED, los botones y el potenciómetro. |
+|        1 | Caja / estructura de la instalación | Soporte físico del proyecto, planteado a partir de la idea de una tabla de picar.      |
+
+
+
+## 11. Referencias
+
+### Código
+
+Los códigos fueron desarrollados y modificados progresivamente durante el proceso del proyecto. Cada versión corresponde a una etapa distinta de prueba y desarrollo.
+
+* [`codigo08-28.md`](./codigo08-28.md) — primera etapa de desarrollo del código.
+* [`codigo09-01.txt`](./codigo09-01.txt) — incorporación y organización de nuevas funciones.
+* [`codigo09-06.txt`](./codigo09-06.txt) — desarrollo avanzado de las animaciones y controles.
+* [`codigo09-06-error.txt`](./codigo09-06-error.txt) — prueba de separación de palabras que produjo el solapamiento de textos.
+* [`codigo09-06-final.txt`](./codigo09-06-final.txt) — versión posterior a la prueba anterior, con el poema completo funcionando.
+
+Repositorio del proceso:
+
+[Repositorio del proyecto en GitHub](https://github.com/blosssom-n/dis8645-2026-2-procesos-1?utm_source=chatgpt.com)
+
+
+
+### Poema y autora
+
+
+**Booker, Malika.** *Pepper Sauce*. En *Pepper Seed*, 2013.
+
+Copyright © 2013 Malika Booker. All rights reserved.
+
+El poema fue utilizado dentro del proyecto con fines académicos y no comerciales, como parte de una reinterpretación visual mediante código y una pantalla OLED.
+
+
+
+### Otras referencias
+
+
+* [Arduino — String Object](https://docs.arduino.cc/language-reference/en/variables/data-types/stringObject/?utm_source=chatgpt.com) — referencia utilizada para comprender el uso de `String` en Arduino.
+
+* [Arduino — String Characters](https://docs.arduino.cc/built-in-examples/strings/StringCharacters/?utm_source=chatgpt.com) — referencia utilizada durante las primeras pruebas con caracteres y arreglos.
+
+
+
+* **Registro visual del proceso:** las fotografías utilizadas en la bitácora se encuentran en la carpeta `./imagenes/`.
+
+
+# Conclusión
+
+
+El desarrollo de *Pepper Sauce* nos permitió entender que programar una interpretación no consiste solamente en conseguir que el texto aparezca en una pantalla, sino en tomar decisiones sobre **cómo el código puede transmitir lo que ocurre en el poema**.
+
+Durante el proceso pasamos de trabajar con el texto de manera bastante directa a construir un sistema de variables, funciones y estrofas que nos permitió reutilizar comportamientos y relacionarlos con distintos momentos del poema. Las variaciones de velocidad, tamaño, movimiento, brillo, pausas y acumulación fueron convirtiéndose en herramientas para representar los cambios de intensidad de la obra.
+
+También fue importante trabajar a partir de pruebas reales. La pantalla de 128 × 32 px, los botones, el potenciómetro y los `delay()` nos obligaron a adaptar constantemente nuestras ideas a las posibilidades y limitaciones del dispositivo. Algunos problemas, como el comportamiento de `REPEAT`, el corte de palabras y el solapamiento de textos, todavía no están completamente resueltos, pero también fueron parte importante del proceso porque nos permitieron entender mejor cómo estaba funcionando nuestro código.
+
+Al terminar esta etapa conseguimos que **el poema completo pudiera reproducirse en la OLED**, incorporando las principales animaciones y controles que habíamos planteado. Al mismo tiempo, dejamos identificados los aspectos que todavía podemos seguir mejorando, tanto en el código como en la construcción física de la caja.
+
+Más que buscar una reproducción literal del poema, nuestro objetivo fue construir una **interpretación visual y programada de su intensidad**, haciendo que el comportamiento del texto acompañara su recorrido desde el inicio hasta el final.
 
