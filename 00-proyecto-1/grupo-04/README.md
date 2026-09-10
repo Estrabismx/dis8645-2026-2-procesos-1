@@ -41,8 +41,8 @@ Antes de leerlo queremos informar que el poema contiene situaciones de violencia
 >           and pack it deep into she granddaughter’s pussy,  
 > I hear there was one piece of screaming in the house that day.
 >
->           Anne bawl till she turn hoarse,  
->     bawl till the hair on the neighbours skin raise up,  
+>  Anne bawl till she turn hoarse,  
+>  bawl till the hair on the neighbours skin raise up,  
 >   bawl till she start hiss through her teeth,  
 >   bawl till she mouth could make no more sound,  
 >  I hear how she turn raw,  
