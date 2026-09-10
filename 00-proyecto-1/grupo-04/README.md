@@ -42,13 +42,13 @@ Antes de leerlo queremos informar que el poema contiene situaciones de violencia
 > I hear there was one piece of screaming in the house that day.
 >
 >           Anne bawl till she turn hoarse,  
->                bawl till the hair on the neighbours skin raise up,  
->                bawl till she start hiss through her teeth,  
->                bawl till she mouth could make no more sound,  
->           I hear how she turn raw,  
->           how that grandmother leave her there all day,
+>     bawl till the hair on the neighbours skin raise up,  
+>   bawl till she start hiss through her teeth,  
+>   bawl till she mouth could make no more sound,  
+>  I hear how she turn raw,  
+>  how that grandmother leave her there all day,
 >
->           I hear how she couldn’t walk or talk for weeks.
+>   I hear how she couldn’t walk or talk for weeks.
 >   
 
 
@@ -68,10 +68,6 @@ Elegimos *Pepper Sauce* porque muestra cómo la violencia familiar puede estar c
 El poema no presenta una licencia Creative Commons o licencia abierta. Su reproducción y la creación de obras derivadas requieren autorización del titular de los derechos, salvo las excepciones legales aplicables a usos educativos, investigación o cita.
 
 
-
-  ---
-
-    
 
 
 ## 1. Primer acercamiento al poema
@@ -140,8 +136,6 @@ En la cuarta estrofa agregamos un *trigger warning* y decidimos no representar l
 
 En la quinta estrofa queríamos que la repetición de `bawl` fuera llenando la pantalla hasta llegar a un punto de saturación. Después todo desaparecería y la intensidad comenzaría a bajar hasta llegar al último verso, que aparecería solo y lentamente.
 
-
- ---
 
    
 
@@ -316,7 +310,6 @@ Esto nos permitió ir construyendo el poema por partes y modificar los comportam
 
 
 
- ---
 
   
 
