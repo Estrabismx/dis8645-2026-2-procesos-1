@@ -755,3 +755,32 @@ void loop() {
 ---
 
 ## lectura
+
+### Mindstorms: Children, Computers and Powerful Ideas - Seymour Papert
+- esta semana debido a que estuve muy ocupada no pude realizar una lectura extensa
+- actualmente me encuentro en el capítulo 2 llamado "Mathophobia: The fear of learning.", en el cual leí la mitad del capítulo, rescatando ciertas cosas.
+
+- problemas con el aaprendizaje iniciando la etapa escolar
+- cómo la presencia de la computadora puede ser capaz de contrarrestar este miedo
+- no presenciamos o no nos detenemos a analizar el alcance y la naturaleza de que los niños están aprendiendo, debido a que lo damos por hecho como adultos de que eso es un deber
+- conocimiento intelectual sustancial
+- aprendizaje Piagetian
+- en este capítulo se habla de la pérdida del aprendizaje en los adultos, en donde la gente se autozabotea o como más bien se menciona en el texto se crea esta especie de autoimágenes en donder la gente se percibe de una forma o no se cree capaz de poder realizar ciertas cosas
+- este tipo de autosabotaje la mayoría de las veces es muy fuertes o auto-reforzadas, lo que lleva así al fracaso personal, llevando así luego a un bucle y volver a la creencia original del no poder
+- esto principalmente de nuestra cultura, siempre se implanta la idea de gente inteligente y gente tonta, teniendo así una construcción social de un individuo como un conjunto de aptitudes
+- luego esto pasa a los niños en el cual se ven reflejados o adaptan su visión de la vida con estos pensamientos, percibiendo el fracaso y si no son capaces de realizar x cosa son capaces de definirse a sí mismos en sus limitaciones
+- concepto de Mathland -- cómo usar computadoras como un vehículo 
+  
+```
+"I havealready suggested that the computer may serve as a force to break down the line between the "two cultures"
+"Ya he sugerido que la computadora puede servir como una fuerza para romper la línea entre las "dos culturas"
+```
+- esta cita hace referencia a lo que se centra al principio del capítulo, en el cual se destina a romper la diferencia entre ciencias y humanidades, para así poder generar un todo.
+
+
+
+
+
+
+
+
