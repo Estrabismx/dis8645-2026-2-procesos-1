@@ -23,7 +23,7 @@ Dice así:
 
 > *No somos poetas con título,*  
 *pero las palabras plasmadas aquí, crecieron de nuestro ser*  
-*como las flores en primeravera.*  
+*como las flores en primaravera.*  
 
 >*La primavera de Santiago de Chile, ¡Que coincidencia!*  
 *estamos en primavera.*  
@@ -1210,8 +1210,7 @@ int alturaMontana(int x, int cantidadPuntos, const int perfilX[], const int perf
 # Referentes
 1. Días sin ti, Elvira Sastre.
 2. Aquella orilla nuestra, Elvira Sastre.
-3. 
-4. "Mira niñita", una canción de los Jaivas.
-5. "La danza de la libélulas", una canción de Manuel García.
-6. "La exiliada del sur", un poema de Violeta Parra.
-7. "Un día más", una canción de Jósean Log
+3. "Mira niñita", una canción de los Jaivas.
+4. "La danza de la libélulas", una canción de Manuel García.
+5. "La exiliada del sur", un poema de Violeta Parra.
+6. "Un día más", una canción de Jósean Log
