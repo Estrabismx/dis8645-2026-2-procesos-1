@@ -391,9 +391,9 @@ con la oscuridad y la hora de la muerte rodeándolo.
 
 ```
 
-Hicimos nuestra traducción con apoyo de claude, modificando palabras para hacerla propia.
+La traducción se hizo por nosotras con apoyo de inteligencia artificial, se reemplazaron algunas palabras por otras que considerábamos más adecuadas.
 
-[ADJUNTAR CHAT Y SOLICITUD CON CLAUDE]
+[traduccion-poema-ia](./pdfs-ia/traduccion-poema.pdf)
 
 > ![ATENTION]
 >
