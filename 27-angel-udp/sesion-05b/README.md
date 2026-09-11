@@ -14,7 +14,9 @@ Por lo que pudimos saber gracias a Misaa, que nos explicó que los DATOS son NÚ
 
 Libro *Inteligencias paralelas*, Laura Tripaldi.
 
-  
+Las cosas tienen que ver con un uso, ¿y qué tiene que ver con el uso? El lenguaje.
+
+El lenguaje nos constituye como personas.
 
 ## encargos
 
