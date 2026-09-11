@@ -6,9 +6,9 @@ Fecha entrega: 2026-09-11
 
 Emilia Contreras / [hazzaily](https://github.com/hazzaily) / encargada de las animaciones y carcasa.
 
-Monserrat Paredes / [Monserrat-Paredes](https://github.com/Monserrat-Paredes) / encargada de los códigos
+Monserrat Paredes / [Monserrat-Paredes](https://github.com/Monserrat-Paredes) / encargada de los códigos.
 
-Katalina Riquelme / [riyakatalinaa](https://github.com/riyakatalinaa) / encargada de registro en github
+Katalina Riquelme / [riyakatalinaa](https://github.com/riyakatalinaa) / encargada de registro en github.
 
 
 ---
