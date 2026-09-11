@@ -10,7 +10,7 @@
   - Bianka Vilchez / [biankavilchezs](https://github.com/biankavilchez)
   
 
-## Licencia 
+## Licencia
 
 Esta obra y su documentación están bajo una [Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional](https://creativecommons.org/licenses/by-sa/4.0/).
 
@@ -159,6 +159,8 @@ A diferencia de la mayoría de los grupos decidimos utilizar esta pantalla, debi
 
 - **Tipo de Pantalla** STN (Super-twisted Nematic) de tipo negativo.
 
+- **Protocolo** HD44780 (Comunicación Paralela Nativa)
+
 <br>
 
 ## Código
@@ -269,13 +271,17 @@ A pesar de ser un proyecto enfocado en mostrar datos duros, nos comparte una vis
 
 ### Etapa inicial
 
-**poema descartado (copyright)**
+#### **Noema descartado (copyright)**
 
-**como primer inicio, el poema que elegimos fue "cine" de victoria ramírez mansilla, el cual no logramos ocupar por el copyright. sin embargo, nos ayudó a encaminar y aportó a la conceptualización del proyecto.**
+> [!NOTE]
+>
+> Como inicio, el poema que elegimos fue "_cine_" de Victoria Ramírez Mansilla, el cual no concretamos su implementación por el **_Copyright_**. Sin embargo, nos ayudó a encaminar y aportó a expandir el marco conceptual del proyecto.
 
-cine — victoria ramírez mansilla
+<br>
 
-CINE
+```txt
+
+Cine - Victoria Ramírez Mansilla
 
 luces bajas y escaleras de lava negra
 me toman la mano y es una mano áspera
@@ -297,18 +303,28 @@ quiero decir que entiendo
 la entrega de la fracción
 de la fracción de la fracción.
 
+```
 
-- El poema habla de dos personas en un cine: mientras se supone que ven la película, la persona que narra se distrae completamente tocando y observando a la otra (su mano, su cuello), sin poder concentrarse en la historia. Al final dice que solo logra recibir un poquito de esa cercanía, no todo.
+El poema habla de dos personas en un cine: mientras se supone que ven la película, la persona que narra se distrae completamente tocando y observando a la otra (su mano, su cuello), sin poder concentrarse en la historia. Al final dice que solo logra recibir un poquito de esa cercanía, no todo.
 
-**luego de ya saber de qué trataba el poema, decidimos hacer una lluvia de ideas con acciones clave, por ejemplo acciones típicas de un cine y cómo se ven visualmente. de esa lluvia de ideas seleccionamos algunas finales**
+Luego de comprender mejor el poema, decidimos hacer una lluvia de ideas con **acciones clave**, por ejemplo acciones típicas de un cine y cómo se visualizan. De esa lluvia de ideas seleccionamos algunos conjuntos.
+
+<br>
 
 **acciones típicas del cine de suspenso (lluvia de ideas):**
-aparecer lentamente, desaparecer lentamente, parpadear, interrumpirse, cortar, congelarse, acercarse/zoom, alejarse, temblar, vibrar, perder el foco, desenfocarse, repetirse, esperar, pausar, perseguir, seguir, observar, ocultar, revelar, fragmentar, distorsionar, desvanecer, acelerar, frenar, interrumpir abruptamente
+
+Aparecer lentamente, desaparecer lentamente, parpadear, interrumpirse, cortar, congelarse, acercarse/zoom, alejarse, temblar, vibrar, perder el foco, desenfocarse, repetirse, esperar, pausar, perseguir, seguir, observar, ocultar, revelar, fragmentar, distorsionar, desvanecer, acelerar, frenar, interrumpir abruptamente
+
+<br>
 
 **palabras clave visuales (lluvia de ideas):**
-tensión, silencio, espera, oscuridad, sombra, distancia, cercanía, secreto, duda, misterio, presencia, ausencia, rastro, huella, fragmento, vacío, eco, respiración, susurro, persecución, inquietud, anticipación, revelación, ocultamiento, interferencia
 
-**selección final:**
+Tensión, silencio, espera, oscuridad, sombra, distancia, cercanía, secreto, duda, misterio, presencia, ausencia, rastro, huella, fragmento, vacío, eco, respiración, susurro, persecución, inquietud, anticipación, revelación, ocultamiento, interferencia
+
+<br>
+
+**Selección final:**
+
 - congelarse
 - pausar
 - revelar
@@ -320,132 +336,147 @@ tensión, silencio, espera, oscuridad, sombra, distancia, cercanía, secreto, du
 - interferencia
 - buscar alguna solución
 
-**luego de nuestro trabajo conceptual y la lluvia de ideas, decidimos cambiar el poema por los derechos :(. como ya teníamos algo encaminado, buscamos un poema que abordara la misma temática y donde pudiéramos utilizar nuestras palabras clave.**
+Luego de nuestro trabajo conceptual y la lluvia de ideas, decidimos cambiar el poema a trabajar, ya que al encontrarse bajo **_Copyright_** no poseiamos las facultades para el uso del poema en en el contexto requerido. Como ya teníamos algo una idea encaminada, buscamos un poema que abordara la misma temática y donde pudiéramos utilizar nuestras palabras clave.
 
+<br>
 
-- **nuevo poema**
+#### **Nuevo poema**
 
-**elegimos un poema de elizabeth barret browning, el cual cumple con los plazos que necesitábamos para que fuera de dominio público). luego, hicimos nuestra propia traducción del poema.**
+Elegimos un poema de Elizabeth Barret Browning, el cual cumple con los requerimientos en sus licencias (debido a la fecha de muerta de la autora pertenece al dominio público). Luego, hicimos nuestra propia traducción del poema.
+
+<br>
+
+Versión Original
+
+```txt
+
+Sonet XXII / When our two souls stand up - Elizabeth Barret Browning
 
 When our two souls stand up erect and strong,
-
 Face to face, silent, drawing nigh and nigher,
-
 Until the lengthening wings break into fire
-
 At either curvèd point,—what bitter wrong
-
 Can the earth do to us, that we should not long
-
 Be here contented? Think. In mounting higher,
-
 The angels would press on us and aspire
-
 To drop some golden orb of perfect song
-
 Into our deep, dear silence. Let us stay
-
 Rather on earth, Belovèd,—where the unfit
-
 Contrarious moods of men recoil away
-
 And isolate pure spirits, and permit
-
 A place to stand and love in for a day,
-
 With darkness and the death-hour rounding it.
 
+```
 
+<br>
+
+Versión Traducida
+
+```txt
 Cuando nuestras dos almas se eleven, firmes y fuertes,
-
 frente a frente, en silencio, acercándose más y más, 
-
 hasta que las alas que se alargan estallan en fuego 
-
 en cada punta curva ¿qué mal amargo 
-
 puede hacernos la tierra, que no debiéramos 
-
 quedarnos aquí, contentos? Piénsalo. Al subir más alto, 
-
 los ángeles nos oprimirían y aspirarían 
-
 a dejar caer algún áureo orbe de canto perfecto
-
 en nuestro hondo, querido silencio. Quedémonos
-
 mejor en la tierra, Amado mío, donde los ánimos
-
 contrarios e injustos de los hombres retroceden
-
 y aíslan a los espíritus puros, y permiten
-
 un lugar donde estar y amar por un día,
-
 con la oscuridad y la hora de la muerte rodeándolo.
 
-hicimos nuestra traducción con apoyo de claude, modificando palabras para hacerla propia.
+```
 
-> dato: en chile, la ley n° 17.336 de propiedad intelectual protege solo las obras hechas por personas naturales, por lo que las obras creadas de forma 100% con ia entrarían en dominio público.
+Hicimos nuestra traducción con apoyo de claude, modificando palabras para hacerla propia.
+
+[ADJUNTAR CHAT Y SOLICITUD CON CLAUDE]
+
+> ![ATENTION]
+>
+> En chile, la ley n° 17.336 de propiedad intelectual protege solo las obras hechas por personas naturales, por lo que las obras creadas de forma 100% con ia entrarían en dominio público.
 
 
-**relación entre el poema final y las ideas del proyecto**
+##### Relación entre el poema final y las ideas del proyecto
 
-el poema trata justamente de dos almas que se encuentran "frente a frente" y juntas generan algo mayor (el fuego, el canto). pero el poema también marca un límite: en vez de fundirse del todo con lo divino, eligen quedarse en la tierra, incompletas respecto a esa unión perfecta. esto encaja con la lógica de los botones: un botón solo no completa la acción (como quedarse a medio camino de esa elevación); se necesitan los dos —las dos almas— presionados juntos para que la acción se complete.
+En este poema se aborda la relación entre el amor y el apego, se nos habla de dejar de lado la ídea de alcanzar el cielo catolico y quedarnos en un mundo terrenal lleno de _muerte_. Abandonar la idea de lo dívino y apegarnos a la realidad terrenal, todo esto por el amor romantico. 
 
-en base a nuestras palabras clave y a de qué trata el texto, tomamos las siguientes decisiones:
-- para **aceleración**: decidimos trabajar con la velocidad del texto, cómo este se va a mostrar y a leer.
-- para **fragmentar - pausar - revelar**: pensamos en revelar fragmentos del texto mientras este va avanzando.
-- buscamos generar una acción que dependa de otra, para que juntas puedan formar algo nuevo.
+Tomando este eje central de un amor que busca mantenerse impoluto y evitando la separación, es que desarrollamos la máquina visualizadora de poemas **_"2al+"_**. Acá se busca que 2 personas interactuen y pongan a prueba su conexión para poder dejar de lado una idea original, para poder llegar a su propio mundo (el que es representado por la aparición de un nuevo poema hecho a partir del original), además de que si una de las aprtes abandona la máquina en el proceso, el tiempo se congela (se detiene el texto)
 
-**asignación de elementos a las acciones**
+<br>
 
-- **potenciómetro**: define la velocidad del poema, cómo este avanza o retrocede.
-- **botones**: presionando solo un botón, el texto se detiene; con dos botones, una pulsación breve revela una palabra; manteniendo los dos botones presionados, se puede ver un poema nuevo.
+En base a nuestras palabras clave y a de qué trata el texto, tomamos las siguientes decisiones:
+
+- Para **aceleración**: decidimos trabajar con la velocidad del texto, cómo este se va a mostrar y a leer.
+- Para **fragmentar - pausar - revelar**: pensamos en revelar fragmentos del texto mientras este va avanzando.
+- Buscamos generar una acción que dependa de otra, para que juntas puedan formar algo nuevo.
+
+Asignación de elementos a las acciones
+
+- **Potenciómetro**: define la velocidad del poema, cómo este avanza o retrocede.
+- **Botones**: presionando solo un botón, el texto se detiene y con dos botones. Una pulsación breve revela una palabra y manteniendo los dos botones presionados, se puede ver un poema nuevo.
 
 ### Pseudo código
 
-**listado de pasos**
+#### **Listado de pasos**
 
-1. inicia el arduino.
-2. el texto avanza de manera continua hasta que se presionen los botones o se manipule el potenciómetro.
-3. si se presiona solo 1 botón, el texto se congela y no sigue avanzando hasta que se deje de presionar.
-4. si se presionan los 2 botones, el texto se detiene y desaparece.
-5. mientras esto ocurre, se consulta en qué sección del texto se encuentra.
-6. en base a la sección del texto mostrado, se visualiza una palabra clave.
-7. al dejar de presionar un botón, vuelve a ocurrir el punto 3.
-8. si se sueltan ambos botones, desaparece la palabra.
-9. luego continúa avanzando el texto desde el mismo punto en el que quedó.
-10. en caso de ser manipulado el potenciómetro, se modifica la velocidad del texto (mientras más lejos del centro, más rápido el cambio).
-11. si se rota hacia la derecha, avanza de manera normal solo variando la velocidad.
-12. si se rota hacia la izquierda, retrocede el texto según qué tan lejos del centro esté.
+1. Inicia el arduino.
+2. El texto avanza de manera continua hasta que se presionen los botones o se manipule el potenciómetro.
+3. Si se presiona solo 1 botón, el texto se congela y no sigue avanzando hasta que se deje de presionar.
+4. Si se presionan los 2 botones, el texto se detiene y desaparece.
+5. Mientras esto ocurre, se consulta en qué sección del texto se encuentra.
+6. En base a la sección del texto mostrado, se visualiza una palabra clave.
+7. Al dejar de presionar un botón, vuelve a ocurrir el punto 3.
+8. Si se sueltan ambos botones, desaparece la palabra.
+9. Luego continúa avanzando el texto desde el mismo punto en el que quedó.
+10. En caso de ser manipulado el potenciómetro, se modifica la velocidad del texto (mientras más lejos del centro, más rápido el cambio).
+11. Si se rota hacia la derecha, avanza de manera normal solo variando la velocidad.
+12. Si se rota hacia la izquierda, retrocede el texto según qué tan lejos del centro esté.
 
-**ituaciones que podrían entrar en conflicto
+<br>
 
-- botones presionados en distinto orden o con distinto timing**: qué pasa si se presiona primero A y luego B con unos milisegundos de diferencia — ¿debería contar como "2 botones" igual, o solo si están presionados exactamente al mismo tiempo?
-- límites del arreglo `versosPoema[]`**: qué ocurre si `versoActual` llega al último verso mientras el potenciómetro sigue "avanzando" — hay que definir si se detiene, hace loop, o muestra un mensaje de fin.
-- **potenciómetro en el centro exacto**: si "más lejos del centro = más rápido", hay que decidir qué pasa justo en el centro (¿velocidad 0, o un mínimo definido para que no quede completamente detenido?).
-- rebote de botones (debounce)**: una sola pulsación física puede leerse como varias si no se filtra, lo que podría hacer parpadear la palabra clave o saltar versos de más.
+##### Situaciones que podrían entrar en conflicto
+
+- Botones presionados en distinto orden o con distinto timing**: qué pasa si se presiona primero A y luego B con unos milisegundos de diferencia — ¿debería contar como "2 botones" igual, o solo si están presionados exactamente al mismo tiempo?
+- Límites del arreglo `versosPoema[]`**: qué ocurre si `versoActual` llega al último verso mientras el potenciómetro sigue "avanzando" — hay que definir si se detiene, hace loop, o muestra un mensaje de fin.
+- **Potenciómetro en el centro exacto**: si "más lejos del centro = más rápido", hay que decidir qué pasa justo en el centro (¿velocidad 0, o un mínimo definido para que no quede completamente detenido?).
+- Rebote de botones (debounce)**: una sola pulsación física puede leerse como varias si no se filtra, lo que podría hacer parpadear la palabra clave o saltar versos de más.
 - **transición entre 1 botón y 2 botones**: si ya se está mostrando la palabra clave (1 botón) y se presiona el segundo, hay que definir si pasa directo a "texto desaparece" o si necesita soltar primero.
 
-***esquema / pruebas
+#### Estados de la máquina
 
-**los tres estados del poema
+1. **Texto Inicial**: Ocurre una sola vez al inicio y muestra el nombre y licencia del proyecto, además del nombre de la autora y del poema
+2. **Poema original avanzando**: Se visualiza `versosPoema[]` avanzando de manera ordenada
+3. **Poema original avanzando**: Se visualiza `versosPoema[]` retrocediendo verso por verso
+4. **Poema original congelado**:  `versosPoema[]` detiene su desplazamiento y queda estático al presionar un solo botón
+5. **Palabra clave de cada verso**: Aparece una palabra o frase relacionada al verso que se estaba visualizando. Esta aparecera al presionar 2 botónes de manera simultanea por menos de 2 segundos y durará 3 segundos en pantalla
+6. **Nuevo poema**: El poema es reemplazado por otro, que está creado a partir de palabras del poema original. Será visible siempre que ambos botónes se activen en simultaneo por más de 2 segundos, desaparece si se deja de presionar uno de los botónes
 
-1. **versos del poema**: aparecen los versos completos del poema original, constantes en pantalla. su velocidad de avance y retroceso se modifica con el potenciómetro.
-2. **segundo poema**: a partir de fragmentos del primer poema se generó un nuevo poema. aparece mientras los dos botones se mantienen presionados por **más de 2 segundos**.
-3. **palabra por verso**: son palabras clave de cada verso. aparecen cuando se presionan los dos botones por **menos de 2 segundos**, dentro del rango del verso que se esté mostrando en pantalla.
+<br>
 
-**ejemplo:
+#### Tabla palabras claves
 
-| verso completo | palabra clave |
-|---|---|
+| Verso completo | Palabra clave |
+|--------------- | ------------- |
 | Cuando nuestras dos almas se eleven, firmes y fuertes, | firme y fuerte |
 | frente a frente, en silencio, acercandose mas y mas, | acercándose |
 | hasta que las alas que se alargan estallan en fuego | estallan |
-| en cada punta curva que mal amargo | en cada |
+| en cada punta curva que mal amargo | en cada | 
+| puede hacernos la tierra, que no debiéramos | tierra |
+| quedarnos aqui, contentos? Piensalo. Al subir más alto, | contentos |
+| los angeles nos oprimirian y aspirarian | oprimiran | 
+| a dejar caer algun aureo orbe de canto perfecto | algun |
+| en nuestro hondo, querido silencio. Quedemonos | silencio
+| mejor en la tierra, Amado mio, donde los animos | amado mio
+| contrarios e injustos de los hombres retroceden | injusto |
+| y aislan a los espiritus puros, y permiten| aislan |
+| un lugar donde estar y amar por un dia, | lugar | 
+| con la oscuridad y la hora de la muerte rodeandolo. | muerte |
 
- **variables y arreglos
+#### Variables y arreglos
 
 ```cpp
 // poema principal, un verso por casilla
