@@ -41,4 +41,4 @@ Aquí estábamos mi grupo y yo, y la "jo" en la Biblioteca Nicanor Parra discuti
 ![](./imagenes/img12.jpeg)
 
 ## lectura
-Agregar resumen 
+Lo siento, no he podido sacar tiempo para resolver los ejercicios del libro. Para las próximas bitácoras, lo haré. Crossfingers
