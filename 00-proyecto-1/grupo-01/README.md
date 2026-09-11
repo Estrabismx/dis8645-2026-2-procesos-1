@@ -393,8 +393,6 @@ con la oscuridad y la hora de la muerte rodeándolo.
 
 Hicimos nuestra traducción con apoyo de claude, modificando palabras para hacerla propia.
 
-[ADJUNTAR CHAT Y SOLICITUD CON CLAUDE]
-
 >[!IMPORTANT]
 > En chile, la ley n° 17.336 de propiedad intelectual protege solo las obras hechas por personas naturales, por lo que las obras creadas de forma 100% con ia entrarían en dominio público.
 
