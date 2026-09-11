@@ -1,4 +1,5 @@
 
+
 ![](./imagenes/chile-mapu-meww.gif)
 
 **Realizado por:**  
@@ -23,12 +24,12 @@ Dice así:
 
 > *No somos poetas con título,*  
 *pero las palabras plasmadas aquí, crecieron de nuestro ser*  
-*como las flores en primaravera.*  
+*como las flores en primavera.*  
 
 >*La primavera de Santiago de Chile, ¡Que coincidencia!*  
 *estamos en primavera.*  
 
->*Bienvenidx*  
+>*Bienvenide*  
 
 >*Con amor: Francisca, Nicolás y Santiago.*  
 
@@ -119,6 +120,18 @@ Dentro de ese living, cada componente técnico cumple un rol simbólico:
 | Botón | Encender la TV |
 | Pantalla OLED | Para ver la memoria |
 | Carcasa de cartón con aspecto antiguo | La materialidad del hogar, de lo domesticado, de lo que ha envejecido junto a quien lo habita |
+
+## BOM
+
+| Componente | Valor Unidad | Cantidad | Link |
+| --- | --- | --- | --- |
+| Arduino UNO R4 WiFi | $35.990 | 1 | <https://arduino.cl/products/arduino-uno-r4-wifi> |
+| Pantalla LCD Oled 1.3" 128x64 caracteres azules | $5.000 | 1 | <https://afel.cl/products/pantalla-lcd-oled-1-3-128x64-caracteres-azules> |
+| Protoboard 830 puntos | $2.500 | 1 | <https://afel.cl/products/protoboard-mb-102-830-puntos> |
+| Potenciómetro B100kΩ | $500 | 2 | <https://afel.cl/products/potenciometro-100k-ohm> |
+| Fotoresistor GL5528 (LDR) | $500 | 1 | <https://afel.cl/products/pack-5-fotoresistores-gl5528-ldr> |
+| Botón pulsador 4 pines | $400 | 1 | <https://afel.cl/products/boton-tactil-tapa-12x12x7-3-interruptor> |
+| Cables Dupont | $1.000 | 1 Pack | <https://afel.cl/products/pack-20-cables-de-conexion-macho-macho> |
 
 ---
 
@@ -1210,7 +1223,7 @@ int alturaMontana(int x, int cantidadPuntos, const int perfilX[], const int perf
 # Referentes
 1. Días sin ti, Elvira Sastre.
 2. Aquella orilla nuestra, Elvira Sastre.
-3. "Mira niñita", una canción de los Jaivas.
+3. "Mira niñita", canción de los Jaivas.
 4. "La danza de la libélulas", una canción de Manuel García.
 5. "La exiliada del sur", un poema de Violeta Parra.
 6. "Un día más", una canción de Jósean Log
