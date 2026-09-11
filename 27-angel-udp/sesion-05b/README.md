@@ -12,6 +12,9 @@ Luego seguimos observando símbolos y yendo más allá, buscando su significado 
 
 Por lo que pudimos saber gracias a Misaa, que nos explicó que los DATOS son NÚMEROS, y un computador no es más allá que un ábaco.
 
+Libro *Inteligencias paralelas*, Laura Tripaldi.
+
+  
 
 ## encargos
 
