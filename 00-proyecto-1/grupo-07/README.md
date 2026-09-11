@@ -143,6 +143,17 @@ Como se puede apreciar en la imagen, las palabras subrayadas son las **palabras 
 
 ---
 
+## Diagrama de flujo
+
+
+
+
+
+
+
+
+---
+
 
 ## Bill of Materials
 
@@ -187,9 +198,12 @@ El proyecto evolucionó progresivamente desde la reproducción de un poema en el
 ---
 
 
-## Registro en imagen y gifd por código
+## Registro en imagen y gifs por código
 
 Código 1: Reproducción del poema en el **Serial Monitor**, mediante un loop. Código base modificado a partir del código entregado en clases.
+
+código visto en clase y modificado con nuestros versos del poema "queja"
+
 
 ![gif reproducción del poema en el Serial Monitor mediante un loop](./imagenes/codigo-1-serialmonitor.gif)
 
@@ -199,9 +213,24 @@ Código 1: Reproducción del poema en el **Serial Monitor**, mediante un loop. C
 
 Código 2: Llevar el poema desde el monitor serial a la pantalla.
 
-![imagen del poema reproduciéndose en la pantalla](./imagenes/codigo2.jpg)
+Se incorpora una pantalla OLED 0,91" I2C. El poema comienza a visualizarse físicamente y los versos cambian automáticamente cada 2 segundos.
 
-![gif del poema reproduciéndose en la pantalla](./imagenes/codigo2.gif)
+Conexión física de la Pantalla LCD Oled 0,91" I2C:
+
+SCK/SCL → reloj (cable azul)
+
+SDA → datos (cable verde)
+
+GND → tierra (cable negro)
+
+VCC → voltaje (cable rojo)
+
+La parte que efectivamente "proyecta" el poema en la pantalla es la función mostrarVerso(), específicamente estas líneas:
+
+| Conexiones | Pantalla |
+|:---:|:---:|
+| ![conexiones](./imagenes/codigo2.jpg) | ![pantalla](./imagenes/codigo2.gif) |
+
 
 
 ---
