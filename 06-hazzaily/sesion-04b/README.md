@@ -20,7 +20,7 @@ En este caso, a quién escogimos fue ChatGPT, al cual le preguntamos:
 
 A lo que nos dio esto:
 
-![Imagen generada por ChatGPT de llamas para la animación 1](./imagenes/chatgpt-llamas-invertidas.png)
+![Imagen generada por ChatGPT de llamas para la animación 1](./imagenes/chatgpt-llamas.png)
 
 Y cuando intentamos probarlo nos dimos cuenta de que no calzaba en la pantalla, y además, iba a resultar en negativo, por lo que le pedimos que invirtiera los colores:
 
@@ -30,7 +30,7 @@ Y cuando intentamos probarlo nos dimos cuenta de que no calzaba en la pantalla, 
 
 Y nos dio esto:
 
-![Imagen generada por ChatGPT de llamas para la animación 1](./imagenes/chatgpt-llamas.png)
+![Imagen generada por ChatGPT de llamas para la animación 1](./imagenes/chatgpt-llamas-invertidas.png)
 
 Cuando lo pasamos por [Stonez56](https://tools.stonez56.com/u8g2/getBitmap.php) no dimos cuneta de que era un poco pequeña la imagen para la pantalla, pero aún así lo intentamos.
 
