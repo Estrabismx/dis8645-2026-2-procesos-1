@@ -395,8 +395,7 @@ Hicimos nuestra traducción con apoyo de claude, modificando palabras para hacer
 
 [ADJUNTAR CHAT Y SOLICITUD CON CLAUDE]
 
-> ![ATENTION]
->
+>[!IMPORTANT]
 > En chile, la ley n° 17.336 de propiedad intelectual protege solo las obras hechas por personas naturales, por lo que las obras creadas de forma 100% con ia entrarían en dominio público.
 
 
@@ -573,7 +572,7 @@ unsigned long tiempoAnterior = 0; // ultimo momento actualizado (millis())
 - `textoInicial()`
 - `mostrarPoema()`
 - `mostrarPalabra()`
-- `mostrarNuevoPoema()
+- `mostrarNuevoPoema()`
 
 ### Codi-Gooooo
 
@@ -593,6 +592,12 @@ El código debe venir con comentarios que indiquen que secciones corresponde a q
 
 ```
 
+<br>
+
+---
+
+>[!TIP]
+>Casilla desplegable 👁️
 
 <details>
 <summary><b>Código Inicial en bruto por Gemini</b></summary>
@@ -661,6 +666,14 @@ void loop() {
 
 </details>
 
+
+> $\textcolor{red}{Código\ generado\ por\ Gemini\ SIC}$ Cualquier error de conceptos u ortografía corresponde al modelo IA
+> Solo se está utilizando como referencia este código 
+
+---
+
+<br>
+
 Este código, sumado a lo visto en clases nos ayudó a realizar nuestra primera prueba relacionada al proyecto, para esto nos fijamos en los siguientes elementos claves:
 
 ```cpp
@@ -712,6 +725,11 @@ Ahora nos aventuramos a hacer nuestra propia versión en la que se muestren los 
 > Autora del poema
 
 <br>
+
+---
+
+>[!TIP]
+>Casilla desplegable 👁️
 
 <details>
 <summary><b>Código Incial</b></summary>
@@ -775,6 +793,13 @@ lcd.clear();
 - Y la segunda realiza una _limpieza_ de la pantalla, es decir que borra todo lo que se visualice en ella
 
 Ambas funciones juntas nos ayudan a que el poema se pueda visualizar por x cantidad de segundos, para luego ser borrada. Por lo que añadiendo ambos elementos el código quedó de la siguiente manera:
+
+<br>
+
+---
+
+>[!TIP]
+>Casilla desplegable 👁️
 
 <details>
 <summary><b> Código Inicio Funcional</b></summary>
@@ -880,6 +905,8 @@ void loop() {
 
 </details>
 
+---
+
 <br>
 
 [![video weno](./imagenes/vid02.png)](https://youtu.be/zpnbKxdgfW8)
@@ -898,6 +925,13 @@ void loop() {
 El siguiente gran paso fue añadir todo el poema para que se pueda visualizar luego de que termine el **_texto inicial_**, es decir el $\textcolor{turquoise}{void}$ $\textcolor{orange}{setup()}$
 
 Por lo mismo, nos apoyamos de nuestro diagrama y listado de acciones para estructurar una secuencia, esta fue apoyada con los ejercicios realizados en clase. Quedando de la siguiente manera:
+
+<br>
+
+---
+
+>[!TIP]
+>Casilla desplegable 👁️
 
 <details>
 <summary><b>Codigo con Poema primer intento </b></summary>
@@ -1026,6 +1060,8 @@ char *versosPoema[]={
 
 </details>
 
+---
+
 <br>
 
 El problema con esta versión fue que intentamos imprimir, cuando solo estamos definiendo una variable.
@@ -1033,6 +1069,10 @@ El problema con esta versión fue que intentamos imprimir, cuando solo estamos d
 Para solucionarlo, tomamos como referencia el ejemplo que funciono anteriormente, sumado a esto. Le adjuntamos a Gemini la estructura de funcionamiento con los parámetros. Para esto le añadimos **###Coreografia** donde se añade el listado y el esquema
 
 Por lo que llegamos al siguiente paso con:
+
+<br>
+
+---
 
 <details>
 <summary><b>Codigo con Poema funcional</b></summary>
@@ -1183,6 +1223,12 @@ Considera que los valores ocurren dentro de un margen de 0 a 255. En base a esto
 Dime que estructura debo editar para añadirlo
 
 ```
+<br>
+
+---
+
+>[!TIP]
+>Casilla desplegable 👁️
 
 <details>
 <summary><b>Código Potenciómetro</b></summary>
@@ -1389,6 +1435,8 @@ if (poteFiltrado >= 135) {
 
 </details>
 
+---
+
 <br>
 
 [![poema](./imagenes/vid03.png)](https://youtube.com/shorts/GtjCxBL5BN4)
@@ -1432,7 +1480,14 @@ prompt:
 
 *b. No borres los comentarios que ya están en el código original, ya que son importantes para nosotros entender que es lo que hemos hecho.*
 
-<details>
+<br>
+
+---
+
+> [!TIP]
+> Casilla desplegable 👁️
+ 
+ <details>
 <summary> <b> Código botones </b> </summary>
 
 ```cpp
@@ -1731,6 +1786,10 @@ void loop() {
 }
 ```
 </details>
+
+---
+
+<br>
 
 Aquí se definen las nuevas variables para ambos botones, en conjunto con las nuevas acciones. 
 
