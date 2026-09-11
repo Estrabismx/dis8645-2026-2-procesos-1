@@ -582,13 +582,185 @@ https://www.youtube.com/watch?v=SDmdVimu-xw
 https://www.youtube.com/watch?v=w7oqHxpn4oM
 
 # Declaración de ayuda de inteligencia artificial 
-Ante algunas dudas que se nos generaban al avanzar con el trabajo, se utilizo de ayuda como herramienta la inteligencia artificial Chat GPT. Se entrega un pdf con las preguntas hechas.
+Ante algunas dudas que se nos generaban al avanzar con el trabajo, se utilizo de ayuda como herramienta la inteligencia artificial Chat GPT.
 
-[Haz clic aquí para ver el documento PDF](imagenes/declaracion-uso-ia.pdf)
+"mira tengo este potenciómetro y necesito conectarlo en la proto para poder usarlo, pero no cacho donde debo conectarlo debo conectar cables al Arduino y luego que esos vayan en la misma línea que el potenciómetro?"
+
+"Ya, pero a ver a ver, vamos de a poco, tenemos los versos escritos en el char, ok listo, ahora para ponerlos en el setup ordenados y que pasen debo poner como display.println(verso1) y así con todo lo que quiero que aparezca? no me metas cosas raras de que se puede hacer más corto, tu dime si así funciona o no después me explicas como es que iría" 
+
+"Las estrofas de las versiones del poema deben tener la misma cantidad de versos o se puede armar por ejemplo con la version en español con mas versos"
+
+"Si quisiera agregar una animacion que se mueva y no los frames ordenados hacía abajo, onda que mientras desplazo hacia abajo se muestre un espacio de la pantalla un punto moviendose, es posible?, onda puedo armar eso con delay o no"
+
+"ya mira vamos a hacer esto paso a paso y sin usar milis ni esas cosas más complejas, además, queremos agregar un botón y un potenciómetro, la función que tendrá el botón será la de mostrar el poema traducido al español y la función del potenciómetro será la de cambiar el tamaño de la tipografía, de momento llevo esto escrito, como voy 
+
+```cpp
+//primero lo primero
+
+//llamar a la biblioteca de las
+
+//cosas que queremos usar
+
+//para que esto funcione
+
+//librebria de la pantallita
+
+#include <SPI.h>
+
+#include <Wire.h>
+
+#include <Adafruit_GFX.h>
+
+#include <Adafruit_SSD1306.h>
+
+#include <Fonts/FreeSans9pt7b.h>
+
+ // Librería de la fuente Sans Serif
+
+#include <Fonts/FreeSerifItalic9pt7b.h>
+
+//definir el tipo de pantalla que estamos usando 
+
+#define SCREEN_WIDTH 128
+
+#define SCREEN_HEIGHT 32
+
+//esto no entiendo que es pero se pone tmbn
+
+#define OLED_RESET -1
+
+#define SCREEN_ADDRESS 0x3C
+
+//en la zona digital
+
+//hay que decirle si será in o si será out
+
+//entonces de entrada tenemos
+
+int patitaBoton = 3;
+
+//según comentarios de nachi
+
+//lectura botón comienza en 0
+
+//porque esta apagado
+
+int lecturaBoton = 0
+
+//este igual, pero como dice display 
+
+//supongo que algo inicia
+
+Adafruit_SSD1306 display(
+
+  SCREEN_WIDTH,
+
+  SCREEN_HEIGHT,
+
+  &Wire,
+
+  OLED_RESET
+
+);
+
+//luego definimos los char de la animacion
+
+//que fueron generados en la pagina 
+
+//image2cpp
+
+//pero como es muy largo 
+
+//se crea una carpeta aparte
+
+//que lo soporte
+
+#include "animacion.h"
+
+//ahora debemos definir el poema
+
+//cambiamos un poco los versos
+
+//para hacer enfasis en lo que queremos destacar
+
+const char *versos[] = {
+
+  "Hope is the thing with",
+
+  "feathers",
+
+  "That perches in",
+
+  "the soul",
+
+  "and sings the tune without the words",
+
+  "and never stops",
+
+  "at all...",
+
+  "-Emily Dickinson"
+
+};
+
+//también definimos el poema 
+
+//con su traducción al español
+
+const char *versos[] = {
+
+  "Esperanza es eso con",
+
+  "plumas",
+
+  "que se posa en",
+
+  "el alma",
+
+  "y canta una melodía sin palabras",
+
+  "y nunca",
+
+  "se detiene",
+
+  "-Emily Dickinson"
+
+};
+
+//ahora hay algo que no entiendo
+
+//como se define lo que hacen los botones
+
+//y potenciometro
+
+//eso se definia en los void ono
+
+//esos no hay que llamarlos
+
+//pero si ponerles nombre
+
+//o eso es lo mismo 
+
+//segun el codigo que estaban haciendo las chiquillas en clases
+
+//se definen esas cosas pero antes
+
+//asi que nos vamos a devolver
+
+//anotado de 21 a 28
+
+//los const de la animación 
+
+//deben estar aquí?
+
+//o pueden quedarse en la sub carpeta?
+
+//ahora aquí nos complicamos
+```
+
+no es mucho pero estamos aprendiendo"
 
 # Bibliografía 
-
-AleCondeando. (22 de septiembre de 2019). Funcion Millis con Arduino [Video]. YouTube. https://www.youtube.com/watch?v=yyYjdyGImFM
 
 Arduino. (s.f.). Digital Pins. Arduino Documentation. https://docs.arduino.cc/learn/microcontrollers/digital-pins/
 
