@@ -34,7 +34,10 @@ Y le envíe este sckecth a mi grupo, y se oficializo nuestro proyecto 01:
 
 Period
 Aquí estábamos mi grupo y yo, y la "jo" en la Biblioteca Nicanor Parra discutiendo como íbamos a hacer tangible el proyecto:
-![](./imagenes/img.jpeg)
+![](./imagenes/img8.jpeg)
+![](./imagenes/img9.jpeg)
+![](./imagenes/img10.jpeg)
+![](./imagenes/img11.jpeg)
 
 ## lectura
 Agregar resumen 
