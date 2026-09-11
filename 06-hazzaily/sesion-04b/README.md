@@ -724,6 +724,28 @@ Imagen de la carcasa final.
 
 ![Imagen de la carcasa final](./imagenes/carcasa-final.jpeg)
 
+## Herramienta para animaciones pixel a pixel
+
+No logramos encontrar imágenes adecuadas para lo que estábamos buscando representar, es por esto que buscamos una solución para poder desarrollar nuestros "frames" desde cero para generar las animaciones.
+
+Es así que llegamos a [Pixelorama](https://pixelorama.org/) que es una aplicación que se utiliza para generar animaciones pixel a pixel, la cual tiene distintas formas de descargar y nosotras la descargamos desde su GitHub.
+
+## Herramienta para animaciones en arduino (bitmap)
+
+Esta herramienta nos la enseño Seba (grande Seba c:), y se llama [Stonez56](https://tools.stonez56.com/u8g2/getBitmap.php) y sirve para ingresar una imagen en el formato y que la reescriba pixel por pixel para generar una imagen en arduino.
+
+Captura de pantalla de la página convirtiendo una imagen en bitmap pt. 1.
+
+![Captura de pantalla de la página convirtiendo una imagen en bitmap pt. 1](./imagenes/stonez56-1.png)
+
+Captura de pantalla de la página convirtiendo una imagen en bitmap pt. 2.
+
+![Captura de pantalla de la página convirtiendo una imagen en bitmap pt. 2](./imagenes/stonez56-2.png)
+
+Captura de pantalla de la página convirtiendo una imagen en bitmap pt. 3.
+
+![Captura de pantalla de la página convirtiendo una imagen en bitmap pt. 3](./imagenes/stonez56-3.png)
+
 ## encargos
 
 ## lectura
