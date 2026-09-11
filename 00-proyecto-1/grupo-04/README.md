@@ -159,7 +159,7 @@ A partir de esto entendimos el texto como una secuencia de caracteres y pudimos 
 
 También comenzamos a utilizar `for` para recorrer conjuntos. Esto después fue útil no solamente para recorrer los versos, sino también para controlar posiciones, movimientos y otras animaciones.
 
-
+![pantalla](./imagenes/pantalla1.png)
 
 ### Variables
 
@@ -706,8 +706,6 @@ LOOP
 
 Dentro de cada estrofa, las funciones de animación se ejecutan en el orden definido para cada verso. Mientras existen pausas controladas, el código continúa revisando los botones para permitir que `STOP` interrumpa la reproducción.
 
-
-
 ### Cosas que funcionan como esperábamos
 
 
@@ -904,15 +902,19 @@ Esta idea quedó solamente en la etapa conceptual. **No llegamos a probar físic
 
 ## 10. Bill of Materials
 
-| Cantidad | Componente                          | Descripción / uso                                                                      |
-| -------: | ----------------------------------- | -------------------------------------------------------------------------------------- |
-|        1 | Arduino UNO R4 WiFi                 | Microcontrolador utilizado para ejecutar el código y controlar la instalación.         |
-|        1 | Pantalla OLED SSD1306 128 × 32 px   | Pantalla donde se muestra e interpreta visualmente el poema. Utiliza comunicación I2C. |
-|        3 | Botones                             | Controles físicos para **PLAY**, **STOP** y **REPEAT**.                                |
-|        1 | Potenciómetro                       | Permite controlar el tamaño de letra en tiempo real entre los tamaños 1, 2 y 3.        |
-|        1 | Protoboard                          | Utilizada para realizar las conexiones y pruebas del circuito.                         |
-|        — | Cables jumper                       | Utilizados para conectar el Arduino, la pantalla OLED, los botones y el potenciómetro. |
-|        1 | Caja / estructura de la instalación | Soporte físico del proyecto, planteado a partir de la idea de una tabla de picar.      |
+| # | Componente | Cant. | Tienda | Precio unit. | Link |
+|---|---|---:|---|---:|---|
+| 1 | Arduino UNO R4 WiFi | 1 | Arduino Chile | $41.990 | https://arduino.cl/products/arduino-uno-r4-wifi?variant=51526624280874 |
+| 2 | Pantalla OLED SSD1306 128×32 | 1 | MechatronicStore | $3.990 | https://www.mechatronicstore.cl/pantalla-oled-128x32-i2c-0-91-ssd1306/ |
+| 3 | Botón táctil estándar 6x6x5 mm (sin tapa) | 3 | AFEL | $100 | https://afel.cl/products/kit-boton-tactil-6x6x5-interruptor-5-unidades |
+| 4 | Potenciómetro 10K WH148 | 1 | AFEL | $500 | https://afel.cl/products/potenciometro-10k-ohm |
+| 5 | Pack 60 cables Dupont con conectores | 1 | AFEL | $2.500 | https://afel.cl/products/pack-60-cables-de-conexion |
+
+**Costo total estimado**
+
+Total incluyendo Arduino UNO R4 WiFi: $49.280 CLP
+
+Total sin Arduino, si ya lo tienes: $7.290 CLP
 
 
 
