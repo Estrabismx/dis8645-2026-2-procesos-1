@@ -300,7 +300,7 @@ Este día tras la explicación de Aarón, se ordenó el código para que estuvie
 
 ### Organización de la estructura del código
 
-Para esta parte fuimos ordenando el código por secciones, trabajando cada una por separado para entender mejor su función dentro del proyecto. Primero comenzamos con las **librerías**, que ya habíamos configurado en la clase anterior y que funcionaban como la base de nuestro código.
+Para esta parte fuimos ordenando el código por secciones, trabajando cada una por separado para entender mejor su función dentro del proyecto. Primero comenzamos con las **bibliotecas**, que ya habíamos configurado en la clase anterior y que funcionaban como la base de nuestro código.
 
 ```cpp
 #include <Wire.h>
