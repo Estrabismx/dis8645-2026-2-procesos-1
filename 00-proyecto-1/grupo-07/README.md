@@ -473,5 +473,8 @@ Imagen de la carcasa final.
 
 ![final2](./imagenes/final2.jpg)
 
+![final4](./imagenes/final4.jpg)
+
+![final3](./imagenes/final3.gif)
 
 
