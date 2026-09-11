@@ -62,6 +62,7 @@ ESPAÑOL: "Impreso por B. Franklin, Administrador de Correos."
 
 Análisis: Cinco palabras que funcionan como manifiesto involuntario: en Franklin, escribir, imprimir y distribuir son la misma función ejercida por la misma persona. Diseño gráfico entendido como control de cadena completa, no como tarea aislada.
 
+---
 
 Cita 2 (pp. 34-35)
 
@@ -71,6 +72,7 @@ ESPAÑOL: "El Servicio Postal de Estados Unidos sigue siendo, al menos por ahora
 
 Análisis: El USPS muestra que un sistema de distribución bien diseñado puede sobrevivir mucho más que la tecnología que lo originó. Lectura del diseño como ingeniería de infraestructura duradera, no de objetos de moda pasajera.
 
+---
 
 Cita 3 (p. 38)
 
