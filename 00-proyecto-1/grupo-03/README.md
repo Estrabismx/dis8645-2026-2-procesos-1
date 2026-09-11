@@ -121,7 +121,7 @@ Este mapa corresponde exactamente al programa. Si tu montaje de prueba usa otros
 
 Referencia del mapa de pines: [pinout oficial de Uno R4 Minima](https://docs.arduino.cc/resources/pinouts/ABX00080-full-pinout.pdf). La distinción entre alimentación y señales puede verse en los módulos de [Adafruit con regulador y adaptación de nivel incorporados](https://www.adafruit.com/product/3787); 
 
-### pasos finales que realizamos
+### pasos claves que realizamos
 
 1. Abrir el archivo en Arduino IDE. Instala el soporte para Uno R4 si aún no está instalado y seleccionar **Arduino Uno R4 Minima** y su puerto.
 2. Instalar desde el gestor de bibliotecas **Adafruit GFX Library**, **Adafruit ST7735 and ST7789 Library**, **Adafruit SSD1306** y **Adafruit BusIO**, aceptando las dependencias.
@@ -140,7 +140,7 @@ Se restaura el bucle original: al llegar a la escena 10 y devolver el mando, sal
 
 | Escena | Comportamiento |
 |---|---|
-| 1 | La TFT conserva verso → números → `sintax error`, con esa escritura solicitada. La OLED dice únicamente «Girar potenciómetro». |
+| 1 | La TFT conserva verso → números → `syntax error`, con esa escritura solicitada. La OLED dice únicamente «Girar potenciómetro». |
 | 2 | Texto que se contrae y se desintegra. Se reinicia al volver a entrar. |
 | 3 | Píxeles negros se convierten aleatoriamente en blancos y permanecen blancos, hasta absorber también las letras. Tras un segundo de pantalla completamente blanca aparece «Con un poco de hambre» en negro y conserva su desintegración. Al regresar, el verso de pureza aparece de inmediato. |
 | 4 | «Todo acaba aquí» estático, |
@@ -161,10 +161,6 @@ Las animaciones temporales siguen desarrollándose mientras se permanezca en su 
 - `NAV_HYSTERESIS`: margen entre zonas; subirlo reduce cambios por ruido pero exige más movimiento en cada frontera.
 - `FAST_BLINK_DURATION_MS`, `MOTOR_POWER` y `MOTORS_ENABLED`: duración del parpadeo rápido, PWM y habilitación de motores, después de verificar la alimentación y los drivers.
 - Si queremos rotar TFT, cambiamos `setRotation(1)` por `setRotation(3)` para conservar la orientación horizontal.
-
-Prueba primero con la alimentación de motores desconectada: mueve el mando mientras proliferan los números y comprueba que cambie de escena; vuelve a la 1 y comprueba que reaparezca el verso. En la 6, detén el giro en cada una de sus tres zonas y verifica que las frases dependan únicamente de la posición. Revisa la frase descendente en la TFT y que la OLED conserve la instrucción de giro. Atraviesa la 8 sin pulsar y luego comprueba que pulsar acelere el parpadeo del LED durante 1,8 segundos y después vuelva al ritmo normal. Comprueba también que una pulsación no impida salir de la escena y que el LED se apague al salir.
-
-Comprueba también el bucle completo en ambos sentidos físicos: 1 → … → 10 → 2 → … → 10 → 2. El salto no espera a que termine ninguna animación.
 
 ### Texto de la segunda pantalla
 
@@ -263,7 +259,8 @@ https://github.com/tomascatri/dis8645-2026-2-procesos-1/tree/main/00-proyecto-1/
 https://github.com/tomascatri/dis8645-2026-2-procesos-1/tree/main/00-proyecto-1/grupo-03/codigos/codigos-pruebas/prueba-motor-vibratorio-y-modulo-hw-517
 https://share.gemini.google/BSsl6DHlf5yU
 
-**Version final**
+**Version final** 
+https://chatgpt.com/s/cx_6aa32f0da6d881919a586751a2dd9690
 
 ```cpp
 /* Poema electronico — UNO R4 Minima / ST7789V 240x320 / SSD1306 128x32.
