@@ -145,11 +145,7 @@ Como se puede apreciar en la imagen, las palabras subrayadas son las **palabras 
 
 ## Diagrama de flujo
 
-
-
-
-
-
+![diagrama de flujo](./imagenes/diagramaflujo.png)
 
 
 ---
@@ -402,7 +398,7 @@ Frames de la animación de corazón.
 
 Frame de la animación de llama.
 
-![Frame de la animación de llama](./imagenes/llamafinal.png)
+![frames animacion llama](./imagenes/framesllamas.png)
 
 
 ---
