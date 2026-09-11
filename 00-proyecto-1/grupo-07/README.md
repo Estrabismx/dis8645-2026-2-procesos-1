@@ -22,7 +22,7 @@ Todos los gifs e imágenes se encuentran subidos en la carpeta de "imagenes".
 
 Códigos subidos por fecha en la carpeta "codigos".
 
-Las conversacions con [Claude](https://claude.ai/) las podemos encontrar como [prompt-claude-codigo.pdf](https://github.com/disenoUDP/dis8645-2026-2-procesos-1/blob/main/00-proyecto-1/grupo-07/codigos/prompt-claude-codigo.pdf) y en [chats-claude-pt1](https://github.com/disenoUDP/dis8645-2026-2-procesos-1/tree/main/00-proyecto-1/grupo-07/codigos/chats-claude-pt1)
+Las conversacions con [Claude](https://claude.ai/) las podemos encontrar como [prompt-claude-codigo.pdf](https://github.com/disenoUDP/dis8645-2026-2-procesos-1/blob/main/00-proyecto-1/grupo-07/codigos/prompt-claude-codigo.pdf) y en [chats-claude-pt1](https://github.com/disenoUDP/dis8645-2026-2-procesos-1/tree/main/00-proyecto-1/grupo-07/codigos/chats-claude-pt1) en formato PDF.
 
 
 ---
