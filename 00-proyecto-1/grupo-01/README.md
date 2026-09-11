@@ -533,12 +533,9 @@ char *palabraVerso[] = {
   "lugar",    // nota: sin "un"
   "muerte",   // nota: sin "de la"
 };
-```
+``` 
 
-***como se va a montrar y dividir el texto 
-
-**variables
-
+##### Variables
 
 ```cpp
 char *versosPoema[] = {
@@ -568,12 +565,12 @@ const int intervalo = 3000; // duracion de cada verso (ms)
 unsigned long tiempoAnterior = 0; // ultimo momento actualizado (millis())
 ```
 
-**funciones 
+##### Funciones 
 
 - `textoInicial()`
 - `mostrarPoema()`
 - `mostrarPalabra()`
-- `mostrarNuevoPoema()
+- `mostrarNuevoPoema()`
 
 ### Codi-Gooooo
 
@@ -592,6 +589,13 @@ Además de encontrarme trabajando en un Arduino UNO R4 WIFI. Donde nos estamos c
 El código debe venir con comentarios que indiquen que secciones corresponde a que elementos, además de mencionar como actua cada función y que se puede editar en sus variables
 
 ```
+
+<br>
+
+---
+
+>[!TIP]
+> $\color{green}{\text{Casilla desplegable 👁️}}$
 
 
 <details>
@@ -661,6 +665,14 @@ void loop() {
 
 </details>
 
+
+> $\textcolor{red}{Código\ generado\ por\ Gemini\ SIC}$ Cualquier error de conceptos u ortografía corresponde al modelo IA
+> Solo se está utilizando como referencia este código 
+
+---
+
+<br>
+
 Este código, sumado a lo visto en clases nos ayudó a realizar nuestra primera prueba relacionada al proyecto, para esto nos fijamos en los siguientes elementos claves:
 
 ```cpp
@@ -712,6 +724,11 @@ Ahora nos aventuramos a hacer nuestra propia versión en la que se muestren los 
 > Autora del poema
 
 <br>
+
+---
+
+>[!TIP]
+> $\color{green}{\text{Casilla desplegable 👁️}}$
 
 <details>
 <summary><b>Código Incial</b></summary>
@@ -775,6 +792,13 @@ lcd.clear();
 - Y la segunda realiza una _limpieza_ de la pantalla, es decir que borra todo lo que se visualice en ella
 
 Ambas funciones juntas nos ayudan a que el poema se pueda visualizar por x cantidad de segundos, para luego ser borrada. Por lo que añadiendo ambos elementos el código quedó de la siguiente manera:
+
+<br>
+
+---
+
+>[!TIP]
+> $\color{green}{\text{Casilla desplegable 👁️}}$
 
 <details>
 <summary><b> Código Inicio Funcional</b></summary>
@@ -880,6 +904,8 @@ void loop() {
 
 </details>
 
+---
+
 <br>
 
 [![video weno](./imagenes/vid02.png)](https://youtu.be/zpnbKxdgfW8)
@@ -898,6 +924,13 @@ void loop() {
 El siguiente gran paso fue añadir todo el poema para que se pueda visualizar luego de que termine el **_texto inicial_**, es decir el $\textcolor{turquoise}{void}$ $\textcolor{orange}{setup()}$
 
 Por lo mismo, nos apoyamos de nuestro diagrama y listado de acciones para estructurar una secuencia, esta fue apoyada con los ejercicios realizados en clase. Quedando de la siguiente manera:
+
+<br>
+
+---
+
+>[!TIP]
+> $\color{green}{\text{Casilla desplegable 👁️}}$
 
 <details>
 <summary><b>Codigo con Poema primer intento </b></summary>
@@ -1026,6 +1059,8 @@ char *versosPoema[]={
 
 </details>
 
+---
+
 <br>
 
 El problema con esta versión fue que intentamos imprimir, cuando solo estamos definiendo una variable.
@@ -1033,6 +1068,10 @@ El problema con esta versión fue que intentamos imprimir, cuando solo estamos d
 Para solucionarlo, tomamos como referencia el ejemplo que funciono anteriormente, sumado a esto. Le adjuntamos a Gemini la estructura de funcionamiento con los parámetros. Para esto le añadimos **###Coreografia** donde se añade el listado y el esquema
 
 Por lo que llegamos al siguiente paso con:
+
+<br>
+
+---
 
 <details>
 <summary><b>Codigo con Poema funcional</b></summary>
@@ -1172,6 +1211,9 @@ Luego de estos avances empezamos a plantear agregar los potenciometros...
 
 #### Potenciómetro
 
+[![video](./imagenes/vid00.png)](https://youtube.com/shorts/qPF3jfDAklU)
+
+
 Para lograrlo, establecimos el siguiente prompt: 
 
 ```txt
@@ -1183,6 +1225,12 @@ Considera que los valores ocurren dentro de un margen de 0 a 255. En base a esto
 Dime que estructura debo editar para añadirlo
 
 ```
+<br>
+
+---
+
+>[!TIP]
+> $\color{green}{\text{Casilla desplegable 👁️}}$
 
 <details>
 <summary><b>Código Potenciómetro</b></summary>
@@ -1389,9 +1437,11 @@ if (poteFiltrado >= 135) {
 
 </details>
 
+---
+
 <br>
 
-[![poema](./imagenes/vid03.png)](https://youtube.com/shorts/GtjCxBL5BN4)
+[![poema](./imagenes/vid00.png)](https://youtube.com/shorts/GtjCxBL5BN4)
 
 Para lograr añadir el potenciómetro, utilizamos el ejercicio de ejemplo que tuvimos al inicio y trabajamos en base a ese valor. Este se le indicó a Gemini que lo tomara de referencia 
 
@@ -1432,8 +1482,17 @@ prompt:
 
 *b. No borres los comentarios que ya están en el código original, ya que son importantes para nosotros entender que es lo que hemos hecho.*
 
-<details>
+<br>
+
+---
+
+> [!TIP]
+> Casilla desplegable 👁️
+ 
+ <details>
 <summary> <b> Código botones </b> </summary>
+
+[![error](./imagenes/vid04.png)](https://youtube.com/shorts/WJUcuQjkYJc?feature=share)
 
 ```cpp
   #include <LiquidCrystal.h>
@@ -1732,6 +1791,10 @@ void loop() {
 ```
 </details>
 
+---
+
+<br>
+
 Aquí se definen las nuevas variables para ambos botones, en conjunto con las nuevas acciones. 
 
 ```cpp
@@ -1856,7 +1919,7 @@ Y al dejar de presionar el botón, el texto vuelve al último punto en que qued�
 
  <br>
 
- [![video](./imagenes/vid04.png)](https://youtube.com/shorts/qPF3jfDAklU)
+ [![video](./imagenes/vid00.png)](https://youtube.com/shorts/qPF3jfDAklU)
 
 #### Resultado
 
