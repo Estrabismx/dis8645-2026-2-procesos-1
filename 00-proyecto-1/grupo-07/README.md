@@ -161,12 +161,14 @@ Como se puede apreciar en la imagen, las palabras subrayadas son las **palabras 
 |Protoboard|1|$1.500|<https://afel.cl/products/mini-protoboard-400-puntos>|
 |LEDS|3|$70|<https://afel.cl/products/diodo-led-5mm-ultrabrillante-rojo?_pos=10&_sid=9ca2bb29d&_ss=r>|
 |Kit resistencias|3|$4.990|<https://afel.cl/products/kit-600-resistencias-1-4w-30-valores?_pos=1&_sid=aa6abbe0f&_ss=r>|
-|Cables|7|$1.000|<https://afel.cl/products/pack-20-cables-de-conexion-macho-macho>|
+|Cables|10|$1.000|<https://afel.cl/products/pack-20-cables-de-conexion-macho-macho>|
 |Potenciómetro B10k|1|$500|<https://afel.cl/products/potenciometro-10k-ohm>|
-|Kit cables caimán|6|$3000|<https://afel.cl/products/kit-10-cables-conectores-tipo-caiman?srsltid=AfmBOorPXCoNA5FfnVv3FukZopGL348V9KtyglGtKEOZ-cGqXj8U1g1_>|
-|Pack cables Dupont|18|$2500|<https://afel.cl/products/pack-60-cables-de-conexion?variant=45125231935640&country=CL&currency=CLP&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&utm_term=&utm_campaign=@+Smart+Shopping&utm_source=adwords&utm_medium=ppc&hsa_acc=1808722794&hsa_cam=18405560573&hsa_grp=&hsa_ad=&hsa_src=x&hsa_tgt=&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=17613659948&gbraid=0AAAAADBMsFQIbGQpkhnrUNPR5LmXeViHp&gclid=CjwKCAjwwfnUBhAtEiwAfQpAYgm7J5jNss5OV1btE3F0jvFZ52Ixl_uZo3bNBxeZTep7EVkxkVaXWRoC7ZAQAvD_BwE>|
+|Kit cables caimán|6|$3.000|<https://afel.cl/products/kit-10-cables-conectores-tipo-caiman?srsltid=AfmBOorPXCoNA5FfnVv3FukZopGL348V9KtyglGtKEOZ-cGqXj8U1g1_>|
+|Pack cables Dupont|18|$2.500|<https://afel.cl/products/pack-60-cables-de-conexion?variant=45125231935640&country=CL&currency=CLP&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&utm_term=&utm_campaign=@+Smart+Shopping&utm_source=adwords&utm_medium=ppc&hsa_acc=1808722794&hsa_cam=18405560573&hsa_grp=&hsa_ad=&hsa_src=x&hsa_tgt=&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=17613659948&gbraid=0AAAAADBMsFQIbGQpkhnrUNPR5LmXeViHp&gclid=CjwKCAjwwfnUBhAtEiwAfQpAYgm7J5jNss5OV1btE3F0jvFZ52Ixl_uZo3bNBxeZTep7EVkxkVaXWRoC7ZAQAvD_BwE>|
+|Cinta masking tape negro|1|$1.090|<https://librerialapaloma.cl/producto/scotch-de-papel-negro/>|
 |Cartón reutilizado (carcasa)|2|-|-|
 |Acrílico reutilizado (carcasa)|1|-|-|
+
 
 ---
 
