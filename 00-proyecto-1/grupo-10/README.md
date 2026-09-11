@@ -98,14 +98,14 @@ Parte del estudio para generar el codigo.
   
 2. Convierte el valor del potenciómetro (de 0 a 1023) en coordenadas espaciales Y (20 a -900) usando la función ```map```. Esto crea el deslizamiento del poema hacia arriba y abajo.
    
-3. Se borra la pantalla y usa el condicional ```if (lecturaBoton == 1)```para decidir qué idioma usar. Luego mediante for imprime todas las lineas del poemas en forma de columna vertical, sumando píxeles a ```posicionY``` para separar cada línea.
+3. Se borra la pantalla y usa el condicional ```if (lecturaBoton == 1)```para decidir qué idioma usar. Luego, mediante for, imprime todas las lineas del poemas en forma de columna vertical, sumando píxeles a ```posicionY``` para separar cada línea.
    
 4. Mientras ```for``` imprime las lineas del poema, también vigila qué verso se está imprimiendo. Si pasa por el verso asignado para las plumas, dibuja los dibujitos de las plumas. Si pasa por el verso asignado para la tormenta, dibuja la animación del pajarito.
    
 5. Actualiza el ```display display.display(),``` y hace una pausa mínima de 80 milisegundos que define la velocidad de cambio de frames de la animación del pájaro.
    
 # Animaciones 
-Las animación hecha en la plataforma www.pixilart.com, siguiendo el formato de 128x32 px, la primera animacion tiene 5 fotogramas y la segunda 10 fotogramas, se pasaron a https://javl.github.io/image2cpp/ para poder generar el código y agregarlas en el código final, con su respectiva carpeta conocimos esta pagina gracias a los repositorios de la generación pasada.
+Las animación hecha en la plataforma www.pixilart.com, siguiendo el formato de 128x32 px, la primera animación tiene 5 fotogramas y la segunda 10 fotogramas, se pasaron a https://javl.github.io/image2cpp/ para poder generar el código y agregarlas en el código final, con su respectiva carpeta conocimos esta página gracias a los repositorios de la generación pasada.
 
 - Plumas: El programa dibuja los 5 frames de las plumas al mismo tiempo, apilados uno debajo del otro. Al mover el potenciómetro para leer el poema, la pantalla baja y crea la ilusión de que las plumas van cayendo.
   
@@ -120,7 +120,7 @@ Seguimos las conexiones de una foto que compartieron por discord, pero al conect
 - Cuando empezamos a implementar el botón para que se mostrará el poema traducido, el poema se quedaba pegado en la versión en español y no avanzaba, finalmente era un error del código, que fue corregido con el profe Aaron.
 
 
-- Para dividir la tarea, trabajamos en dos códigos distintos, uno para las animaciones y otro para el texto y la reproducción de este, esto nos aliviano a la pega como grupo. Pero lamentablemente esto nos trajo problemas al intentar unirlos luego, pues no sabíamos cómo y produjo mucho desorden de funciones y esquema general del código. 
+- Para dividir la tarea, trabajamos en dos códigos distintos, uno para las animaciones y otro para el texto y la reproducción de este. Esto nos alivianó la carga como grupo, pero lamentablemente nos trajo problemas al intentar unirlos después, pues no sabíamos cómo y produjo mucho desorden de funciones y esquema general del código. 
 
 
 - Uno de los ayudantes nos recomendó investigar sobre los “millis” para que la visualización del poema se viera más fluido pero fue un proceso tortuoso intentar entenderlo y que funcionara. Igual después de muchos intentos de probar cambiando cositas pequeñas que creíamos eran el problema, logramos que funcionara. Sin embargo, al final decidimos descartar el uso de este comando porque si fue difícil implementarlo solo al poema, cuando tuviéramos que juntarlo con la animación podríamos perder la cabeza.
@@ -152,8 +152,8 @@ https://www.youtube.com/shorts/l3qSqMJfn6Y
 
 - En problemas más comunes, tuvimos muchas confusiones con murciélagos y paréntesis que nos faltaban o sobraban, o teníamos mal anotadas ciertas cosas, como haberle puesto un nombre, luego cambiarle el nombre pero no cambiarlo a lo largo del código. O colocamos variables pero no las declaramos antes, nos faltaban puntos y comas, o comas, o poníamos mayúsculas o tildes.
 
-# Codigo final
-1. Incluye librerías, tipografías, carpetas de animaciones, pantalla. 
+# Código final
+1. Incluye bibliotecas, tipografías, carpetas de animaciones, pantalla. 
  ```cpp
 //primero lo primero
 //llamar a la biblioteca de las
@@ -317,16 +317,16 @@ void setup() {
 }
 
 ```
-5. void loop, lecturas elementos, animaciones, 
+5. void loop, lecturas, elementos, animaciones, 
 ```cpp
 void loop() {
 
 
-//Leer boton
+//Leer botón
   lecturaBoton = digitalRead(patitaBoton);
 
 
-//Leer potenciometro
+//Leer potenciómetro
   lecturaPot = analogRead(patitaPot);
 
 
@@ -363,7 +363,7 @@ void loop() {
     int posicionY = y;
 
 
-//Ordenamos en una formula
+//Ordenamos en una fórmula
 //el avance del poema
 //i será la variable que cambia mientras corre el poema
     for (int i = 0; i < 30; i++) {
@@ -465,7 +465,7 @@ void loop() {
   }
 
 
-//Poema en ingles
+//Poema en inglés
 //si el botón no está presionado
 //se muestra la versión original
   else {
@@ -475,7 +475,7 @@ void loop() {
     int posicionY = y;
 
 
-//Ordenamos en una formula
+//Ordenamos en una fórmula
 //el avance del poema
 //i será la variable que cambia mientras corre el poema
     for (int i = 0; i < 25; i++) {
@@ -576,6 +576,7 @@ void loop() {
 ```
 
 # Resultado final 
+
 https://www.youtube.com/watch?v=SDmdVimu-xw 
 
 https://www.youtube.com/watch?v=w7oqHxpn4oM
