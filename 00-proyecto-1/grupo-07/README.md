@@ -20,9 +20,10 @@ Todas las imágenes y gifs son de nuestra autoría.
 
 Todos los gifs e imágenes se encuentran subidos en la carpeta de "imagenes".
 
-Prompt usados por claude/chat gpt para los códigos se encuentran en la carpeta de "codigos".
-
 Códigos subidos por fecha en la carpeta "codigos".
+
+Las conversacions con [Claude](https://claude.ai/) las podemos encontrar como [prompt-claude-codigo.pdf](https://github.com/disenoUDP/dis8645-2026-2-procesos-1/blob/main/00-proyecto-1/grupo-07/codigos/prompt-claude-codigo.pdf) y en [chats-claude-pt1](https://github.com/disenoUDP/dis8645-2026-2-procesos-1/tree/main/00-proyecto-1/grupo-07/codigos/chats-claude-pt1)
+
 
 ---
 
@@ -354,6 +355,24 @@ Código 8: Animación de **fuego**, relacionada con el verso "Me consumo en mi f
 
 ![gif de la animación llamas](./imagenes/animacion-llamas.gif)
 
+
+---
+
+
+## Circuito del proyecto en TinkerCAD
+
+Para generar la siguiente imagen utilizamos la página [TinkerCAD](https://www.tinkercad.com/) que nos ayuda a esquematizar lo que queremos hacer, además de tener la capacidad de simular el circuito:
+
+![Representación gráfica de nuestro circuito](./imagenes/circuito-proyecto1.png)
+
+No pudimos encontrar una pantalla similar dentro de la galería así que quejamos el espacio en blanco, pero funciona así:
+
+ - h12 = SDA
+ - h13 = SCK
+ - h14 = VCC
+ - h15 = GND
+
+
 ---
 
 
@@ -494,8 +513,7 @@ Pixelorama, your free & open source sprite editor. (s/f). Pixelorama.org. Recupe
 
 Stonez. (s. f.). Image to Bitmap Converter for Arduino & U8g2 | Stonez56. Stonez56 創客工坊. <https://tools.stonez56.com/u8g2/getBitmap.php>
 
-
-
+Tinkercad. (s. f.). Tinkercad. <https://www.tinkercad.com/>
 
 
 
