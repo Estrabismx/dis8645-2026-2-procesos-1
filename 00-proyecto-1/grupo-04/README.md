@@ -159,7 +159,7 @@ A partir de esto entendimos el texto como una secuencia de caracteres y pudimos 
 
 También comenzamos a utilizar `for` para recorrer conjuntos. Esto después fue útil no solamente para recorrer los versos, sino también para controlar posiciones, movimientos y otras animaciones.
 
-![pantalla](.imagenes/pantalla1.png)
+![pantalla](./imagenes/pantalla1.png)
 
 ### Variables
 
