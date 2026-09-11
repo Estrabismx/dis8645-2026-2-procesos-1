@@ -532,12 +532,9 @@ char *palabraVerso[] = {
   "lugar",    // nota: sin "un"
   "muerte",   // nota: sin "de la"
 };
-```
+``` 
 
-***como se va a montrar y dividir el texto 
-
-**variables
-
+##### Variables
 
 ```cpp
 char *versosPoema[] = {
@@ -567,7 +564,7 @@ const int intervalo = 3000; // duracion de cada verso (ms)
 unsigned long tiempoAnterior = 0; // ultimo momento actualizado (millis())
 ```
 
-**funciones 
+##### Funciones 
 
 - `textoInicial()`
 - `mostrarPoema()`
@@ -597,7 +594,8 @@ El código debe venir con comentarios que indiquen que secciones corresponde a q
 ---
 
 >[!TIP]
->Casilla desplegable 👁️
+> $\color{green}{\text{Casilla desplegable 👁️}}$
+
 
 <details>
 <summary><b>Código Inicial en bruto por Gemini</b></summary>
@@ -729,7 +727,7 @@ Ahora nos aventuramos a hacer nuestra propia versión en la que se muestren los 
 ---
 
 >[!TIP]
->Casilla desplegable 👁️
+> $\color{green}{\text{Casilla desplegable 👁️}}$
 
 <details>
 <summary><b>Código Incial</b></summary>
@@ -799,7 +797,7 @@ Ambas funciones juntas nos ayudan a que el poema se pueda visualizar por x canti
 ---
 
 >[!TIP]
->Casilla desplegable 👁️
+> $\color{green}{\text{Casilla desplegable 👁️}}$
 
 <details>
 <summary><b> Código Inicio Funcional</b></summary>
@@ -931,7 +929,7 @@ Por lo mismo, nos apoyamos de nuestro diagrama y listado de acciones para estruc
 ---
 
 >[!TIP]
->Casilla desplegable 👁️
+> $\color{green}{\text{Casilla desplegable 👁️}}$
 
 <details>
 <summary><b>Codigo con Poema primer intento </b></summary>
@@ -1228,7 +1226,7 @@ Dime que estructura debo editar para añadirlo
 ---
 
 >[!TIP]
->Casilla desplegable 👁️
+> $\color{green}{\text{Casilla desplegable 👁️}}$
 
 <details>
 <summary><b>Código Potenciómetro</b></summary>
