@@ -671,7 +671,7 @@ En cuanto a la estructura diseñamos el boceto final en Rhino, esto nos ayudó p
 | 0 | Experimentamos con el primer código de ejemplo que nos dieron, eliminando cosas que no necesitábamos, probando propiedades del texto y reemplazando el contenido por partes de nuestro poema para entender cómo funcionaba. |
 | 1 | Definimos la interacción completa y armamos el diagrama de flujo. |
 | 2 | Probamos por separado el botón, el potenciómetro, el LED y la pantalla OLED. |
-| 3 | Declaramos las librerías, la pantalla y los pines de cada componente. |
+| 3 | Declaramos las bibliotecas, la pantalla y los pines de cada componente. |
 | 4 | Declaramos los textos del proyecto usando `const char` y `arrays`. |
 | 5 | Ajustamos los versos al tamaño de la pantalla usando `\n` para los saltos de línea. |
 | 6 | Creamos las variables de control para guardar la etapa, el estado del botón, la parte del poema y el valor del potenciómetro. |
@@ -701,4 +701,9 @@ Por otra parte, el desarrollo de la carcasa nos hizo cuestionarnos cómo organiz
 
 [LINK YOTUBE]<https://www.youtube.com/watch?v=PrD93Q1XOUg&feature=youtu.be>
 
+## Bibliografia
 
+1. [Documentación de Arduino](https://docs.arduino.cc/)
+2. [Adafruit SSD1306](https://learn.adafruit.com/monochrome-oled-breakouts)
+3. [Referente: @cocoasaesthetic_ - TikTok](https://www.tiktok.com/@cocoasaesthetic_/video/7655582511858257166)
+4. [Referente: Supercar Blondie - Cyberdeck](https://tech.supercarblondie.com/people-building-homemade-computers-inside-purses-cyberdeck/)
