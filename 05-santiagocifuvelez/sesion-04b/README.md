@@ -7,6 +7,10 @@ Aquí creamos la case de nuestro proyecto, y el orden en el que iban a ir a los 
 ![](./imagenes/prototipo.jpg)
 ![](./imagenes/prototipo2.jpg)
 
+Fotitos del proceso:
+![](./imagenes/img1.jpg)
+![](./imagenes/img2.jpg)
+![](./imagenes/img3.jpg)
 
 Este fue el resultado:
 ![](./imagenes/process-living.gif)
