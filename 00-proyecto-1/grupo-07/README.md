@@ -16,7 +16,7 @@ Katalina Riquelme / [riyakatalinaa](https://github.com/riyakatalinaa) / encargad
 
 ## Importante
 
-Todo las imágenes y gifs son de nuestra autoría.
+Todas las imágenes y gifs son de nuestra autoría.
 
 Todos los gifs e imágenes se encuentran subidos en la carpeta de "imagenes".
 
