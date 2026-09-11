@@ -1210,6 +1210,9 @@ Luego de estos avances empezamos a plantear agregar los potenciometros...
 
 #### Potenciómetro
 
+[![video](./imagenes/vid00.png)](https://youtube.com/shorts/qPF3jfDAklU)
+
+
 Para lograrlo, establecimos el siguiente prompt: 
 
 ```txt
@@ -1437,7 +1440,7 @@ if (poteFiltrado >= 135) {
 
 <br>
 
-[![poema](./imagenes/vid03.png)](https://youtube.com/shorts/GtjCxBL5BN4)
+[![poema](./imagenes/vid00.png)](https://youtube.com/shorts/GtjCxBL5BN4)
 
 Para lograr añadir el potenciómetro, utilizamos el ejercicio de ejemplo que tuvimos al inicio y trabajamos en base a ese valor. Este se le indicó a Gemini que lo tomara de referencia 
 
@@ -1487,6 +1490,8 @@ prompt:
  
  <details>
 <summary> <b> Código botones </b> </summary>
+
+[![error](./imagenes/vid04.png)](https://youtube.com/shorts/WJUcuQjkYJc?feature=share)
 
 ```cpp
   #include <LiquidCrystal.h>
@@ -1913,7 +1918,7 @@ Y al dejar de presionar el botón, el texto vuelve al último punto en que qued�
 
  <br>
 
- [![video](./imagenes/vid04.png)](https://youtube.com/shorts/qPF3jfDAklU)
+ [![video](./imagenes/vid00.png)](https://youtube.com/shorts/qPF3jfDAklU)
 
 #### Resultado
 
