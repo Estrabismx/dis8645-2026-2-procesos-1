@@ -66,7 +66,7 @@ Dice así:
 Excepción: los versos "Pero también, ya en tu pecho florecerán, colores de amor. Florecerán..." pertenecen a la canción "Mira Niñita" de Los Jaivas, compuesta por Carlos Cabezas, Claudio Parra, Mario Mutis, Juanita Parra y Ankatu Alquinta. Ese fragmento no está cubierto por la licencia CC de este poema; todos los derechos sobre él pertenecen a sus autores originales. Se cita aquí con fines no comerciales y académicos, en el contexto de un proyecto de taller.
 
 # ¿Qué hicimos?
-
+> La creación del poema y el concepto, lo pueden ver aquí: [05-santiagocifuvelez/sesion-04a](https://github.com/santiagocifuvelez/dis8645-2026-2-procesos-1/tree/main/05-santiagocifuvelez/sesion-04a)
 ---
 
 ## 1. Contexto del encargo
