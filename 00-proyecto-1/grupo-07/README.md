@@ -482,5 +482,21 @@ Imagen de la carcasa final.
 
 Alfonsina Storni - Sus poemas, biografía y galería de fotos. (s. f.). <https://www.poemas-del-alma.com/alfonsina-storni.htm#block-bio>
 
+colaboradores de Wikipedia. (2026, 21 agosto). Alfonsina Storni. Wikipedia, la Enciclopedia Libre. <https://es.wikipedia.org/wiki/Alfonsina_Storni>
+
+Argentina.gob.ar. (1933, 30 septiembre). Argentina.gob.ar. <https://www.argentina.gob.ar/normativa/nacional/42755/actualizacion?utm_source=chatgpt.com>
+
+Gob.ar. (S/f). Recuperado el 11 de septiembre de 2026, de <https://www.cultura.gob.ar/9-poemas-imprescindibles-de-alfonsina-storni-8463/>
+
+Stonez. (s/f). Image to bitmap converter. Stonez56 創客工坊. Recuperado el 11 de septiembre de 2026, de <https://tools.stonez56.com/u8g2/getBitmap.php>
+
+Pixelorama, your free & open source sprite editor. (s/f). Pixelorama.org. Recuperado el 11 de septiembre de 2026, de <https://pixelorama.org/>
+
+Stonez. (s. f.). Image to Bitmap Converter for Arduino & U8g2 | Stonez56. Stonez56 創客工坊. <https://tools.stonez56.com/u8g2/getBitmap.php>
+
+
+
+
+
 
 
