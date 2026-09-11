@@ -124,7 +124,10 @@ El proyecto consiste en reproducir, mediante una pantalla LCD OLED de 0,91", un 
 Para que el usuario pueda interactuar con el proyecto y leer el fragmento del poema que se reproduce en la pantalla, se utiliza un potenciómetro, cuya principal función es desplazar la frase por la pantalla para poder leerla de manera correcta y completa. También se utiliza un botón que, al ser presionado, permite cambiar a la siguiente frase. De esta manera, el usuario puede controlar tanto el desplazamiento del texto como el momento en que desea avanzar a la siguiente frase.
 
 ![alt](./imagenes/proyecto.jpeg)
+
 https://youtu.be/fOX_0zksPlA?si=51IJRl3PwZZpNhPD
+
+https://youtu.be/BCbU4XNFgXw?si=Q2fGhKfy3B3KhqLM
 
 ### Pasos del proceso
 
@@ -195,7 +198,7 @@ Los fotogramas que utilizamos fueron obtenidos de Internet y posteriormente modi
 
 Durante el desarrollo del proyecto realizamos distintas pruebas para adaptar el código a nuestro objetivo. Uno de los primeros desafíos fue modificar el movimiento del texto para que se desplazara horizontalmente mediante el potenciómetro y pudiera desaparecer al llegar al límite de la pantalla. Después de varias pruebas y modificaciones en el código, logramos el resultado esperado.
 
-Acá tenemos algunas pruebas de como logramos los primeros acercamientos a poder mover la frase con el potenciómetro y además lograr tener una frase completo y larga en toda la pantalla que pudiera desplazarse.
+Acá tenemos algunas pruebas de cómo logramos los primeros acercamientos para poder mover la frase con el potenciómetro y además lograr tener una frase completa y larga en toda la pantalla que pudiera desplazarse.
 
 ![alt](./imagenes/holaejemplo.gif)
 
@@ -213,9 +216,9 @@ Finalmente, después de un incidente con el potenciómetro, la pantalla comenzó
 
 ### Aciertos
 
-Luego de enfocarnos solo en las frases de nuestro poema, decidimos irnos por lo lleno a las imágenes y fotogramas a realizar, para eso buscamos referentes de cursos pasados, videos en youtube, que fueron de varia ayuda. También en este proceso descubrimos la página <https://www.image2cpp.com/> que fue de gran ayuda a nuestro proyecto, al momento de traspasar nuestras imágenes al código y así realizar las distintas animaciones.
+Luego de enfocarnos solo en las frases de nuestro poema, decidimos irnos por lo lleno a las imágenes y fotogramas a realizar, para eso buscamos referentes de cursos pasados, videos en youtube, que fueron de mucha ayuda. También en este proceso descubrimos la página <https://www.image2cpp.com/> que fue de gran ayuda a nuestro proyecto, al momento de traspasar nuestras imágenes al código y así realizar las distintas animaciones.
 
-Antes de llegar a las imágenes finales de nuestros fotogramas, las imágenes se veían distorsionadas o no se mostraba de forma clara en nuestra pantalla, por lo cual creíamos que era problemas de los códigos que realizábamos, pero nos dimos cuenta que eran las imágenes, ya que al ser tan grandes, en la pantalla se distorsionaban, por lo que tuvimos que redimensionar todas las imágenes a un formato en el cual se pudiese visualizar en la pantalla.
+Antes de llegar a las imágenes finales de nuestros fotogramas, estas se veían distorsionadas o no se mostraba de forma clara en nuestra pantalla, por lo cual creíamos que era problema de los códigos que realizábamos, pero nos dimos cuenta que eran las imágenes, ya que al ser tan grandes, en la pantalla se distorsionaban, por lo que tuvimos que redimensionar todas las imágenes a un formato en el cual se pudiese visualizar en la pantalla.
 
 ![titulo](./imagenes/caballocortado.jpeg)
 
