@@ -173,13 +173,11 @@ Como se puede apreciar en la imagen, las palabras subrayadas son las **palabras 
 ---
 
 
-## Proceso código (resumen)
+## Proceso código → Evolución del proyecto (resumen)
 
 
 El proyecto evolucionó progresivamente desde la reproducción de un poema en el monitor serial hacia una experiencia visual e interactiva, incorporando jerarquía tipográfica, control manual y animaciones vinculadas al contenido emocional de la obra.
 
-
-## Evolución del proyecto
 
 | Versión | Fecha | Etapa | Cambios principales | Objetivo |
 |:---:|:---:|---|---|---|
@@ -198,7 +196,7 @@ El proyecto evolucionó progresivamente desde la reproducción de un poema en el
 ---
 
 
-## Registro en imágenes y gifs por código
+## Registro de imágenes y gifs por código
 
 Código 1: Reproducción del poema en el **Serial Monitor**, mediante un loop. Código base modificado a partir del código entregado en clases.
 
