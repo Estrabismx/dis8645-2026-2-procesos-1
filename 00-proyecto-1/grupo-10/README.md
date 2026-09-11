@@ -304,7 +304,7 @@ void setup() {
   display.clearDisplay();
 
 
-//cosas tipograficas
+//cosas tipográficas
   display.setTextSize(1);
 
 
@@ -317,7 +317,7 @@ void setup() {
 }
 
 ```
-5. void loop, lecturas, elementos, animaciones, 
+5. void loop, lecturas, elementos, animaciones. 
 ```cpp
 void loop() {
 
