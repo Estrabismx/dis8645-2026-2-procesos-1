@@ -11,7 +11,7 @@ Luego, refrescamos el concepto del lenguaje C++, en como `Strings` solo funciona
 
 Después de refrescar estos conceptos, la curiosidad comenzó a gobernarnos y nos cuestionamos: Por que no trabajar con la placa Rasberi Pi co 2w, y lo intentamos y no funcionó.
 
-## Creación del poema
+## Creación del poema y el concepto 
 
 Más adelante en ese mismo día, en mi lugar favorito udp, la biblioteca Nicanor Parra, comencé a escribir textos que se me vienen a la cabeza cuando voy por la ciudad en el metro, en el uber, o en mis pies sobre Santiago de Chile, su gente y el paraíso que es:
 
@@ -28,7 +28,7 @@ Pero luego, en la noche al llegar a casa, la nostalgia, el cariño y la alegría
 
 Al amanecer, lo primero que volví a escuchar, fue esta canción, y allí fue cuando todo comenzó a hacerse más claro, y nació de manera oficial el poema "Chile mapu mew", y a su vez, se terminó reforzando el concepto del por que se estaba haciendo esto y como lo íbamos a representar con una pantalla y un Arduino.
 
-Y le envíe este sckecth a mi grupo:
+Y le envíe este sckecth a mi grupo, y se oficializo nuestro proyecto 01:
 ![](./imagenes/img.jpeg)
 
 
