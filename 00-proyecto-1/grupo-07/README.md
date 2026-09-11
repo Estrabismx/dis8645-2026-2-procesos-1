@@ -478,3 +478,9 @@ Imagen de la carcasa final.
 ![final3](./imagenes/final3.gif)
 
 
+## Bibliografía
+
+Alfonsina Storni - Sus poemas, biografía y galería de fotos. (s. f.). <https://www.poemas-del-alma.com/alfonsina-storni.htm#block-bio>
+
+
+
