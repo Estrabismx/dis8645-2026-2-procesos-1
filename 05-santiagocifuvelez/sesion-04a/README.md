@@ -38,6 +38,7 @@ Aquí estábamos mi grupo y yo, y la "jo" en la Biblioteca Nicanor Parra discuti
 ![](./imagenes/img9.jpeg)
 ![](./imagenes/img10.jpeg)
 ![](./imagenes/img11.jpeg)
+![](./imagenes/img12.jpeg)
 
 ## lectura
 Agregar resumen 
