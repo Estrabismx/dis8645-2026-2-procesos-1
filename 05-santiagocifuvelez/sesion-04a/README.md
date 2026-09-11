@@ -11,9 +11,20 @@ Luego, refrescamos el concepto del lenguaje C++, en como `Strings` solo funciona
 
 Después de refrescar estos conceptos, la curiosidad comenzó a gobernarnos y nos cuestionamos: Por que no trabajar con la placa Rasberi Pi co 2w, y lo intentamos y no funcionó.
 
-Más adelante en ese mismo día, comencé a escribir textos que se me vienen a la cabeza cuando voy por la ciudad en el metro, en el uber, o en mis pies sobre Santiago de Chile, su gente y el paraíso que es:
+## Creación del poema
 
+Más adelante en ese mismo día, en mi lugar favorito udp, la biblioteca Nicanor Parra, comencé a escribir textos que se me vienen a la cabeza cuando voy por la ciudad en el metro, en el uber, o en mis pies sobre Santiago de Chile, su gente y el paraíso que es:
+
+Primer borrador:
 ![]()
+
+Pero luego, en la noche al llegar a casa, la nostalgia, el cariño y la alegría se apoderaron de mi..., y fue cuando surgió esta idea, pero aún no estaba estructurado de manera oficial el poema.
+![]()
+![]()
+![]()
+![]()
+![]()
+
 
 ## lectura
 Agregar resumen 
