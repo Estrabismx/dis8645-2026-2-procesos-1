@@ -16,6 +16,9 @@ Los datos se miden, son números.
 El diseño de una interfaz depende de la acción a la que esté destinada. Hacer un objeto universal es muy difícil, ya que existen necesidades y problemáticas distintas que solucionar.
 
 
+------------
+
+ACM Y IEEE
 
 ## encargos
 
