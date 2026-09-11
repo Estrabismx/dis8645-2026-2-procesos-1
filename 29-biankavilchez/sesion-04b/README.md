@@ -63,6 +63,9 @@ luego de aprender a ocupar el chart, el delay, agregar los millis, ir probando, 
 
 luego me tocó hacer la carcasa. agregaré fotos de los dibujos iniciales, las medidas, y el resultado final.
 
+![Carcasa del proyecto](imagenes/carcasa-proyecto.png)
+
+![Carcasa del proyecto](imagenes/carcasa-proyect-video.gif)
 
 ## encargos
 
