@@ -232,11 +232,20 @@ La parte que efectivamente "proyecta" el poema en la pantalla es la función mos
 | ![conexiones](./imagenes/codigo2.jpg) | ![pantalla](./imagenes/codigo2.gif) |
 
 
+Para continuar nos preguntamos que queriamos que apareciera especificamente y se nos ocurrieron varias cosas.
+
+Potenciometro B10K: cambiar la velocidad del poema al mover la perilla
+
+El poema ya vendrá con ciertas palabras en grande cómo si estuvieran gritando, seran palabras que hablen del poema y representen su intensidad
+
+
 
 ---
 
 
 Código 3: Representar visualmente la intensidad emocional del poema.
+
+Se destacan determinadas palabras clave e intensas del poema mediante un tamaño mayor, mientras el resto mantiene un tamaño normal.
 
 ![imagen del circuito y cómo se ven las palabras más grandes en la pantalla](./imagenes/c3.jpg)
 
@@ -246,13 +255,41 @@ Código 3: Representar visualmente la intensidad emocional del poema.
 
 Código 4: Añadir potenciómetro para controlar manualmente el avance de los versos.
 
+Se incorpora un potenciómetro para controlar manualmente el avance de los versos, reemplazando el avance automático.
+
+Conexión física del potenciómetro B10K:
+
+Pata izquierda → GND (cable negro)
+
+Pata derecha → 5V (cable rojo)
+
+Pata del medio → A0 (cable amarillo)
+
+
+
 ![imagen del circuito actualizado con el potenciómetro](./imagenes/codigo4.jpg)
+
+PROBLEMA: los versos del poema siguen una velocidad determinada y mientras muevo la perilla del potenciómetro solo acelera el paso de los versos, pero no tengo el control total del movimiento.
 
 
 ---
 
 
-Código 4.2: Se agrega el nombre de la poetisa al comienzo del poema.
+Código 4.2: Mejorar la composición y legibilidad en pantalla.
+
+Se agrega el nombre de la poetisa, al comienzo del poema, se centra y alinea el texto y se establece una jerarquía tipográfica: palabras clave de 16 px y texto normal de 8 px.
+
+PROBLEMA: En los versos del poema en la linea 95 en pantalla se ve así:
+
+"piedad", // 10: ¡Señor, piedad, piedad! (agranda las dos apariciones) → se corta por espacio en pantalla, al ser 2 palabras de mayor tamaño
+
+deberia aparecer:
+
+```cpp
+// agrandar las palabras “Piedad, piedad!” 
+  "¡Señor, piedad, piedad!",
+```
+foto problema +
 
 ![imagen del nombre de la poetisa en la pantalla](./imagenes/c4-2.jpg)
 
@@ -262,13 +299,31 @@ Código 4.2: Se agrega el nombre de la poetisa al comienzo del poema.
 
 Código 5: Terminar de adaptar el poema al formato de la pantalla.
 
+Se detectan problemas de espacio en pantalla. Se reduce la cantidad de palabras destacadas para asegurar que todos los versos sean visibles correctamente.
+
+se arregla el problema del codigo 4.2 y queda de esta manera:
+
+```cpp
+// agrandar la palabra “piedad!” 
+  "¡Señor, piedad, piedad!",
+```
+
 ![gif del poema adaptado al formato de la pantalla](./imagenes/codigo5.gif)
 
 
 ---
 
 
-Código 5.2: Prueba de animación.
+Código 5.2: Prueba de animación fallida.
+
+se utilizo bitmaps para transformar imagenes a código: <https://tools.stonez56.com/u8g2/getBitmap.php>
+
+Buscamos que la animación fluya y en ese momento uno no puedo controlar el texto, porque esta corriendo la animación, la idea es que pase solo una vez, que no ser en loop, luego de esto uno puede seguir controlando el poema con el potenciómetro.
+
+Se incorpora una primera animación. El resultado no se adapta correctamente a las dimensiones de la pantalla.
+
+Esta animación no funciono del todo, ya que en pantalla "se ve chica" porque el arte de las llamas fue generado/exportado ocupando solo una franja angosta en el centro, no porque tu código la esté encogiendo.
+
 
 ![gif de la prueba de animación](./imagenes/codigo5-2.gif)
 
@@ -276,7 +331,7 @@ Código 5.2: Prueba de animación.
 ---
 
 
-Código 6: Animación del título **“Queja”**, utilizada como introducción después del nombre de la poetisa.
+Código 6: Animación 1 del título **“Queja”**, utilizada como introducción después del nombre de la poetisa.
 
 ![gif de la animación queja](./imagenes/animacion-queja.gif)
 
@@ -284,7 +339,9 @@ Código 6: Animación del título **“Queja”**, utilizada como introducción 
 ---
 
 
-Código 7: Animación de un **corazón roto**, vinculada al verso "Pero no puedo amar" después de la primera estrofa se agregan 3 LEDs rojos.
+Código 7: Animación 2 de un **corazón roto**, se busca reforzar la carga emocional del poema mediante una respuesta visual y física sincronizada con el poema.
+
+Animación de un corazón roto, vinculada al verso "Pero no puedo amar" después de la primera estrofa se agregan 3 LEDs rojos, que se encienden cada vez que aparecen las palabras clave e intensas del poema.
 
 ![imagen de los LEDs ya incorporados al circuito](./imagenes/codigo7.jpg)
 
@@ -294,7 +351,7 @@ Código 7: Animación de un **corazón roto**, vinculada al verso "Pero no puedo
 ---
 
 
-Código 8: Animación de **fuego**, relacionada con el verso "Me consumo en mi fuego" después de la segunda estrofa.
+Código 8: Animación de **fuego**, relacionada con el verso "Me consumo en mi fuego" después de la segunda estrofa. Busca Representar visualmente la intensidad y el consumo emocional.
 
 ![gif de la animación llamas](./imagenes/animacion-llamas.gif)
 
