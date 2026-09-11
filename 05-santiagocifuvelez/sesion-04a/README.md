@@ -16,14 +16,14 @@ Después de refrescar estos conceptos, la curiosidad comenzó a gobernarnos y no
 Más adelante en ese mismo día, en mi lugar favorito udp, la biblioteca Nicanor Parra, comencé a escribir textos que se me vienen a la cabeza cuando voy por la ciudad en el metro, en el uber, o en mis pies sobre Santiago de Chile, su gente y el paraíso que es:
 
 Primer borrador:
-![]()
+![](./imagenes/img1.jpeg)
 
 Pero luego, en la noche al llegar a casa, la nostalgia, el cariño y la alegría se apoderaron de mi..., y fue cuando surgió esta idea, pero aún no estaba estructurado de manera oficial el poema.
-![]()
-![]()
-![]()
-![]()
-![]()
+![](./imagenes/img2.jpeg)
+![](./imagenes/img3.jpeg)
+![](./imagenes/img4.jpeg)
+![](./imagenes/img5.jpeg)
+
 
 
 ## lectura
