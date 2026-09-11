@@ -29,9 +29,12 @@ Pero luego, en la noche al llegar a casa, la nostalgia, el cariño y la alegría
 Al amanecer, lo primero que volví a escuchar, fue esta canción, y allí fue cuando todo comenzó a hacerse más claro, y nació de manera oficial el poema "Chile mapu mew", y a su vez, se terminó reforzando el concepto del por que se estaba haciendo esto y como lo íbamos a representar con una pantalla y un Arduino.
 
 Y le envíe este sckecth a mi grupo, y se oficializo nuestro proyecto 01:
+![](./imagenes/img6.jpeg)
+![](./imagenes/img7.jpeg)
+
+Period
+Aquí estábamos mi grupo y yo, y la "jo" en la Biblioteca Nicanor Parra discutiendo como íbamos a hacer tangible el proyecto:
 ![](./imagenes/img.jpeg)
-
-
 
 ## lectura
 Agregar resumen 
