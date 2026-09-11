@@ -4,7 +4,7 @@ martes 2026-09-08
 
 ## apuntes sesión
 
-Proyecto-1 (solemne 1)
+evaluación proyecto-1 
 
 ## encargos
 
