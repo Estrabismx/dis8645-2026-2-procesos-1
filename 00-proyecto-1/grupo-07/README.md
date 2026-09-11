@@ -2,7 +2,7 @@
 
 Fecha entrega: 2026-09-11
 
-## Integrantes:
+## Integrantes
 
 Emilia Contreras / [hazzaily](https://github.com/hazzaily) / encargada de las animaciones y carcasa.
 
@@ -98,7 +98,7 @@ Poema sacado de → https://www.cultura.gob.ar/9-poemas-imprescindibles-de-alfon
 ---
 
 
-### Análisis:
+### Análisis
 
 El poema expresa un conflicto interno entre el deseo de amar y la incapacidad de hacerlo. Ella se siente “muriendo de amor”, pero al mismo tiempo no logra entregarse emocionalmente porque busca constantemente la perfección, tanto en ella misma como en los demás.
 
@@ -194,7 +194,7 @@ El proyecto evolucionó progresivamente desde la reproducción de un poema en el
 ---
 
 
-## Registro en imagen y gifs por código
+## Registro en imágenes y gifs por código
 
 Código 1: Reproducción del poema en el **Serial Monitor**, mediante un loop. Código base modificado a partir del código entregado en clases.
 
@@ -221,11 +221,12 @@ GND → tierra (cable negro)
 
 VCC → voltaje (cable rojo)
 
+
 La parte que efectivamente "proyecta" el poema en la pantalla es la función mostrarVerso(), específicamente estas líneas:
 
-| Conexiones | Pantalla |
-|:---:|:---:|
-| ![conexiones](./imagenes/codigo2.jpg) | ![pantalla](./imagenes/codigo2.gif) |
+![codigo2](./imagenes/codigo2.jpg)
+
+![codigo2](./imagenes/codigo2.gif)
 
 
 Para continuar nos preguntamos que queriamos que apareciera especificamente y se nos ocurrieron varias cosas.
@@ -465,4 +466,10 @@ Imagen del proceso de la carcasa pt. 2.
 Imagen de la carcasa final.
 
 ![Imagen de la carcasa final](./imagenes/carcasa-final.jpeg)
+
+![final1](./imagenes/final1.jpg)
+
+![final2](./imagenes/final2.jpg)
+
+
 
