@@ -271,7 +271,7 @@ A pesar de ser un proyecto enfocado en mostrar datos duros, nos comparte una vis
 
 ### Etapa inicial
 
-#### **Noema descartado (copyright)**
+#### **Poema descartado (copyright)**
 
 > [!NOTE]
 >
