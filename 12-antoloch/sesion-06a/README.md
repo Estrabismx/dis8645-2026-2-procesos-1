@@ -15,20 +15,11 @@ Los datos describen cómo es el objeto y las acciones indican qué puede hacer.
 
 Una **variable** sirve para guardar información.
 
-Ejemplos:
-
-```cpp
-bool encendido = true;
-int edad = 20;
-uint cantidad = 5;
-```
-
 ### Tipos vistos
 
 - `bool`: verdadero o falso → `true / false`
 - `int`: números enteros
 - `uint`: números enteros positivos o 0
-
 
 
 ## Clases
