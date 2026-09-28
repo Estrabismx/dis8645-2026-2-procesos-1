@@ -96,5 +96,16 @@ las clases son moldes que permiten propagar comportamientos, y el resultado de e
 - no estoy entendiendo mucho, ampliaremos después, se vienen cositas
   
 ## encargos
+### profundizar en Constructores
+
+"en programación orientada a objetos (POO), **un constructor es una subrutina cuya misión es inicializar un objeto de una clase. en el constructor se asignan los valores iniciales del nuevo objeto**.
+
+se utiliza para crear tablas de clases virtuales y poder así desarrollar el polimorfismo, una de las herramientas de la programación orientada a objetos. al utilizar un constructor, el compilador determina cual de los objetos va a responder al mensaje (virtual) que hemos creado. tiene un tipo de acceso, un nombre y un paréntesis."
+
+
+fuentes:
+
+- https://es.wikipedia.org/wiki/Constructor_(informática)
+- https://learn.microsoft.com/es-es/cpp/cpp/constructors-cpp?view=msvc-170
 
 ## lectura
