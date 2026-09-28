@@ -106,6 +106,8 @@ seleccionar un objeto y clasificarlo según las categorías del ser de aristóte
 + Acción: Toma e imprime fotografías.
 + Pasión:
 
+  ![objeto](./imagenes/camara.png/)
+
 + martes 29-09:
 
 bajar una red social e investigar que piensa esa red de mi, cuál es mi algoritmo
