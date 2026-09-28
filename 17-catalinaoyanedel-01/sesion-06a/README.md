@@ -141,3 +141,18 @@ a partir de las definiciones que leí anteriormente, elegí como mi objeto mi te
 - know-what: lo que se aprende en la universidad, lo teórico
 
 ## lectura
+
+- “una cosa que me gusta de hacer arte es no volverme demasiado complicado. no tengo que interpretar tanto mi arte. creo que te estás volviendo un poco sofisticado. se trata realmente de arte minimalista. puedes mirarlo y es puro y abstracto.”
+- (sobre el arte público) “sí, ves qué bonito es eso. no es pretencioso. no es caro. ni siquiera necesita un edificio para contenerlo. a la gente no le importa estar pasándolo de largo. también puedes arruinarlo, y no me importará. el único problema es que más adelante tal vez quiera donárselo a alguien, y nadie lo querrá.”
+
+terminé el libro!! y me gustó mucho
+
+no conocía al artista y si bien no terminé siendo muy fan de sus obras, simplemente porque no son del tipo que me suelen gustar, me conmovió mucho su formas de pensar. es alguien con mucha conciencia política y social, y es importante que existan personas que levanten la voz por quienes están siendo reprimidos, como lo hizo por ejemplo con sus obras relacionadas a la crisis global de los refugiados y el desplazamiento forzado (la instalación la ley del viaje, el documental flujo humano y las intervenciones en columnas de museos con chalecos salvavidas). 
+
+me hizo reflexionar sobre el arte como una expresión política, y en recordar siempre cuestionarse las condiciones políticas, sobre todo en el contexto que estamos viviendo actualmente ¿de quiénes son los derechos que se pasan a llevar primero?
+
+por otra parte, me informó bastante del contexto político que se vive en china, del cual no sabía casi nada, así que agradezco también el poder aprender algo nuevo.
+
+también encontré este documental de él, así que quiero verlo cuando tenga tiempo!
+
+https://www.youtube.com/watch?v=IrVI41ngFtA&t=27s
