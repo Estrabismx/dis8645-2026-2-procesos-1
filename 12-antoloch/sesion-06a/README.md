@@ -215,7 +215,7 @@ La idea es:
 # Encargo
 
 ## Categorías de Aristóteles — Reloj digital Casio
-
+![relojdorado](./imagenes/relojdorado.jpeg)
 ### 1. Sustancia
 
 Reloj digital de pulsera Casio, formado por una caja, una pantalla y una correa. Lo uso principalmente para saber la hora.
@@ -273,3 +273,34 @@ Se refiere a las acciones que el reloj recibe.
 - lo pongo o saco de mi muñeca.
 
 ## lectura
+
+![lecturititi](./imagenes/lecturititi.jpeg)
+
+> “Moving through the latent space creates animation.”
+
+Las imágenes que genera una GAN no están necesariamente aisladas. El modelo organiza distintas características visuales dentro de un **espacio latente**, y al desplazarse de un punto a otro se pueden generar imágenes intermedias.
+
+Cuando esas imágenes se muestran de manera consecutiva, se produce una **animación**.
+ la animación se construye explorando las posibilidades que existen dentro del modelo
+
+Siento que acá cambia un poco la idea de crear, porque el artista no controla cada imagen directamente, sino que descubre resultados y decide cuáles utilizar.
+
+
+> “The space can be navigated either smoothly and slowly, or quickly and erratically.”
+
+
+Reas plantea que el espacio latente se puede recorrer de distintas maneras.
+
+Un movimiento lento puede producir transformaciones progresivas entre las imágenes, mientras que un movimiento rápido puede generar cambios más bruscos o inesperados.
+
+Por eso, el resultado depende no solo de la inteligencia artificial, sino también de **cómo el creador decide explorarla**.
+
+Me parece interesante porque demuestra que la IA no hace todo sola.
+
+Aunque el modelo genera las imágenes, **hay decisiones humanas detrás del ritmo, las transiciones y la selección de los resultados**.
+
+un espacio que se puede explorar visualmente.
+
+Al recorrer el espacio latente aparecen rostros y formas que se van transformando, y esas transformaciones incluso pueden convertirse en video o animación.
+
+Esa mezcla entre algo familiar y algo artificial.
