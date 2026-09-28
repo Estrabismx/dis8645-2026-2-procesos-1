@@ -190,4 +190,6 @@ Elegir un objeto y describirlo con las categorías del ser de Aristóteles.
 
 ## Lectura
 
-- (sin entrada por ahora)
+Lectura Anarchy - Páginas 7 a la 13
+
+Al avanzar en esta parte de la lectura me encontré con varios conceptos y referencias políticas que no conocía muy bien, por lo que tuve que investigar en chat gpt sobre el trasfondo anarquista del texto y menciones a figuras como Emma Goldman para no perderme. Ya analizando las ideas con más calma y buscando relacionarlas con nuestra forma de hacer las cosas, lo que plantea el autor es repensar por completo cómo estructuramos los sistemas o los proyectos, apuntando a que el objetivo principal nunca debería ser la acumulación de poder o la búsqueda de un resultado cerrado e impositivo, sino centrarnos en el "enjoyment of the extensional will to change", entendiendo de esta manera que el verdadero orden nace siempre de la autonomía y de la libertad de cada parte involucrada y jamás desde una jerarquía externa que nos mande.
