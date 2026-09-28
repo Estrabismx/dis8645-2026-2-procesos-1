@@ -274,7 +274,7 @@ Se refiere a las acciones que el reloj recibe.
 
 ## lectura
 
-![lecturititi](./imagenes/lecturititi.jpeg)
+![lecturititi](./imagenes/lecturititi.png)
 
 > “Moving through the latent space creates animation.”
 
