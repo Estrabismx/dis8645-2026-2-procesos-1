@@ -2,7 +2,53 @@
 
 ## apuntes sesión
 
+### Clase: Una clase sirve para representar un tipo de objeto o cosa dentro del programa. En ella podemos definir qué información tiene y qué cosas puede hacer. 
+
++ Por ejemplo:
+
+      class Perrito {
+
+      };
+
+La clase sería como una especie de molde. Después, a partir de ese molde, se pueden crear objetos que tengan las características y acciones que definimos.
+
+Por ejemplo, si la clase es Perrito, podemos guardar información sobre el perro y también definir acciones que puede realizar.
+
+### atributos: Los atributos sirven para guardar información sobre el objeto.
+
+Por ejemplo, de un perrito nos podría interesar saber:
++hambre
++pelaje
++durmiendo
+
+En código:
+
+
+      class Perrito {
+
+          bool hambre;
+          bool durmiendo;
+          int pelaje;
+
+      };
+
+Estas variables están dentro de la clase, por lo que funcionan como atributos del objeto.
+
+Los atributos pueden representar características, datos o el estado en que se encuentra algo.
+
+### Métodos: los métodos representan las cosas que un objeto puede realizar
+
+Poodemos pensar que normalmente los métodos representan acciones o verbos, mientras que los atributos representan características o información.
+
+PARA RECORDAR:
+
++ las clases comienzan con letra mayúscula: Perrito, Poodle
++ para variables, atributos y métodos, se comienza normalmente con minúscula: hambre, pelaje, ladrar
++ cuando el nombre tiene varias palabras, se juntan y cada palabra nueva comienza con mayúscula 
+
+
 Ejemplo: 
+
 
 clase: poodle 
 
