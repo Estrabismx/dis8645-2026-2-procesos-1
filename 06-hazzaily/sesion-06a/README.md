@@ -100,7 +100,7 @@ Al final, lo que quería Aristóteles era clasificar las distintas formas de en 
 
 El objeto que escogí es este:
 
-[Foto de mi estuche](.imagenes/estuche-emi.jpg)
+[Foto de mi estuche](.imagenes/estuche-emi.jpeg)
 
  - **Sustancia:** El estuche
  - **Cantidad:** 1 cierre, 1 compartimiento, 1 etiqueta
