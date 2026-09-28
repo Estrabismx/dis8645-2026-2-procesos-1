@@ -4,7 +4,7 @@
 
 ### Clase
 
-Una clase sirve para representar un tipo de objeto o cosa dentro del programa. En ella podemos definir qué información tiene y qué cosas puede hacer. 
+Una clase sirve para representar un tipo de objeto o cosa dentro del programa. En ella podemos definir qué información tiene y qué cosas puede hacer
 
 + Por ejemplo:
 
