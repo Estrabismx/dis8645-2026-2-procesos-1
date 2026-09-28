@@ -230,6 +230,68 @@ Buscar a **Aristóteles** y sus categorías.
 
 Analizar el objeto utilizando esas categorías.
 
+
+**Aristóteles y sus categorías**
+
+
+Para este ejercicio elegí analizar mi Kindle, porque es un objeto que uso bastante y que puedo describir de distintas formas según las categorías de Aristóteles.
+
+
+Objeto: mi Kindle
+
+
+1. Sustancia — ¿qué es?
+
+Es un lector de libros electrónicos.
+
+
+2. Cantidad — ¿cuánto?
+
+Tengo un Kindle. Es liviano y tiene un tamaño pequeño.
+
+
+3. Cualidad — ¿cómo es?
+
+Es delgado, rectangular y liviano. Tiene una pantalla de tinta electrónica.
+
+
+4. Relación — ¿con respecto a qué?
+
+Es mi Kindle y lo relaciono principalmente con los libros que leo.
+
+
+5. Lugar — ¿dónde está?
+
+Puede estar en mi pieza, en mi cartera, sobre mi velador o en mis manos.
+
+
+6. Tiempo — ¿cuándo?
+
+Leo en mi Kindle cada vez que tengo un momento libre, aunque sean solo unos minutos. Por ejemplo, en el metro, mientras espero el metro o la micro, o en el auto cuando no voy manejando.
+
+
+7. Situación — ¿cómo está colocado?
+
+Puede estar vertical cuando estoy leyendo, acostado sobre una mesa o apoyado en la cama.
+
+
+8. Condición — ¿qué tiene?
+
+Puede tener una funda, libros descargados y batería cargada.
+
+
+9. Acción — ¿qué hace?
+
+Puede mostrar libros, cambiar de página, guardar mi progreso y cambiar el tamaño de la letra
+
+
+10. Pasión — ¿qué le ocurre?
+
+Se puede descargar, caer, rayar o actualizar.
+
+
+
+
 aparte, para el martes 07a
 
 Bajar cómo **Instagram nos describe**, pensando en el algoritmo.
