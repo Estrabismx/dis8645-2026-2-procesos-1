@@ -15,9 +15,11 @@
 9. acción: encender una llama
 10. pasión: quemar o iniciar combustión
 
-### charla Rodrigo Toro Madrid
+### charla [Rodrigo Toro Madrid](https://www.instagram.com/rodrigotoro.m/)
 
-- - -
+Dentro de lo que nos comentó Rodrigo quiero hacer enfasis, en el aspecto de la autoformación. Ya que nos dio un mensaje importante, aprovechar esta edad de preguntar, aprender y equivocarnos. Me resuena mucho esto, por que últimamente me llaman Kid Voodoo (no me pierdo una xd), fuera de bromas estoy asistiendo a la mayor cantidad de eventos que puedo, ya sean congresos, charlas, trabajos de magister, etc.
+
+Mi meta es poder acercarme a distintas áreas y rubros, no necesariamente saberlo todo o trabajar en ellos, si no que poder conoceerlos y decidir si vale la pena acercarme a ese abismo de conocimiento
 
 ### [Wokwi](https://wokwi.com/)
 
