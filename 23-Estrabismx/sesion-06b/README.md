@@ -15,9 +15,9 @@
 9. acción: encender una llama
 10. pasión: quemar o iniciar combustión
 
-### charla ---
+### charla Rodrigo Toro Madrid
 
-[]
+- - -
 
 ### [Wokwi](https://wokwi.com/)
 
@@ -121,6 +121,24 @@ int main() {
 
 ## encargos
 
-RRSS
+"_bajar una red social e investigar que piensa esa red de mi, cuál es mi algoritmo. (listar 10 categorías que deciden qué y quién eres)_"
+
+### TikTok
+
+![tiktok](./imagenes/sc-sm01.jpg)
+
+Esta red social genera un listado de diversos temas asociados a tu consumo. Con el fin de saber que productos venderte, obviamente este perfil es generado en base a tus interacciones, con que videos interactuas más, con cuales menos, etc.
+
+Por lo que el algoritmo de TIkTok puede identificar a que categoria corresponden los videos dentro de su plataforma y enlazarlos a "_arquetipos de usuarios_" 
+
+<br>
+
+### Instagram
+
+![Instagram](./imagenes/sc-16.png)
+
+![Instagram](./imagenes/sc-17.png)
+
+Para observar el algoritmo de instagram, me dirigí a la opción de busqueda, la cual funciona recomendando contenido según cada perfil. Esto sirvio para entender que elementos identifica Meta como parte de mi persona
 
 ## lectura
