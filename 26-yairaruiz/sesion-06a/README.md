@@ -2,7 +2,9 @@
 
 ## apuntes sesión
 
-### Clase: Una clase sirve para representar un tipo de objeto o cosa dentro del programa. En ella podemos definir qué información tiene y qué cosas puede hacer. 
+### Clase
+
+Una clase sirve para representar un tipo de objeto o cosa dentro del programa. En ella podemos definir qué información tiene y qué cosas puede hacer. 
 
 + Por ejemplo:
 
@@ -14,7 +16,9 @@ La clase sería como una especie de molde. Después, a partir de ese molde, se p
 
 Por ejemplo, si la clase es Perrito, podemos guardar información sobre el perro y también definir acciones que puede realizar.
 
-### atributos: Los atributos sirven para guardar información sobre el objeto.
+### atributos
+
+Los atributos sirven para guardar información sobre el objeto.
 
 Por ejemplo, de un perrito nos podría interesar saber:
 +hambre
@@ -36,7 +40,9 @@ Estas variables están dentro de la clase, por lo que funcionan como atributos d
 
 Los atributos pueden representar características, datos o el estado en que se encuentra algo.
 
-### Métodos: los métodos representan las cosas que un objeto puede realizar
+### Métodos
+
+los métodos representan las cosas que un objeto puede realizar
 
 Poodemos pensar que normalmente los métodos representan acciones o verbos, mientras que los atributos representan características o información.
 
