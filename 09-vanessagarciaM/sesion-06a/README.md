@@ -84,16 +84,25 @@ los datos no afectan directamente al método
 
 seleccionar un objeto y clasificarlo según las categorías del ser de aristóteles 
 
-sustancia: mi carcasa de iphone 14
-cantidad: 1 carcasa, tamaño de iphone 14
-cualidad: transparente, de plástico, con manchas negras y estrellas rosadas
-relación: protector de mi iphone 14
-lugar: puesta en mi celular, conmigo
-tiempo: ahora, siempre, cuando uso mi celular
-posición: alrededor del celular
-posesión: contener mi iphone
-acción: proteger el celular
-pasión: recibir golpes
+1. sustancia: mi carcasa de iphone 14
+
+2. cantidad: 1 carcasa, tamaño de iphone 14
+
+3. cualidad: transparente, de plástico, con manchas negras y estrellas rosadas
+
+4. relación: protector de mi iphone 14
+
+5. lugar: puesta en mi celular, conmigo
+
+6. tiempo: ahora, siempre, cuando uso mi celular
+
+7. posición: alrededor del celular
+
+8. posesión: contener mi iphone
+
+9. acción: proteger el celular
+
+10. pasión: recibir golpes
 
 ## lectura
 
