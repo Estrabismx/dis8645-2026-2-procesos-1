@@ -53,7 +53,7 @@ En la misma clase puede haber más de un constructor con los mismos parámetros
 
 `double` has more memory than `float`, but it's not accurate regardless
 
-`sleep_ms(1000);`is like `delay(1000);`in Arduino
+`sleep_ms(1000);` is like `delay(1000);` in Arduino
 
 ```cpp
 Class Boton {
@@ -71,12 +71,20 @@ Class Boton {
     }
 
     // método
+    // estos pueden conversar entre si
+    // o con los atributos
+    // esto es una declaración que va en los archivos .h
+    void leer();
+    void actualizar();
+    
 }
 ```
 
 ### Bloque 11:00 - 12:50
 
 Continuando con "método" en el código
+
+Tendremos dos tipos de archivo, .cpp (C++) y .h (header) por cada clase
 
 ## encargos
 
