@@ -41,6 +41,7 @@ Acción: decora el peinado
 ### bajar una red social e investigar que piensa esa red de mi, cuál es mi algoritmo
 (listar 10 categorías que deciden qué y quién eres)
 
+mi algoritmo en instagram:
 
 1. Cheerleading:	me interesa el cheer, las rutinas, competencias, técnicas y contenido relacionado con el deporte
 2. Flexibilidad y movimiento: me interesan ejercicios de estiramiento, flexibilidad y movilidad corporal, para aumentar mi flexibilidad y mejorar mi postura
