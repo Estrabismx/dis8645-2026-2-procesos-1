@@ -41,7 +41,9 @@ el .1 dice: solo dame 1 decimal
 //hace que el programa pause o detenga su ejecución durante 1 segundo
 sleep_ms(1000)
 ```
-
+Una clase implica 2 archivos
+.cpp
+.h tendrá un resumen de todo
 ```
 class Boton{
 public:
@@ -60,7 +62,12 @@ char[] nombre;
 Boton (int nuevaPatita) {
 patita = nuevaPatita;
 }
-}
+
+//metodos
+//declaración, va en h.
+void leer();
+void actualizar();
+};
 ```
 ## encargos
 
