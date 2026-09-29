@@ -86,6 +86,10 @@ Continuando con "método" en el código
 
 Tendremos dos tipos de archivo, .cpp (C++) y .h (header) por cada clase
 
+We'll write some code on WOKWI, utilizamos el template de Pi Pico SDK
+
+SDK &rarr; Software Development Kit
+
 ## encargos
 
 ## lectura
