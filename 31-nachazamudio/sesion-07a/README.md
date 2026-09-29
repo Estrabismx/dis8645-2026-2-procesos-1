@@ -11,9 +11,13 @@ Botón 0 y 1, o doble click: si clickeamos 0111111101, de 0 a 1 cambiamos el est
 Orden uso de CLASS
 
 class Nombre{
+
 1.atributos ---> int, bool, char...
+
 2.método constructor
+
 3.método general
+
 }
 
 Ejemplo en clase: https://wokwi.com/projects/476140065507309569 
