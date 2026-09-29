@@ -22,6 +22,7 @@ class Nombre{
 
 Ejemplo en clase: https://wokwi.com/projects/476140065507309569 
 
+
 Puede tener más de un método constructor, se pone denso eso. 
 
 Public y private, private no se puede modificar. Está detrás de una contraseña. Se murió lo privado en la clase, chao chao.
@@ -30,12 +31,11 @@ elDeCata.abierto / elDeMati.temperatura ---> elDeCata y elDeMati, lugar en donde
 
 Else ----> E.O.C EN OTRO CASO
 
-´´´cpp
 
 printf("termo de mati: %.1f grados\n", elDeMati.temperatura);
    
-    printf("\n");
-´´´
+printf("\n");
+    
 
 Pregunta por la temperatura del termo de mati, e imprime los grados. 
 
