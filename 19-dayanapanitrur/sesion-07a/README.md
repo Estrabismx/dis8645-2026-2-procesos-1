@@ -92,7 +92,62 @@ Porque los ML pueden variar.
 
 ```while (true)``` es como el ```void loop``` en nuestro Arduino IDE.
 
-```else``` se traduce comunmente como e.o.c, que es "en otro caso".
+```else``` se traduce comunmente como e.o.c, que es "en otro caso". 
+
+```cpp
+class Boton {
+//atributos
+bool presionado= 0;
+bool normalAbierto= true
+```
+pero también existen los normalmente cerrados, entonces podría quedar así:
+
+```cpp
+class Boton {
+//atributos
+bool presionado= 0;
+bool normalCerrado= true
+```
+que más le importa al botón?
+
+el tiempo que dura presionado este botón
+
+```cpp
+class Boton {
+//atributos
+bool presionado= 0;
+bool normalAbierto= true
+Uint duracionPresionado= 0;
+```
+
+además, debemos programar a que pin de nuestro microcontrolador lo conectamos
+
+```cpp
+class Boton {
+//atributos
+bool presionado= 0;
+bool normalAbierto= true
+Uint duracionPresionado= 0;
+int patita;
+```
+constructor
+
+```cpp
+class Boton {
+//atributos
+bool presionado= 0;
+bool normalAbierto= true
+Uint duracionPresionado= 0;
+int patita;
+Uint vecesPresionado= 0;
+
+//constructor
+
+Boton (int nuevaPatita){
+patita= nuevaPatita;
+```
+
+Entonces cuando creemos un constructor tenemos que darle un parámetro.
 
 ## encargos
 
