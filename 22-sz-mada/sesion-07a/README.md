@@ -90,6 +90,8 @@ We'll write some code on WOKWI, utilizamos el template de Pi Pico SDK
 
 SDK &rarr; Software Development Kit
 
+[Código escrito por Aarón en clase](https://wokwi.com/projects/476507507193136129)
+
 ## encargos
 
 ## lectura
