@@ -56,6 +56,20 @@ patita = nuevaPatita;
 }
 ```
 
+Métodos: 
+Los métodos pueden conversar entre ellos
+
+void leer();
+void acrualizar();
+
+Primero hay que definir las cosas y luego hacer cosas con ellas, el segundo proyecto va a consistir más en código y definir.
+
+Se crean diferntes archivos.
+main.cpp
+diagram.json
+Boton.h
+Boton.cpp 
+y cada uno tiene su función al igual que en una página web hay un archivo que es la programación de la interfaz y otro donde se controla la base de datos.
 
 
 ## encargos
