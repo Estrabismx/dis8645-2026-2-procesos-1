@@ -70,6 +70,10 @@ Micropython está **prohibido** lol
 
 Elegir un objeto, buscar las categorías del ser de Aristóteles. Analizar el objeto a partir de sus categorías.
 
+![Mi gato, Pancho](./imagenes/pancho.jpg)
+
+&uarr; Mi gato, Pancho
+
 - **Sustancia**: Mi gato, Pancho. Un ser viviente individual, una sustancia primaria. Pertenece a las sustancias secundarias *gato*, *animal*, y *ser viviente*
 
 - **Cantidad**: Pancho pesa alrededor de 4.7 kg, y mide cerca de 48cm desde su nariz hasta la base de la cola. Tiene 16 años, y es un solo gato singular
