@@ -11,11 +11,13 @@ Botón 0 y 1, o doble click: si clickeamos 0111111101, de 0 a 1 cambiamos el est
 Orden uso de CLASS
 
 ´´´cpp
+
 class Nombre{
 1.atributos ---> int, bool, char...
 2.método constructor
 3.método general
 }
+
 ´´´
 
 Ejemplo en clase: https://wokwi.com/projects/476140065507309569 
@@ -29,10 +31,12 @@ elDeCata.abierto / elDeMati.temperatura ---> elDeCata y elDeMati, lugar en donde
 Else ----> E.O.C EN OTRO CASO
 
 ´´´cpp
+
 printf("termo de mati: %.1f grados\n", elDeMati.temperatura);
    
     printf("\n");
 ´´´
+
 Pregunta por la temperatura del termo de mati, e imprime los grados. 
 
 %.1f ---> F de Float y el 1 es la cantidad de decimales que entregará. ejemplo los pesos y dolares, los pesos son así nomas, lo dolares tienen centavos.
