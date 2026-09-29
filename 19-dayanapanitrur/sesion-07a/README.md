@@ -2,6 +2,8 @@
 
 ## apuntes sesión
 
+###  parte de la clase
+
 En la clase de hoy revisamos esto:
 
 https://wokwi.com/projects/476140065507309569
@@ -148,6 +150,38 @@ patita= nuevaPatita;
 ```
 
 Entonces cuando creemos un constructor tenemos que darle un parámetro.
+
+___
+
+### Segunda parte de la clase
+
+Dejamos atrás Arduino.
+
+A continuación veremos los métodos. Esta parte está densa.
+
+```cpp
+void leer();
+void actualizar();
+```
+¿que pasó aquí? no definimos qué es leer, ni que es actualizar.
+
+esto es una declaración.
+
+vamos a hacer dos archivos: 
+
+Boton.cpp 
+
+Boton.h (h es *header*) 
+
+en el .h es donde definimos que suceden ciertas cosas.
+
+en el .cpp nos haremos cargo de hacer que esas cosas sucedan.
+
+en el .h comento que haremos sopaipillas
+
+en el .cpp escribiré paso a paso como haremos sopaipillas.
+
+haremos siempre un .h y un .cpp
 
 ## encargos
 
