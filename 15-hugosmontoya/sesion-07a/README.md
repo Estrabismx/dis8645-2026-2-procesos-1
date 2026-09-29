@@ -1,6 +1,62 @@
 # sesion-07a
 
 ## apuntes sesión
+En una clase puede haber más de un constructor pero con distintos parámetros.
+Los valores se pueden cambiar con métodos
+
+```cpp
+Class Termo {
+  // palabra clave public
+  // la usaremos este semestre
+  public:
+    // atributos de la clase
+    // (variables internas) 
+    bool existencia = true;
+    bool abierto = false;
+    int posicion = 0;
+    int cantidadML;
+    float temperatura = 100.0;
+    int rodamientos = 5;
+
+```
+Se define la clase termo y luego le damos unos atributos, como por ejemplo que la existencia del termo es verdad o que su posición inicial es 0.
+
+No siempre hace falta darle un valor al hacer una variable, existen otros métodos, Aarón en la línea 16 "int cantidadML;" no le ha dado ningún valor.
+"main" significa todo el programa.
+/n es el equivalente de ln, es decir que haga print en una nueva linea.
+Else se traduce a en otro caso, si el if no es verdad, en el otro caso: else.
+while(true) es como el void loop, es decir que funciona como un bucle infinito.
+Los floats no son perfectos, son una aproximación (los floats son números con decimales.) Por ejemplo si tu escribe 100 - 0,3 no te va a dar 99,03 te va a dar un número como: 99,03542. Esto se debe a que los ordenadores son binarios y no tienen decimales por eso aproxima al calcular un float. Por eso es mejor no trabajar con floats.
+Double es un float con mayor resolución, lee más decimales que un float normal.
+
+Un long es como un int pero con un número más largo, es decir es un int que contiene más bits.
+
+Es mejor no usar delay o sleep, sobretodo en proyectos con sensores, ya que durante ese tiempo no se leen los sensores.
+
+Botones:
+Todos los botones tienen un atributo que se llama presionado.
+
+```
+//Creamos una clase que se llama botón
+Class Boton{
+
+//definimos atributos
+bool presionado = 0;
+bool normalAbierto = true;
+//Uint permite que el valor siempre sea mayor a 0
+Uint duracionpresionado = 0;
+//Como no puedo presionar un botón negativa veces, pongo U
+Uint patita;
+Uint vecesPresionado = 0;
+
+//Ahora hacemos constructores, aquí se van a usar () {}
+Boton (int nuevaPatita){
+patita = nuevaPatita;
+
+}
+
+
+
 
 ## encargos
 
