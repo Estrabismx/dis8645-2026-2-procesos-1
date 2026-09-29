@@ -92,7 +92,11 @@ SDK &rarr; Software Development Kit
 
 [Código escrito por Aarón en clase](https://wokwi.com/projects/476507507193136129)
 
-![Código WOKWI con botón](./imagenes/wokwi_boton.gif)
+![Código WOKWI con botón](./imagenes/wokwi-boton.gif)
+
+Aarón nos dio el task de hacer que funcione con dos botones, y lo logré ::], simplemente agregué `miSegundoBoton` después de `miPrimerBoton` lol
+
+![Simulación con dos botones](./imagenes/dos-botones.gif)
 
 ## encargos
 
