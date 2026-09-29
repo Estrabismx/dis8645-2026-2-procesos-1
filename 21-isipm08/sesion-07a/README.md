@@ -217,6 +217,9 @@ Boton pausa (GP1);
 Boton reproducir (GP3);
 Boton apagar (GP30);
 ```
+
+<https://wokwi.com/projects/476507507193136129>
+
 ## encargos
 bajar una red social e investigar que piensa esa red de mi, cuál es mi algoritmo
 
