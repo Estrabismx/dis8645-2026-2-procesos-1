@@ -84,6 +84,17 @@ los datos no afectan directamente al método
 
 seleccionar un objeto y clasificarlo según las categorías del ser de aristóteles 
 
+sustancia: mi carcasa de iphone 14
+cantidad: 1 carcasa, tamaño de iphone 14
+cualidad: transparente, de plástico, con manchas negras y estrellas rosadas
+relación: protector de mi iphone 14
+lugar: puesta en mi celular, conmigo
+tiempo: ahora, siempre, cuando uso mi celular
+posición: alrededor del celular
+posesión: contener mi iphone
+acción: proteger el celular
+pasión: recibir golpes
+
 ## lectura
 
 ### reading writing interfaces: from the digital to the bookbound
