@@ -39,7 +39,7 @@ Pregunta por la temperatura del termo de mati, e imprime los grados.
 
 luego imprime /n, un espacio en blanco.
 
-
+función sleep_ms es delay en arduino. En milisegundos. 
 
 ## encargos
 
