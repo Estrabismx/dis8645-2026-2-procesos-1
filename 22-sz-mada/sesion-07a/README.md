@@ -74,6 +74,10 @@ Class Boton {
 }
 ```
 
+### Bloque 11:00 - 12:50
+
+Continuando con "método" en el código
+
 ## encargos
 
 ## lectura
