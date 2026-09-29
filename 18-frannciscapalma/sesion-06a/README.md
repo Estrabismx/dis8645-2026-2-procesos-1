@@ -74,3 +74,9 @@ Estado: puede estar puesta, guardada, nueva, usada o rota
 Acción: decora el peinado
 
 ## lectura
+
+en el nuevo capítulo que leí de Negroponte, habla sobre el ancho de banda y la gran cantidad de información que podemos transmitir, luego reflexiona de que tenemos esa gran capacidad de información pero que somos nosotros quienes debemos decidir como aprovecharla, aprender a seleccionar ue informacion realmente necesitamos y cómo utilizarla de manera significativa. esto lo veo muy relacionado al scroll en las redes sociales y que nosotros no decidimos qué es lo que vemos, sino que ya viene todo predeterminado por el algoritmo. 
+
+“Sin embargo, los nuevos servicios de información y entretenimiento no nos los proporcionará la fibra sino la imaginación.”
+
+“El ancho de banda ilimitado no es malo, pero como la libertad sexual, tampoco es necesariamente bueno. Yo me planteo si de verdad queremos o necesitamos todos esos bits.”
