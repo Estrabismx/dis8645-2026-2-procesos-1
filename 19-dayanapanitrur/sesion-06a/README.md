@@ -16,9 +16,15 @@ estos dos términos que se encuentran destacados son importantes para lo que rea
 
 pero entonces, ¿qué es una `clase` o `class`?
 
+`class` es un simplemente un molde
+
 ojo, `class` no es una variable.
 
 clase puede considerarse un conjunto de métodos y atributos (o más bien tiene que contener esto).
+
+lo cual nos sirve para no tener que estar escribiendo desde 0 y 1 por 1 las características y acciones de 50 cosas (por ejemplo).
+
+entonces vamos a mantener todo junto en un solo lugar.
 
 estructura para escribir las "clases" en C++:
 
@@ -30,3 +36,4 @@ class NombreDeLaClase {
 ## encargos
 
 ## lectura
+
