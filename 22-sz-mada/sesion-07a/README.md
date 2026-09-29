@@ -96,6 +96,51 @@ SDK &rarr; Software Development Kit
 
 Aarón nos dio el task de hacer que funcione con dos botones, y lo logré ::], simplemente agregué `miSegundoBoton` después de `miPrimerBoton` lol
 
+```cpp
+#include <stdio.h>
+#include "pico/stdlib.h"
+
+// incluir mis archivos
+#include "Boton.h"
+
+int main() {
+
+  stdio_init_all();
+
+  // crear Boton
+  // que se llame miPrimerBoton
+  // con el constructor
+  Boton miPrimerBoton(7);
+  Boton miSegundoBoton(6);
+
+
+  while (true) {
+
+    miPrimerBoton.leer();
+
+    if (miPrimerBoton.presionado) {
+       printf("bacan, estoy presionado pero igual me presiona\n");
+     }
+     else {
+       // cuando no esté presionado
+       printf("no hay nadie presionandome\n");
+     }
+  
+    miSegundoBoton.leer();
+
+    if (miSegundoBoton.presionado) {
+       printf("ahora yo estoy presionado\n");
+     }
+     else {
+       // cuando no esté presionado
+       printf("no hay nadie presionandome tampoco\n");
+     }
+
+    sleep_ms(1000);
+  }
+}
+```
+
 ![Simulación con dos botones](./imagenes/dos-botones.gif)
 
 ## encargos
