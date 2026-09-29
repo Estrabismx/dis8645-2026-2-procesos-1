@@ -82,7 +82,8 @@ int main() {
 } 
 
 ``` 
- 
+___
+
 nos visita 
 
 Rodrigo Toro 
@@ -134,6 +135,3 @@ para crear un constructor, utilice el mismo nombre que la clase, seguido de par�
 
 con agregar una línea en classes, puede propagar todo a los otros ¨termos¨, ej: rodamientos
 
-## encargos
-
-## lectura
