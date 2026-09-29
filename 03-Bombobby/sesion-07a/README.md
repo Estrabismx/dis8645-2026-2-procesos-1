@@ -69,6 +69,98 @@ void leer();
 void actualizar();
 };
 ```
+Plantilla Boton.h
+```
+#ifndef BOTON_H
+#define BOTON_H
+
+// Boton.h
+// declaraciones de la clase Boton
+
+//definir clase boton
+class Boton {
+  //todo publico
+  public:
+
+  //atributos
+  bool presionado = false
+
+  //constructor
+  Boton();
+
+  //metodos
+  void presionar();
+  void soltar();
+
+
+};
+
+#endif
+```
+Plantilla Boton.cpp
+```
+// Boton.cpp
+// implementaciones de la clase
+
+// importar archivo header
+#include "Boton.h"
+
+// constructor
+Boton::Boton() {
+
+}
+
+// metodos
+void Boton::presionar() {
+  Boton::presionado = true;
+}
+
+void Boton::soltar() {
+  Boton::presionado = false;
+  Boton::duracionPresionado = 0;
+}
+```
+main.cpp
+```
+#include <stdio.h>
+#include "pico/stdlib.h"
+// incluir mis archivos
+#include "Boton.h"
+
+int main() {
+
+  stdio_init_all();
+  
+  // crear Boton
+  // llamado miPrimerBoton
+  // con el constructor
+  // los parentesis no son necesarios cuando
+  // el constructor no tiene parametros
+  // Boton miPrimerBoton();
+  Boton miPrimerBoton;
+  
+  while (true) {
+
+    if (miPrimerBoton.presionado) {
+      printf("bacan estoy presionado, pero igual me presiona\n");
+      printf("o como dice matias, estoy impresionado jaja\n");
+      miPrimerBoton.soltar();
+    }
+    else {
+      // cuando no este presionado
+      printf("no hay nadie presionandome\n");
+      miPrimerBoton.presionar();
+    }
+
+
+
+
+
+    // printf("Hello, Wokwi!\n");
+    sleep_ms(1000);
+  }
+}
+```
 ## encargos
 
 ## lectura
