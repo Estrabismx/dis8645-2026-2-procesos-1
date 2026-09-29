@@ -9,6 +9,7 @@ En la clase de hoy revisamos esto:
 https://wokwi.com/projects/476140065507309569
 
 %d : placeholder
+
 \n salto de línea
 
 Los doble click los podemos programar, al código le importa saber cuando hay un 0 y después un 1 (el presionar) o un 1 y luego un 0 (soltar), algo que para el proyecto 01 tuvimos que realizar con Cami y Bianka con los botones, establecimos por cuantos segundos / milisegundos se debían mantener presionados los botones para que sucedieran cosas.
@@ -182,6 +183,50 @@ en el .h comento que haremos sopaipillas
 en el .cpp escribiré paso a paso como haremos sopaipillas.
 
 haremos siempre un .h y un .cpp
+
+- Ahora programaremos el botón en https://wokwi.com/pi-pico
+
+en el archivo .h
+
+```cpp
+#ifndef BOTON_H
+#define BOTON_H
+
+
+// Boton.h
+// declaraciones de la clase Boton
+
+
+// definir clase Boton
+class Boton {
+
+  // todo publico
+  // nada de andar privatizando
+  public:
+
+  // atributos
+  bool presionado = false;
+
+  // constructor
+  Boton();
+
+  // metodos
+  void presionar();
+  void soltar();
+
+};
+
+#endif
+
+```
+
+```#ifndef``` y  ```#endif``` será obligatorio usar.
+
+En el archivo .cpp
+
+```cpp
+a
+```
 
 ## encargos
 
