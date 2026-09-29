@@ -45,6 +45,45 @@ luego imprime /n, un espacio en blanco.
 
 función sleep_ms es delay en arduino. En milisegundos. 
 
+--------
+Ejemplo class de botón:
+
+class Botón{
+
+atributos:
+
+bool presionado = 0;
+
+bool normalAbierto = true; 
+
+u int duracionPresionado = 0; //u int ya que los valores van de 0 a enteros positivos. 
+
+int patita; 
+
+u int vecesPresionado; 
+
+char[]nombre //nombrar el botón
+
+método constructor:
+
+//Es un método porque tiene el nombre de la clase,(),{}, y parametros. 
+
+//En el constructor evitamos colocar el mismo nombre al parametro para evitar confuciones, ya que quedaría patita = patita. Muy brígido. 
+
+//int dentro del () porque necesita un entero. 
+
+Boton(int nuevaPatita){
+
+patita = nuevaPatita //patita desde los atributos. 
+
+}
+
+método general: 
+
+
+}
+--------
+
 ## encargos
 
 ## lectura
