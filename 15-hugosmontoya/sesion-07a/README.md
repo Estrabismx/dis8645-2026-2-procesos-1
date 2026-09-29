@@ -17,8 +17,8 @@ Class Termo {
     int cantidadML;
     float temperatura = 100.0;
     int rodamientos = 5;
-
 ```
+
 Se define la clase termo y luego le damos unos atributos, como por ejemplo que la existencia del termo es verdad o que su posición inicial es 0.
 
 No siempre hace falta darle un valor al hacer una variable, existen otros métodos, Aarón en la línea 16 "int cantidadML;" no le ha dado ningún valor.
@@ -36,7 +36,7 @@ Es mejor no usar delay o sleep, sobretodo en proyectos con sensores, ya que dura
 Botones:
 Todos los botones tienen un atributo que se llama presionado.
 
-```
+```cpp
 //Creamos una clase que se llama botón
 Class Boton{
 
@@ -54,7 +54,7 @@ Boton (int nuevaPatita){
 patita = nuevaPatita;
 
 }
-
+```
 
 
 
