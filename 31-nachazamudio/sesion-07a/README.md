@@ -80,9 +80,23 @@ patita = nuevaPatita //patita desde los atributos.
 
 método general: 
 
+void leer ();
+
+void actualizar(); 
 
 }
 --------
+una clase implica dos archivos, boton.cpp y boton.h
+
+h --> header y cpp --> c++
+
+#ifndef GRUPO_H ---> al comienzo del Boton.h
+
+#define GRUPO_H
+
+#endif ---> final de boton.h
+--------
+
 
 ## encargos
 
