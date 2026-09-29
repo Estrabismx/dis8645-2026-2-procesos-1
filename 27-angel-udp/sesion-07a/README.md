@@ -88,6 +88,72 @@ y como trata de decir siempre la verdad lo importante es poner algo que siempre 
 
 y ¿como borra hacia adelante?
 
+finalmente este fue el código:
+// esto venia en wokwi
+#include <stdio.h>
+#include "pico/stdlib.h"
+
+
+// esto lo agregamos para GPIO
+// general purpose input output
+#include "hardware/gpio.h"
+
+// incluir mis archivos
+#include "Boton.h"
+
+int main() {
+
+  stdio_init_all();
+
+  // inicializar patita 7
+  gpio_init(7);
+  // la patita 7 es entrada
+  gpio_set_dir(7, GPIO_IN);
+  
+  // crear Boton
+  // que se llama miPrimerBoton
+  // con el constructor
+  // habia hecho un error
+  // que era usar parentesis sin nada
+  // que no son necesarios cuando
+  // el constructor no tiene parametros
+  // Boton miPrimerBoton();
+  Boton miPrimerBoton;
+  
+  while (true) {
+
+
+    // leer boton
+    bool lectura = gpio_get(7);
+
+
+    if (lectura) {
+     printf("caramba estoy presionado\n"); 
+    } else {
+      printf("pucha no hay nadie\n"); 
+    }
+
+    // digitalRead();
+
+    // if (miPrimerBoton.presionado) {
+    //   printf("bacan estoy presionado, pero igual me presiona\n");
+    //   printf("o como dice matias, estoy impresionado jaja\n");
+    //   miPrimerBoton.soltar();
+    // }
+    // else {
+    //   // cuando no este presionado
+    //   printf("no hay nadie presionandome\n");
+    //   miPrimerBoton.presionar();
+    // }
+
+
+
+
+
+    // printf("Hello, Wokwi!\n");
+    sleep_ms(1000);
+  }
+}
 
 
 ## encargos
