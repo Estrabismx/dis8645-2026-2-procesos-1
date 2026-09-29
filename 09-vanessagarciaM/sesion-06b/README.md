@@ -7,14 +7,23 @@ Comenzamos revisando el encargo
 ### ejemplo en la clase
 
 sustancia: mi termo 
+
 cantidad: 800 ml 
+
 cualidad: blanco, metálico, térmico 
+
 relación: contenedor de té ceylan
+
 lugar: favorito conmigo. a la izquierda de mi mano izquierda 
+
 tiempo: ahora siempre pronto 
+
 posición:
+
 posesión: líquido,
+
 acción: mantener el líquido caliente
+
 pasión: ser llenado y transportado (no tiene, es inerte) 
 
 
@@ -94,6 +103,7 @@ ___
 
 ### c++ classes/objects 
 c++ es un lenguaje de programación orientado a objetos.
+
 en C++, todo está asociado a clases y objetos, junto con sus atributos y métodos. por ejemplo: en la vida real, un coche es un objeto. el coche tiene atributos , como peso y color, y métodos , como conducir y frenar.
 
 los atributos y métodos son básicamente variables y funciones que pertenecen a la clase. a menudo se les denomina "miembros de la clase".
