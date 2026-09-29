@@ -35,11 +35,32 @@ while (true)
 para acceder a las funciones y estados de una clase ocupamos un punto .
 ej: elDeCata.cantidadML, esto nos dice cuantos ml tiene el termo de Cata
 
-%.1f f es float y se agrega si el número tiene parte decimal
+%.1f | f es float y se agrega si el número tiene parte decimal
 el .1 dice: solo dame 1 decimal
 ```
 //hace que el programa pause o detenga su ejecución durante 1 segundo
 sleep_ms(1000)
+```
+
+```
+class Boton{
+public:
+//u es porque el número nunca será negativo
+bool presionado = 0;
+bool normalAbierto = true
+uint duracionPresionado = 0;
+int patita;
+uint vecesPresionado = 0;
+char[] nombre;
+
+//constructor
+//para evitar confusiones
+// ojalá cambiar el nombre del parámetro en el constructor
+//constructor le da el valor a la patita
+Boton (int nuevaPatita) {
+patita = nuevaPatita;
+}
+}
 ```
 ## encargos
 
