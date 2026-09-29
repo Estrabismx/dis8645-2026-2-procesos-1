@@ -37,3 +37,11 @@ class NombreDeLaClase {
 
 ## lectura
 
+*The Oxford Handbook of Computer Music*
+
+Me estaba quedando bastante atrasada con la lectura ya que a veces se me hace un poco dificil entender algunas partes de la escritura del libro ya que está en Inglés.
+
+De lo que pude comprender en el capítulo 2 se discute la terminología de la “música por computadora”. Partiendo por el término de “música”, el cual ha ido evolucionando a lo largo de los siglos, ya que se entendía de una manera muy estructurada.
+Este capítulo se encuentra dentro de un marco teórico que referencia otros dos autores Chadabe (1997) y Manning (2004), los cuales desconozco. Por otra parte Douglas Keislar sostiene que la música por computadora tiende a solaparse con otros términos como música electrónica o música electroacústica y discute la terminología en aspecto de género musical más que cualquier otro aspecto.
+
+Lo que nosotros entendemos ahora como sonido analógico y casi obsoleto, antes era la música electrónica de la época. Aquí se mencionan instrumentos como el theremin, los sintetizadores modulares Moog y Buchla. Los cuales recuerdo que conocí en el taller de máquinas electrónicas.
