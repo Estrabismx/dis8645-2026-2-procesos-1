@@ -65,6 +65,29 @@ bOTON apagar (GP30)
 }
 👀 🐱
 
+Metodos
+
+void leer()
+
+voidactualizar(); esto es una declaración y va en los archivos .h
+
+vamos a ver una clase Boton.h
+
+Boton.cpp
+
+header
+
+Nuestro MAin va a ser cpp
+
+A todos los archivos.h le vamos a poner el #ifndef, #define, #endif
+
+while true es una manera de pedirle a main que se repita para siempre
+y como trata de decir siempre la verdad lo importante es poner algo que siempre sea la verdad osea (true)
+
+¿Como comenta "//" todo con la selección?
+
+y ¿como borra hacia adelante?
+
 
 
 ## encargos
