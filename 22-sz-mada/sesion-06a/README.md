@@ -92,4 +92,6 @@ Elegir un objeto, buscar las categorías del ser de Aristóteles. Analizar el ob
 
 ---
 
+De una red social, descargar e investigar qué es lo que piensa de mí el algoritmo
+
 ## lectura
