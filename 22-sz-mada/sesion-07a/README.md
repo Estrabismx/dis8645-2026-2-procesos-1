@@ -92,6 +92,8 @@ SDK &rarr; Software Development Kit
 
 [Código escrito por Aarón en clase](https://wokwi.com/projects/476507507193136129)
 
+![Código WOKWI con botón](./imagenes/wokwi_boton.gif)
+
 ## encargos
 
 ## lectura
