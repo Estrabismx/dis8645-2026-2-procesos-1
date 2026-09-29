@@ -1,7 +1,11 @@
 # sesion-06b
 
+2026.09.25
+
 ## apuntes sesión
 
-## encargos
+No asistí a esta clase, así que todo lo siguiente es basado en los apuntes de mis compañeros
 
-## lectura
+---
+
+## encargos
