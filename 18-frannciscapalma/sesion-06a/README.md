@@ -30,7 +30,7 @@ class poodle{
 superclass Perrite();
 bool molestando=true;
 ___
-se usa la mayuscucula para ponerle nombre a una clase
+se usa la mayúscula para ponerle nombre a una clase
 existen los poodle:
 Poodle copito;
 clase instancia
