@@ -8,4 +8,8 @@ No asistí a esta clase, así que todo lo siguiente es basado en los apuntes de 
 
 ---
 
+Usando wokwi, se simuló el micro controlador Pi Pico W
+
+Incluir `<stdio.h>`, std es por **standard** and io is for **input output**
+
 ## encargos
