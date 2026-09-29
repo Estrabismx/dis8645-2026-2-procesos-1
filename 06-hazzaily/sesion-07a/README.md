@@ -1,6 +1,70 @@
 # sesion-07a
 
+2026-09-29
+
 ## apuntes sesión
+
+El ejemplo utilizado en clase lo hizo Aaron el fin de semana, y podemos verlo aquí [ejemplo-07a](https://wokwi.com/projects/476140065507309569)
+
+
+
+```
+ //  en la línea 96 del ejemplo
+ // encontramos esto
+ // en donde % significa que aquí va un valor y que sea reemplazado con otra cosa
+ // el .1 es la cantidad de decimales que va a mostrar
+ // una vez imprima la temperatura
+ // y la f es para que sea un float
+
+ printf("termo de mati: %.1f grados\n", elDeMati.temperatura);
+```
+
+double = float de mayor resolución/capacidad
+
+long = un int de mayor capacidad, caben más números enteros
+
+## class Boton
+
+```c
+class Boton {
+
+// atributos
+
+bool presionado = 0;
+bool noormalAbierto = true;
+u int duracioPresionadoMS = 0;
+int patita;
+u int vecesPresionado = 0;
+char[] nombre;
+
+ // constructor
+
+ // se hacen con parentesis
+ // tambien con muercilagos
+ // y con el nombre de la clase
+
+ // opcion 1
+ // Boton(int patita) {
+ // patita = patita
+ // }
+
+ // opcion 2
+ // la que mas vamos a usar
+Boton(int nuevaPatita) {
+patita = nuevaPatita;
+}
+
+ //  despues
+ // cada boton tendra su nombre
+ // y ademas su patita
+
+ // Boton pausa(GP1);
+ // Boton reproducir(GP3);
+ // Boton apagar(GP30);
+
+ // metodos
+
+```
 
 ## encargos
 
