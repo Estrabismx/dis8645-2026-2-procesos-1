@@ -68,7 +68,7 @@ Micropython está **prohibido** lol
 
 ## encargos
 
-### Elegir un objeto, buscar las categorías del ser de Aristóteles. Analizar el objeto a partir de sus categorías.
+### Elegir un objeto, buscar las categorías del ser de Aristóteles. Analizar el objeto a partir de sus categorías
 
 ![Mi gato, Pancho](./imagenes/pancho.jpg)
 
