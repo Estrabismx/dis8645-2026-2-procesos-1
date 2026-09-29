@@ -73,4 +73,4 @@ int main() {
 
 Aparentemente este código específico no funcionó. Primero Aarón pensó que era porque `print`es para `char`, mientras que `int` es para números enteros, pero seguía sin funcionar luego de cambiar esto. Se realizaron varios cambios al código y aún así no funcionaba lol
 
-Resultó ser que en la línea `printf(prueba();)`, había que añadir `%d/n` antes de `prueba()`, i.e. había que escrbir `printf(%d/n, prueba());`
+Resultó ser que en la línea `printf(prueba();)`, había que añadir `%d\n` antes de `prueba()`, i.e. había que escrbir `printf(%d\n, prueba());`
