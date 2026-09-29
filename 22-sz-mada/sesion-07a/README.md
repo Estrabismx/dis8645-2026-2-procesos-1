@@ -4,7 +4,7 @@
 
 ## apuntes sesión
 
-### Bloque 9:00 - 
+### Bloque 9:00 - 10:30
 
 Comenzamos hablando del [código actualizado](https://wokwi.com/projects/476140065507309569) que mandó Aarón al discord durante el fin de semana
 `%d` es un placeholder número `int`, `\n` es el salto de línea
@@ -48,6 +48,31 @@ En la misma clase puede haber más de un constructor con los mismos parámetros
 `} else {` &rarr; "E.O.C" (En Otro Caso)
 
 `%.1f` % &rarr; placeholder, f &rarr; float, .1 &rarr; return one (1) decimal
+
+(random reminder to myself: it is BACKSLASH N `\n`, **NOT** SLASH N `/n`)
+
+`double` has more memory than `float`, but it's not accurate regardless
+
+`sleep_ms(1000);`is like `delay(1000);`in Arduino
+
+```cpp
+Class Boton {
+    // atributos
+    bool presionado = false;
+    bool normalAbierto = true;
+    uint duracionPresionado = 0;
+    int patita;
+    uint vecesPresionado = 0;
+    char [] nombre;
+
+    // constructor
+    Boton(int, nuevaPatita) {
+        patita = nuevaPatita;
+    }
+
+    // método
+}
+```
 
 ## encargos
 
