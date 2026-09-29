@@ -11,13 +11,13 @@ No asistí a esta clase, así que todo lo siguiente es basado en los apuntes de 
 Usando wokwi, se simuló el micro controlador Pi Pico W
 
 ```cpp
-include <stdio.h>
+#include <stdio.h>
 ```
 
 std es por **standard** and io is for **input output**
 
 ```cpp
-include "pico/stdlib.h"
+#include "pico/stdlib.h"
 ```
 
 ```cpp
