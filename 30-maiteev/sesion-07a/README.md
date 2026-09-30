@@ -2,6 +2,63 @@
 
 ## apuntes sesión
 
+**2026-09-29**
+
+```cpp
+if
+ ```
+- es una pregunta
+ ```cpp
+printf
+ ```
+- %d placeholder es un valor que voy a remplazar   
+ ```cpp
+\n
+```
+- salto de línea
+- mouseRevease 
+- Es importante filtrar la información para que la acción funcione
+
+- orden de legibilidad 
+
+1)ATRIBUTOS 
+ ```cpp
+
+class nombre {
+
+public: 
+
+int 
+
+bool
+
+chars 
+
+// estos son atributos/ variables 
+   ```
+
+2) METODOS CONSTRUCTOR
+  ```cpp
+  
+Nombre(....){
+} 
+abrir(...);
+cerrar(...);
+ ```
+
+- cuando uno define una class tu defines que es public y que es private.
+- no existe lo privado 
+- en lo constructor siempre tienes que definir los parámetros
+- pueden haber varios constructores con varios parámetros
+ ```cpp
+  while (true)
+ ```
+- esto es como el loop sin decirlo y todo lo que está arriba es setup 
+-else = en otro caso 
+- float y el int los decimales son lo único que los diferencia
+- los float son unas aproximaciones raras 
+- double es un float de mejor aproximación 
+
 ## encargos
 
 1. usar el ejemplo base visto en clases <https://wokwi.com/projects/476507507193136129>, agregar un segundo botón en la simulación de hardware, agregar una segunda instancia de la clase Boton, agregarle un atributo y un método a la clase Boton, y hacer que el segundo botón haga algo diferente al primero.
