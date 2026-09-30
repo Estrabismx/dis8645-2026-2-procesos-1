@@ -217,14 +217,34 @@ Boton pausa (GP1);
 Boton reproducir (GP3);
 Boton apagar (GP30);
 ```
+- realizamos en conjunto el código en wokwi
+- en el cual siempre tenemos un ```maincpp``` ```Boton.h``` ```Boton.cpp```
 
 <https://wokwi.com/projects/476507507193136129>
 
+## encargos
+realizar en el ejemplo visto en clase, integrar otro botón
+
 <https://wokwi.com/projects/476535764702876673>
 
-## encargos
-bajar una red social e investigar que piensa esa red de mi, cuál es mi algoritmo
-
-(listar 10 categorías que deciden qué y quién eres)
-
 ## lectura
+### Mindstorms: Children, Computers and Powerful Ideas - Seymour Papert
+- sigo en la continuación del capítulo llamado "Turtle Geometry: A Mathematics Made for Learning"
+
+*apuntes lectura*
+- los ejemplos del texto muestran el cómo la continuidad hacen que la geomtería de la tortuga se pueda aprender de manera fácil y aplicable
+- conocimiento matemático
+- conocimiento matemático sobre el aprendizaje
+- dar sentido a lo que quieres aprender
+- geometría de tortugas -- sintónica -- alienta a la conciencia
+- atribuir las problemáticas y plasmarlas en la vida real, de esta forma es más fácil poder proyectarlas para poder resolver los problemas
+- variables como un medio de comunicación, fuente de poder personal
+
+"Lo que más importa es que al crecer con unos pocos teoremas muy poderosos, uno llega a apreciar cómo ciertas ideas se pueden usar como herramientas para pensar a lo largo de toda la vida. Uno aprende a disfrutar y respetar el poder de las ideas poderosas. Uno aprende que la idea más poderosa de todas es la idea de ideas poderosas."
+### George Polya
+  1. pensamiento eurístico
+
+
+
+
+
