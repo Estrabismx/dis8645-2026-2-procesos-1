@@ -2,6 +2,102 @@
 
 ## apuntes sesión
 
+%d\n"
+
+%d place holder es un espacio vacío para ser ocupado por un número entero y \n salto de linea.
+
+Botón 0 y 1, o doble click: si clickeamos 0111111101, de 0 a 1 cambiamos el estado con el botón, configuramos para que en caso de que hayan dos cambios de estado(doble click) en cierto rango de tiempo, suceda otra acción. 01/111111/01.
+
+Orden uso de CLASS
+
+class Nombre{
+
+1.atributos ---> int, bool, char...
+
+2.método constructor
+
+3.método general
+
+}
+
+Ejemplo en clase: https://wokwi.com/projects/476140065507309569 
+
+
+Puede tener más de un método constructor, se pone denso eso. 
+
+Public y private, private no se puede modificar. Está detrás de una contraseña. Se murió lo privado en la clase, chao chao.
+
+elDeCata.abierto / elDeMati.temperatura ---> elDeCata y elDeMati, lugar en donde pregunta + el punto + qué quieres saber. 
+
+Else ----> E.O.C EN OTRO CASO
+
+
+printf("termo de mati: %.1f grados\n", elDeMati.temperatura);
+   
+printf("\n");
+    
+
+Pregunta por la temperatura del termo de mati, e imprime los grados. 
+
+%.1f ---> F de Float y el 1 es la cantidad de decimales que entregará. ejemplo los pesos y dolares, los pesos son así nomas, lo dolares tienen centavos.
+
+luego imprime /n, un espacio en blanco.
+
+función sleep_ms es delay en arduino. En milisegundos. 
+
+--------
+Ejemplo class de botón:
+
+class Botón{
+
+atributos:
+
+bool presionado = 0;
+
+bool normalAbierto = true; 
+
+u int duracionPresionado = 0; //u int ya que los valores van de 0 a enteros positivos. 
+
+int patita; 
+
+u int vecesPresionado; 
+
+char[]nombre //nombrar el botón
+
+método constructor:
+
+//Es un método porque tiene el nombre de la clase,(),{}, y parametros. 
+
+//En el constructor evitamos colocar el mismo nombre al parametro para evitar confuciones, ya que quedaría patita = patita. Muy brígido. 
+
+//int dentro del () porque necesita un entero. 
+
+Boton(int nuevaPatita){
+
+patita = nuevaPatita //patita desde los atributos. 
+
+}
+
+método general: 
+
+void leer ();
+
+void actualizar(); 
+
+}
+--------
+una clase implica dos archivos, boton.cpp y boton.h
+
+h --> header y cpp --> c++
+
+#ifndef GRUPO_H ---> al comienzo del Boton.h
+
+#define GRUPO_H
+
+#endif ---> final de boton.h
+--------
+
+
 ## encargos
 
 ## lectura
