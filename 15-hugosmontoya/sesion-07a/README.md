@@ -74,6 +74,9 @@ y cada uno tiene su función al igual que en una página web hay un archivo que 
 
 ## encargos
 
+1. usar el ejemplo base visto en clases <https://wokwi.com/projects/476507507193136129>, agregar un segundo botón en la simulación de hardware, agregar una segunda instancia de la clase Boton, agregarle un atributo y un método a la clase Boton, y hacer que el segundo botón haga algo diferente al primero.
+2. descargar todos los archivos de wokwi, descomprimir el archivo.zip y subir esa carpeta a tu repositorio en esta sesión.
+
 ## lectura
 La pregunta de "¿quien controla el código?" iba haciendose cada vez más grande a medida que avanzaba el tiempo.
 Hoy en día los grupos de hackers están prácticamente en toda Europa y Estados Unidos, de hecho el Chaos Computer Club se expandió hasta Francia y en España cada vez iba haciendose notar más.
