@@ -54,6 +54,17 @@ class Estudiante {
 }
 
 ```
+---
+## Excusa
+
+Esta semana no he podido avanzar con los encargos solicitados, ni las lecturas. Por estar realizando algo más importante... Un sintetizador modular que representará la mención de interacción digital en la semana del diseño en México
+
+Adjunto video
+
+[![sin_te](./imagenes/sin-te.jpg)](https://youtube.com/shorts/05eUSAa7zkY)
+
+---
+
 
 ## encargos
 

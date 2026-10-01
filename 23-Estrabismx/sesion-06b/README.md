@@ -15,9 +15,11 @@
 9. acción: encender una llama
 10. pasión: quemar o iniciar combustión
 
-### charla ---
+### charla [Rodrigo Toro Madrid](https://www.instagram.com/rodrigotoro.m/)
 
-[]
+Dentro de lo que nos comentó Rodrigo quiero hacer enfasis, en el aspecto de la autoformación. Ya que nos dio un mensaje importante, aprovechar esta edad de preguntar, aprender y equivocarnos. Me resuena mucho esto, por que últimamente me llaman Kid Voodoo (no me pierdo una xd), fuera de bromas estoy asistiendo a la mayor cantidad de eventos que puedo, ya sean congresos, charlas, trabajos de magister, etc.
+
+Mi meta es poder acercarme a distintas áreas y rubros, no necesariamente saberlo todo o trabajar en ellos, si no que poder conoceerlos y decidir si vale la pena acercarme a ese abismo de conocimiento
 
 ### [Wokwi](https://wokwi.com/)
 
@@ -121,6 +123,24 @@ int main() {
 
 ## encargos
 
-RRSS
+"_bajar una red social e investigar que piensa esa red de mi, cuál es mi algoritmo. (listar 10 categorías que deciden qué y quién eres)_"
+
+### TikTok
+
+![tiktok](./imagenes/sc-sm01.jpg)
+
+Esta red social genera un listado de diversos temas asociados a tu consumo. Con el fin de saber que productos venderte, obviamente este perfil es generado en base a tus interacciones, con que videos interactuas más, con cuales menos, etc.
+
+Por lo que el algoritmo de TIkTok puede identificar a que categoria corresponden los videos dentro de su plataforma y enlazarlos a "_arquetipos de usuarios_" 
+
+<br>
+
+### Instagram
+
+![Instagram](./imagenes/sc-16.png)
+
+![Instagram](./imagenes/sc-17.png)
+
+Para observar el algoritmo de instagram, me dirigí a la opción de busqueda, la cual funciona recomendando contenido según cada perfil. Esto sirvio para entender que elementos identifica Meta como parte de mi persona
 
 ## lectura

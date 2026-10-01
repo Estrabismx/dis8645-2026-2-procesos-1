@@ -68,8 +68,38 @@ Micropython está **prohibido** lol
 
 ## encargos
 
-PLAN Z hagamos un asado (????????????)
+### Elegir un objeto, buscar las categorías del ser de Aristóteles. Analizar el objeto a partir de sus categorías
 
-Elegir un objeto, buscar las categorías del ser de Aristóteles.
+![Mi gato, Pancho](./imagenes/pancho.jpg)
+
+&uarr; Mi gato, Pancho
+
+- **Sustancia**: Mi gato, Pancho. Un ser viviente individual, una sustancia primaria. Pertenece a las sustancias secundarias *gato*, *animal*, y *ser viviente*
+
+- **Cantidad**: Pancho pesa alrededor de 4.7 kg, y mide cerca de 48cm desde su nariz hasta la base de la cola. Tiene 16 años, y es un solo gato singular
+
+- **Cualidad**: Su pelaje es completamente negro, con algunas canas debido a la edad, con ojos amarillos y una personalidad relativamente calmada. Puede maullar, ronronear, y trepar
+
+- **Relación**: Pancho es mi mascota, y yo, junto a mi familia, somos sus dueños o cuidadores, por lo tanto depende de nosotros para comer y tener un lugar donde vivir
+
+- **Lugar (dónde)**: Generalmente pasa su tiempo en la pieza de mi hermana, específicamente en su cama o su silla de escritorio
+
+- **Tiempo (cuándo)**: Pancho es más activo en la tarde, pasado las 4pm, ya que ahí es cuando suele haber más gente en casa. Normalmente duerme de corrido desde las 10pm hasta las 6am. Nació en 2009
+
+- **Situación (posición)**: En este mismo momento, está acostado a los pies de mi cama, durmiendo. Le gusta estar de lado, completamente estirado
+
+- **Hábito (posesión)**: Tiene un collar verde recubierto en plástico, del cual cuelga una medalla que dice su nombre (Panchito) por un lado, y el número de teléfono de mi papá por el otro lado
+
+- **Acción**: Pancho a menudo maulla y llora por comida, lava su propio pelaje, e intenta atrapar cosas que uno lanza en su dirección (eg. al rebotar una pelotita contra la pared)
+
+- **Pasión**: Él es afectado al ser acariciado, alimentado, lo asustan los ruidos de los autos, le gusta que le cepillen su pelo
+
+---
+
+### De una red social, descargar e investigar qué es lo que piensa de mí el algoritmo
+
+Elegí descargar mi información de Instagram
+
+Basado en mi dispositivo, it accurately know que estoy actualmente en Santiago, Chile
 
 ## lectura

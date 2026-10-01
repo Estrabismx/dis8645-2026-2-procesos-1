@@ -2,6 +2,20 @@
 
 ## apuntes sesión
 
+https://wokwi.com/projects/new/pi-pico-sdk
+wokwi 
+
+para borrar algo, es mejor ponerlo en comentarios
+
+“” si esta aca adentro es LITERALMENTE lo que está dentro
+
+\n para el enter
+
+“%d” placeholder
+
+Hablamos con Rodrigo Toro
+
+
 ## encargos
 
 >"martes 29-09:
