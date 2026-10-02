@@ -245,7 +245,15 @@ El principal problema que tuve fue que al leer el pote me dejaba un valor estát
 
 ---
 
-La próxima actualización será controlar algo con los botones y potenciometros
+Luego de varias pruebas y errores logre comprender y añadir potenciometros y ampliar el concepto de las clases. Me fue de gran ayuda entender como combinar los arrays al momento de _construir_ instancias.
+
+Acá adjunto gif de la última actualización, donde las luces oscilan (la idea es poder reemplazar/sumar una onda que genere sonido) una vez seleccionado el boton correspondiente. La idea es que el potenciometro altere la oscilación, pero es algo para el futuro
+
+![gif](./imagenes/luces-oscilando.gif)
+
+Adjunto PDF del chat con Gemini que me ayudó a comprender ciertos elementos [ACÁ](./imagenes/chat-gemini.pdf)
+
+Además si clickean [AQUÍ](./luces-oscilando) podran observar los archivos que se crearon
 
 ---
 
