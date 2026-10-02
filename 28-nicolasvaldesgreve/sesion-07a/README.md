@@ -73,9 +73,142 @@ al hacer archivos tendremos:
 + Boton.h // ya que tenemos la clase Boton, por eso se llaman así
 	// h es de header kkkkkkkk
 
+---
+
 ## encargos
 
 1. usar el ejemplo base visto en clases <https://wokwi.com/projects/476507507193136129>, agregar un segundo botón en la simulación de hardware, agregar una segunda instancia de la clase Boton, agregarle un atributo y un método a la clase Boton, y hacer que el segundo botón haga algo diferente al primero.
 2. descargar todos los archivos de wokwi, descomprimir el archivo.zip y subir esa carpeta a tu repositorio en esta sesión.
 
+#### avance en clases
+
+main:
+
+```cpp
+// este es main.cpp
+
+// esto venia en wokwi
+#include <stdio.h>
+#include "pico/stdlib.h"
+
+// incluir mis archivos
+#include "Boton.h"
+
+int main() {
+
+  stdio_init_all();
+
+  // crear Boton que se llama miPrimerBoton
+  // con el constructor
+  Boton miPrimerBoton(7);
+  Boton miSegundoBoton(22);
+  
+  while (true) {
+
+    miPrimerBoton.leer();
+
+    if (miPrimerBoton.presionado) {
+      printf("bacan estoy presionado, pero igual me presiona\n");
+    }
+    else {
+      // cuando no este presionado
+      printf("\n no hay nadie presionandome\n");
+    }
+
+// agrego otro boton kkkkkk hola
+
+    miSegundoBoton.leer();
+
+    if (miSegundoBoton.presionado) {
+        printf("hola soy el otro y estoy presionado\n");
+    }
+    else {
+      printf("\n alguien plis \n");
+    }
+
+    sleep_ms(800);
+
+  }
+
+  
+}
+```
+
+Boton.h
+
+```cpp
+// Boton.h
+// declaraciones de la clase Boton
+
+#ifndef BOTON_H
+#define BOTON_H
+
+// esto lo agregamos para GPIO
+// general purpose input output
+#include "hardware/gpio.h"
+
+// definir clase Boton
+class Boton {
+
+  // todo publico
+  // nada de andar privatizando
+  public:
+
+  // atributos
+  bool presionado = false;
+  int duracionPresionado = 0;
+  int patita;
+
+
+  // constructor
+  Boton(int nuevaPatita);
+
+  // metodos
+  void leer();
+  void presionar();
+  void soltar();
+
+};
+
+#endif
+```
+
+Boton.cpp
+
+```cpp
+// Boton.cpp
+// implementaciones de la clase
+
+// importar el archivo header
+#include "Boton.h"
+
+// constructor
+Boton::Boton(int nuevaPatita) {
+
+  // guardar el valor
+  Boton::patita = nuevaPatita;
+
+   // inicializar patita
+  gpio_init(Boton::patita);
+  // la patita es entrada
+  gpio_set_dir(Boton::patita, GPIO_IN);
+}
+
+void Boton::leer() {
+    // leer boton
+    Boton::presionado = gpio_get(Boton::patita);
+}
+
+// metodos
+void Boton::presionar() {
+  Boton::presionado = true;
+  // queda pendiente calcular
+  // cuanto rato lleva presionado
+}
+  
+void Boton::soltar() {
+   Boton::presionado = false;
+   Boton::duracionPresionado = 0;
+}
+```
 ## lectura
