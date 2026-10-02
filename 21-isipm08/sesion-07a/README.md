@@ -245,8 +245,14 @@ realizar en el ejemplo visto en clase, integrar otro botón
 - variables como un medio de comunicación, fuente de poder personal
 
 "Lo que más importa es que al crecer con unos pocos teoremas muy poderosos, uno llega a apreciar cómo ciertas ideas se pueden usar como herramientas para pensar a lo largo de toda la vida. Uno aprende a disfrutar y respetar el poder de las ideas poderosas. Uno aprende que la idea más poderosa de todas es la idea de ideas poderosas."
+
 ### George Polya
+
   1. pensamiento eurístico
+
+<https://es.wikipedia.org/wiki/George_P%C3%B3lya>
+
+<https://es.wikipedia.org/wiki/Heur%C3%ADstica>
 
 
 
