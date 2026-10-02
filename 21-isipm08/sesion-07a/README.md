@@ -231,7 +231,7 @@ realizar en el ejemplo visto en clase, integrar otro botón
 
 <https://wokwi.com/projects/476535764702876673>
 
-<https://wokwi.com/projects/476535764702876673>
+<https://wokwi.com/projects/476795657278740481>
 
 ## lectura
 ### Mindstorms: Children, Computers and Powerful Ideas - Seymour Papert
