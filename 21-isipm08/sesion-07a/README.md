@@ -231,6 +231,8 @@ realizar en el ejemplo visto en clase, integrar otro botón
 
 <https://wokwi.com/projects/476535764702876673>
 
+<https://wokwi.com/projects/476535764702876673>
+
 ## lectura
 ### Mindstorms: Children, Computers and Powerful Ideas - Seymour Papert
 - sigo en la continuación del capítulo llamado "Turtle Geometry: A Mathematics Made for Learning"
