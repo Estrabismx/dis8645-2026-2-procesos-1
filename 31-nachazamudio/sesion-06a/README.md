@@ -58,10 +58,15 @@ tomarTe()
 Respirar()
 
 ----
+
 LAS FUNCIONES SON paramétricas. ejemplo, puedo usar dormir(calidad). 
+
 ----
+
 los atributos no afectan directamente a los métodos.
+
 ---
+
 PARTE 2 CLASE a programar:
 
 mateo god, hace placas.
