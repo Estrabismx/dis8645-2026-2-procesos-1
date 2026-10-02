@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-breadboard-half",
+      "id": "bb1",
+      "top": 63.3,
+      "left": -419.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-pi-pico",
+      "id": "pico",
+      "top": 0,
+      "left": 0,
+      "attrs": { "builder": "pico-sdk" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 90.35,
+      "left": -230.4,
+      "attrs": { "value": "10000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": 51.95,
+      "left": -230.4,
+      "attrs": { "value": "10000" }
+    },
+    {
+      "type": "wokwi-pushbutton-6mm",
+      "id": "btn3",
+      "top": 36.2,
+      "left": -268.8,
+      "attrs": { "color": "green", "xray": "1" }
+    },
+    {
+      "type": "wokwi-pushbutton-6mm",
+      "id": "btn4",
+      "top": 74.6,
+      "left": -268.8,
+      "attrs": { "color": "green", "xray": "1" }
+    },
+    { "type": "wokwi-potentiometer", "id": "pot1", "top": 123.5, "left": -144.2, "attrs": {} }
+  ],
+  "connections": [
+    [ "pico:GP0", "$serialMonitor:RX", "", [] ],
+    [ "pico:GP1", "$serialMonitor:TX", "", [] ],
+    [ "pico:3V3", "bb1:tp.1", "red", [ "h24", "v-99.15", "h-249.6" ] ],
+    [ "bb1:bp.25", "bb1:tp.25", "red", [ "h0.9", "v30.4", "h172.8" ] ],
+    [ "bb1:tn.25", "bb1:bn.25", "black", [ "h0.1", "v40", "h-172.8" ] ],
+    [ "pico:GND.1", "bb1:tn.1", "black", [ "h-54", "v-41.55", "h-124.8" ] ],
+    [ "pico:GP6", "bb1:4t.b", "violet", [ "h-130.8", "v-12.75", "h-67.2" ] ],
+    [ "pico:GP7", "bb1:8t.b", "violet", [ "h-140.4", "v16.05", "h-57.6" ] ],
+    [ "bb1:2b.j", "bb1:bp.1", "red", [ "h0" ] ],
+    [ "bb1:6b.j", "bb1:bp.5", "red", [ "h0" ] ],
+    [ "btn3:1.l", "bb1:2b.f", "", [ "$bb" ] ],
+    [ "btn3:2.l", "bb1:4b.f", "", [ "$bb" ] ],
+    [ "btn3:1.r", "bb1:2t.e", "", [ "$bb" ] ],
+    [ "btn3:2.r", "bb1:4t.e", "", [ "$bb" ] ],
+    [ "btn4:1.l", "bb1:6b.f", "", [ "$bb" ] ],
+    [ "btn4:2.l", "bb1:8b.f", "", [ "$bb" ] ],
+    [ "btn4:1.r", "bb1:6t.e", "", [ "$bb" ] ],
+    [ "btn4:2.r", "bb1:8t.e", "", [ "$bb" ] ],
+    [ "r1:1", "bb1:8t.d", "", [ "$bb" ] ],
+    [ "r1:2", "bb1:tn.6", "", [ "$bb" ] ],
+    [ "r2:1", "bb1:4t.d", "", [ "$bb" ] ],
+    [ "r2:2", "bb1:tn.3", "", [ "$bb" ] ],
+    [ "pot1:GND", "bb1:tn.15", "black", [ "v9.6", "h-57.6" ] ],
+    [ "pot1:VCC", "bb1:tp.17", "red", [ "v0" ] ],
+    [ "pot1:SIG", "pico:GP26", "green", [ "v19.2", "h210.8", "v-115.2" ] ]
+  ],
+  "dependencies": {}
+}
