@@ -94,7 +94,7 @@ h --> header y cpp --> c++
 
 #define GRUPO_H
 
-#endif ---> final de boton.h
+endif ---> final de boton.h
 --------
 
 
