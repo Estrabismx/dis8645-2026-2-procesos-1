@@ -227,11 +227,21 @@ Boton apagar (GP30);
 1. usar el ejemplo base visto en clases <https://wokwi.com/projects/476507507193136129>, agregar un segundo botón en la simulación de hardware, agregar una segunda instancia de la clase Boton, agregarle un atributo y un método a la clase Boton, y hacer que el segundo botón haga algo diferente al primero.
 2. descargar todos los archivos de wokwi, descomprimir el archivo.zip y subir esa carpeta a tu repositorio en esta sesión.
 
-realizar en el ejemplo visto en clase, integrar otro botón
+primero realicé distintas pruebas, manteniendo las conexiones similaares del primer botón, para que el otro al presionarlo mandara otro mensaje distinto, lo cual no me funcionó, entonces me rendí y quise probar algo distinto
 
-<https://wokwi.com/projects/476535764702876673>
+<https://wokwi.com/projects/476535764702876673> -- 1er intento
 
-<https://wokwi.com/projects/476795657278740481>
+![titulo](./imagenes/conexion1.png)
+
+![titulo](./imagenes/conexion2.png)
+
+![titulo](./imagenes/conexion3.png)
+
+para este nuevo código le pedí ayuda a la IA, especificándole el proyecto anterior y que quería integrar un nuevo botón que prendiera un LED
+
+<https://wokwi.com/projects/476795657278740481> -- 2do intento y final
+
+![titulo](./imagenes/conexionfinal.png)
 
 ## lectura
 ### Mindstorms: Children, Computers and Powerful Ideas - Seymour Papert
