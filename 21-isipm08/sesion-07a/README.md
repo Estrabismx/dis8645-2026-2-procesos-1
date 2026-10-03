@@ -239,7 +239,9 @@ primero realicé distintas pruebas, manteniendo las conexiones similaares del pr
 
 para este nuevo código le pedí ayuda a la IA, especificándole el proyecto anterior y que quería integrar un nuevo botón que prendiera un LED
 
-<https://wokwi.com/projects/476795657278740481> -- 2do intento y final
+<https://wokwi.com/projects/476795657278740481> -- 2do intento 
+
+<https://wokwi.com/projects/476824146410140673> -- final
 
 ![titulo](./imagenes/conexionfinal.png)
 
