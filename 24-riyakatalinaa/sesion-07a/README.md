@@ -314,12 +314,12 @@ cree los nuevos métodos para este segundo botón que son: configurarLed(), ence
 
 **paso 3**
 
-luego en el código **main.cpp** creé **miSegundoBoton(8)** (patita 8) y le asigné el LED con **configurarLed(15)** (el LED se encuentra en la patita 15)
+luego en el código **main.cpp** creé **miSegundoBoton(9)** (patita 9) y le asigné el LED con **configurarLed(15)** (el LED se encuentra en la patita 15)
 
 
 ```c++
-  // crear segundo Boton en la patita 8
-  Boton miSegundoBoton(8);
+  // crear segundo Boton en la patita 9
+  Boton miSegundoBoton(9);
   // este boton controla un LED en la patita 15
   miSegundoBoton.configurarLed(15);
 ```
@@ -349,9 +349,9 @@ a comparación del primer botón este tiene un comportamiento distinto, el prime
 
 ![simulacion paso 1 conectar boton a 3v3](imagenes/simulacion-paso-1.png)
 
-**paso 2: conecte una de las patitas del botón a GP8**
+**paso 2: conecte una de las patitas del botón a GP9**
 
-![simulacion paso 2 conectar boton a GP8](imagenes/simulacion-paso-2.png)
+![simulacion paso 2 conectar boton a GP9](imagenes/simulacion-paso-2.png)
 
 **paso 3: agregué un LED con una resistencia de 100k, conectado a GP15 y a GND**
 
