@@ -351,15 +351,15 @@ a comparación del primer botón este tiene un comportamiento distinto, el prime
 
 **paso 2: conecte una de las patitas del botón a GP9**
 
-![simulacion paso 2 conectar boton a GP9](imagenes/simulacion-paso-2.png)
+![simulacion paso 2 conectar boton a GP9](imagenes/simulacion-paso-dos.png)
 
 **paso 3: agregué un LED con una resistencia de 100k, conectado a GP15 y a GND**
 
-![simulacion paso 3 conectar resistencia y LED](imagenes/simulacion-paso-3.png)
+![simulacion paso 3 conectar resistencia y LED](imagenes/simulacion-paso-tres.png)
 
 **paso 4: botón presioado y LED encendido**
 
-![simulacion paso 4 LED encendido](imagenes/simulacion-paso-4.png)
+![simulacion paso 4 LED encendido](imagenes/simulacion-paso-cuatro.png)
 
 ## lectura
 
