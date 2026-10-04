@@ -357,6 +357,9 @@ a comparación del primer botón este tiene un comportamiento distinto, el prime
 
 ![simulacion paso 3 conectar resistencia y LED](imagenes/simulacion-paso-3.png)
 
+**paso 4: botón presioado y LED encendido**
+
+![simulacion paso 4 LED encendido](imagenes/simulacion-paso-4.png)
 
 ## lectura
 
