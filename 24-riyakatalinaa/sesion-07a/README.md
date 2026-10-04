@@ -339,7 +339,7 @@ a comparación del primer botón este tiene un comportamiento distinto, el prime
 
 **imagen del ejemplo de clases en wokwi sin modificación**
 
-![simulacion sin modicifaciones](./imagenes/simulacion-sin-modificación.png)
+![simulacion sin modicifaciones](./imagenes/simulacion-sin-modificacion.png)
 
 **imagen de wokwi y los componentes a utilizar**
 
