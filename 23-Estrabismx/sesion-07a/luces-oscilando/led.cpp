@@ -40,12 +40,20 @@ void Led::apagarLed(){
 
 void Led::oscilarLed() {
 
-//que el led prenda y apague
-encendido = gpio_get_out_level(conexionLed);
+//calcula cuanto tiempo ha pasado desde que
+//inicio el microcontrolador
+//to_ms_since_boot es una funcion que devuelve el tiempo en milisegundos
+//get_absolute_time es una funcion que devuelve el tiempo absoluto
+uint32_t tiempoActual = to_ms_since_boot(get_absolute_time());
 
+// si ha pasado mas tiempo que el que se definio en duracionEncendido
+if (tiempoActual - ultimoCambio >= 500) {
+
+//! encendido es una variable que nos indica si el led esta encendido o apagado
+encendido = gpio_get_out_level(conexionLed);
 //! corresponde a una negacion
 gpio_put(conexionLed, !encendido);
 
-sleep_ms(100);
+ultimoCambio = tiempoActual;
 
 }
