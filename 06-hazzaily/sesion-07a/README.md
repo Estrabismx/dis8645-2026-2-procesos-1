@@ -69,7 +69,24 @@ patita = nuevaPatita;
 ## encargos
 
 1. usar el ejemplo base visto en clases <https://wokwi.com/projects/476507507193136129>, agregar un segundo botón en la simulación de hardware, agregar una segunda instancia de la clase Boton, agregarle un atributo y un método a la clase Boton, y hacer que el segundo botón haga algo diferente al primero.
+
+Para el segundo botón quise que encendiera el LED integrado de la raspi, para esto, hubo que crear un botón nuevo dentro de los mismos archivos y luego darle un sentido, que en este caso es que encendiera y apagara el LED.
+
+Y aquí tuve 2 versiones, la primera, en donde sólo enciende el LED:
+
+![gif de la simulación en wokwi de la versión 1](./imagenes/encargo-07a-v1.gif)
+
+Y para la segunda versión, como había que incluir un atributo y un método, lo que quise hacer es que el LED no se mantuviera encendido durante el tiempo que uno presionara el botón, sino que, al pulsarlo el LED se mantuviera prendido por cierta cantidad de tiempo, en el caso del ejemplo son 1500ms:
+
+![gif de la simulación en wokwi de la versión 1](./imagenes/encargo-07a-vf.gif)
+ 
 2. descargar todos los archivos de wokwi, descomprimir el archivo.zip y subir esa carpeta a tu repositorio en esta sesión.
+
+Los archivos de wokwi y de mi conversación con claude se encuentran aquí:
+
+[Wokwi - encargo-07a](https://github.com/disenoUDP/dis8645-2026-2-procesos-1/blob/main/06-hazzaily/sesion-07a/imagenes/encargo-07a.zip)
+
+[Claude - encargo-07a](https://github.com/disenoUDP/dis8645-2026-2-procesos-1/blob/main/06-hazzaily/sesion-07a/imagenes/claude-boton-led.pdf)
 
 ## lectura
 
