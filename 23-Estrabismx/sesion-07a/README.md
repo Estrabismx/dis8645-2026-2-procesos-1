@@ -129,9 +129,148 @@ Ahora sabemos la estructura de una clase, pero la implementación no es solo lle
 
 Tenemos como ejemplo el siguiente en [Wokwi](https://wokwi.com/projects/476507507193136129)
 
+<details>
+<summary><h4> 🔴 <b>código visto en clases - main.cpp</b></h4></summary>
+
+```cpp
+
+// esto venia en wokwi
+#include <stdio.h>
+#include "pico/stdlib.h"
+
+// incluir mis archivos
+#include "Boton.h"
+
+int main() {
+
+  stdio_init_all();
+
+  // crear Boton que se llama miPrimerBoton
+  // con el constructor
+  Boton miPrimerBoton(7);
+  
+  while (true) {
+
+    miPrimerBoton.leer();
+
+    if (miPrimerBoton.presionado) {
+      printf("bacan estoy presionado, pero igual me presiona\n");
+    }
+    else {
+      // cuando no este presionado
+      printf("no hay nadie presionandome\n");
+    }
+
+    sleep_ms(10);
+
+  }
+}
+
+```
+
+</details>
+
+<br>
+
+<details>
+<summary><h4> 🔴 <b>código visto en clases - Boton.h</b></h4></summary>
+
+```cpp
+
+#ifndef BOTON_H
+#define BOTON_H
+
+// esto lo agregamos para GPIO
+// general purpose input output
+#include "hardware/gpio.h"
+
+
+// Boton.h
+// declaraciones de la clase Boton
+
+
+// definir clase Boton
+class Boton {
+
+  // todo publico
+  // nada de andar privatizando
+  public:
+
+  // atributos
+  bool presionado = false;
+  int duracionPresionado = 0;
+  int patita;
+
+
+  // constructor
+  Boton(int nuevaPatita);
+
+  // metodos
+  void leer();
+  void presionar();
+  void soltar();
+
+};
+
+#endif
+
+```
+
+</details>
+
+<br>
+
+<details>
+<summary><h4> 🔴 <b>código visto en clases - Boton.cpp</b></h4></summary>
+
+```cpp
+
+// Boton.cpp
+// implementaciones de la clase
+
+// importar el archivo header
+#include "Boton.h"
+
+// constructor
+Boton::Boton(int nuevaPatita) {
+
+  // guardar el valor
+  Boton::patita = nuevaPatita;
+
+   // inicializar patita
+  gpio_init(Boton::patita);
+  // la patita es entrada
+  gpio_set_dir(Boton::patita, GPIO_IN);
+}
+
+void Boton::leer() {
+    // leer boton
+    Boton::presionado = gpio_get(Boton::patita);
+}
+
+// metodos
+void Boton::presionar() {
+  Boton::presionado = true;
+  // queda pendiente calcular
+  // cuanto rato lleva presionado
+}
+  
+void Boton::soltar() {
+   Boton::presionado = false;
+   Boton::duracionPresionado = 0;
+}
+
+```
+
+</details>
+
 ## encargos
 
-1. usar el ejemplo base visto en clases <https://wokwi.com/projects/476507507193136129>, agregar un segundo botón en la simulación de hardware, agregar una segunda instancia de la clase Boton, agregarle un atributo y un método a la clase Boton, y hacer que el segundo botón haga algo diferente al primero.
+_1. usar el ejemplo base visto en clases <https://wokwi.com/projects/476507507193136129>, agregar un segundo botón en la simulación de hardware, agregar una segunda instancia de la clase Boton, agregarle un atributo y un método a la clase Boton, y hacer que el segundo botón haga algo diferente al primero._
+
+<br>
+
+### añadir 2do botón
 
 Para poder realizar un segundo botón no fue complejo, la dificultad que tuve radicó en añadir una función que ocurriera al no estar ningún botón presionado, para ello recurrí a la lógica boolena y utilize una compuerta AND. Es decir que para algo ocurra 2 elementos deben cumplir un parámetro, en este caso que `miPrimerBoton` y `miSegundoBoton` en su variable de `presionado` posea valor `false`
 
@@ -144,6 +283,12 @@ Para poder realizar un segundo botón no fue complejo, la dificultad que tuve ra
 ```
 
 Como observamos, es necesario que exista `==` para definir una igualdad matemática (valores iguales) y al momento de definir AND se hace con `&&`
+
+Para acceder a los archivos, hacer click [ACÁ](./ejemplo2-botones/) 
+
+<br>
+
+### añadir pote
 
 Ahora quiero pavimentar el camino para las próximas clases (xddd), por lo que vamos a describir que atributos corresponden a un potenciómetro:
 
@@ -181,7 +326,7 @@ void leerPote()
 
 <br>
 
-Lo anterior posee un nivel de abstracción aún, ya que aún no nos hacemos responsables de como va a leer el pote, es decir que hicimos `Pote.h`
+Lo anterior posee un nivel de abstracción aún, ya que aún no nos hacemos responsables de como va a leer el pote, es decir que hicimos `Pote.cpp`
 
 ```cpp
 
@@ -231,19 +376,18 @@ Luego de revisar posibles errores soluciona la mitad, pero varios me dieron prob
 
 <br>
 
-Para ver que solucionar me acerque al inicio de las clases y [acá](/00-docentes/sesion-02a/ej_pico_pote/main.c) observé el código y busqúe como implementarlo a la clase Pote
+Para ver que solucionar me acerque al inicio de las clases (a las primeras sesiones, donde hicimos pruebas con el potenciometro en Arduino) y [acá](/00-docentes/sesion-02a/ej_pico_pote/main.c) observé el código y busqúe como implementarlo a la clase Pote
 
 Luego de múltiples búsquedas y solucionar errores pequeños, llegue al código final [aquí](./2botones1pote-v-0-2/)
 
 ![potee](./imagenes/2botones1pote.gif)
 
-<br>
 
 El principal problema que tuve fue que al leer el pote me dejaba un valor estático, se soluciono añadiendo `miPrimerPote.leerPote();`, de esta manera se genera una lectura de manera consistente
 
-[Link Wokwi](https://wokwi.com/projects/476512284795190273)
+<br>
 
----
+### arrays + clases
 
 Luego de varias pruebas y errores logre comprender y añadir potenciometros y ampliar el concepto de las clases. Me fue de gran ayuda entender como combinar los arrays al momento de _construir_ instancias.
 
@@ -251,12 +395,56 @@ Acá adjunto gif de la última actualización, donde las luces oscilan (la idea 
 
 ![gif](./imagenes/luces-oscilando.gif)
 
+Luego de diversos cambios e investigación se implementó el potenciométro para alterar la velocidad de oscilación
+
+![gif](./imagenes/idea.gif)
+
+<br>
+
 Adjunto PDF del chat con Gemini que me ayudó a comprender ciertos elementos [ACÁ](./imagenes/chat-gemini.pdf)
 
-Además si clickean [AQUÍ](./luces-oscilando) podran observar los archivos que se crearon
+Además si clickean [AQUÍ](./luces-oscilando) podran observar los archivos que se crearon, sin olvidar el link del proyecto [Link Wokwi](https://wokwi.com/projects/476512284795190273)
+
+<br>
+
+### ideas proyecto 02 - 03
+
+#### referente raspi
+
+A continuación adjunto video que me ayuda a entender y comprender que se podria realizar para un futuro proyecto
+
+- <https://www.youtube.com/watch?v=jm5V9wdTMXQ>
+
+#### funcionamiento - Korg Volca Sample
+
+Un referente que considero relevante a la hora de desarrollar un sampler, es el Korg Volca Sample. Este posee disitintos botones y perrilas que funcionan en un sistema estructurado para generar una infinidad de posibilidades.
+
+- [Video](https://www.youtube.com/watch?v=bSTxg43_wBM&t=35s)
+
+- ![imagen](./imagenes/korg-volca-sample.heic)
+
+#### carcasa - bastl
+
+<img src="./imagenes/dude.jpg" width="50%">
+
+<img src="./imagenes/kastle-1.5.jpg" width="50%">
+
+<img src="./imagenes/kastle-drum.jpg" width="50%">
+
+<img src="./imagenes/kastle.jpg" width="50%">
+
+Todos estos modelos de la serie Bastl, consisten de laminas encajadas y aseguradas mediante pernos, lo curioso es que estas son de PCB, a las cuales se le aplica serigrafía
+
+#### otros - Bleep Drum
+
+- ![bleep](./imagenes/bleep-drum.jpg)
+
+Este es un controlador MIDI, que además es una caja de ritmos que funciona mediante un microcontrolador del tipo ATMEGA
 
 ---
 
-2. descargar todos los archivos de wokwi, descomprimir el archivo.zip y subir esa carpeta a tu repositorio en esta sesión.
+_2. descargar todos los archivos de wokwi, descomprimir el archivo.zip y subir esa carpeta a tu repositorio en esta sesión._
+
+Archivos ya subidos :p
 
 ## lectura
