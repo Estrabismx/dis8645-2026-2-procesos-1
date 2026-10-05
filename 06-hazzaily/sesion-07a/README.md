@@ -2,11 +2,9 @@
 
 2026-09-29
 
-## apuntes sesión
+## ejemplo aaron
 
 El ejemplo utilizado en clase lo hizo Aaron el fin de semana, y podemos verlo aquí [ejemplo-07a](https://wokwi.com/projects/476140065507309569)
-
-
 
 ```
  //  en la línea 96 del ejemplo
@@ -65,6 +63,37 @@ patita = nuevaPatita;
  // metodos
 
 ```
+
+## apuntes
+
+ - Podemos crear tanto class públicas como privadas, pero para lo que estamos haciendo todo es público: 
+
+```cpp
+  // debajo de la class
+  // por ejmplo
+
+class Termo {
+
+  public:
+
+  // atributos
+
+  // constructor
+
+  // metodo
+
+}
+```
+
+ - %.1f en donde f = float, que son aproximaciones, no números enteros, por ejemplo:
+
+```cpp
+printf("termo de matias: %.1f grados\n", elDeMati.temperatura);
+```
+
+ - Existen los **double**, que son como los float, pero tienen mas capacidad/resolución.
+
+ - Los "métodos" son funciones.
 
 ## encargos
 
