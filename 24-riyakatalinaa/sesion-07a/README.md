@@ -279,6 +279,88 @@ int main() {
 
 implementar botón en simulador wokwi
 
+
+### agregar segundo botón
+
+la idea es agregar un botón que haga encender un LED si este esta presionado 
+
+código sin modificar
+
+![codigo ejemplo de clases sin mofidicar](./imagenes/captura-de-pantalla-ejemplo-clases.png)
+
+**paso 1**
+
+a la clase Boton le añadí los atributos **patitaLed** y **ledEncendido**
+
+
+```c++
+  int patitaLed = -1;
+  bool ledEncendido = false;
+```
+
+donde -1 significa no existe led
+
+
+**paso 2**
+
+cree los nuevos métodos para este segundo botón que son: configurarLed(), encenderLed() y apagarLed()
+
+
+```c++
+  void configurarLed(int nuevaPatitaLed);
+  void encenderLed();
+  void apagarLed();
+```
+
+**paso 3**
+
+luego en el código **main.cpp** creé **miSegundoBoton(9)** (patita 9) y le asigné el LED con **configurarLed(15)** (el LED se encuentra en la patita 15)
+
+
+```c++
+  // crear segundo Boton en la patita 9
+  Boton miSegundoBoton(9);
+  // este boton controla un LED en la patita 15
+  miSegundoBoton.configurarLed(15);
+```
+
+
+a comparación del primer botón este tiene un comportamiento distinto, el primer botón imprime un mensaje al ser y no ser presionado, en cambio el segundo botón solo enciende el LED mientras está presionado y lo apaga al soltarlo
+
+
+
+### fotos de simulación paso a paso
+
+**componentes a implementar**
+- botón 2
+- resistencia 100k
+- LED
+- cables (conexciones)
+
+**imagen del ejemplo de clases en wokwi sin modificación**
+
+![simulacion sin modicifaciones](./imagenes/simulacion-sin-modificacion.png)
+
+**imagen de wokwi y los componentes a utilizar**
+
+![simulacion con componentes a utilizar](imagenes/simulacion-con-componentes.png)
+
+**paso 1: primero conecte una de las patitas del botón a 3v3**
+
+![simulacion paso 1 conectar boton a 3v3](imagenes/simulacion-paso-1.png)
+
+**paso 2: conecte una de las patitas del botón a GP9**
+
+![simulacion paso 2 conectar boton a GP9](imagenes/simulacion-paso-dos.png)
+
+**paso 3: agregué un LED con una resistencia de 100k, conectado a GP15 y a GND**
+
+![simulacion paso 3 conectar resistencia y LED](imagenes/simulacion-paso-tres.png)
+
+**paso 4: botón presioado y LED encendido**
+
+![simulacion paso 4 LED encendido](imagenes/simulacion-paso-cuatro.png)
+
 ## lectura
 
 nos dejaron elegir un libro para leer durante el semestre en el cual debemos dejar 2 citas por clase y leer mínimo 100 paginas durante el semestre

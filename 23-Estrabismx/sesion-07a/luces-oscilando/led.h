@@ -12,8 +12,8 @@ class Led {
   //atributos -----
   int conexionLed; //en que GPio se encuentra conectado
   bool encendido = false;
-  unsigned int duracionEncendido = 0;
-
+  unsigned int duracionEncendido = 0; //cuanto tiempo lleva encendido
+  uint32_t ultimoCambio = 0; //cuando fue la ultima vez que cambio de estado
 
   //constructor -----
   Led(int nuevaConexionLed);
