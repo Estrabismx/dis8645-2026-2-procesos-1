@@ -56,8 +56,8 @@ atributos:
 constructor:
 
 ```cpp
-Boton (~int patita~ nuevaPatita) {
-	 patita = ~int patita~ nuevaPatita;
+Boton (nuevaPatita) { // esto solia ser Boton (int patita)
+	 patita = nuevaPatita; // esto solia ser patita = int patita
 }
 ```
 
