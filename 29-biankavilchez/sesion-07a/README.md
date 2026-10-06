@@ -20,16 +20,16 @@ la regla general es esta:
 ```cpp
 class Nombre {
   public:
-    // atributos: variables internas (int, bool, float...)
+    // atributos  (int, bool, float...)
 
-    // constructor: se llama igual que la clase
+    // constructor
     Nombre(...) {
     }
 
-    // métodos: lo que la clase sabe hacer
+    //
     void abrir(...);
     void cerrar(...);
-};   // ojo: la clase termina con punto y coma
+};   //la clase termina con punto y coma
 ```
 
 - el nombre de la clase empieza con mayúscula.
@@ -49,7 +49,7 @@ class Nombre {
 // declaración de la clase Termo
 class Termo {
   public:
-    // atributos de la clase (variables internas)
+    // atributos 
     bool existencia = true;
     bool abierto = false;
     int posicion = 0;
@@ -57,12 +57,12 @@ class Termo {
     float temperatura = 100.0;
     int rodamientos = 5;
 
-    // método constructor, con un parámetro: cuantosML
+    // método constructor
     Termo(int cuantosML) {
       cantidadML = cuantosML;
     }
 
-    // método enfriar
+    // método 
     void enfriar() {
       while (true) {
         temperatura = temperatura - 0.7;
@@ -119,29 +119,7 @@ antes de cerrar las comillas está `\n`, que corresponde a un salto de línea. c
 - `float`: aproximación, de menor resolución.
 - `double`: mayor rango y precisión.
 
-## ejemplo: clase `Boton`
 
-```cpp
-class Boton {
-  public:
-    // atributos
-    bool presionado = false;          // sí o no, según si se presionó
-    bool normalAbierto = true;
-    int duracionPresionado = 0;       // en ms
-    unsigned int patita;              // unsigned: entero que no puede ser negativo
-    unsigned int vecesPresionado = 0;
-    char nombre[10];                  // ej: "pausa", "reproducir"
-
-    // constructor: define la patita
-    Boton(int nuevaPatita) {
-      patita = nuevaPatita;
-    }
-
-    // métodos
-    void leer();
-    void actualizar();
-};
-```
 
 ### el constructor
 
