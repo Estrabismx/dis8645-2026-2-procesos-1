@@ -161,8 +161,147 @@ int main() {
 1. usar el ejemplo base visto en clases <https://wokwi.com/projects/476507507193136129>, agregar un segundo botón en la simulación de hardware, agregar una segunda instancia de la clase Boton, agregarle un atributo y un método a la clase Boton, y hacer que el segundo botón haga algo diferente al primero.
 2. descargar todos los archivos de wokwi, descomprimir el archivo.zip y subir esa carpeta a tu repositorio en esta sesión.
 
-SOLUCIÖN ENCARGO
+**SOLUCIÓN ENCARGO**
+
+En general quedaron así los ajustes:
+
+**Boton.h**
+
+```cpp
+#ifndef BOTON_H
+#define BOTON_H
+
+// esto lo agregamos para GPIO
+// general purpose input output
+#include "hardware/gpio.h"
 
 
+// Boton.h
+// declaraciones de la clase Boton
+
+
+// definir clase Boton
+class Boton {
+
+  // todo publico
+  // nada de andar privatizando
+  public:
+
+  // Atributos
+  bool presionado = false;
+  int duracionPresionado = 0;
+  int patita;
+
+  // atributo nuevo
+  int vecesPresionado = 0;
+
+  // constructor
+  Boton(int nuevaPatita);
+
+  // metodos
+  void leer();
+  void presionar();
+  void soltar();
+
+  // metodo nuevo
+  void contarPresion();
+};
+
+#endif
+```
+**Boton.cpp**
+
+```cpp
+// Boton.cpp
+// implementaciones de la clase
+
+// importar el archivo header
+#include "Boton.h"
+
+// constructor
+Boton::Boton(int nuevaPatita) {
+
+  // guardar el valor
+  Boton::patita = nuevaPatita;
+
+   // inicializar patita
+  gpio_init(Boton::patita);
+  // la patita es entrada
+  gpio_set_dir(Boton::patita, GPIO_IN);
+}
+
+void Boton::leer() {
+    // leer boton
+    Boton::presionado = gpio_get(Boton::patita);
+}
+
+// metodos
+void Boton::presionar() {
+  Boton::presionado = true;
+  // queda pendiente calcular
+  // cuanto rato lleva presionado
+}
+  
+void Boton::soltar() {
+   Boton::presionado = false;
+   Boton::duracionPresionado = 0;
+}
+
+// metodo nuevo
+void Boton::contarPresion() {
+  Boton::vecesPresionado++;
+}
+```
+**main.cpp**
+
+```cpp
+// esto venia en wokwi
+#include <stdio.h>
+#include "pico/stdlib.h"
+
+// incluir mis archivos
+#include "Boton.h"
+
+int main() {
+
+  stdio_init_all();
+
+  // crear Boton que se llama miPrimerBoton
+  // con el constructor
+  Boton miPrimerBoton(7);
+  Boton segundoBoton(8);
+  while (true) {
+
+    miPrimerBoton.leer();
+    segundoBoton.leer();
+
+    if (miPrimerBoton.presionado) {
+      printf("bacan estoy presionado, pero igual me presiona\n");
+    }
+    else {
+      // cuando no este presionado
+      printf("no hay nadie presionandome\n");
+    }
+
+    if (segundoBoton.presionado) {
+      // cuenta la cantidad de presiones al oprimir el "segundoBoton"
+      segundoBoton.contarPresion();
+      // imprime el texto con la cantidad de veces presionando el "segundoBoton"
+      printf(
+        "estilo porta en la suela, llevo %d presiones\n",
+        segundoBoton.vecesPresionado
+      );
+    }
+    // es lo que se ve si no se presiona nada
+    else {
+      printf("tranquilo se la navega\n");
+    }
+
+    sleep_ms(100);
+  }
+}
+```
+
+Y acá está el link al wokwi directamente: https://wokwi.com/projects/477107804422557697
 
 ## lectura
