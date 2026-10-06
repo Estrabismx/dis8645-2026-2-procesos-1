@@ -2,8 +2,6 @@
 
 ## apuntes sesión
 
-## apuntes sesión 07a
-
 Llegamos (aunque de nuevo llegue tarde im so sorry) retomando el código de Wokwi y empezamos a meternos más con las clases, instancias y cómo se organiza todo esto en distintos archivos.
 
 Primero vimos que una clase puede tener datos internos, que serían los atributos, y acciones que puede realizar, que serían los métodos.
@@ -277,23 +275,7 @@ segundo botón → GP8
 
 También dejé el segundo botón de otro color para poder distinguirlo en la simulación.
 
-### En resumen
 
-Partí con el botón que ya había hecho el profe y lo usé como base.
-
-Después agregué:
-
-```text
-segundo botón
-↓
-segunda instancia de Boton
-↓
-nuevo atributo: cantidadPresiones
-↓
-nuevo método: contarPresion()
-```
-
-Y así los dos botones siguen siendo objetos de la misma clase Boton, pero el segundo tiene una función distinta.
 
 ## lectura
 
