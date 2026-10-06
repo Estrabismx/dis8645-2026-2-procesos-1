@@ -407,3 +407,7 @@ el código final con las correcciones que menciono está en la carpeta ``encargo
 ---
 
 ## lectura: Program Or Be Programmed: Ten Commands for a Digital Age - Douglas Rushkoff
+
+“Websites and programs become laboratories where our keystrokes and mouse clicks are measured and compared, our every choice registered for its ability to predict and influence the next choice”
+
+“Withholding choice is not death. Quite on the contrary, it is one of the few things distinguishing life from its digital imitators”
