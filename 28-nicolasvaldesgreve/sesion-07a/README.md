@@ -239,9 +239,155 @@ void Boton::soltar() {
 
 ## trabajo en casa
 
-HOLA FALTA PROCESO DEL LED++++++++++++++++++++++++++++++++++++++++++++++++++
+una vez ya tenía logrado lo del segundo botón, me dediqué a probar agregar un LED que se controle con miSegundoBoton, por lo que agregué en la simulación un LED y una resistencia de 220Ω conectando la patita negativa del LED a una patita de la resistencia, mientras que la otra iba a GND. la patita positiva del LED la conecté a GP20:)
 
-atados que se provocaron ya que no me di cuenta qué estaba haciendo mal:
+> mientras hacía esto, recordé que la primera vez que quise controlar un LED con un botón en una raspi puse el botón y el LED en el mismo GP (fue el semestre pasado lol)
+
+![screenshot de wokwi](./imagenes/led.png)
+
+ahora, para intervenir el código y añadir el LED creé nuevos archivos ya que no me gustaba la idea de añadir la clase _Led_ en el archivo de _Boton_, asi que hice _Led.h_ y _Led.cpp_. no sé si es lo correcto, pero era lo que me parecía más correcto en mi mente(?
+
+para añadir el LED, dentro de _main.cpp_ añadí ``#include "Led.h"``, y dentro de ``int main()`` creé ``Led miUnicoLed(20);``. luego, con mucha esperanza añadí dentro de ``miSegundoBoton.leer()`` que si el botón estaba siendo presionado, entonces ``miUnicoLed.encendido = true;``.... me sentí como el meme de scripting kinda easy
+
+![momazo de <https://www.reddit.com/r/ProgrammerHumor/comments/1qemasd/scriptingkindaeasy/>](./imagenes/momo.png)
+
+en _Led.cpp_ y _Led.h_, copié y pegué lo que había dentro de _Boton.cpp_ y _Boton.h_, haciendo las siguientes modificaciones:
+
++ cambiar todo lo que decía Boton por Led (para ambos archivos, .h y .cpp)
++ dentro de _Led.h_ cambiar el atributo _presionado_ a _encendido_, y _duracionPresionado_ a _duracionEncendido_. mantuve _patita_ :V
++ cambiar métodos a _leer_ y _encender_... yo realmente tenía un sueño
++ dentro de _Led.cpp_ solo añadí el método de ``Led::encender()``, ignorando _leer_ LOLOLOLOLOL epic trolleo (a wokwi asumo???)
+
+esta creación quedó de la siguiente forma:
+
+### main.cpp
+
+```cpp
+// este es main.cpp
+
+// esto venia en wokwi
+#include <stdio.h>
+#include "pico/stdlib.h"
+
+// incluir mis archivos
+#include "Boton.h"
+#include "Led.h"
+
+int main() {
+
+  stdio_init_all();
+
+  // crear Boton que se llama miPrimerBoton
+  // con el constructor
+  Boton miPrimerBoton(7);
+  Boton miSegundoBoton(22);
+
+  // crear LED que es mi unico LED... hola
+  Led miUnicoLed(20);
+  
+  while (true) {
+
+    miPrimerBoton.leer();
+
+    if (miPrimerBoton.presionado) {
+      printf("bacan estoy presionado, pero igual me presiona\n");
+    }
+    else {
+      // cuando no este presionado
+      printf("\n no hay nadie presionandome\n");
+    }
+
+// agrego otro boton kkkkkk hola
+
+    miSegundoBoton.leer();
+
+    if (miSegundoBoton.presionado) {
+        printf("hola soy el otro y estoy presionado\n");
+        miUnicoLed.encendido = true;
+    }
+    else {
+      printf("\n alguien plis \n");
+    }
+
+    sleep_ms(800);
+
+  }
+
+  
+}
+```
+
+### Led.h
+
+```cpp
+// Led.h
+// declaraciones de la clase Led
+
+#ifndef LED_H
+#define LED_H
+
+// esto lo agregamos para GPIO
+// general purpose input output
+#include "hardware/gpio.h"
+
+// definir clase Led
+class Led {
+
+  // todo publico
+  // nada de andar privatizando
+  public:
+
+  // atributos
+  bool encendido = false;
+  int duracionEncendido = 0;
+  int patita;
+
+ // constructor
+  Led(int nuevaPatita);
+
+  // metodos
+  void leer();
+  void encender();
+
+};
+          
+#endif
+```
+
+### Led.cpp
+
+```cpp
+// Led.cpp
+// implementaciones de la clase
+
+// importar el archivo header
+#include "Led.h"
+
+// constructor
+Led::Led(int nuevaPatita) {
+
+  // guardar el valor
+  Led::patita = nuevaPatita;
+
+   // inicializar patita
+  gpio_init(Led::patita);
+  // la patita es entrada
+  gpio_set_dir(Led::patita, GPIO_IN);
+}
+
+
+// metodos
+void Led::encender() {
+  Led::encendido = true;
+  // queda pendiente calcular
+  // cuanto rato lleva presionado
+}
+
+```
+
+> no muestro _Boton.h_ ni _Boton.cpp_ ya que en estos no cambió nada, siguen siendo los de arriba.
+
+#### atados que tuve por inventar LOL:
 
 1. puse la patita del LED como entrada ya que copié y pegué el constructor del botón LOLOLOLOL y no le cambié la patita a salida
 2. puse con mucha fe ``miUnicoLed.encendido = true;`` esperando que hiciera que se prenda el LED cuando se presione miSegundoBoton... solo soy una persona con muchos sueños y un computador.
@@ -251,11 +397,13 @@ atados que se provocaron ya que no me di cuenta qué estaba haciendo mal:
 
 4. como método del LED puse ``leer()``, pensando que este leía cuándo había voltaje y cuándo no dependiendo del estado de miSegundoBoton, pero en realidad solo necesitaba ``encender()`` y ``apagar()`` ya que la señal le llegará cuando dentro de main.cpp se le explique que sucederá ``miUnicoLed.encender()`` cuando se lea ``miSegundoBoton`` en ``miSegundoBoton.leer()``
 
-### fuentes
+el código final con las correcciones que menciono está en la carpeta ``encargo-clases``. es un proyecto humilde, pero hecho con mucho esfuerzo a pesar de haber sido con un proceso torpe
+
+### fuentes que me ayudaron... gracias internet
 
 + <https://www.kevsrobots.com/learn/c_pico/08_gpio_basics.html>
 + <https://ohyaan.github.io/programming/2._controlling_led_with_gpio/#understanding-the-code>
 
 ---
 
-## lectura
+## lectura: Program Or Be Programmed: Ten Commands for a Digital Age - Douglas Rushkoff
