@@ -123,6 +123,76 @@ esto permite que otro archivo pueda utilizar lo que definimos en Boton.h.
 1. usar el ejemplo base visto en clases <https://wokwi.com/projects/476507507193136129>, agregar un segundo botón en la simulación de hardware, agregar una segunda instancia de la clase Boton, agregarle un atributo y un método a la clase Boton, y hacer que el segundo botón haga algo diferente al primero.
 2. descargar todos los archivos de wokwi, descomprimir el archivo.zip y subir esa carpeta a tu repositorio en esta sesión.
 
+
+### DESARROLLO ENCARGO 
+
+Para comenzar, partí agregando un segundo botón y una segunda resistencia a la simulación de Wokwi. Traté de mantener la misma conexión que tenía el primer botón, pero conectando el nuevo botón al pin GP22.
+
+Después de hacer las conexiones, agregué una segunda instancia de la clase Boton en main.cpp:
+
+```cpp
+Boton miPrimerBoton(7);
+Boton miSegundoBoton(22);
+```
+
++ acá miPrimerBoton sigue conectado al pin 7, mientras que miSegundoBoton está conectado al pin 22
+
+Luego copié la estructura que ya tenía para el primer botón y la adapté para el segundo. De esta forma, ambos botones utilizan el método leer() para saber si están siendo presionados, para que no hicieran exactamente lo mismo, hice que cada uno mostrara un mensaje diferente en el monitor serial.
+
++ el primer botón mantiene su mensaje original:
+
+```cpp
+if (miPrimerBoton.presionado) {
+printf("bacan estoy presionado, pero igual me presiona\n"); } else {
+printf("no hay nadie presionandome\n"); }
+```
+
++ para el segundo botón hice algo diferente:
+
+```cpp
+if (miSegundoBoton.presionado) {
+printf("hola, soy el segundo boton\n"); } else {
+printf("el segundo boton esta libre\n"); }
+```
+
+Al principio no me funcionaba porque había que revisar bien las conexiones del segundo botón en Wokwi. Una vez que conecté correctamente el botón al GP22 y la resistencia a GND, pude hacer que ambos respondieran de manera independiente.
+
+Después agregué un atributo en boton.h 
+
+
+```cpp
+char nombre[20];
+```
+( ahora cada botón puede tener un nombre )
+
++ en main.cpp le puse nombres:
+
+```cpp
+miPrimerBoton.nombre[0] = 'P';
+miPrimerBoton.nombre[1] = '\0';
+
+miSegundoBoton.nombre[0] = 'S';
+miSegundoBoton.nombre[1] = '\0';
+```
++ el método:
+
+```cpp
+  void mostrarNombre();
+```
++ En Boton.h
+
+```cpp
+    void mostrarNombre();
+```
++ en Boton.cpp:
+
+
+```cpp
+  
+```
+
+* 
+
 ## lectura
 
 En esta parte se habla de cómo el movimiento obrero terminó alejándose de los propios trabajadores
