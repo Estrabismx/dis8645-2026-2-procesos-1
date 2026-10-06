@@ -110,7 +110,7 @@ void actualizar();
     + cpp → donde hacemos que funcione: en el .cpp escribimos el funcionamiento de lo que declaramos en el .h
     + por ejemplo, si en el .h dijimos que existe leer(), en el .cpp escribimos las instrucciones que harán que leer() realmente lea el botón
 
-# #Include
+### #Include
 + #include sirve para incorporar otro archivo o biblioteca a nuestro código
 + por ejemplo: #include "Boton.h"
 
@@ -204,6 +204,7 @@ if (miSegundoBoton.presionado) {
 
 agregué el atributo nombre, y el método mostrarNombre(, para que cada botón tenga un nombre y que el segundo botón, al ser presionado, mostrar un mensaje diferente al primero 
 
+![IMG1](./imagenes/wokwi.png/)
 
 ## lectura
 
