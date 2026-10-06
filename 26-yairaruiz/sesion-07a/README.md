@@ -188,10 +188,22 @@ miSegundoBoton.nombre[1] = '\0';
 
 
 ```cpp
-  
+  void Boton::mostrarNombre() {
+  printf("Soy el boton %s\n", Boton::nombre);
+}
 ```
 
-* 
+Finalmente en main.cpp:
+
+```cpp
+if (miSegundoBoton.presionado) {
+    printf("hola, soy el segundo boton\n");
+    miSegundoBoton.mostrarNombre();
+}
+```
+
+agregué el atributo nombre, y el método mostrarNombre(, para que cada botón tenga un nombre y que el segundo botón, al ser presionado, mostrar un mensaje diferente al primero 
+
 
 ## lectura
 
