@@ -1,4 +1,4 @@
-# sesion-07a → 29/09/26
+# sesion-07a → 30/09/26
 
 ## apuntes sesión
 
@@ -85,4 +85,25 @@ Luego pasamos a programarlo en vivo :)
 1. usar el ejemplo base visto en clases <https://wokwi.com/projects/476507507193136129>, agregar un segundo botón en la simulación de hardware, agregar una segunda instancia de la clase Boton, agregarle un atributo y un método a la clase Boton, y hacer que el segundo botón haga algo diferente al primero.
 2. descargar todos los archivos de wokwi, descomprimir el archivo.zip y subir esa carpeta a tu repositorio en esta sesión.
 
+
+### Segundo botón 
+
+
+
+
+
 ## lectura
+
+Libro: A New Program for Graphic Design
+
+Autor: David Reinfurt
+
+El libro está dividido en 3 grandes capítulos.
+
+I. T--Y-P-O-G-R-A-P-H-Y
+
+II. G-E-S-T-A-L-T
+
+III. I-N-T-E-R-F-A-C-E
+
+El autor plantea las bases de lo que significa enseñar diseño gráfico hoy. Introduce la idea de que el diseño no se trata de "estilo" o decoración, sino de sistemas, reglas y tecnología aplicadas a la comunicación.
