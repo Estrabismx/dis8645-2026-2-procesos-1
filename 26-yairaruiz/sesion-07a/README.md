@@ -124,3 +124,13 @@ esto permite que otro archivo pueda utilizar lo que definimos en Boton.h.
 2. descargar todos los archivos de wokwi, descomprimir el archivo.zip y subir esa carpeta a tu repositorio en esta sesión.
 
 ## lectura
+
+En esta parte se habla de cómo el movimiento obrero terminó alejándose de los propios trabajadores
+
++ la representación de los trabajadores terminó reemplazando a los propios trabajadores
+
+Algo que me costó entender fue que decía que la burocracia tenía el poder sobre el Estado y la economía, pero al mismo tiempo debía negar que existía como una clase dominante. También menciona que habla del fascismo como otra forma de defender el orden capitalista frente a las crisis y al miedo a una revolución. 
+
++ "la representación obrera se ha opuesto radicalmente a la clase"
++ "las cuestiones técnicas de organización resultaban ser cuestiones sociales"
+
