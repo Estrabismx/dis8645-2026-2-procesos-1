@@ -304,4 +304,6 @@ int main() {
 
 Y acá está el link al wokwi directamente: https://wokwi.com/projects/477107804422557697
 
+2. Los archivos wokwi que descomprimí los coloqué en la carpeta "/imagenes" de este repositorio
+
 ## lectura
