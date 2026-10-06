@@ -110,7 +110,7 @@ void actualizar();
     + cpp → donde hacemos que funcione: en el .cpp escribimos el funcionamiento de lo que declaramos en el .h
     + por ejemplo, si en el .h dijimos que existe leer(), en el .cpp escribimos las instrucciones que harán que leer() realmente lea el botón
 
-# #Include
+### #Include
 + #include sirve para incorporar otro archivo o biblioteca a nuestro código
 + por ejemplo: #include "Boton.h"
 
