@@ -307,3 +307,31 @@ Y acá está el link al wokwi directamente: https://wokwi.com/projects/477107804
 2. Los archivos wokwi que descomprimí los coloqué en la carpeta "/imagenes" de este repositorio
 
 ## lectura
+
+Comienzo en la pág. 47, donde se sigue explicando el uso de LibreOffice Writer. Además de servir para escribir documentos, también permite cambiar el estilo, el color y el tamaño de las letras, agregar imágenes, gráficos y tablas. También se menciona que puede ayudar a identificar algunos errores, como faltas de ortografía o problemas gramaticales. Finalmente, se explica cómo guardar un documento asignándole un nombre y utilizando la opción de guardar.
+
+Luego, se recomienda guardar el trabajo constantemente, incluso cuando todavía no esté terminado, para evitar perderlo en caso de que ocurra algún problema. También se muestran otros programas que forman parte de LibreOffice, como Base, Calc, Draw, Impress y Math. Cada uno cumple una función diferente, como trabajar con bases de datos, hojas de cálculo, ilustraciones, presentaciones o fórmulas matemáticas.
+
+Se presenta la herramienta Recommended Software, que permite buscar e instalar diferentes programas compatibles con Raspberry Pi. Los programas aparecen organizados por categorías y, si uno tiene una marca de verificación, significa que ya está instalado. También se pueden seleccionar varios programas para instalarlos al mismo tiempo, aunque hay que tener en cuenta el espacio disponible en la tarjeta microSD.
+
+También se explica que es posible instalar o desinstalar programas mediante la herramienta Add/Remove Software. Después se presenta la herramienta Configuración de Raspberry Pi, que sirve para modificar diferentes opciones del sistema y se parece al asistente que aparece cuando se configura la Raspberry Pi por primera vez.
+
+En la pág. 51 se explican algunas de las opciones que se pueden cambiar desde esta herramienta. Por ejemplo, se puede modificar la contraseña, el nombre de la Raspberry Pi dentro de la red, algunas opciones de la pantalla y la configuración regional. También existen opciones relacionadas con interfaces, rendimiento y localización, aunque varias de ellas no es necesario cambiarlas si no se sabe exactamente para qué sirven.
+
+Finalmente, en las pág. 52 y 53 se explica cómo apagar correctamente la Raspberry Pi. No es recomendable simplemente desconectar el cable, ya que el sistema puede estar trabajando con archivos en ese momento y esto podría causar problemas o incluso hacer que algunos datos se pierdan. Para apagarla correctamente se debe utilizar la opción Shutdown y esperar hasta que el sistema termine de cerrar todos los programas y archivos.
+
+Diferencia entre Shutdown, Reboot y Logout. Shutdown apaga completamente la Raspberry Pi, Reboot la reinicia y Logout sirve principalmente para cerrar la sesión de un usuario. Se advierte que desconectar directamente el cable sin apagar primero el sistema podría dañar el sistema operativo o provocar la pérdida de archivos.
+
+2 Citas:
+
+1. “Acostúmbrate a guardar tu trabajo, aunque aún no lo hayas terminado”.
+ 
+2. “No tires del cable de Raspberry Pi sin antes apagar el ordenador”.
+
+Pregunta:
+
+¿Por qué desconectar directamente el cable de alimentación de la Raspberry Pi puede provocar problemas en el sistema o la pérdida de archivos?
+
+Referente:
+
+LibreOffice y las herramientas de Raspberry Pi para trabajar con documentos, instalar o desinstalar programas, configurar diferentes opciones del sistema y apagar correctamente la Raspberry Pi.
