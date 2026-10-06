@@ -200,4 +200,28 @@ En este ejemplo:
 
 ## encargos
 
+### Categorías de Arisóteles
+- **Sustancia:** Lo que existe por sí mismo (ejemplo: un humano, un perro). Es la base de todo lo demás.
+- **Cantidad:** El tamaño, número o medida (ejemplo: dos metros, tres kilos).
+- **Cualidad:** Las propiedades o características (ejemplo: rojo, caliente, inteligente).
+- **Relación:** La comparación o referencia a otra cosa (ejemplo: mayor que, padre de).
+- **Lugar:** El sitio o espacio donde se está (ejemplo: en la casa, en Madrid).
+- **Tiempo:** El momento o duración (ejemplo: ayer, a las tres).
+- **Posición:** La postura o disposición del cuerpo (ejemplo: sentado, de pie).
+- **Posesión (o Hábito):** Lo que se tiene o porta (ejemplo: calzado, armado).
+- **Acción:** El acto que se ejerce sobre algo (ejemplo: cortar, calentar).
+- **Pasión:** El acto sufrido o recibido (ejemplo: ser calentado, ser visto).
+
+### Encargo objeto celular
+- sustancia: iPhone marce
+- cantidad: 1
+- cualidad: blanco, 6,1 pulgadas, capacidad de 64 GB
+- relación: herramienta para uso general
+- lugar: conmigo
+- tiempo: siempre
+- posición: con la pantalla hacia el frente
+- posesión: tiene una funda gris
+- acción: encendido
+- pasión: esta siendo sostenido
+
 ## lectura
