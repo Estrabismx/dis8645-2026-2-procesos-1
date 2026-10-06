@@ -397,7 +397,7 @@ void Led::encender() {
 
 4. como método del LED puse ``leer()``, pensando que este leía cuándo había voltaje y cuándo no dependiendo del estado de miSegundoBoton, pero en realidad solo necesitaba ``encender()`` y ``apagar()`` ya que la señal le llegará cuando dentro de main.cpp se le explique que sucederá ``miUnicoLed.encender()`` cuando se lea ``miSegundoBoton`` en ``miSegundoBoton.leer()``
 
-el código final con las correcciones que menciono está en la carpeta ``encargo-clases``. es un proyecto humilde, pero hecho con mucho esfuerzo a pesar de haber sido con un proceso torpe
+el código final con las correcciones que menciono está en la carpeta ``encargo-clases``. es un proyecto humilde, pero hecho con mucho esfuerzo a pesar de haber sido con un proceso torpe. de no querer descargarlo, pueden meterse al siguiente link: <https://wokwi.com/projects/477091575567790081> :)
 
 ### fuentes que me ayudaron... gracias internet
 
