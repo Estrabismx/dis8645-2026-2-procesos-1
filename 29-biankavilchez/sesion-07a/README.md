@@ -147,11 +147,74 @@ cada botón es una instancia distinta.
 - `Boton.h` (header, encabezado): es el resumen de la clase. muestra todo lo que se puede leer y usar de los botones:
 
 
-
-
 ## encargos
 
 1. usar el ejemplo base visto en clases <https://wokwi.com/projects/476507507193136129>, agregar un segundo botón en la simulación de hardware, agregar una segunda instancia de la clase Boton, agregarle un atributo y un método a la clase Boton, y hacer que el segundo botón haga algo diferente al primero.
 2. descargar todos los archivos de wokwi, descomprimir el archivo.zip y subir esa carpeta a tu repositorio en esta sesión.
 
+### segundo botón en wokwi (pseudocódigo)
+
+proyecto base: `ejemplo-2026-09-29-clases` (raspberry pi pico, pico sdk).
+
+### qué hace el botón nuevo
+
+el botón azul **cuenta cuántas veces lo presionan** y lo muestra en pantalla. el botón verde solo avisa si está presionado o no.
+
+### atributo nuevo (`Boton.h`)
+
+```
+clase Boton:
+    atributos que ya tenía:
+        presionado, duracionPresionado, patita
+
+    atributos nuevos:
+        vecesPresionado = 0        // el contador de clics
+        estabaPresionado = falso   // cómo estaba el botón en la lectura anterior
+```
+
+### método nuevo (`Boton.h` y `Boton.cpp`)
+
+```
+método contar():
+    nuevaPresion = (presionado ahora) Y (NO estaba presionado antes)
+
+    si nuevaPresion:
+        vecesPresionado = vecesPresionado + 1
+
+    estabaPresionado = presionado      // recordar para la próxima lectura
+    devolver nuevaPresion              // verdadero solo en el instante del clic
+```
+
+la condición "ahora sí y antes no" hace que cada clic cuente una sola vez. sin ella, como el programa lee cada 10 ms, un solo clic sumaría decenas de veces.
+
+### segunda instancia (`main.cpp`)
+
+```
+crear miPrimerBoton  con patita 7    // el verde, como estaba
+crear miSegundoBoton con patita 8    // el azul, nueva instancia
+```
+
+### comportamiento distinto (`main.cpp`)
+
+```
+repetir para siempre:
+    miPrimerBoton.leer()
+    miSegundoBoton.leer()
+
+    // botón verde: hace lo mismo de antes
+    si miPrimerBoton.presionado:
+        imprimir "bacan estoy presionado..."
+    si no:
+        imprimir "no hay nadie presionandome"
+
+    // botón azul: algo diferente, contar
+    si miSegundoBoton.contar() es verdadero:
+        imprimir "me han presionado N veces"
+
+    esperar 10 ms
+```
+para esta parte me basé en el primer ejemplo de clase. lo más difícil fueron las conexiones del hardware
+
 ## lectura
+
+
