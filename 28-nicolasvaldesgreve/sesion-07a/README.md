@@ -1,14 +1,14 @@
 # sesion-07a
 
 ## apuntes sesión
-una función tiene un int main, dentro de eso está todo lo que ocurre. todo lo que est´fuera, es infraestructura que nos ayuda a que cuando pase int main todo funcione
 
-el if es una pregunta
+una función tiene un int main, dentro de eso está todo lo que ocurre. todo lo que está fuera, es infraestructura que nos ayuda a que cuando pase int main todo funcione
 
-printf("..")
+> el if es una pregunta
 
-%d = placeholder (jefe lo hago al tiro), número entero
-\n = enter, salto de línea 
++ ``printf("..")`` = imprimir texto
++ ``%d`` = placeholder (jefe lo hago al tiro), número entero
++ ``\n`` = enter, salto de línea 
 
 ```cpp
 // estructura típica:
@@ -25,20 +25,21 @@ Nombre (...) { // método constructor
 };
 ```
 
-en la misma clase puede haber más de un constructor
+> en la misma clase puede haber más de un constructor
 
-while (true) -> mientras es verdad, hazlo. cuando sea falso, para. es como un void loop de arduino pero más crudo.
-el main sucede una vez pero nunca va a parar ya que se queda atrapado en un while true.
+``while (true)`` = _mientras sea verdad, hazlo. cuando sea falso, para._ esto es como un ``void loop()`` de Arduino pero más crudo. el main sucede una vez pero nunca va a parar ya que se queda atrapado en un while true:)
 
-e.o.c -> en otro caso
++ ``e.o.c`` = en otro caso
 
-_%.1f_
+---
 
-%. -> place holder, aquí va un valor que voy a cambiar
+#### _%.1f_
 
-f -> float, para mostrar decimales 
+``%.`` = place holder, aquí va un valor que voy a cambiar
+
+``f`` = float, para mostrar decimales 
   
-.1 -> dame solo un decimal
+``.1`` = dame solo un decimal
 
 ---
 
@@ -68,11 +69,11 @@ void leer();
 
 al hacer archivos tendremos:
 
-+ main.cpp
-+ Boton.cpp // estos son en el caso del ejemplo
-+ Boton.h // ya que tenemos la clase Boton, por eso se llaman así
-	// h es de header kkkkkkkk
++ main.cpp (aquí está el funcionamiento total)
++ Boton.h (aquí se define la clase. van atributos, constructor y métodos)
++ Boton.cpp (aquí van las implementaciones de la clase)
 
+> se llaman Boton porque estamos haciendo el ejemplo con botones, no confundirse. de lo que hablamos acá es sobre tener el _main_, _cpp_ y _header_
 ---
 
 ## encargos
@@ -80,9 +81,32 @@ al hacer archivos tendremos:
 1. usar el ejemplo base visto en clases <https://wokwi.com/projects/476507507193136129>, agregar un segundo botón en la simulación de hardware, agregar una segunda instancia de la clase Boton, agregarle un atributo y un método a la clase Boton, y hacer que el segundo botón haga algo diferente al primero.
 2. descargar todos los archivos de wokwi, descomprimir el archivo.zip y subir esa carpeta a tu repositorio en esta sesión.
 
-#### avance en clases
+### avance en clases
 
-main:
+durante clases primero me dediqué a hacer las nuevas conexiones para añadir el segundo botón, para luego dedicarme a intervenir el código y lograr que cumpla los mismos requisitos mínimos que el primer botón. para esto, dupliqué el botón y la resistencia, conectando el botón a ``GP22``, quedando así:
+
+![screenshot simulación wokwi](./imagenes/segundo-boton.png)
+
+luego, me puse a intervenir el código que hizo Aarón en clases para poder lograr que, al presionar el nuevo botón que añadí, se muestre un mensaje al igual que lo hacía el botón inicial.
+
+para partir, creé el botón como constructor en ``Boton miSegundoBoton(22)``, indicando que se encuentra en el pin GP22 de la raspi. luego, copié y pegué lo que había dentro de ``while (true)`` para que miSegundoBoton haga lo mismo que miPrimerBoton, es decir, lo siguiente:
+
+```cpp
+   miPrimerBoton.leer();
+
+    if (miPrimerBoton.presionado) {
+      printf("bacan estoy presionado, pero igual me presiona\n");
+    }
+    else {
+      // cuando no este presionado
+      printf("no hay nadie presionandome\n");
+```
+
+como dije, copié y pegué, pero edité el texto que se imprime a mi gusto y tuve que añadirle ``\n`` al inicio y al final de cada uno ya que estos al mostrarse en el monitor se pegaban al texto anterior.
+
+fuera de eso, no hice nada más ya que los dos botones hacían el mismo trabajo solo que con distinto texto, por lo que quedé con lo siguiente dentro de los archivos:
+
+### main.cpp
 
 ```cpp
 // este es main.cpp
@@ -134,7 +158,7 @@ int main() {
 }
 ```
 
-Boton.h
+### Boton.h
 
 ```cpp
 // Boton.h
@@ -173,7 +197,7 @@ class Boton {
 #endif
 ```
 
-Boton.cpp
+### Boton.cpp
 
 ```cpp
 // Boton.cpp
@@ -211,4 +235,27 @@ void Boton::soltar() {
    Boton::duracionPresionado = 0;
 }
 ```
+---
+
+## trabajo en casa
+
+HOLA FALTA PROCESO DEL LED++++++++++++++++++++++++++++++++++++++++++++++++++
+
+atados que se provocaron ya que no me di cuenta qué estaba haciendo mal:
+
+1. puse la patita del LED como entrada ya que copié y pegué el constructor del botón LOLOLOLOL y no le cambié la patita a salida
+2. puse con mucha fe ``miUnicoLed.encendido = true;`` esperando que hiciera que se prenda el LED cuando se presione miSegundoBoton... solo soy una persona con muchos sueños y un computador.
+3.  dentro de ``Led::encender()`` (en Led.cpp) también tenía ``encendido = true`` sin llamar a ``gpio_put``. al final lo cambié por ``gpio_put(Led::patita, 1)`` lololololol (1 es que le llega voltaje)
+
+> recordar que ``Led::patita`` es en donde va el pin. esto se me olvidó mientras trabajaba en esto y fue horrible lo que me costó recordarlo
+
+4. como método del LED puse ``leer()``, pensando que este leía cuándo había voltaje y cuándo no dependiendo del estado de miSegundoBoton, pero en realidad solo necesitaba ``encender()`` y ``apagar()`` ya que la señal le llegará cuando dentro de main.cpp se le explique que sucederá ``miUnicoLed.encender()`` cuando se lea ``miSegundoBoton`` en ``miSegundoBoton.leer()``
+
+### fuentes
+
++ <https://www.kevsrobots.com/learn/c_pico/08_gpio_basics.html>
++ <https://ohyaan.github.io/programming/2._controlling_led_with_gpio/#understanding-the-code>
+
+---
+
 ## lectura
