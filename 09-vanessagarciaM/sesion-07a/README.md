@@ -187,6 +187,7 @@ ejemplo-2029-09-29-clases - Wokwi ESP32, STM32, Arduino Simulator
 mi ejemplo: <https://wokwi.com/projects/477154643509297153>
 
 2. descargar todos los archivos de wokwi, descomprimir el archivo.zip y subir esa carpeta a tu repositorio en esta sesión.
++ los subí en la carpeta imágenes
 
 ## lectura
 
