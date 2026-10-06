@@ -2,7 +2,7 @@
 // implementaciones de la clase
 
 // importar el archivo header
-#include "boton.h"
+#include "Boton.h"
 
 // constructor
 Boton::Boton(int nuevaPatita) {

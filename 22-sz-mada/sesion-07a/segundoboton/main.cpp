@@ -3,7 +3,7 @@
 #include "pico/stdlib.h"
 
 // incluir mis archivos
-#include "boton.h"
+#include "Boton.h"
 
 int main() {
 
