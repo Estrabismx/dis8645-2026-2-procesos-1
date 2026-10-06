@@ -204,6 +204,7 @@ if (miSegundoBoton.presionado) {
 
 agregué el atributo nombre, y el método mostrarNombre(, para que cada botón tenga un nombre y que el segundo botón, al ser presionado, mostrar un mensaje diferente al primero 
 
+![IMG1](./imagenes/wokwi.png/)
 
 ## lectura
 
