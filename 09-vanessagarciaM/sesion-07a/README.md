@@ -191,7 +191,7 @@ mi ejemplo: <https://wokwi.com/projects/477154643509297153>
 
 ## lectura
 
-> En estas páginas del libro se habla de cómo la tecnología de hoy intenta ocultar las pantallas y las interfaces para que ni nos demos cuenta de que están ahí. Pero los artistas y escritores digitales hacen todo lo contrario, si no que usan el hackeo, los errores y la incomodidad para romper esa ilusión y hacernos conscientes del código y del aparato que estamos usando. Esto lo muestran con ejemplos súper interesantes, como poemas que reaccionan cuando tocas la pantalla del iPad, programas de hipertexto modificados para esconder historias secretas, y hasta obras que se autodestruyen, hechas con disquetes y libros que se van borrando solos.
+> en estas páginas del libro se habla de cómo la tecnología de hoy intenta ocultar las pantallas y las interfaces para que ni nos demos cuenta de que están ahí. pero los artistas y escritores digitales hacen todo lo contrario, si no que usan el hackeo, los errores y la incomodidad para romper esa ilusión y hacernos conscientes del código y del aparato que estamos usando. esto lo muestran con ejemplos súper interesantes, como poemas que reaccionan cuando tocas la pantalla del ipad, programas de hipertexto modificados para esconder historias secretas, y hasta obras que se autodestruyen, hechas con disquetes y libros que se van borrando solos.
 
 **cita 1**
 
